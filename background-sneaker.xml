@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+    <info>
+        <name>AAA Sneaker</name>
+        <description>All DEX skills + Artisan's Tools</description>
+		<author url="https://github.com/cajadehu/aurorabuilder/">LemonCat</author>
+		<update version="0.0.1">
+            <file name="background-sneaker.xml" url="https://github.com/cajadehu/aurorabuilder/background-sneaker.xml" />
+        </update>
+    </info>
+    <element name="AAA Sneaker" type="Background" source="AAA" id="ID_BACKGROUND_AAA_SNEAKER">
+        <description>
+            <p>You have spent much of your childhood tiptoeing around hallways, peeking through keyholes, hiding in shadows, and listening in on others conversations.</p>
+            <p class="indent">You might have been working as a spy, gathering secrets and intel for your Patron. Perhaps you were a burglar, or a lookout for a gang. Maybe you just love gossip!</p>
+			<ul class="unstyled">
+				<li><strong>Skill Proficiencies:</strong>Acrobatics, Sleight of Hand, Stealth.</li>
+				<li><strong>Tool Proficiencies:</strong>Thieves’ Tools, Artisan's Tools.</li>
+				<li><strong>Languages:</strong> Thieves’ Cant</li>
+			</ul>
+        </description>
+        <setters>
+            <set name="short">Acrobatics, Sleight of Hand, Stealth, Thieves’ Tools, Artisan's Tools, Thieves’ Cant</set>
+        </setters>
+        <rules>
+            <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_ACROBATICS" />
+            <grant type="Proficiency" id="ID_PROFICIENCY_SKILL_SLEIGHTOFHAND" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_STEALTH" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_THIEVES_TOOLS" />
+			<select type="Proficiency" name="Tool Proficiency (Sneaker)" supports="Artisan tools"/>
+            <grant type="Class Feature" id="ID_WOTC_PHB_CLASS_FEATURE_ROGUE_THIEVES_CANT" />
+			
+            <select type="List" name="Personality Trait" number="2">
+                <item id="1">Gloomy. Death waits for us all. It is just a matter of time.</item>
+                <item id="2">Anxious. What if it rains, and I slip in the mud, and break my ankle? AAHH!</item>
+                <item id="3">Haggler. Hmm, the guy down the street is selling these for 5cp less.</item>
+                <item id="4">Gormand. This could use a little more salt to balance the flavors. 3 stars.</item>
+                <item id="5">Rude. Were you born stupid or have you been practicing? Should I use smaller words?</item>
+                <item id="6">Creepy. Your hair smells even better when you're awake.</item>
+                <item id="7">Peppy. C'mon guys! Rise and shine! Adventure awaits!</item>
+                <item id="8">Vain. Do my boots match my gloves? Isn't my hair silky smooth?</item>
+            </select>
+            <select type="List" name="Ideal">
+                <item id="1">I will see justice done, regardless of circumstances. (Lawful)</item>
+                <item id="2">Life is meant to be fun! (Chaotic)</item>
+                <item id="3">I help the poor and downtrodden when I can. (Good)</item>
+                <item id="4">Power is it's own reward. (Evil)</item>
+                <item id="5">I am but a leaf on the river of life. (Neutral)</item>
+                <item id="6">The world just needs more love and understanding. (Good)</item>
+            </select>
+            <select type="List" name="Bond">
+                <item id="1">My Clan's holy relic was taken. I must retrieve it no matter the cost.</item>
+                <item id="2">To asure a place of honor in the afterlife, I must accomplish a great feat.</item>
+                <item id="3">I need a title to wed my beloved.</item>
+                <item id="4">I escaped a death cult as a child. I pray they never find me.</item>
+                <item id="5">I was framed for a crime I didn't commit.</item>
+                <item id="6">I will avenge the murder of my family.</item>
+            </select>
+            <select type="List" name="Flaw">
+                <item id="1">It's how much? Nevermind. By the way, when do you close?</item>
+                <item id="2">It wasn't my fault. Honest. Okay, maybe it was.</item>
+                <item id="3">I am completely focused on what you are saying OOH! A BIRD!</item>
+                <item id="4">Pranks and practical jokes are the highest form of humor.</item>
+                <item id="5">I think you mean "whom", not "who". How do you not know this.</item>
+                <item id="6">I bite my toenails and pick my nose in public.</item>
+            </select>
+        </rules>
+    </element>
+</elements>

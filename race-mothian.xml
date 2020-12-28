@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Mothian</name>
+		<description>Mothian</description>
+		<author url="https://github.com/cajadehu/aurorabuilder/">LemonCat</author>
+		<update version="0.0.1">
+			<file name="race-mothian.xml" url="https://github.com/cajadehu/aurorabuilder/race-mothian.xml" />
+		</update>
+	</info>
+
+	<element name="Mothian" type="Race" source="AAA" id="ID_CUSTOM_RACE_MOTHIAN">
+		<description>
+			<p class="flavor">“Follow the light in your heart, and your nights will be calm.”</p>
+			<p>
+			Beauty can be found everywhere, you merely have to look for it. Mothian are typically a calm and peaceful people who enjoy a gentle way of life. </p>
+			<p class="indent">
+			Mothian follow a similar life cycle to the common moth except for their disproportionately long adult stage. Upon emerging from their cocoon, they innately know the language of their clan's lineage (or common). The unfamiliar may confuse a Mothian for a Sprite, but they differ in their wing shape, their long fanned antennae, all-black eyes, and a very soft short fuzzy fur over most of their skin in a mottled grey and brown color.</p>
+			<h4>MOTHIAN TRADITIONS</h4>
+			<p>All of the Mothian people have an innate knowledge of ancient traditions with each clan having their own unique variations. Festival dancing on the night of the full moon, extinguishing a burning candle with a bare hand as a right of passage, a dare, or a test of bravery.</p>
+			<h4>MOTHIAN POLITICS</h4>
+			<p>There are clans within the Mothian people that each pursue different ideals, but the clans are open and somewhat dynamic. Members of a clan may leave and join any clan at any time, although it is uncommon for this to happen. Having few predators in their native environment, they are a curious people.</p>
+			<h4>MOTHIAN TRAITS</h4>
+			<p>Your Mothian character has certain traits deriving from your unusual nature</p>
+			<p class="indent"><b><i>Ability Score Increase. </i></b>Your Charisma score increases by 2, and two other ability scores of your choice increase by 1.</p>
+			<p class="indent"><b><i>Age. </i></b>Mothian emerge from their cocoon as adults, and live around 60 years.</p>
+			<p class="indent"><b><i>Alignment. </i></b>As a rule, Mothian are driven by their love of nature, the moon, and self-enlightenment, making them tend toward lawful and good. Lawful Mothian might devote their time to ritualistic worship, fighting the unnatural, or studying the arcane arts.</p>
+			<p class="indent"><b><i>Size. </i></b>Mothian are about the same size as Halflings, ranging from 3 to 4 feet tall. They are quite light—only about 90 pounds. Your size is Small.</p>
+			<p class="indent"><b><i>Speed. </i></b>Your base walking speed is 30 feet.</p>
+			<p class="indent"><b><i>Darkvision. </i></b>Accustomed to the night, you have superior vision in dark and dim conditions. You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can’t discern color in darkness, only shades of gray.</p>
+			<p class="indent"><b><i>Moth Wings. </i></b>You have a fly speed of 20ft.</p>
+			<p class="indent"><b><i>Silver Tongue. </i></b>You gain proficiency in the Persuasion skill.</p>
+			<p class="indent"><b><i>Mothian Blessing. </i></b>You know one cantrip [Light, Produce FLame, or Prestidigitation]. Charisma is your spellcasting ability for it.</p>
+			<p class="indent"><b><i>Languages. </i></b>You can speak, read, and write Common and two other languages of your choice.</p>
+		</description>
+		<setters>
+			<set name="names" type="name">Luna, Celeste, Truni, Wai, Yolfa</set>
+			<set name="names" type="surname">Oslavi, Eshanto, Aelima, Injoa</set>
+			<set name="names-format">{{name}} {{surname}}</set>
+			<set name="height" modifier="1d12">3'0"</set>
+			<set name="weight" modifier="2d4">80 lb.</set>
+		</setters>
+		<sheet display="false" />
+		<rules>
+			<stat name="charisma" value="2" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+			<select type="Ability Score Improvement" name="Ability Score Increase (Mothian)" supports="Ability Score Improvement, Mothian" number="2" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+			<select type="Ability Score Improvement" name="Custom Ability Score Improvement +2 (Mothian)" supports="Custom Ability Score Increase 2" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+			<select type="Ability Score Improvement" name="Custom Ability Score Improvement +1 (Mothian)" number="2" supports="Custom Ability Score Increase 1" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+			<stat name="innate speed" value="30" bonus="base" />
+			<grant type="Size" id="ID_SIZE_SMALL" />
+			<grant type="Vision" id="ID_VISION_DARKVISION" />
+			<grant type="Racial Trait" id="ID_CUSTOM_RACIAL_TRAIT_FLIGHT20" />
+			<grant type="Racial Trait" id="ID_CUSTOM_RACIAL_TRAIT_SILVER_TONGUE" />
+			<grant type="Racial Trait" id="ID_CUSTOM_RACIAL_TRAIT_MOTHIAN_BLESSING" />
+			<grant type="Language" id="ID_LANGUAGE_COMMON" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE" />
+			<select type="Language" name="Customized Language" supports="Custom Race Language" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE" />
+			<select type="Language" name="Language (Mothian)" number="2" supports="Standard||Exotic" />
+		</rules>
+	</element>
+	<element name="Moth Wings" type="Racial Trait" source="AAA" id="ID_CUSTOM_RACIAL_TRAIT_FLIGHT20">
+		<description>
+			<p>You have a flying speed of 20 feet. To use this speed, you can’t be wearing medium or heavy armor.</p>
+		</description>
+		<sheet>
+			<description>You have a flying speed of 20 feet. To use this speed, you can’t be wearing medium or heavy armor.</description>
+		</sheet>
+		<rules>
+			<stat name="innate speed:fly" value="20" bonus="base" equipped="![armor:medium],![armor:heavy]" />
+		</rules>
+	</element>
+	<element name="Silver Tongue" type="Racial Trait" source="AAA" id="ID_CUSTOM_RACIAL_TRAIT_SILVER_TONGUE">
+		<description>
+			<p>You gain proficiency in the Persuasion skill.</p>
+		</description>
+		<sheet display="false">
+			<description>You gain proficiency in the Persuasion skill.</description>
+		</sheet>
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_PERSUASION" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_PROFICIENCY" />
+			<select type="Proficiency" name="Customized Skill Proficiency" supports="Skill" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_PROFICIENCY" />
+		</rules>
+	</element>
+	<element name="Mothian Blessing" type="Racial Trait" source="AAA" id="ID_CUSTOM_RACIAL_TRAIT_MOTHIAN_BLESSING">
+		<description>
+			<p>You know one cantrip [Light, Produce FLame, or Prestidigitation]. Charisma is your spellcasting ability for it.</p>
+		</description>
+		<sheet>
+			<description>You know one cantrip [Light, Produce FLame, or Prestidigitation]. (Spellcasting: Charisma)</description>
+		</sheet>
+		
+		<sheet display="false">
+			<description>The spells on the Mothian Blessing Spells table are Light, Produce FLame, and Prestidigitation.</description>
+		</sheet>
+		<spellcasting name="Mothian Blessing" ability="Charisma" allowReplace="true">
+			<list>Mothian Blessing</list>
+		</spellcasting>
+		<rules>
+			<select type="Spell" name="Cantrip (Mothian Blessing)" supports="Mothian Blessing, 0" spellcasting="Mothian Blessing" />
+		</rules>
+  </element>
+  
+  <append id="ID_PHB_SPELL_LIGHT">
+    <supports>Mothian Blessing</supports>
+  </append>
+    <append id="ID_PHB_SPELL_PRODUCE_FLAME">
+    <supports>Mothian Blessing</supports>
+  </append>
+    <append id="ID_PHB_SPELL_PRESTIDIGITATION">
+    <supports>Mothian Blessing</supports>
+  </append>
+</elements>
