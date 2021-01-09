@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Squirrelan</name>
+		<description>Squirrelan</description>
+		<author url="https://github.com/cajadehu/aurorabuilder/">LemonCat</author>
+		<update version="0.0.1">
+			<file name="race-squirrelan.xml" url="https://github.com/cajadehu/aurorabuilder/race-squirrelan.xml" />
+		</update>
+	</info>
+
+	<element name="Squirrelan" type="Race" source="AAA" id="ID_CUSTOM_RACE_SQUIRRELAN">
+		<description>
+			<p class="flavor">“Invest in your future, evade danger, and you shall prosper.”</p>
+			<p>
+			Cautious action and prudent planning make for success. Squirrelan are typically an anxious yet passionate people. Often found in the deepest parts of forests their culture has a strong emphasis on seasonal harvests, living off the land, and family life.</p>
+			<p class="indent">
+			Squirrelan tend to live out their entire lives within a few miles of their birthplace and have a strong bond with nature. They rarely travel far unless forced otherwise by the destruction of their habitat, or lack of natural resources. Occasionally a Squirrelan may seek a different life full of adventure and action, although few ever return to their homeland finding it too small and restrictive.
+			<h4>Squirrelan Varieties</h4>
+			There are several variations between sub-species, primarily in fur color with other differences being more subtle, and generally only noticed by those raised in Squirrelan society. The three most well known varieties are red, brown, and grey.</p>
+			<h4>Squirrelan Traditions</h4>
+			<p>All of the Squirrelan people have an innate bond with nature, particularly with trees. The gathering of preserves for storage over long and cold winters is commonplace, and the coming of spring is celebrated with a large communal festival. Young Squirrelans can often be seen leaping from tree branch to tree branch in competitive glee. Some have been known to shave down much of their tail fur in order to better hide it within their armor for protection, while others spend a great deal of time adorning their tail and fur with shinning bobbles and ribbons as a display of wealth or prominance to others.</p>
+			<h4>Squirrelan Politics</h4>
+			<p>Each community of Squirrelans is lead by a small council of elders. There is always an odd number of council members to minimise indecision. Being an amenable people, internal conflict is rare but when it does occur, it falls to the council to advise and pass judgement as needed.</p>
+			<h4>Squirrelan Traits</h4>
+			<p>Your Squirrelan character has certain traits deriving from your unusual nature</p>
+			<p class="indent"><b><i>Ability Score Increase. </i></b>Your Dexterity score increases by 2, and your Constitution score increases by 1.</p>
+			<p class="indent"><b><i>Age. </i></b>Squirrelan live around 70 years when living a peaceful, healthful lifestyle.</p>
+			<p class="indent"><b><i>Alignment. </i></b>As a rule, Squirrelan are driven by their love of nature, and their sense of community, making them tend toward lawful and good.</p>
+			<p class="indent"><b><i>Size. </i></b>Squirrelan are about the same size as dwarves, ranging from 4 to 5 feet tall. They are usually slender in warm environments and bulkier in cold environments. Your size is Medium.</p>
+			<p class="indent"><b><i>Speed. </i></b>Your base walking speed is 30 feet.</p>
+			<p class="indent"><b><i>Darkvision. </i></b>Accustomed to poor light in dense forests, you have superior vision in dark and dim conditions. You can see in dim light within 60 feet of you as if it were bright light, and in darkness as if it were dim light. You can’t discern color in darkness, only shades of gray.</p>
+			<p class="indent"><b><i>Forager. </i></b>You gain proficiency in the Investigation skill.</p>
+			<p class="indent"><b><i>Languages. </i></b>You can speak, read, and write Common and one other standard language of your choice.</p>
+		</description>
+		<setters>
+			<set name="names" type="male">Nutz, Goram, Holan, Kuld, Dras</set>
+			<set name="names" type="female">Fluffy, Evedi, Shupi, Orlai, Ilvanna</set>
+			<set name="names" type="surname">Treeborn, von Oak, Piner, von Delt</set>
+			<set name="names-format">{{name}} {{surname}}</set>
+			<set name="height" modifier="1d12">4'0"</set>
+			<set name="weight" modifier="2d4">90 lb.</set>
+		</setters>
+		<sheet display="false" />
+		<rules>
+			<stat name="dexterity" value="2" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+			<select type="Ability Score Improvement" name="Custom Ability Score Increase +2 (Squirrelan)" supports="Custom Ability Score Increase 2" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+			
+			<stat name="constitution" value="1" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+			<select type="Ability Score Improvement" name="Custom Ability Score Increase +1 (Squirrelan)" supports="Custom Ability Score Increase 1" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+			
+			<stat name="innate speed" value="30" bonus="base" />
+			<grant type="Size" id="ID_SIZE_MEDIUM" />
+			<grant type="Vision" id="ID_VISION_DARKVISION" />
+			<grant type="Racial Trait" id="ID_CUSTOM_RACIAL_TRAIT_FORAGER" />
+			<grant type="Language" id="ID_LANGUAGE_COMMON" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE" />
+			<select type="Language" name="Customized Language" supports="Custom Race Language" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE" />
+			<select type="Language" name="Language (Squirrelan)" number="1" supports="Standard" />
+			<grant type="Racial Trait" id="ID_RACIAL_TRAIT_SQUIRRELAN_SUBRACE" />
+		</rules>
+	</element>
+
+    <append id="ID_PHB_SPELL_PRESTIDIGITATION">
+        <supports>Well Groomed</supports>
+    </append>
+
+	<element name="Forager" type="Racial Trait" source="AAA" id="ID_CUSTOM_RACIAL_TRAIT_FORAGER">
+		<description>
+			<p>You gain proficiency in the Investigation skill.</p>
+		</description>
+		<sheet display="false">
+			<description>You gain proficiency in the Investigation skill.</description>
+		</sheet>
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_INVESTIGATION" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_PROFICIENCY" />
+			<select type="Proficiency" name="Customized Skill Proficiency" supports="Skill" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_PROFICIENCY" />
+		</rules>
+	</element>
+
+	<element name="Well Groomed" type="Racial Trait" source="AAA" id="ID_CUSTOM_RACIAL_TRAIT_WELL_GROOMED">
+		<description>
+			<p>You know the Prestidigitation cantrip. Charisma is your spellcasting ability for it.</p>
+		</description>
+		<sheet>
+			<description>You know one the Prestidigitation cantrip. (Spellcasting: Charisma)</description>
+		</sheet>
+		
+		<sheet display="false">
+			<description>The spells on the Well Groomed Spells table are Prestidigitation.</description>
+		</sheet>
+		<spellcasting name="Well Groomed" ability="Charisma" allowReplace="true">
+			<list>Well Groomed</list>
+		</spellcasting>
+		<rules>
+			<select type="Spell" name="Cantrip (Well Groomed)" supports="Well Groomed, 0" spellcasting="Well Groomed" />
+		</rules>
+  </element>
+
+	<element name="Natural Armor (Str)" type="Racial Trait" source="AAA" id="ID_CUSTOM_RACIAL_TRAIT_NATURAL_ARMOR_STR">
+		<description>
+			<p>Due to your body's natural features, you have a base AC of 13 + Strength Modifier.</p>
+		</description>
+		<sheet>
+			<description>Due to your body's natural features, you have a base AC of 13 + Strength Modifier.</description>
+		</sheet>
+		<rules>
+			<stat name="ac:natural armor" value="13" />
+			<stat name="ac:natural armor" value="strength:modifier" />
+			<stat name="ac:calculation" value="ac:natural armor" bonus="calculation" alt="Natural Armor (Str)"/>
+		</rules>
+	</element>
+
+	<element name="Natural Armor (Cha)" type="Racial Trait" source="AAA" id="ID_CUSTOM_RACIAL_TRAIT_NATURAL_ARMOR_CHA">
+		<description>
+			<p>Due to your body's natural features, you have a base AC of 13 + Charisma Modifier.</p>
+		</description>
+		<sheet>
+			<description>Due to your body's natural features, you have a base AC of 13 + Charisma Modifier.</description>
+		</sheet>
+		<rules>
+			<stat name="ac:natural armor" value="13" />
+			<stat name="ac:natural armor" value="charisma:modifier" />
+			<stat name="ac:calculation" value="ac:natural armor" bonus="calculation" alt="Natural Armor (Cha)"/>
+		</rules>
+	</element>
+
+	<element name="Natural Armor (Int)" type="Racial Trait" source="AAA" id="ID_CUSTOM_RACIAL_TRAIT_NATURAL_ARMOR_INT">
+		<description>
+			<p>Due to your body's natural features, you have a base AC of 13 + Intelligence Modifier.</p>
+		</description>
+		<sheet>
+			<description>Due to your body's natural features, you have a base AC of 13 + Intelligence Modifier.</description>
+		</sheet>
+		<rules>
+			<stat name="ac:natural armor" value="13" />
+			<stat name="ac:natural armor" value="intelligence:modifier" />
+			<stat name="ac:calculation" value="ac:natural armor" bonus="calculation" alt="Natural Armor (Int)"/>
+		</rules>
+	</element>
+
+	<element name="Combat Training" type="Racial Trait" source="AAA" id="ID_CUSTOM_RACIAL_TRAIT_COMBAT_TRAINING">
+		<description>
+			<p>You have proficiency with one martial weapon of your choice.</p>
+		</description>
+		<sheet display="false">
+			<description>You have proficiency with one martial weapon of your choice.</description>
+		</sheet>
+		<rules>
+			<select type="Proficiency" name="Martial Weapon, Combat Training" supports="Martial"/>
+		</rules>
+	</element>
+
+	<element name="Natural Craftsman" type="Racial Trait" source="AAA" id="ID_CUSTOM_RACIAL_TRAIT_NATURAL_CRAFTSMAN">
+		<description>
+			<p>You have proficiency with one tool of your choice.</p>
+		</description>
+		<sheet display="false">
+			<description>You have proficiency with one tool of your choice.</description>
+		</sheet>
+		<rules>
+			<select type="Proficiency" name="Tool, Natural Craftsman" supports="Tool" />
+		</rules>
+	</element>
+  
+  	<element name="Squirrelan Subrace" type="Racial Trait" source="AAA" id="ID_RACIAL_TRAIT_SQUIRRELAN_SUBRACE">
+		<description>
+			<p>Several subraces of Squirrelan populate the worlds of D&amp;D. Choose one of these subraces.</p>
+		</description>
+		<sheet display="false"/>
+		<rules>
+			<select type="Sub Race" name="Squirrelan Subrace" supports="Squirrelan" />
+		</rules>
+	</element>
+
+	<element name="Gray" type="Sub Race" source="AAA" id="ID_CUSTOM_SUB_RACE_SQUIRRELAN_GRAY">
+		<supports>Squirrelan</supports>
+		<description>
+			<p>Tending towards militarianism, the "Grays" will sometimes come into conflict with others who encroach on their territory.</p>
+			<p class="indent"><strong><em>Wirey Toughness</em></strong> You have a natural armor deriving from your tough life-style. Your AC is 13 + Strength Modifier.</p>
+			<p class="indent"><strong><em>Combat Training</em></strong>	You have also gained proficiency in one weapon of your choice through intense training.</p>
+		</description>
+		<sheet alt="Squirrelan (Gray)" display="false" />
+		<rules>
+			<grant type="Racial Trait" id="ID_CUSTOM_RACIAL_TRAIT_NATURAL_ARMOR_STR" />
+			<grant type="Racial Trait" id="ID_CUSTOM_RACIAL_TRAIT_COMBAT_TRAINING" />
+		</rules>
+	</element>
+
+	<element name="Red" type="Sub Race" source="AAA" id="ID_CUSTOM_SUB_RACE_SQUIRRELAN_RED">
+		<supports>Squirrelan</supports>
+		<description>
+			<p>Tending towards socialism, the "Reds" or "Rusties" will often socialize, chat, and mutually groom others in their community as a way to bond.</p>
+			<p class="indent"><strong><em>Graceful Toughness</em></strong> You have a natural armor deriving from your distracting and misleading fur covering your body. Your AC is 13 + Charisma Modifier.</p>
+			<p class="indent"><strong><em>Well Groomed</em></strong> You are accustomed to public grooming within your community and know the Prestidigitation cantrip.</p>
+		</description>
+		<sheet alt="Squirrelan (Red)" display="false" />
+		<rules>
+			<grant type="Racial Trait" id="ID_CUSTOM_RACIAL_TRAIT_NATURAL_ARMOR_CHA" />
+			<grant type="Racial Trait" id="ID_CUSTOM_RACIAL_TRAIT_WELL_GROOMED" />
+		</rules>
+	</element>
+	
+	<element name="Brown" type="Sub Race" source="AAA" id="ID_CUSTOM_SUB_RACE_SQUIRRELAN_BROWN">
+		<supports>Squirrelan</supports>
+		<description>
+			<p>Tending towards capitalism, the "Browns" like to haggle, bargain, and trade. They are often cunning and eloquent with an eye for details.</p>
+			<p class="indent"><strong><em>Ancestral Instinct</em></strong> You have a natural armor deriving from your base instincts and primal awareness of danger. Your AC is 13 + Intelligence Modifier.</p>
+			<p class="indent"><strong><em>Natural Craftsman</em></strong> You are are proficient with one tool of your choice.</p>
+		</description>
+		<sheet alt="Squirrelan (Red)" display="false" />
+		<rules>
+			<grant type="Racial Trait" id="ID_CUSTOM_RACIAL_TRAIT_NATURAL_ARMOR_INT" />
+			<grant type="Racial Trait" id="ID_CUSTOM_RACIAL_TRAIT_NATURAL_CRAFTSMAN" />
+		</rules>
+	</element>
+
+</elements>
