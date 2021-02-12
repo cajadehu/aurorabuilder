@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Special Weapons</name>
+		<description>Special Weapons</description>
+		<author url="https://github.com/cajadehu/aurorabuilder/">LemonCat</author>
+		<update version="0.0.1">
+			<file name="lemoncat_specialWeapons.xml" url="https://github.com/cajadehu/aurorabuilder/lemoncat_specialWeapons.xml" />
+		</update>
+	</info>
+	<element name="Shillelagh Club" type="Weapon" source="AAA" id="ID_LEMONCAT_WEAPON_SHILLELAGH_CLUB">
+		<supports>ID_INTERNAL_WEAPON_CATEGORY_SIMPLE_MELEE, ID_INTERNAL_DAMAGE_TYPE_BLUDGEONING, ID_INTERNAL_WEAPON_PROPERTY_LIGHT, ID_INTERNAL_WEAPON_GROUP_CLUBS</supports>
+		<requirements>ID_PHB_SPELL_SHILLELAGH</requirements>
+        <description>
+			<p>The wood of a club or quarterstaff you are holding is imbued with nature’s power.</p>
+			<p>For the duration, you can use your spellcasting ability instead of Strength for the attack and damage rolls of melee attacks using that weapon, and the weapon’s damage die becomes a d8.</p>
+			<p>The weapon also becomes magical, if it isn’t already. The spell ends if you cast it again or if you let go of the weapon. PHB p275</p>
+            <p>MANAGE > ATTACKS > ABILITY > WISDOM (or your spell casting ability)</p>
+		</description>
+		<setters>
+			<set name="keywords">shillelagh, club, druid, lemoncat</set>
+			<set name="damage" type="bludgeoning">1d8</set>
+			<set name="category">Weapons</set>
+			<set name="cost" currency="sp">1</set>
+			<set name="weight" lb="2">2 lb.</set>
+			<set name="slot">onehand</set>
+            <set name="proficiency">ID_PROFICIENCY_WEAPON_PROFICIENCY_CLUB</set>
+		</setters>
+	</element>
+
+    <element name="Shillelagh Quarterstaff" type="Weapon" source="AAA" id="ID_LEMONCAT_WEAPON_SHILLELAGH_STAFF">
+		<supports>ID_INTERNAL_WEAPON_CATEGORY_SIMPLE_MELEE, ID_INTERNAL_DAMAGE_TYPE_BLUDGEONING, ID_INTERNAL_WEAPON_PROPERTY_VERSATILE</supports>
+		<requirements>ID_PHB_SPELL_SHILLELAGH</requirements>
+		<description>
+			<p>The wood of a club or quarterstaff you are holding is imbued with nature’s power.</p>
+			<p>For the duration, you can use your spellcasting ability instead of Strength for the attack and damage rolls of melee attacks using that weapon, and the weapon’s damage die becomes a d8.</p>
+			<p>The weapon also becomes magical, if it isn’t already. The spell ends if you cast it again or if you let go of the weapon. PHB p275</p>
+            <p>MANAGE > ATTACKS > ABILITY > WISDOM (or your spell casting ability)</p>
+		</description>
+		<setters>
+			<set name="keywords">shillelagh, quarterstaff, druid, lemoncat</set>
+			<set name="damage" type="bludgeoning">1d8</set>
+			<set name="category">Weapons</set>
+			<set name="cost" currency="sp">2</set>
+			<set name="weight" lb="4">4 lb.</set>
+			<set name="slot">onehand</set>
+            <set name="versatile">1d8</set>
+            <set name="proficiency">ID_PROFICIENCY_WEAPON_PROFICIENCY_QUARTERSTAFF</set>
+		</setters>
+	</element>
+	
+	<element name="Lightning Launcher (INT)" type="Weapon" source="AAA" id="ID_LEMONCAT_WEAPON_LIGHTNINGLAUNCHER">
+		<supports>ID_INTERNAL_WEAPON_CATEGORY_SIMPLE_RANGED, ID_INTERNAL_DAMAGE_TYPE_LIGHTNING</supports>
+		<description>
+			A gemlike node appears on one of your armored fists or on the chest. It counts as a simple ranged weapon, with a normal range of 90 feet and a long range of 300 feet, and it deals 1d6 lightning damage on a hit. Once on each of your turns when you hit a creature with it, you can deal an extra 1d6 lightning damage to that target.
+		</description>
+		<setters>
+			<set name="keywords">lightning, launcher, artificer, lemoncat</set>
+			<set name="category">Weapons</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="slot">misc</set>
+			<set name="range">90/300</set>
+			<set name="damage" type="lightning">1d6</set>
+		</setters>
+	</element>
+</elements>
