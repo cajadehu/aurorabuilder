@@ -4,7 +4,7 @@
 		<name>Special Weapons</name>
 		<description>Special Weapons</description>
 		<author url="https://github.com/cajadehu/aurorabuilder/">LemonCat</author>
-		<update version="0.0.1">
+		<update version="0.0.2">
 			<file name="lemoncat_specialWeapons.xml" url="https://github.com/cajadehu/aurorabuilder/lemoncat_specialWeapons.xml" />
 		</update>
 	</info>
@@ -62,6 +62,38 @@
 			<set name="slot">misc</set>
 			<set name="range">90/300</set>
 			<set name="damage" type="lightning">1d6</set>
+		</setters>
+	</element>
+	
+	<element name="Psychic Blade (STR/DEX Action)" type="Weapon" source="AAA" id="ID_LEMONCAT_WEAPON_PSYCHICBLADE">
+		<supports>ID_INTERNAL_DAMAGE_TYPE_PSYCHIC, ID_INTERNAL_WEAPON_CATEGORY_SIMPLE_MELEE, ID_INTERNAL_WEAPON_PROPERTY_THROWN, ID_INTERNAL_WEAPON_PROPERTY_FINESSE</supports>
+		<description>
+			PSYCHIC BLADES 3rd-level Rogue Soulknife feature - You can manifest your psionic power as shimmering blades of psychic energy. Whenever you take the Attack action, you can manifest a psychic blade from your free hand and make the attack with that blade. This magic blade is a simple melee weapon with the finesse and thrown properties. It has a normal range of 60 feet and no long range, and on a hit, it deals psychic damage equal to 1d6 plus the ability modifier you used for the attack roll. The blade vanishes immediately after it hits or misses its target, and it leaves no mark on its target if it deals damage. - After you attack with the blade, you can make a melee or ranged attack with a second psychic blade as a bonus action on the same turn, provided your other hand is free to create it. The damage die of this bonus attack is 1d4, instead of 1d6.
+		</description>
+		<setters>
+			<set name="keywords">psychic, psionic, soul, thrown, finesse, lemoncat</set>
+			<set name="category">Weapons</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="slot">onehand</set>
+			<set name="range">60</set>
+			<set name="damage" type="psychic">1d6</set>
+		</setters>
+	</element>
+	
+	<element name="Psychic Blade (STR/DEX Bonus Action)" type="Weapon" source="AAA" id="ID_LEMONCAT_WEAPON_PSYCHICBLADE2">
+		<supports>ID_INTERNAL_DAMAGE_TYPE_PSYCHIC, ID_INTERNAL_WEAPON_CATEGORY_SIMPLE_MELEE, ID_INTERNAL_WEAPON_PROPERTY_THROWN, ID_INTERNAL_WEAPON_PROPERTY_FINESSE</supports>
+		<description>
+			PSYCHIC BLADES 3rd-level Rogue Soulknife feature - You can manifest your psionic power as shimmering blades of psychic energy. Whenever you take the Attack action, you can manifest a psychic blade from your free hand and make the attack with that blade. This magic blade is a simple melee weapon with the finesse and thrown properties. It has a normal range of 60 feet and no long range, and on a hit, it deals psychic damage equal to 1d6 plus the ability modifier you used for the attack roll. The blade vanishes immediately after it hits or misses its target, and it leaves no mark on its target if it deals damage. - After you attack with the blade, you can make a melee or ranged attack with a second psychic blade as a bonus action on the same turn, provided your other hand is free to create it. The damage die of this bonus attack is 1d4, instead of 1d6.
+		</description>
+		<setters>
+			<set name="keywords">psychic, psionic, soul, thrown, finesse, lemoncat</set>
+			<set name="category">Weapons</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="slot">onehand</set>
+			<set name="range">60</set>
+			<set name="damage" type="psychic">1d4</set>
 		</setters>
 	</element>
 </elements>
