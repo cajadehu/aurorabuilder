@@ -4,7 +4,7 @@
 		<name>Special Weapons</name>
 		<description>Special Weapons</description>
 		<author url="https://github.com/cajadehu/aurorabuilder/">LemonCat</author>
-		<update version="0.0.4">
+		<update version="0.0.5">
 			<file name="lemoncat_specialWeapons.xml" url="https://github.com/cajadehu/aurorabuilder/lemoncat_specialWeapons.xml" />
 		</update>
 	</info>
@@ -24,7 +24,7 @@
 			<set name="cost" currency="sp">1</set>
 			<set name="weight" lb="2">2 lb.</set>
 			<set name="slot">onehand</set>
-            <set name="proficiency">ID_PROFICIENCY_WEAPON_PROFICIENCY_CLUB</set>
+			<set name="proficiency">ID_PROFICIENCY_WEAPON_PROFICIENCY_CLUB</set>
 		</setters>
 	</element>
 
@@ -45,7 +45,7 @@
 			<set name="weight" lb="4">4 lb.</set>
 			<set name="slot">onehand</set>
             <set name="versatile">1d8</set>
-            <set name="proficiency">ID_PROFICIENCY_WEAPON_PROFICIENCY_QUARTERSTAFF</set>
+			<set name="proficiency">ID_PROFICIENCY_WEAPON_PROFICIENCY_QUARTERSTAFF</set>
 		</setters>
 	</element>
 	
@@ -62,6 +62,7 @@
 			<set name="slot">misc</set>
 			<set name="range">90/300</set>
 			<set name="damage" type="lightning">1d6</set>
+			<set name="proficiency">ID_PROFICIENCY_WEAPON_PROFICIENCY_DAGGER</set>
 		</setters>
 	</element>
 	
@@ -78,6 +79,7 @@
 			<set name="slot">onehand</set>
 			<set name="range">60</set>
 			<set name="damage" type="psychic">1d6</set>
+			<set name="proficiency">ID_PROFICIENCY_WEAPON_PROFICIENCY_DAGGER</set>
 		</setters>
 	</element>
 	
@@ -94,6 +96,7 @@
 			<set name="slot">onehand</set>
 			<set name="range">60</set>
 			<set name="damage" type="psychic">1d4</set>
+			<set name="proficiency">ID_PROFICIENCY_WEAPON_PROFICIENCY_DAGGER</set>
 		</setters>
 	</element>
 	
@@ -109,9 +112,23 @@
 			<set name="weight" lb="0">0 lb.</set>
 			<set name="slot">onehand</set>
 			<set name="damage" type="bludgeoning">1d4</set>
+			<set name="proficiency">ID_PROFICIENCY_WEAPON_PROFICIENCY_DAGGER</set>
 		</setters>
-		<rules>
-			<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_SIMPLE_MELEE_WEAPONS" />
-		</rules>
 	</element>
+	
+	<append id="ID_PROFICIENCY_WEAPON_PROFICIENCY_SIMPLE_MELEE_WEAPONS">
+		<rules>
+			<grant type="Proficiency" id="ID_LEMONCAT_WEAPON_SHILLELAGH_CLUB" />
+			<grant type="Proficiency" id="ID_LEMONCAT_WEAPON_SHILLELAGH_STAFF" />
+			<grant type="Proficiency" id="ID_LEMONCAT_WEAPON_UNARMEDSTRIKE" />
+			<grant type="Proficiency" id="ID_LEMONCAT_WEAPON_PSYCHICBLADE" />
+			<grant type="Proficiency" id="ID_LEMONCAT_WEAPON_PSYCHICBLADE2" />
+		</rules>
+	</append>
+	
+	<append id="ID_INTERNAL_WEAPON_CATEGORY_SIMPLE_RANGED">
+		<rules>
+			<grant type="Proficiency" id="ID_LEMONCAT_WEAPON_LIGHTNINGLAUNCHER" />
+		</rules>
+	</append>
 </elements>
