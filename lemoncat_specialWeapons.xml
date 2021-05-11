@@ -4,7 +4,7 @@
 		<name>Special Weapons</name>
 		<description>Special Weapons</description>
 		<author url="https://github.com/cajadehu/aurorabuilder/">LemonCat</author>
-		<update version="0.0.2">
+		<update version="0.0.4">
 			<file name="lemoncat_specialWeapons.xml" url="https://github.com/cajadehu/aurorabuilder/lemoncat_specialWeapons.xml" />
 		</update>
 	</info>
@@ -95,5 +95,23 @@
 			<set name="range">60</set>
 			<set name="damage" type="psychic">1d4</set>
 		</setters>
+	</element>
+	
+	<element name="Unarmed Strike" type="Weapon" source="AAA" id="ID_LEMONCAT_WEAPON_UNARMEDSTRIKE">
+		<supports>ID_INTERNAL_DAMAGE_TYPE_BLUDGEONING, ID_INTERNAL_WEAPON_CATEGORY_SIMPLE_MELEE</supports>
+		<description>
+			A punch, kick, elbow, headbutt, or other physical attack using the body.
+		</description>
+		<setters>
+			<set name="keywords">unarmed, melee, lemoncat</set>
+			<set name="category">Weapons</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="slot">onehand</set>
+			<set name="damage" type="bludgeoning">1d4</set>
+		</setters>
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_SIMPLE_MELEE_WEAPONS" />
+		</rules>
 	</element>
 </elements>
