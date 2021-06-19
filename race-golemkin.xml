@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Golemkin</name>
+		<description>Golemkin</description>
+		<author url="https://github.com/cajadehu/aurorabuilder/">LemonCat</author>
+		<update version="0.0.1">
+			<file name="race-golemkin.xml" url="https://github.com/cajadehu/aurorabuilder/race-golemkin.xml" />
+		</update>
+	</info>
+
+	<element name="Golemkin" type="Race" source="AAA" id="ID_CUSTOM_RACE_GOLEMKIN">
+		<description>
+			<p class="flavor">“Honor the past but sculpt your own future.”</p>
+			<h4>Golemkin Nature</h4>
+			<p>
+			Golemkin are usually a bold, outgoing people with a strong sense of honor and justice. They are most populous in desert areas, enjoy warm climates, and their culture has strong emphasis on inheritance of land and wealth.</p>
+			<p class="indent">Golemkin are somewhat unusual in terms of lifecycle in that they are born biological humanoids with flesh and blood, and at the onset of puberty they begin to turn into their Golemkin form. Their blood becoming a liquid mud and organs turning to clay. As their Golemkin traits become more apperent, they lose all their hair, and their eyes' pupils become cross shaped like those of a goat.
+			</p>
+			<p class="indent">When Golemkin elders die there is typically an elaborate death ritual where they are heated, shattered, and the fragments distributed throughout the local Golemkin community. Most Golemkin choose to absorb these fragments into their own body so that the elder may live on as a part of them.</p>
+			<h4>Golemkin Varieties</h4>
+			<p>Skin tones are often similar to local clay deposits and vary widely depending on the earth tones of the area around them. A Golemkin's skin has even been known to gradually shift tones over long periods of time to match local earth colors.
+			There are several common variations of Golemkin, primarily in the functions of their skin, and the functions of their inner core or heart. Softskins, Hardskins, Embercores, and Fluidcores.</p>
+			<h4>Golemkin Traditions</h4>
+			<p>All of the Golemkin people have an innate bond with the earth, finding it a natural comfort when in close contact with it. Mudbaths are popular, as is walking barefoot so that contact with the earth more frequent. They are an outgoing people who are comfortable with their nature, and easily adapt to other cultures and societies. As Golemkin approach the end of their natural lives, they feel a strong urge to return to the place of their origin.</p>
+			<h4>Golemkin Politics</h4>
+			<p>Each community of Golemkin is lead by a small council of elders. There is always an odd number of council members to minimise indecision. Being an amenable people, internal conflict is rare but when it does occur, it falls to the council to advise and pass judgement as needed.</p>
+			<h4>Golemkin Traits</h4>
+			<p>Your Golemkin character has certain traits deriving from your unusual nature.</p>
+			<p class="indent"><b><i>Ability Score Increase. </i></b>Your Dexterity score increases by 1, and your Constitution score increases by 2.</p>
+			<p class="indent"><b><i>Age. </i></b>Golemkin live around 240 years when living a peaceful, healthy lifestyle.</p>
+			<p class="indent"><b><i>Alignment. </i></b>As a general rule, Golemkin are calm, kind, and outgoing, making them tend toward lawful and good.</p>
+			<p class="indent"><b><i>Size. </i></b>Golemkin are slightly taller than Humans on average, often in the 6 foot range. Your size is Medium.</p>
+			<p class="indent"><b><i>Speed. </i></b>Your base walking speed is 30 feet.</p>
+			<p class="indent"><b><i>Languages. </i></b>You can speak, read, and write Common and one other standard language of your choice.</p>
+			<p class="indent"><b><i>Traits. </i></b>You innately have the (XGTE) Mold Earth cantrip. Constitution is your spellcasting modifier if it applies.</p>
+			<p class="indent"><b><i>Subraces. </i></b>Currently there are 4 common subraces, each with their own unique additional Traits.</p>
+		</description>
+		<setters>
+			<set name="names" type="male">Clay, Clayton, Stornak, Pumikel, Concor</set>
+			<set name="names" type="female">Florai, Chromine, Irona, Coppa</set>
+			<set name="names" type="surname">von Slate, Marbleson, Granai, von Blutei</set>
+			<set name="names-format">{{name}} {{surname}}</set>
+			<set name="height" modifier="1d12">6'0"</set>
+			<set name="weight" modifier="2d4">240 lb.</set>
+		</setters>
+		<sheet display="false" />
+		<rules>
+			<stat name="dexterity" value="1" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+			<select type="Ability Score Improvement" name="Custom Ability Score Increase +1 (Golemkin)" supports="Custom Ability Score Increase 1" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+			
+			<stat name="constitution" value="2" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+			<select type="Ability Score Improvement" name="Custom Ability Score Increase +2 (Golemkin)" supports="Custom Ability Score Increase 2" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+			
+			<stat name="innate speed" value="30" bonus="base" />
+			<grant type="Size" id="ID_SIZE_MEDIUM" />
+			<grant type="Language" id="ID_LANGUAGE_COMMON" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE" />
+			<select type="Language" name="Customized Language" supports="Custom Race Language" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE" />
+			<select type="Language" name="Language (Golemkin)" number="1" supports="Standard" />
+			<grant type="Racial Trait" id="ID_RACIAL_TRAIT_GOLEMKIN_SUBRACE" />
+			<grant type="Racial Trait" id="ID_CUSTOM_RACIAL_TRAIT_OWTL" />
+		</rules>
+	</element>
+
+<!-- RACIAL TRAITS ON SHEET -->
+
+	<element name="One with the Land" type="Racial Trait" source="AAA" id="ID_CUSTOM_RACIAL_TRAIT_OWTL">
+		<description>
+			<p class="indent"><strong><em>One with the Land</em></strong> You gain the Mold Earth (XGTE Con.) cantrip.</p>
+		</description>
+		<sheet>
+			<description>
+			<p> You gain the Mold Earth (XGTE Con.) cantrip.</p>
+		</description>
+		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_XGTE_SPELL_MOLD_EARTH" />
+		</rules>
+	</element>
+
+	<element name="Polydermic" type="Racial Trait" source="AAA" id="ID_CUSTOM_RACIAL_TRAIT_POLYDERMIC">
+		<description>
+			<p class="indent"><strong><em>Polydermic 1/LR</em></strong> Your skin is maleable like soft, unbaked clay, allowing you to change your outward physical appearance. Over the course of 1 minute you can adjust your height by 1d6 inches, your face, build, and even sex. Your overall form must continue to be that of a typical humanoid. You can re-work yourself like this once per long rest.</p>
+		</description>
+		<sheet>
+			<description>
+				<p>Your skin is maleable like soft, unbaked clay, allowing you to change your outward physical appearance. Over the course of 1 minute you can adjust your height by 1d6 inches, your face, build, and even sex. Your overall form must continue to be that of a typical humanoid. You can re-work yourself like this once per long rest.</p>
+			</description>
+		</sheet>
+	</element>
+  
+	<element name="Rock Hard Abs" type="Racial Trait" source="AAA" id="ID_CUSTOM_RACIAL_TRAIT_ROCK_HARD_ABS">
+		<description>
+			<p class="indent"><strong><em>Rock Hard Abs</em></strong> Your skin is covered in tough plates of hard-baked clay affording you a natural armor. You have a base AC of 17.</p>
+		</description>
+		<sheet>
+			<description>Your skin is covered in tough plates of hard-baked clay affording you a natural armor. You have a base AC of 17.</description>
+		</sheet>
+		<rules>
+			<stat name="golemkin:natural armor" value="17" bonus="base" />
+			<stat name="ac:calculation" value="golemkin:natural armor" bonus="calculation" alt="Natural Armor" />
+		</rules>
+	</element>
+  
+	<element name="Smouldering" type="Racial Trait" source="AAA" id="ID_CUSTOM_RACIAL_TRAIT_SMOULDERING">
+		<description>
+			<p class="indent"><strong><em>Smouldering</em></strong> Your heart (or core) smoulders with the calm flame of your race's creation. You have resistance to fire damage, and you have darkvision to 60 feet.</p>
+		</description>
+		<sheet>
+			<description>
+				<p> Your heart (or core) smoulders with the calm flame of your race's creation. You have resistance to fire damage, and you have darkvision to 60 feet.</p>
+			</description>
+		</sheet>
+		<rules>
+			<grant type="Vision" id="ID_VISION_DARKVISION" />
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_FIRE" />
+		</rules>
+	</element>
+  
+	<element name="Fluidic" type="Racial Trait" source="AAA" id="ID_CUSTOM_RACIAL_TRAIT_FLUIDIC">
+		<description>
+			<p class="indent"><strong><em>Fluidic</em></strong> Your heart (or core) gently bubbles and shifts with the purified mud of your race's creation. Once per long rest you can produce from one of your hands a single, solid, non-magical object that is made of baked or unbaked clay and fits entirely within a 1 foot diameter sphere. It can be made with various natural earth tones. It takes 1 Action to create the object. Any object produced in this manner has an AC of 10, 15 HP, and lasts until it is destroyed. Example objects: jugs, keys, statuettes, door wedges, bricks, sun dials, stools, ink stamps, medallions, water-sealing clay, press-molds.</p>
+			<p>The produced object can also be formed around other pre-existing objects as a form of blockage or concealment. For example: hiding gems and coins within a baked clay statuette, a large baked clay ball on a door handle, or a soft clay plug in a breathing tube opening.</p>
+		</description>
+		<sheet>
+			<description>
+				<p> Your heart (or core) gently bubbles and shifts with the purified mud of your race's creation. Once per long rest you can produce from one of your hands a single, solid, non-magical object that is made of baked or unbaked clay and fits entirely within a 1 foot diameter sphere. It can be made with various natural earth tones. It takes 1 Action to create the object. Any object produced in this manner has an AC of 10, 15 HP, and lasts until it is destroyed. - - - Example objects: jugs, keys, statuettes, door wedges, bricks, sun dials, stools, ink stamps, medallions, water-sealing clay, press-molds. - - - The produced object can also be formed around other pre-existing objects as a form of blockage or concealment. For example: hiding gems and coins within a baked clay statuette, a large baked clay ball on a door handle, or a soft clay plug in a breathing tube opening.</p>
+			</description>
+		</sheet>
+	</element>
+  
+  	<element name="Golemkin Subrace" type="Racial Trait" source="AAA" id="ID_RACIAL_TRAIT_GOLEMKIN_SUBRACE">
+		<description>
+			<p>Several subraces of Golemkin populate the worlds of D&amp;D. Choose one of these subraces.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Sub Race" name="Golemkin Subrace" supports="Golemkin" />
+		</rules>
+	</element>
+
+<!-- SUB RACES IN MENU -->
+
+	<element name="Soft Skin" type="Sub Race" source="AAA" id="ID_CUSTOM_SUB_RACE_GOLEMKIN_SOFTSKIN">
+		<supports>Golemkin</supports>
+		<description>
+			<p class="indent"><strong><em>Polydermic</em></strong> Your skin is maleable like soft, unbaked clay, allowing you to change your outward physical appearance. Over the course of 1 minute you can adjust your height by 1d6 inches, your face, build, and even sex. Your overall form must continue to be that of a typical humanoid. You can re-work yourself like this once per long rest.</p>
+		</description>
+		<sheet alt="Golemkin (Soft Skin)" display="false" />
+		<rules>
+			<grant type="Racial Trait" id="ID_CUSTOM_RACIAL_TRAIT_POLYDERMIC" />
+		</rules>
+	</element>
+
+	<element name="Hard Skin" type="Sub Race" source="AAA" id="ID_CUSTOM_SUB_RACE_GOLEMKIN_HARDSKIN">
+		<supports>Golemkin</supports>
+		<description>
+			<p class="indent"><strong><em>Rock Hard Abs</em></strong> You have a natural armor deriving from your thick hard clay plating covering your body. Your base AC is 17.</p>
+		</description>
+		<sheet alt="Golemkin (Hard Skin)" display="false" />
+		<rules>
+			<grant type="Racial Trait" id="ID_CUSTOM_RACIAL_TRAIT_ROCK_HARD_ABS" />
+		</rules>
+	</element>
+	
+	<element name="Ember Core" type="Sub Race" source="AAA" id="ID_CUSTOM_SUB_RACE_GOLEMKIN_EMBERCORE">
+		<supports>Golemkin</supports>
+		<description>
+			<p class="indent"><strong><em>Smouldering</em></strong> Your heart (or core) smoulders with the calm flame of your race's creation. You have resistance to fire damage, and you have darkvision to 60 feet.</p>
+		</description>
+		<sheet alt="Golemkin (Ember Core)" display="false" />
+		<rules>
+			<grant type="Racial Trait" id="ID_CUSTOM_RACIAL_TRAIT_SMOULDERING" />
+		</rules>
+	</element>
+
+	<element name="Fluid Core" type="Sub Race" source="AAA" id="ID_CUSTOM_SUB_RACE_GOLEMKIN_FLUIDCORE">
+		<supports>Golemkin</supports>
+		<description>
+			<p class="indent"><strong><em>Fluidic</em></strong> Your heart (or core) gently bubbles and shifts with the purified mud of your race's creation. Once per long rest you can produce from one of your hands a single, solid, non-magical object that is made of baked or unbaked clay and fits entirely within a 1 foot diameter sphere. It can be made with various natural earth tones. It takes 1 Action to create the object. Any object produced in this manner has an AC of 10, 15 HP, and lasts until it is destroyed. Example objects: jugs, keys, statuettes, door wedges, bricks, sun dials, stools, ink stamps, medallions, water-sealing clay, press-molds.</p>
+			<p>The produced object can also be formed around other pre-existing objects as a form of blockage or concealment. For example: hiding gems and coins within a baked clay statuette, a large baked clay ball on a door handle, or a soft clay plug in a breathing tube opening.</p>
+		</description>
+		<sheet alt="Golemkin (Fluid Core)" display="false" />
+		<rules>
+			<grant type="Racial Trait" id="ID_CUSTOM_RACIAL_TRAIT_FLUIDIC" />
+		</rules>
+	</element>
+	
+</elements>
