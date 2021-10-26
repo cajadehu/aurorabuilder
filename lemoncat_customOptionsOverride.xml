@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!--  -->
+<elements>
+	<info>
+		<name>Special Weapons</name>
+		<description>Special Weapons</description>
+		<author url="https://github.com/cajadehu/aurorabuilder/">LemonCat</author>
+		<update version="0.0.1">
+			<file name="lemoncat_customOptionsOverride.xml" url="https://github.com/cajadehu/aurorabuilder/lemoncat_customOptionsOverride.xml" />
+		</update>
+	</info>
+	<element name="Maximum Hit Points" type="Option" source="AAA" id="ID_INTERNAL_OPTION_ALLOW_MAX_HP">
+		<description>
+			<p>The character is awarded the maximum amount of hit points based on their hit dice.</p>
+		</description>
+		<setters>
+			<set name="default">true</set>
+			<set name="short">The character is awarded the maximum amount of hit points based on their hit dice.</set>
+		</setters>
+		<sheet display="false">
+			<description>The character is awarded the maximum amount of hit points based on their hit dice instead of random rolled (or manually edited) hit points.</description>
+		</sheet>
+		<rules>
+			<stat name="nuked:hp" value="-hp" /> <!-- counters hp from sliders -->
+			<stat name="hp" value="nuked:hp" /> <!-- sets the character's hp value to calculated + value -->
+			
+			<stat name="hp" value="level:barbarian" />
+			<stat name="hp" value="level:barbarian" />
+			<stat name="hp" value="level:barbarian" />
+			<stat name="hp" value="level:barbarian" />
+			<stat name="hp" value="level:barbarian" />
+			<stat name="hp" value="level:barbarian" />
+			<stat name="hp" value="level:barbarian" />
+			<stat name="hp" value="level:barbarian" />
+			<stat name="hp" value="level:barbarian" />
+			<stat name="hp" value="level:barbarian" />
+			<stat name="hp" value="level:barbarian" />
+			<stat name="hp" value="level:barbarian" />
+			
+			<stat name="hp" value="level:bard" />
+			<stat name="hp" value="level:bard" />
+			<stat name="hp" value="level:bard" />
+			<stat name="hp" value="level:bard" />
+			<stat name="hp" value="level:bard" />
+			<stat name="hp" value="level:bard" />
+			<stat name="hp" value="level:bard" />
+			<stat name="hp" value="level:bard" />
+			
+			<stat name="hp" value="level:cleric" />
+			<stat name="hp" value="level:cleric" />
+			<stat name="hp" value="level:cleric" />
+			<stat name="hp" value="level:cleric" />
+			<stat name="hp" value="level:cleric" />
+			<stat name="hp" value="level:cleric" />
+			<stat name="hp" value="level:cleric" />
+			<stat name="hp" value="level:cleric" />
+			
+			<stat name="hp" value="level:druid" />
+			<stat name="hp" value="level:druid" />
+			<stat name="hp" value="level:druid" />
+			<stat name="hp" value="level:druid" />
+			<stat name="hp" value="level:druid" />
+			<stat name="hp" value="level:druid" />
+			<stat name="hp" value="level:druid" />
+			<stat name="hp" value="level:druid" />
+			
+			<stat name="hp" value="level:fighter" />
+			<stat name="hp" value="level:fighter" />
+			<stat name="hp" value="level:fighter" />
+			<stat name="hp" value="level:fighter" />
+			<stat name="hp" value="level:fighter" />
+			<stat name="hp" value="level:fighter" />
+			<stat name="hp" value="level:fighter" />
+			<stat name="hp" value="level:fighter" />
+			<stat name="hp" value="level:fighter" />
+			<stat name="hp" value="level:fighter" />
+
+			<stat name="hp" value="level:monk" />
+			<stat name="hp" value="level:monk" />
+			<stat name="hp" value="level:monk" />
+			<stat name="hp" value="level:monk" />
+			<stat name="hp" value="level:monk" />
+			<stat name="hp" value="level:monk" />
+			<stat name="hp" value="level:monk" />
+			<stat name="hp" value="level:monk" />
+
+			<stat name="hp" value="level:paladin" />
+			<stat name="hp" value="level:paladin" />
+			<stat name="hp" value="level:paladin" />
+			<stat name="hp" value="level:paladin" />
+			<stat name="hp" value="level:paladin" />
+			<stat name="hp" value="level:paladin" />
+			<stat name="hp" value="level:paladin" />
+			<stat name="hp" value="level:paladin" />
+			<stat name="hp" value="level:paladin" />
+			<stat name="hp" value="level:paladin" />
+
+			<stat name="hp" value="level:ranger" />
+			<stat name="hp" value="level:ranger" />
+			<stat name="hp" value="level:ranger" />
+			<stat name="hp" value="level:ranger" />
+			<stat name="hp" value="level:ranger" />
+			<stat name="hp" value="level:ranger" />
+			<stat name="hp" value="level:ranger" />
+			<stat name="hp" value="level:ranger" />
+			<stat name="hp" value="level:ranger" />
+			<stat name="hp" value="level:ranger" />
+			
+			<stat name="hp" value="level:rogue" />
+			<stat name="hp" value="level:rogue" />
+			<stat name="hp" value="level:rogue" />
+			<stat name="hp" value="level:rogue" />
+			<stat name="hp" value="level:rogue" />
+			<stat name="hp" value="level:rogue" />
+			<stat name="hp" value="level:rogue" />
+			<stat name="hp" value="level:rogue" />
+
+			<stat name="hp" value="level:sorcerer" />
+			<stat name="hp" value="level:sorcerer" />
+			<stat name="hp" value="level:sorcerer" />
+			<stat name="hp" value="level:sorcerer" />
+			<stat name="hp" value="level:sorcerer" />
+			<stat name="hp" value="level:sorcerer" />
+			
+			<stat name="hp" value="level:warlock" />
+			<stat name="hp" value="level:warlock" />
+			<stat name="hp" value="level:warlock" />
+			<stat name="hp" value="level:warlock" />
+			<stat name="hp" value="level:warlock" />
+			<stat name="hp" value="level:warlock" />
+			<stat name="hp" value="level:warlock" />
+			<stat name="hp" value="level:warlock" />
+			
+			<stat name="hp" value="level:wizard" />
+			<stat name="hp" value="level:wizard" />
+			<stat name="hp" value="level:wizard" />
+			<stat name="hp" value="level:wizard" />
+			<stat name="hp" value="level:wizard" />
+			<stat name="hp" value="level:wizard" />
+		</rules>
+	</element>
+
+	<element name="Customized Ability Scores" type="Option" source="Internal" id="ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI">
+		<description>
+			<p>Added in TCoE.</p>
+		</description>
+		<setters>
+			<set name="default">true</set>
+			<set name="short">Added in TCoE.</set>
+		</setters>
+	</element>
+	
+	<element name="Customized Proficiencies" type="Option" source="Internal" id="ID_WOTC_TCOE_OPTION_CUSTOMIZED_PROFICIENCY">
+		<description>
+			<p>Allows racial proficiencies to be changed.</p>
+		</description>
+		<setters>
+			<set name="default">true</set>
+			<set name="short">Allows racial proficiencies to be changed.</set>
+		</setters>
+	</element>
+
+</elements>
