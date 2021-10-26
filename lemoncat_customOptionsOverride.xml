@@ -2,10 +2,10 @@
 <!--  -->
 <elements>
 	<info>
-		<name>Special Weapons</name>
-		<description>Special Weapons</description>
+		<name>Custom Options Override</name>
+		<description>Custom Options Override</description>
 		<author url="https://github.com/cajadehu/aurorabuilder/">LemonCat</author>
-		<update version="0.0.1">
+		<update version="0.0.2">
 			<file name="lemoncat_customOptionsOverride.xml" url="https://github.com/cajadehu/aurorabuilder/lemoncat_customOptionsOverride.xml" />
 		</update>
 	</info>
