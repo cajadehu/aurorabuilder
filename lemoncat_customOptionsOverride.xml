@@ -5,7 +5,7 @@
 		<name>Custom Options Override</name>
 		<description>Custom Options Override</description>
 		<author url="https://github.com/cajadehu/aurorabuilder/">LemonCat</author>
-		<update version="0.0.2">
+		<update version="0.0.3">
 			<file name="lemoncat_customOptionsOverride.xml" url="https://github.com/cajadehu/aurorabuilder/lemoncat_customOptionsOverride.xml" />
 		</update>
 	</info>
@@ -23,6 +23,15 @@
 		<rules>
 			<stat name="nuked:hp" value="-hp" /> <!-- counters hp from sliders -->
 			<stat name="hp" value="nuked:hp" /> <!-- sets the character's hp value to calculated + value -->
+			
+			<stat name="hp" value="level:artificer" />
+			<stat name="hp" value="level:artificer" />
+			<stat name="hp" value="level:artificer" />
+			<stat name="hp" value="level:artificer" />
+			<stat name="hp" value="level:artificer" />
+			<stat name="hp" value="level:artificer" />
+			<stat name="hp" value="level:artificer" />
+			<stat name="hp" value="level:artificer" />
 			
 			<stat name="hp" value="level:barbarian" />
 			<stat name="hp" value="level:barbarian" />
