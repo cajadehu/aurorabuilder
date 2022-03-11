@@ -4,7 +4,7 @@
 		<name>Special Weapons</name>
 		<description>Special Weapons</description>
 		<author url="https://github.com/cajadehu/aurorabuilder/">LemonCat</author>
-		<update version="0.0.5">
+		<update version="0.0.6">
 			<file name="lemoncat_specialWeapons.xml" url="https://github.com/cajadehu/aurorabuilder/lemoncat_specialWeapons.xml" />
 		</update>
 	</info>
@@ -15,10 +15,10 @@
 			<p>The wood of a club or quarterstaff you are holding is imbued with nature’s power.</p>
 			<p>For the duration, you can use your spellcasting ability instead of Strength for the attack and damage rolls of melee attacks using that weapon, and the weapon’s damage die becomes a d8.</p>
 			<p>The weapon also becomes magical, if it isn’t already. The spell ends if you cast it again or if you let go of the weapon. PHB p275</p>
-            <p>MANAGE > ATTACKS > ABILITY > WISDOM (or your spell casting ability)</p>
+            <p>MANAGE > ATTACKS > ABILITY > WISDOM (or your spellcasting ability)</p>
 		</description>
 		<setters>
-			<set name="keywords">shillelagh, club, druid, lemoncat</set>
+			<set name="keywords">shillelagh, club, druid, custom, lemoncat, aaa</set>
 			<set name="damage" type="bludgeoning">1d8</set>
 			<set name="category">Weapons</set>
 			<set name="cost" currency="sp">1</set>
@@ -35,10 +35,10 @@
 			<p>The wood of a club or quarterstaff you are holding is imbued with nature’s power.</p>
 			<p>For the duration, you can use your spellcasting ability instead of Strength for the attack and damage rolls of melee attacks using that weapon, and the weapon’s damage die becomes a d8.</p>
 			<p>The weapon also becomes magical, if it isn’t already. The spell ends if you cast it again or if you let go of the weapon. PHB p275</p>
-            <p>MANAGE > ATTACKS > ABILITY > WISDOM (or your spell casting ability)</p>
+            <p>MANAGE > ATTACKS > ABILITY > WISDOM (or your spellcasting ability)</p>
 		</description>
 		<setters>
-			<set name="keywords">shillelagh, quarterstaff, druid, lemoncat</set>
+			<set name="keywords">shillelagh, quarterstaff, druid, custom, lemoncat, aaa</set>
 			<set name="damage" type="bludgeoning">1d8</set>
 			<set name="category">Weapons</set>
 			<set name="cost" currency="sp">2</set>
@@ -55,14 +55,14 @@
 			A gemlike node appears on one of your armored fists or on the chest. It counts as a simple ranged weapon, with a normal range of 90 feet and a long range of 300 feet, and it deals 1d6 lightning damage on a hit. Once on each of your turns when you hit a creature with it, you can deal an extra 1d6 lightning damage to that target.
 		</description>
 		<setters>
-			<set name="keywords">lightning, launcher, artificer, lemoncat</set>
+			<set name="keywords">lightning, launcher, artificer, armorer, custom, lemoncat, aaa</set>
 			<set name="category">Weapons</set>
 			<set name="cost" currency="gp">0</set>
 			<set name="weight" lb="0">0 lb.</set>
 			<set name="slot">misc</set>
 			<set name="range">90/300</set>
 			<set name="damage" type="lightning">1d6</set>
-			<set name="proficiency">ID_PROFICIENCY_WEAPON_PROFICIENCY_DAGGER</set>
+			<set name="proficiency">ID_PROFICIENCY_WEAPON_PROFICIENCY_LIGHTNINGLAUNCHER</set>
 		</setters>
 	</element>
 	
@@ -72,11 +72,11 @@
 			PSYCHIC BLADES 3rd-level Rogue Soulknife feature - You can manifest your psionic power as shimmering blades of psychic energy. Whenever you take the Attack action, you can manifest a psychic blade from your free hand and make the attack with that blade. This magic blade is a simple melee weapon with the finesse and thrown properties. It has a normal range of 60 feet and no long range, and on a hit, it deals psychic damage equal to 1d6 plus the ability modifier you used for the attack roll. The blade vanishes immediately after it hits or misses its target, and it leaves no mark on its target if it deals damage. - After you attack with the blade, you can make a melee or ranged attack with a second psychic blade as a bonus action on the same turn, provided your other hand is free to create it. The damage die of this bonus attack is 1d4, instead of 1d6.
 		</description>
 		<setters>
-			<set name="keywords">psychic, psionic, soul, thrown, finesse, lemoncat</set>
+			<set name="keywords">psychic, psionic, soul, thrown, finesse, custom, lemoncat, aaa</set>
 			<set name="category">Weapons</set>
 			<set name="cost" currency="gp">0</set>
 			<set name="weight" lb="0">0 lb.</set>
-			<set name="slot">onehand</set>
+			<set name="slot">onehand,primary</set>
 			<set name="range">60</set>
 			<set name="damage" type="psychic">1d6</set>
 			<set name="proficiency">ID_PROFICIENCY_WEAPON_PROFICIENCY_DAGGER</set>
@@ -89,11 +89,11 @@
 			PSYCHIC BLADES 3rd-level Rogue Soulknife feature - You can manifest your psionic power as shimmering blades of psychic energy. Whenever you take the Attack action, you can manifest a psychic blade from your free hand and make the attack with that blade. This magic blade is a simple melee weapon with the finesse and thrown properties. It has a normal range of 60 feet and no long range, and on a hit, it deals psychic damage equal to 1d6 plus the ability modifier you used for the attack roll. The blade vanishes immediately after it hits or misses its target, and it leaves no mark on its target if it deals damage. - After you attack with the blade, you can make a melee or ranged attack with a second psychic blade as a bonus action on the same turn, provided your other hand is free to create it. The damage die of this bonus attack is 1d4, instead of 1d6.
 		</description>
 		<setters>
-			<set name="keywords">psychic, psionic, soul, thrown, finesse, lemoncat</set>
+			<set name="keywords">psychic, psionic, soul, thrown, finesse, custom, lemoncat, aaa</set>
 			<set name="category">Weapons</set>
 			<set name="cost" currency="gp">0</set>
 			<set name="weight" lb="0">0 lb.</set>
-			<set name="slot">onehand</set>
+			<set name="slot">onehand,secondary</set>
 			<set name="range">60</set>
 			<set name="damage" type="psychic">1d4</set>
 			<set name="proficiency">ID_PROFICIENCY_WEAPON_PROFICIENCY_DAGGER</set>
@@ -101,18 +101,112 @@
 	</element>
 	
 	<element name="Unarmed Strike" type="Weapon" source="AAA" id="ID_LEMONCAT_WEAPON_UNARMEDSTRIKE">
-		<supports>ID_INTERNAL_DAMAGE_TYPE_BLUDGEONING, ID_INTERNAL_WEAPON_CATEGORY_SIMPLE_MELEE</supports>
+		<supports>ID_INTERNAL_DAMAGE_TYPE_BLUDGEONING, ID_INTERNAL_WEAPON_CATEGORY_SIMPLE_MELEE, ID_INTERNAL_WEAPON_PROPERTY_FINESSE</supports>
 		<description>
 			A punch, kick, elbow, headbutt, or other physical attack using the body.
 		</description>
 		<setters>
-			<set name="keywords">unarmed, melee, lemoncat</set>
+			<set name="keywords">unarmed, strike, melee, monk, custom, lemoncat, aaa</set>
 			<set name="category">Weapons</set>
 			<set name="cost" currency="gp">0</set>
 			<set name="weight" lb="0">0 lb.</set>
-			<set name="slot">onehand</set>
+			<set name="range">5</set>
 			<set name="damage" type="bludgeoning">1d4</set>
-			<set name="proficiency">ID_PROFICIENCY_WEAPON_PROFICIENCY_DAGGER</set>
+			<set name="proficiency">ID_PROFICIENCY_WEAPON_PROFICIENCY_UNARMEDSTRIKE</set>
+		</setters>
+	</element>
+	
+		<element name="Caster's Tattoo +1" type="Magic Item" source="AAA" id="ID_LEMONCAT_CASTERTATTOO1">
+		<description>
+			<p>Produced by a special needle, this magic tattoo focuses magic for casters.</p>
+			<p class="indent"><strong><em>Tattoo Attunement.</em></strong> To attune to this item, you hold the needle to your skin where you want the tattoo to appear, pressing the needle there throughout the attunement process. When the attunement is complete, the needle turns into the ink that becomes the tattoo, which appears on the skin.</p>
+			<p class="indent">If your attunement to the tattoo ends, the tattoo vanishes, and the needle reappears in your space.</p>
+			<p class="indent"><strong><em>Spellcasting Focus.</em></strong> The tattoo acts as a spellcasting focus, much like a wand, staff, totem, rod, amulet, or other such object but is usable by any class capable of using magic.</p>
+			<ul>
+				<li>+1 bonus to spell attack rolls.</li>
+				<li>+1 bonus to spell DCs.</li>
+			</ul>
+		</description>
+		<setters>
+			<set name="keywords">tattoo, cast, spell, custom, aaa</set>
+			<set name="category">Wondrous Items</set>
+			<set name="type">Tattoo</set>
+			<set name="attunement" addition="by any spellcaster">true</set>
+			<set name="rarity">Uncommon</set>
+			<set name="attunement">true</set>
+			<set name="enhancement">1</set>
+		</setters>
+		<rules>
+			<stat name="spellcasting:attack" value="1" bonus="Caster's Tattoo" />
+			<stat name="spellcasting:dc" value="1"     bonus="Caster's Tattoo" />
+		</rules>
+	</element>
+	
+	<element name="Caster's Tattoo +2" type="Magic Item" source="AAA" id="ID_LEMONCAT_CASTERTATTOO2">
+		<description>
+			<p>Produced by a special needle, this magic tattoo focuses magic for casters.</p>
+			<p class="indent"><strong><em>Tattoo Attunement.</em></strong> To attune to this item, you hold the needle to your skin where you want the tattoo to appear, pressing the needle there throughout the attunement process. When the attunement is complete, the needle turns into the ink that becomes the tattoo, which appears on the skin.</p>
+			<p class="indent">If your attunement to the tattoo ends, the tattoo vanishes, and the needle reappears in your space.</p>
+			<p class="indent"><strong><em>Spellcasting Focus.</em></strong> The tattoo acts as a spellcasting focus, much like a wand, staff, totem, rod, amulet, or other such object but is usable by any class capable of using magic.</p>
+			<ul>
+				<li>+2 bonus to spell attack rolls.</li>
+				<li>+2 bonus to spell DCs.</li>
+			</ul>
+		</description>
+		<setters>
+			<set name="keywords">tattoo, cast, spell, custom, lemoncat, aaa</set>
+			<set name="category">Wondrous Items</set>
+			<set name="type">Tattoo</set>
+			<set name="attunement" addition="by any spellcaster">true</set>
+			<set name="rarity">Rare</set>
+			<set name="attunement">true</set>
+			<set name="enhancement">2</set>
+		</setters>
+		<rules>
+			<stat name="spellcasting:attack" value="2" bonus="Caster's Tattoo" />
+			<stat name="spellcasting:dc" value="2"     bonus="Caster's Tattoo" />
+		</rules>
+	</element>
+	
+	<element name="Caster's Tattoo +3" type="Magic Item" source="AAA" id="ID_LEMONCAT_CASTERTATTOO3">
+		<description>
+			<p>Produced by a special needle, this magic tattoo focuses magic for casters.</p>
+			<p class="indent"><strong><em>Tattoo Attunement.</em></strong> To attune to this item, you hold the needle to your skin where you want the tattoo to appear, pressing the needle there throughout the attunement process. When the attunement is complete, the needle turns into the ink that becomes the tattoo, which appears on the skin.</p>
+			<p class="indent">If your attunement to the tattoo ends, the tattoo vanishes, and the needle reappears in your space.</p>
+			<p class="indent"><strong><em>Spellcasting Focus.</em></strong> The tattoo acts as a spellcasting focus, much like a wand, staff, totem, rod, amulet, or other such object but is usable by any class capable of using magic.</p>
+			<ul>
+				<li>+3 bonus to spell attack rolls.</li>
+				<li>+3 bonus to spell DCs.</li>
+			</ul>
+		</description>
+		<setters>
+			<set name="keywords">tattoo, cast, spell, custom, lemoncat, aaa</set>
+			<set name="category">Wondrous Items</set>
+			<set name="type">Tattoo</set>
+			<set name="attunement" addition="by any spellcaster">true</set>
+			<set name="rarity">Very Rare</set>
+			<set name="attunement">true</set>
+			<set name="enhancement">3</set>
+		</setters>
+		<rules>
+			<stat name="spellcasting:attack" value="3" bonus="Caster's Tattoo" />
+			<stat name="spellcasting:dc" value="3"     bonus="Caster's Tattoo" />
+		</rules>
+	</element>
+	
+	<element name="Goodberry Tattoo" type="Magic Item" source="AAA" id="ID_LEMONCAT_GOODBERRYTATTOO">
+		<description>
+			<p>Produced by a special needle, this magic tattoo allows a creature to cast the Goodberry spell 1/day.</p>
+			<p class="indent"><strong><em>Tattoo Application.</em></strong> To apply this item, you hold the needle to your skin where you want the tattoo to appear, pressing the needle there throughout the application process. When the application is complete, the needle turns into the ink that becomes the tattoo, which appears on the skin.</p>
+			<p class="indent">If you remove the tattoo, the tattoo vanishes, and the needle reappears in your space.</p>
+			<p class="indent"><strong><em>Goodberry Spell.</em></strong> When cupping your hand and speaking the command word, the Goodberry spell is cast. The tattoo can be triggered once per day, and regains it's ability at dawn. The berries produced are small, smooth, multicolored, and sweet.</p>
+		</description>
+		<setters>
+			<set name="keywords">tattoo, cast, spell, goodberry, custom, lemoncat, aaa</set>
+			<set name="category">Wondrous Items</set>
+			<set name="type">Tattoo</set>
+			<set name="attunement">false</set>
+			<set name="rarity">Common</set>
 		</setters>
 	</element>
 	
@@ -131,4 +225,105 @@
 			<grant type="Proficiency" id="ID_LEMONCAT_WEAPON_LIGHTNINGLAUNCHER" />
 		</rules>
 	</append>
+
+
+	<!-- Rings and items -->
+	<element name="Ring of Prestidigitation" type="Magic Item" source="AAA" id="ID_LEMONCAT_RING_PRESTIDIGITATION">
+		<description>
+			<p>While wearing this ring you can cast the Prestidigitation cantrip at will.</p>
+		</description>
+		<setters>
+			<set name="keywords">prestidigitation, custom, lemoncat, aaa</set>
+			<set name="category">Rings</set>
+			<set name="type">Ring</set>
+			<set name="slot">ring</set>
+			<set name="attunement">false</set>
+			<set name="rarity">Common</set>
+		</setters>
+	</element>
+
+	<element name="Ring of Thaumaturgy" type="Magic Item" source="AAA" id="ID_LEMONCAT_RING_THAUMATURGY">
+		<description>
+			<p>While wearing this ring you can cast the Thaumaturgy cantrip at will.</p>
+		</description>
+		<setters>
+			<set name="keywords">thaumaturgy, custom, lemoncat, aaa</set>
+			<set name="category">Rings</set>
+			<set name="type">Ring</set>
+			<set name="slot">ring</set>
+			<set name="attunement">false</set>
+			<set name="rarity">Common</set>
+		</setters>
+	</element>
+
+	<element name="Ring of Druidcraft" type="Magic Item" source="AAA" id="ID_LEMONCAT_RING_DRUIDCRAFT">
+		<description>
+			<p>While wearing this ring you can cast the Druidcraft cantrip at will.</p>
+		</description>
+		<setters>
+			<set name="keywords">druid, custom, lemoncat, aaa</set>
+			<set name="category">Rings</set>
+			<set name="type">Ring</set>
+			<set name="slot">ring</set>
+			<set name="attunement">false</set>
+			<set name="rarity">Common</set>
+		</setters>
+	</element>
+	
+	<element name="Choker of Land Breathing" type="Magic Item" source="AAA" id="ID_LEMONCAT_CHOKER_OF_LAND_BREATHING">
+		<description>
+			<p>While wearing this choker out of water, you can speak its command word as an action to create a bubble of perpetually fresh sea water around your head and or gills. It allows you to breathe water normally while out of water. This bubble stays with you until you speak the command word again, the choker is removed, or you are no longer out of the water.</p>
+			<p>This item only activates on creatures capable of breathing water through a racial trait. It does not prevent status effects such as poison or disease from gas or miasma.</p>
+		</description>
+		<setters>
+			<set name="keywords">choker, land, breath, water, custom, lemoncat, aaa</set>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="slot">head</set>
+			<set name="type">Wondrous Item</set>
+			<set name="rarity">Common</set>
+		</setters>
+	</element>
+
+	<element name="Ring of Venom" type="Magic Item" source="AAA" id="ID_LEMONCAT_RING_VENOM">
+		<description>
+			<p>Any ammunition (normal or magically created by the weapon such as Repeating Shot) that the attuned wearer fires becomes venomous for the next minute, and inflicts an additional 1d6 poison damage. A creature hit by this ammunition becomes poisoned if it fails a DC13 Constitution saving throw. The saving throw can be repeated once at the end of each of the creature's turns.</p>
+		</description>
+		<setters>
+			<set name="keywords">venom, poison, damage, custom, lemoncat, aaa</set>
+			<set name="category">Rings</set>
+			<set name="type">Ring</set>
+			<set name="slot">ring</set>
+			<set name="attunement">true</set>
+			<set name="rarity">Uncommon</set>
+		</setters>
+	</element>
+	
+	<element name="Band of Wave Calling" type="Magic Item" source="AAA" id="ID_LEMONCAT_BAND_OF_WAVE_CALLING">
+		<description>
+			<p>While wearing this band, you have the Call to the Wave Racial Feature from the Water Genasi.</p>
+			<p><span class="feature">Call to the Wave.</span>You know the Shape Water cantrip. When you reach 3rd level, you can cast  the Create or Destroy Water spell as a 2nd-level spell once with this trait, and you regain the ability to cast it this way when you finish a long rest. Constitution is your spellcasting ability for these spells.<br />
+			</p> 
+		</description>
+		<setters>
+			<set name="keywords">band, call, wave, grung, custom, lemoncat, aaa</set>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">2 lb.</set>
+			<set name="slot">misc</set>
+			<set name="type">Wondrous Item</set>
+			<set name="rarity">Uncommon</set>
+		</setters>
+		<sheet display="true">
+			<description>
+				<p>While wearing this band, you have the Call to the Wave Racial Feature from the Water Genasi.</p>
+				<p><span class="feature">Call to the Wave.</span>You know the Shape Water cantrip. When you reach 3rd level, you can cast  the Create or Destroy Water spell as a 2nd-level spell once with this trait, and you regain the ability to cast it this way when you finish a long rest. Constitution is your spellcasting ability for these spells.</p> 
+			</description>
+		</sheet>
+		<rules>
+			<grant type="Racial Trait" id="ID_WOTC_POTA_RACIAL_TRAIT_GENASI_WATER_CALL_TO_THE_WAVE" />
+		</rules>
+	</element>
+
 </elements>
