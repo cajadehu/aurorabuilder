@@ -4,7 +4,7 @@
 		<name>Special Weapons</name>
 		<description>Special Weapons</description>
 		<author url="https://github.com/cajadehu/aurorabuilder/">LemonCat</author>
-		<update version="0.0.6">
+		<update version="0.0.7">
 			<file name="lemoncat_specialWeapons.xml" url="https://github.com/cajadehu/aurorabuilder/lemoncat_specialWeapons.xml" />
 		</update>
 	</info>
@@ -49,8 +49,8 @@
 		</setters>
 	</element>
 	
-	<element name="Lightning Launcher (INT)" type="Weapon" source="AAA" id="ID_LEMONCAT_WEAPON_LIGHTNINGLAUNCHER">
-		<supports>ID_INTERNAL_WEAPON_CATEGORY_SIMPLE_RANGED, ID_INTERNAL_DAMAGE_TYPE_LIGHTNING</supports>
+	<element name="Lightning Launcher (DEX/INT)" type="Weapon" source="AAA" id="ID_LEMONCAT_WEAPON_LIGHTNINGLAUNCHER">
+		<supports>ID_INTERNAL_WEAPON_CATEGORY_SIMPLE_RANGED,ID_INTERNAL_DAMAGE_TYPE_LIGHTNING</supports>
 		<description>
 			A gemlike node appears on one of your armored fists or on the chest. It counts as a simple ranged weapon, with a normal range of 90 feet and a long range of 300 feet, and it deals 1d6 lightning damage on a hit. Once on each of your turns when you hit a creature with it, you can deal an extra 1d6 lightning damage to that target.
 		</description>
@@ -62,11 +62,11 @@
 			<set name="slot">misc</set>
 			<set name="range">90/300</set>
 			<set name="damage" type="lightning">1d6</set>
-			<set name="proficiency">ID_PROFICIENCY_WEAPON_PROFICIENCY_LIGHTNINGLAUNCHER</set>
+			<set name="proficiency">ID_PROFICIENCY_WEAPON_PROFICIENCY_SLING</set>
 		</setters>
 	</element>
 	
-	<element name="Psychic Blade (STR/DEX Action)" type="Weapon" source="AAA" id="ID_LEMONCAT_WEAPON_PSYCHICBLADE">
+	<element name="Psychic Blade (STR/DEX Action)" type="Weapon" source="AAA" id="ID_LEMONCAT_WEAPON_PSYCHICBLADE1">
 		<supports>ID_INTERNAL_DAMAGE_TYPE_PSYCHIC, ID_INTERNAL_WEAPON_CATEGORY_SIMPLE_MELEE, ID_INTERNAL_WEAPON_PROPERTY_THROWN, ID_INTERNAL_WEAPON_PROPERTY_FINESSE</supports>
 		<description>
 			PSYCHIC BLADES 3rd-level Rogue Soulknife feature - You can manifest your psionic power as shimmering blades of psychic energy. Whenever you take the Attack action, you can manifest a psychic blade from your free hand and make the attack with that blade. This magic blade is a simple melee weapon with the finesse and thrown properties. It has a normal range of 60 feet and no long range, and on a hit, it deals psychic damage equal to 1d6 plus the ability modifier you used for the attack roll. The blade vanishes immediately after it hits or misses its target, and it leaves no mark on its target if it deals damage. - After you attack with the blade, you can make a melee or ranged attack with a second psychic blade as a bonus action on the same turn, provided your other hand is free to create it. The damage die of this bonus attack is 1d4, instead of 1d6.
@@ -112,15 +112,41 @@
 			<set name="weight" lb="0">0 lb.</set>
 			<set name="range">5</set>
 			<set name="damage" type="bludgeoning">1d4</set>
-			<set name="proficiency">ID_PROFICIENCY_WEAPON_PROFICIENCY_UNARMEDSTRIKE</set>
+			<set name="proficiency">ID_PROFICIENCY_WEAPON_PROFICIENCY_CLUB</set>
 		</setters>
 	</element>
 	
-		<element name="Caster's Tattoo +1" type="Magic Item" source="AAA" id="ID_LEMONCAT_CASTERTATTOO1">
+	<element name="Caster's Tattoo" type="Magic Item" source="AAA" id="ID_LEMONCAT_CASTER_TATTOO0">
 		<description>
 			<p>Produced by a special needle, this magic tattoo focuses magic for casters.</p>
-			<p class="indent"><strong><em>Tattoo Attunement.</em></strong> To attune to this item, you hold the needle to your skin where you want the tattoo to appear, pressing the needle there throughout the attunement process. When the attunement is complete, the needle turns into the ink that becomes the tattoo, which appears on the skin.</p>
-			<p class="indent">If your attunement to the tattoo ends, the tattoo vanishes, and the needle reappears in your space.</p>
+			<p class="indent"><strong><em>Tattoo Attunement.</em></strong> </p>
+			<p class="indent"></p>
+			<p class="indent"><strong><em>Spellcasting Focus.</em></strong> The tattoo acts as a spellcasting focus, much like a wand, staff, totem, rod, amulet, or other such object but is usable by any class capable of using magic.</p>
+			<ul>
+				<li>+0 bonus to spell attack rolls.</li>
+				<li>+0 bonus to spell DCs.</li>
+			</ul>
+		</description>
+		<setters>
+			<set name="keywords">tattoo, cast, spell, custom, aaa</set>
+			<set name="category">Wondrous Items</set>
+			<set name="type">Tattoo</set>
+			<set name="attunement" addition="by any spellcaster">true</set>
+			<set name="rarity">Common</set>
+			<set name="attunement">true</set>
+			<set name="enhancement">0</set>
+		</setters>
+		<rules>
+			<stat name="spellcasting:attack" value="0" bonus="Caster's Tattoo" />
+			<stat name="spellcasting:dc" value="0"     bonus="Caster's Tattoo" />
+		</rules>
+	</element>
+	
+	<element name="Caster's Tattoo +1" type="Magic Item" source="AAA" id="ID_LEMONCAT_CASTER_TATTOO1">
+		<description>
+			<p>Produced by a special needle, this magic tattoo focuses magic for casters.</p>
+			<p class="indent"><strong><em>Tattoo Attunement.</em></strong> </p>
+			<p class="indent"></p>
 			<p class="indent"><strong><em>Spellcasting Focus.</em></strong> The tattoo acts as a spellcasting focus, much like a wand, staff, totem, rod, amulet, or other such object but is usable by any class capable of using magic.</p>
 			<ul>
 				<li>+1 bonus to spell attack rolls.</li>
@@ -142,11 +168,11 @@
 		</rules>
 	</element>
 	
-	<element name="Caster's Tattoo +2" type="Magic Item" source="AAA" id="ID_LEMONCAT_CASTERTATTOO2">
+	<element name="Caster's Tattoo +2" type="Magic Item" source="AAA" id="ID_LEMONCAT_CASTER_TATTOO2">
 		<description>
 			<p>Produced by a special needle, this magic tattoo focuses magic for casters.</p>
-			<p class="indent"><strong><em>Tattoo Attunement.</em></strong> To attune to this item, you hold the needle to your skin where you want the tattoo to appear, pressing the needle there throughout the attunement process. When the attunement is complete, the needle turns into the ink that becomes the tattoo, which appears on the skin.</p>
-			<p class="indent">If your attunement to the tattoo ends, the tattoo vanishes, and the needle reappears in your space.</p>
+			<p class="indent"><strong><em>Tattoo Attunement.</em></strong> </p>
+			<p class="indent"></p>
 			<p class="indent"><strong><em>Spellcasting Focus.</em></strong> The tattoo acts as a spellcasting focus, much like a wand, staff, totem, rod, amulet, or other such object but is usable by any class capable of using magic.</p>
 			<ul>
 				<li>+2 bonus to spell attack rolls.</li>
@@ -168,11 +194,11 @@
 		</rules>
 	</element>
 	
-	<element name="Caster's Tattoo +3" type="Magic Item" source="AAA" id="ID_LEMONCAT_CASTERTATTOO3">
+	<element name="Caster's Tattoo +3" type="Magic Item" source="AAA" id="ID_LEMONCAT_CASTER_TATTOO3">
 		<description>
 			<p>Produced by a special needle, this magic tattoo focuses magic for casters.</p>
-			<p class="indent"><strong><em>Tattoo Attunement.</em></strong> To attune to this item, you hold the needle to your skin where you want the tattoo to appear, pressing the needle there throughout the attunement process. When the attunement is complete, the needle turns into the ink that becomes the tattoo, which appears on the skin.</p>
-			<p class="indent">If your attunement to the tattoo ends, the tattoo vanishes, and the needle reappears in your space.</p>
+			<p class="indent"><strong><em>Tattoo Attunement.</em></strong> </p>
+			<p class="indent"></p>
 			<p class="indent"><strong><em>Spellcasting Focus.</em></strong> The tattoo acts as a spellcasting focus, much like a wand, staff, totem, rod, amulet, or other such object but is usable by any class capable of using magic.</p>
 			<ul>
 				<li>+3 bonus to spell attack rolls.</li>
@@ -194,33 +220,67 @@
 		</rules>
 	</element>
 	
-	<element name="Goodberry Tattoo" type="Magic Item" source="AAA" id="ID_LEMONCAT_GOODBERRYTATTOO">
+	<element name="Goodberry Tattoo" type="Magic Item" source="AAA" id="ID_LEMONCAT_GOODBERRY_TATTOO">
 		<description>
 			<p>Produced by a special needle, this magic tattoo allows a creature to cast the Goodberry spell 1/day.</p>
-			<p class="indent"><strong><em>Tattoo Application.</em></strong> To apply this item, you hold the needle to your skin where you want the tattoo to appear, pressing the needle there throughout the application process. When the application is complete, the needle turns into the ink that becomes the tattoo, which appears on the skin.</p>
-			<p class="indent">If you remove the tattoo, the tattoo vanishes, and the needle reappears in your space.</p>
 			<p class="indent"><strong><em>Goodberry Spell.</em></strong> When cupping your hand and speaking the command word, the Goodberry spell is cast. The tattoo can be triggered once per day, and regains it's ability at dawn. The berries produced are small, smooth, multicolored, and sweet.</p>
 		</description>
 		<setters>
 			<set name="keywords">tattoo, cast, spell, goodberry, custom, lemoncat, aaa</set>
 			<set name="category">Wondrous Items</set>
 			<set name="type">Tattoo</set>
-			<set name="attunement">false</set>
+			<set name="attunement">true</set>
 			<set name="rarity">Common</set>
 		</setters>
 	</element>
 	
+		<element name="Darkvision Tattoo" type="Magic Item" source="AAA" id="ID_LEMONCAT_DARKVISION_TATTOO">
+		<description>
+			<p>Produced by a special needle, this magic tattoo grants the creature darkvision out to 60ft.</p>
+			<p class="indent"><strong><em>Darkvision.</em></strong> You gain darkvision with a range of 60 feet.</p>
+		</description>
+		<setters>
+			<set name="keywords">tattoo, darkvision</set>
+			<set name="category">Wondrous Items</set>
+			<set name="type">Tattoo</set>
+			<set name="rarity">Uncommon</set>
+			<set name="attunement">true</set>
+		</setters>
+		<rules>
+			<grant type="Vision" id="ID_VISION_DARKVISION" />
+			<stat name="darkvision:range" value="60" bonus="base" />
+		</rules>
+	</element>
+	
+	<element name="Blindsight Tattoo" type="Magic Item" source="AAA" id="ID_LEMONCAT_BLINDSIGHT_TATTOO">
+		<description>
+			<p>Produced by a special needle, this magic tattoo grants the creature Blindsight out to 60ft.</p>
+			<p class="indent"><strong><em>Blindsight.</em></strong> You gain blindsight with a range of 60 feet.</p>
+		</description>
+		<setters>
+			<set name="keywords">tattoo, darkvision</set>
+			<set name="category">Wondrous Items</set>
+			<set name="type">Tattoo</set>
+			<set name="rarity">Rare</set>
+			<set name="attunement">true</set>
+		</setters>
+		<rules>
+			<grant type="Vision" id="ID_VISION_BLINDSIGHT" />
+			<stat name="blindsight:range" value="60" bonus="base" />
+		</rules>
+	</element>
+		
 	<append id="ID_PROFICIENCY_WEAPON_PROFICIENCY_SIMPLE_MELEE_WEAPONS">
 		<rules>
 			<grant type="Proficiency" id="ID_LEMONCAT_WEAPON_SHILLELAGH_CLUB" />
 			<grant type="Proficiency" id="ID_LEMONCAT_WEAPON_SHILLELAGH_STAFF" />
 			<grant type="Proficiency" id="ID_LEMONCAT_WEAPON_UNARMEDSTRIKE" />
-			<grant type="Proficiency" id="ID_LEMONCAT_WEAPON_PSYCHICBLADE" />
+			<grant type="Proficiency" id="ID_LEMONCAT_WEAPON_PSYCHICBLADE1" />
 			<grant type="Proficiency" id="ID_LEMONCAT_WEAPON_PSYCHICBLADE2" />
 		</rules>
 	</append>
 	
-	<append id="ID_INTERNAL_WEAPON_CATEGORY_SIMPLE_RANGED">
+	<append id="ID_PROFICIENCY_WEAPON_PROFICIENCY_SIMPLE_WEAPONS">
 		<rules>
 			<grant type="Proficiency" id="ID_LEMONCAT_WEAPON_LIGHTNINGLAUNCHER" />
 		</rules>
@@ -262,6 +322,20 @@
 		</description>
 		<setters>
 			<set name="keywords">druid, custom, lemoncat, aaa</set>
+			<set name="category">Rings</set>
+			<set name="type">Ring</set>
+			<set name="slot">ring</set>
+			<set name="attunement">false</set>
+			<set name="rarity">Common</set>
+		</setters>
+	</element>
+	
+	<element name="Ring of Light" type="Magic Item" source="AAA" id="ID_LEMONCAT_RING_LIGHT">
+		<description>
+			<p>While wearing this ring you can cast the Light cantrip at will.</p>
+		</description>
+		<setters>
+			<set name="keywords">light, custom, lemoncat, aaa</set>
 			<set name="category">Rings</set>
 			<set name="type">Ring</set>
 			<set name="slot">ring</set>
@@ -323,6 +397,26 @@
 		</sheet>
 		<rules>
 			<grant type="Racial Trait" id="ID_WOTC_POTA_RACIAL_TRAIT_GENASI_WATER_CALL_TO_THE_WAVE" />
+		</rules>
+	</element>
+	
+	<element name="All-Purpose Tool" type="Magic Item" source="AAA" id="ID_LEMONCAT_ALL_PURPOSE_TOOL_COMMON">
+		<description>
+			<p>This simple screwdriver can transform into a variety of tools; as an action, you can touch the item and transform it into any type of artisan’s tool of your choice (see the "Equipment" chapter in the Player’s Handbook for a list of artisan’s tools). Whatever form the tool takes, you are proficient with it.</p>
+			<p class="indent">While holding this tool, you gain a +1 bonus to the spell attack rolls and the saving throw DCs of your artificer spells.</p>
+			<p class="indent">As an action, you can focus on the tool to channel your creative forces. Choose a cantrip that you don’t know from any class list. For 8 hours, you can cast that cantrip, and it counts as an artificer cantrip for you. Once this property is used, it can’t be used again until the next dawn.</p>
+		</description>
+		<setters>
+			<set name="keywords">artificer</set>
+			<set name="category">Wondrous Items</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="type">Wondrous Item</set>
+			<set name="rarity">Common</set>
+			<set name="attunement" addition="by an artificer">true</set>
+		</setters>
+		<rules>
+			<stat name="artificer:spellcasting:attack" value="0" />
+			<stat name="artificer:spellcasting:dc" value="0" />
 		</rules>
 	</element>
 

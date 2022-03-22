@@ -1,0 +1,435 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Text Replacement</name>
+		<description>Text Replacement</description>
+		<author url="https://github.com/cajadehu/aurorabuilder/">LemonCat</author>
+		<update version="0.0.1">
+			<file name="lemoncat_textReplacement.xml" url="https://github.com/cajadehu/aurorabuilder/lemoncat_textReplacement.xml" />
+		</update>
+	</info>
+
+<!-- theives cant -->
+
+	<element name="Thieves’ Cant" type="Class Feature" source="Player’s Handbook" id="ID_WOTC_PHB_CLASS_FEATURE_ROGUE_THIEVES_CANT">
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_ROGUE_THIEVES_CANT</requirements>
+		<description>
+			<p>During your rogue training you learned thieves’ cant, a secret mix of dialect, jargon, and code that allows you to hide messages in seemingly normal conversation. Only another creature that knows thieves’ cant understands such messages. It takes four times longer to convey such a message than it does to speak the same idea plainly.</p>
+			<p>In addition, you understand a set of secret signs and symbols used to convey short, simple messages, such as whether an area is dangerous or the territory of a thieves’ guild, whether loot is nearby, or whether the people in an area are easy marks or will provide a safe house for thieves on the run.</p>
+		</description>
+		<rules>
+			<grant type="Language" id="ID_WOTC_PHB_LANGUAGE_THIEVES_CANT" />
+		</rules>
+	</element>
+
+<!-- cunning action -->
+
+	<element name="Cunning Action" type="Class Feature" source="Player’s Handbook" id="ID_WOTC_PHB_CLASS_FEATURE_ROGUE_CUNNINGACTION">
+		<requirements>!ID_INTERNAL_FEATURE_REPLACEMENT_ROGUE_CUNNING_ACTION</requirements>
+		<description>
+			<p>Starting at 2nd level, your quick thinking and agility allow you to move and act quickly. You can take a bonus action on each of your turns in combat. This action can be used only to take the Dash, Disengage, or Hide action.</p>
+		</description>
+		<sheet>
+			<description>+BA: Dash, Disengage, Hide.</description>
+		</sheet>
+	</element>
+
+<!-- dark vision -->
+
+	<element name="Darkvision" type="Vision" source="Player’s Handbook" id="ID_VISION_DARKVISION">
+		<requirements>!ID_VISION_SUPERIORDARKVISION</requirements>
+		<description>
+			<p>Many creatures in the worlds of D&amp;D, especially those that dwell underground, have darkvision. Within a specified range, a creature with darkvision can see in darkness as if the darkness were dim light, so areas of darkness are only lightly obscured as far as that creature is concerned. However, the creature can’t discern color in darkness, only shades of gray.</p>
+		</description>
+		<sheet>
+			<description>{{darkvision:range}} feet.</description>
+		</sheet>
+		<rules>
+			<stat name="darkvision:range" value="60" bonus="base" />
+		</rules>
+	</element>
+
+	<element name="Superior Darkvision" type="Vision" source="Player’s Handbook" id="ID_VISION_SUPERIORDARKVISION">
+		<description>
+			<p>Many creatures in the worlds of D&amp;D, especially those that dwell underground, have darkvision. Within a specified range, a creature with darkvision can see in darkness as if the darkness were dim light, so areas of darkness are only lightly obscured as far as that creature is concerned. However, the creature can’t discern color in darkness, only shades of gray.</p>
+		</description>
+		<sheet>
+			<description>{{darkvision:range}} feet.</description>
+		</sheet>
+		<rules>
+			<stat name="darkvision:range" value="120" bonus="base" />
+		</rules>
+	</element>
+
+<!-- tattoo attunement -->
+
+	<element name="Absorbing Tattoo, Acid" type="Magic Item" source="Tasha’s Cauldron of Everything" id="ID_WOTC_TCOE_MAGIC_ITEM_TATTOO_ABSORBING_TATTOO_ACID">
+		<description>
+			<p>Produced by a special needle, this magic tattoo features designs that emphasize green.</p>
+			<p class="indent"><strong><em>Damage Resistance.</em></strong> While the tattoo is on your skin, you have resistance to acid damage.</p>
+			<p class="indent"><strong><em>Damage Absorption.</em></strong> When you take acid damage, you can use your reaction to gain immunity against the acid damage, and you regain a number of hit points equal to half the damage you would have taken. Once this reaction is used, it can’t be used again until the next dawn.</p>
+		</description>
+		<setters>
+			<set name="keywords">tattoo, acid, resistance</set>
+			<set name="category">Wondrous Items</set>
+			<set name="type">Tattoo</set>
+			<set name="rarity">Very Rare</set>
+			<set name="attunement">true</set>
+		</setters>
+		<rules>
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_ACID" />
+		</rules>
+	</element>
+	
+	<element name="Absorbing Tattoo, Cold" type="Magic Item" source="Tasha’s Cauldron of Everything" id="ID_WOTC_TCOE_MAGIC_ITEM_TATTOO_ABSORBING_TATTOO_COLD">
+		<description>
+			<p>Produced by a special needle, this magic tattoo features designs that emphasize blue.</p>
+			<p class="indent"><strong><em>Damage Resistance.</em></strong> While the tattoo is on your skin, you have resistance to cold damage.</p>
+			<p class="indent"><strong><em>Damage Absorption.</em></strong> When you take cold damage, you can use your reaction to gain immunity against the cold damage, and you regain a number of hit points equal to half the damage you would have taken. Once this reaction is used, it can’t be used again until the next dawn.</p>
+		</description>
+		<setters>
+			<set name="keywords">tattoo, cold, resistance</set>
+			<set name="category">Wondrous Items</set>
+			<set name="type">Tattoo</set>
+			<set name="rarity">Very Rare</set>
+			<set name="attunement">true</set>
+		</setters>
+		<rules>
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_COLD" />
+		</rules>
+	</element>
+	
+	<element name="Absorbing Tattoo, Fire" type="Magic Item" source="Tasha’s Cauldron of Everything" id="ID_WOTC_TCOE_MAGIC_ITEM_TATTOO_ABSORBING_TATTOO_FIRE">
+		<description>
+			<p>Produced by a special needle, this magic tattoo features designs that emphasize red.</p>
+			<p class="indent"><strong><em>Damage Resistance.</em></strong> While the tattoo is on your skin, you have resistance to fire damage.</p>
+			<p class="indent"><strong><em>Damage Absorption.</em></strong> When you take fire damage, you can use your reaction to gain immunity against the fire damage, and you regain a number of hit points equal to half the damage you would have taken. Once this reaction is used, it can’t be used again until the next dawn.</p>
+		</description>
+		<setters>
+			<set name="keywords">tattoo, fire, resistance</set>
+			<set name="category">Wondrous Items</set>
+			<set name="type">Tattoo</set>
+			<set name="rarity">Very Rare</set>
+			<set name="attunement">true</set>
+		</setters>
+		<rules>
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_FIRE" />
+		</rules>
+	</element>
+	
+	<element name="Absorbing Tattoo, Force" type="Magic Item" source="Tasha’s Cauldron of Everything" id="ID_WOTC_TCOE_MAGIC_ITEM_TATTOO_ABSORBING_TATTOO_FORCE">
+		<description>
+			<p>Produced by a special needle, this magic tattoo features designs that emphasize white.</p>
+			<p class="indent"><strong><em>Damage Resistance.</em></strong> While the tattoo is on your skin, you have resistance to force damage.</p>
+			<p class="indent"><strong><em>Damage Absorption.</em></strong> When you take force damage, you can use your reaction to gain immunity against the force damage, and you regain a number of hit points equal to half the damage you would have taken. Once this reaction is used, it can’t be used again until the next dawn.</p>
+		</description>
+		<setters>
+			<set name="keywords">tattoo, force, resistance</set>
+			<set name="category">Wondrous Items</set>
+			<set name="type">Tattoo</set>
+			<set name="rarity">Very Rare</set>
+			<set name="attunement">true</set>
+		</setters>
+		<rules>
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_FORCE" />
+		</rules>
+	</element>
+	
+	<element name="Absorbing Tattoo, Lightning" type="Magic Item" source="Tasha’s Cauldron of Everything" id="ID_WOTC_TCOE_MAGIC_ITEM_TATTOO_ABSORBING_TATTOO_LIGHTNING">
+		<description>
+			<p>Produced by a special needle, this magic tattoo features designs that emphasize yellow.</p>
+			<p class="indent"><strong><em>Damage Resistance.</em></strong> While the tattoo is on your skin, you have resistance to lightning damage.</p>
+			<p class="indent"><strong><em>Damage Absorption.</em></strong> When you take lightning damage, you can use your reaction to gain immunity against the lightning damage, and you regain a number of hit points equal to half the damage you would have taken. Once this reaction is used, it can’t be used again until the next dawn.</p>
+		</description>
+		<setters>
+			<set name="keywords">tattoo, lightning, resistance</set>
+			<set name="category">Wondrous Items</set>
+			<set name="type">Tattoo</set>
+			<set name="rarity">Very Rare</set>
+			<set name="attunement">true</set>
+		</setters>
+		<rules>
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_LIGHTNING" />
+		</rules>
+	</element>
+	
+	<element name="Absorbing Tattoo, Necrotic" type="Magic Item" source="Tasha’s Cauldron of Everything" id="ID_WOTC_TCOE_MAGIC_ITEM_TATTOO_ABSORBING_TATTOO_NECROTIC">
+		<description>
+			<p>Produced by a special needle, this magic tattoo features designs that emphasize black.</p>
+			<p class="indent"><strong><em>Damage Resistance.</em></strong> While the tattoo is on your skin, you have resistance to necrotic damage.</p>
+			<p class="indent"><strong><em>Damage Absorption.</em></strong> When you take necrotic damage, you can use your reaction to gain immunity against the necrotic damage, and you regain a number of hit points equal to half the damage you would have taken. Once this reaction is used, it can’t be used again until the next dawn.</p>
+		</description>
+		<setters>
+			<set name="keywords">tattoo, necrotic, resistance</set>
+			<set name="category">Wondrous Items</set>
+			<set name="type">Tattoo</set>
+			<set name="rarity">Very Rare</set>
+			<set name="attunement">true</set>
+		</setters>
+		<rules>
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_NECROTIC" />
+		</rules>
+	</element>
+	
+	<element name="Absorbing Tattoo, Poison" type="Magic Item" source="Tasha’s Cauldron of Everything" id="ID_WOTC_TCOE_MAGIC_ITEM_TATTOO_ABSORBING_TATTOO_POISON">
+		<description>
+			<p>Produced by a special needle, this magic tattoo features designs that emphasize violet.</p>
+			<p class="indent"><strong><em>Damage Resistance.</em></strong> While the tattoo is on your skin, you have resistance to poison damage.</p>
+			<p class="indent"><strong><em>Damage Absorption.</em></strong> When you take poison damage, you can use your reaction to gain immunity against the poison damage, and you regain a number of hit points equal to half the damage you would have taken. Once this reaction is used, it can’t be used again until the next dawn.</p>
+		</description>
+		<setters>
+			<set name="keywords">tattoo, poison, resistance</set>
+			<set name="category">Wondrous Items</set>
+			<set name="type">Tattoo</set>
+			<set name="rarity">Very Rare</set>
+			<set name="attunement">true</set>
+		</setters>
+		<rules>
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_POISON" />
+		</rules>
+	</element>
+	
+	<element name="Absorbing Tattoo, Psychic" type="Magic Item" source="Tasha’s Cauldron of Everything" id="ID_WOTC_TCOE_MAGIC_ITEM_TATTOO_ABSORBING_TATTOO_PSYCHIC">
+		<description>
+			<p>Produced by a special needle, this magic tattoo features designs that emphasize silver.</p>
+			<p class="indent"><strong><em>Damage Resistance.</em></strong> While the tattoo is on your skin, you have resistance to psychic damage.</p>
+			<p class="indent"><strong><em>Damage Absorption.</em></strong> When you take psychic damage, you can use your reaction to gain immunity against the psychic damage, and you regain a number of hit points equal to half the damage you would have taken. Once this reaction is used, it can’t be used again until the next dawn.</p>
+		</description>
+		<setters>
+			<set name="keywords">tattoo, psychic, resistance</set>
+			<set name="category">Wondrous Items</set>
+			<set name="type">Tattoo</set>
+			<set name="rarity">Very Rare</set>
+			<set name="attunement">true</set>
+		</setters>
+		<rules>
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_PSYCHIC" />
+		</rules>
+	</element>
+	
+	<element name="Absorbing Tattoo, Radiant" type="Magic Item" source="Tasha’s Cauldron of Everything" id="ID_WOTC_TCOE_MAGIC_ITEM_TATTOO_ABSORBING_TATTOO_RADIANT">
+		<description>
+			<p>Produced by a special needle, this magic tattoo features designs that emphasize gold.</p>
+			<p class="indent"><strong><em>Damage Resistance.</em></strong> While the tattoo is on your skin, you have resistance to radiant damage.</p>
+			<p class="indent"><strong><em>Damage Absorption.</em></strong> When you take radiant damage, you can use your reaction to gain immunity against the radiant damage, and you regain a number of hit points equal to half the damage you would have taken. Once this reaction is used, it can’t be used again until the next dawn.</p>
+		</description>
+		<setters>
+			<set name="keywords">tattoo, radiant, resistance</set>
+			<set name="category">Wondrous Items</set>
+			<set name="type">Tattoo</set>
+			<set name="rarity">Very Rare</set>
+			<set name="attunement">true</set>
+		</setters>
+		<rules>
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_RADIANT" />
+		</rules>
+	</element>
+	
+	<element name="Absorbing Tattoo, Thunder" type="Magic Item" source="Tasha’s Cauldron of Everything" id="ID_WOTC_TCOE_MAGIC_ITEM_TATTOO_ABSORBING_TATTOO_THUNDER">
+		<description>
+			<p>Produced by a special needle, this magic tattoo features designs that emphasize orange.</p>
+			<p class="indent"><strong><em>Damage Resistance.</em></strong> While the tattoo is on your skin, you have resistance to thunder damage.</p>
+			<p class="indent"><strong><em>Damage Absorption.</em></strong> When you take thunder damage, you can use your reaction to gain immunity against the thunder damage, and you regain a number of hit points equal to half the damage you would have taken. Once this reaction is used, it can’t be used again until the next dawn.</p>
+		</description>
+		<setters>
+			<set name="keywords">tattoo, thunder, resistance</set>
+			<set name="category">Wondrous Items</set>
+			<set name="type">Tattoo</set>
+			<set name="rarity">Very Rare</set>
+			<set name="attunement">true</set>
+		</setters>
+		<rules>
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_THUNDER" />
+		</rules>
+	</element>
+
+	<element name="Barrier Tattoo" type="Magic Item" source="Tasha’s Cauldron of Everything" id="ID_WOTC_TCOE_MAGIC_ITEM_TATTOO_BARRIER_TATTOO_UNCOMMON">
+		<description>
+			<p>Produced by a special needle, this magic tattoo depicts protective imagery and uses ink that resembles liquid metal.</p>
+			<p class="indent"><strong><em>Protection.</em></strong> While you aren’t wearing armor, the tattoo grants you an Armor Class of 12 + your Dexterity modifier. You can use a shield and still gain this benefit.</p>
+		</description>
+		<setters>
+			<set name="keywords">tattoo, AC, armor, protection</set>
+			<set name="category">Wondrous Items</set>
+			<set name="type">Tattoo</set>
+			<set name="rarity">Uncommon</set>
+			<set name="attunement">true</set>
+		</setters>
+		<rules>
+			<stat name="ac:uncommon barrier tattoo" value="12" />
+			<stat name="ac:uncommon barrier tattoo" value="dexterity:modifier" />
+			<stat name="ac:calculation" value="ac:uncommon barrier tattoo" bonus="calculation" equipped="[armor:none]" alt="Protection (Barrier Tattoo)" />
+		</rules>
+	</element>
+	
+	<element name="Barrier Tattoo" type="Magic Item" source="Tasha’s Cauldron of Everything" id="ID_WOTC_TCOE_MAGIC_ITEM_TATTOO_BARRIER_TATTOO_RARE">
+		<description>
+			<p>Produced by a special needle, this magic tattoo depicts protective imagery and uses ink that resembles liquid metal.</p>
+			<p class="indent"><strong><em>Protection.</em></strong> While you aren’t wearing armor, the tattoo grants you an Armor Class of 15 + your Dexterity modifier (maximum of +2). You can use a shield and still gain this benefit.</p>
+		</description>
+		<setters>
+			<set name="keywords">tattoo, AC, armor, protection</set>
+			<set name="category">Wondrous Items</set>
+			<set name="type">Tattoo</set>
+			<set name="rarity">Rare</set>
+			<set name="attunement">true</set>
+		</setters>
+		<rules>
+			<stat name="ac:rare barrier tattoo" value="15" />
+			<stat name="ac:rare barrier tattoo" value="dexterity:modifier" maximum="2" />
+			<stat name="ac:calculation" value="ac:rare barrier tattoo" bonus="calculation" equipped="[armor:none]" alt="Protection (Barrier Tattoo)" />
+		</rules>
+	</element>
+	
+	<element name="Barrier Tattoo" type="Magic Item" source="Tasha’s Cauldron of Everything" id="ID_WOTC_TCOE_MAGIC_ITEM_TATTOO_BARRIER_TATTOO_VERY_RARE">
+		<description>
+			<p>Produced by a special needle, this magic tattoo depicts protective imagery and uses ink that resembles liquid metal.</p>
+			<p class="indent"><strong><em>Protection.</em></strong> While you aren’t wearing armor, the tattoo grants you an Armor Class of 18. You can use a shield and still gain this benefit.</p>
+		</description>
+		<setters>
+			<set name="keywords">tattoo, AC, armor, protection</set>
+			<set name="category">Wondrous Items</set>
+			<set name="type">Tattoo</set>
+			<set name="rarity">Very Rare</set>
+			<set name="attunement">true</set>
+		</setters>
+		<rules>
+			<stat name="ac:very rare barrier tattoo" value="18" />
+			<stat name="ac:calculation" value="ac:very rare barrier tattoo" bonus="calculation" equipped="[armor:none]" alt="Protection (Barrier Tattoo)" />
+		</rules>
+	</element>
+
+	<element name="Blood Fury Tattoo" type="Magic Item" source="Tasha’s Cauldron of Everything" id="ID_WOTC_TCOE_MAGIC_ITEM_TATTOO_BLOOD_FURY_TATTOO">
+		<description>
+			<p>Produced by a special needle, this magic tattoo evokes fury in its form and colors.</p>
+			<p class="indent"><strong><em>Bloodthirsty Strikes.</em></strong> The tattoo has 10 charges, and it regains all expended charges daily at dawn. While this tattoo is on your skin, you gain the following benefits:</p>
+			<ul>
+				<li>When you hit a creature with a weapon attack, you can expend a charge to deal an extra 4d6 necrotic damage to the target, and you regain a number of hit points equal to the necrotic damage dealt.</li>
+				<li>When a creature you can see damages you, you can expend a charge and use your reaction to make a melee attack against that creature, with advantage on your attack roll.</li>
+			</ul>
+		</description>
+		<setters>
+			<set name="keywords">tattoo, necrotic, vampirism</set>
+			<set name="category">Wondrous Items</set>
+			<set name="type">Tattoo</set>
+			<set name="rarity">Legendary</set>
+			<set name="attunement">true</set>
+			<set name="charges">10</set>
+		</setters>
+	</element>
+
+	<element name="Coiling Grasp Tattoo" type="Magic Item" source="Tasha’s Cauldron of Everything" id="ID_WOTC_TCOE_MAGIC_ITEM_TATTOO_COILING_GRASP_TATTOO">
+		<description>
+			<p>Produced by a special needle, this magic tattoo has long intertwining designs.</p>
+			<p class="indent"><strong><em>Grasping Tendrils.</em></strong> While the tattoo is on your skin, you can, as an action, cause the tattoo to extrude into inky tendrils, which reach for a creature you can see within 15 feet of you. The creature must succeed on a DC 14 Strength saving throw or take 3d6 force damage and be grappled by you. As an action, the creature can escape the grapple by succeeding on a DC 14 Strength (Athletics) or Dexterity (Acrobatics) check. The grapple also ends if you halt it (no action required), if the creature is ever more than 15 feet away from you, or if you use this tattoo on a different creature.</p>
+		</description>
+		<setters>
+			<set name="keywords">tattoo, grapple</set>
+			<set name="category">Wondrous Items</set>
+			<set name="type">Tattoo</set>
+			<set name="rarity">Uncommon</set>
+			<set name="attunement">true</set>
+		</setters>
+	</element>
+
+	<element name="Eldritch Claw Tattoo" type="Magic Item" source="Tasha’s Cauldron of Everything" id="ID_WOTC_TCOE_MAGIC_ITEM_TATTOO_ELDRITCH_CLAW_TATTOO">
+		<description>
+			<p>Produced by a special needle, this magic tattoo depicts clawlike forms and other jagged shapes.</p>
+			<p class="indent"><strong><em>Magical Strikes.</em></strong> While the tattoo is on your skin, your unarmed strikes are considered magical for the purpose of overcoming immunity and resistance to nonmagical attacks, and you gain a +1 bonus to attack and damage rolls with unarmed strikes.</p>
+			<p class="indent"><strong><em>Eldritch Maul.</em></strong> As a bonus action, you can empower the tattoo for 1 minute. For the duration, each of your melee attacks with a weapon or an unarmed strike can reach a target up to 15 feet away from you, as inky tendrils launch toward the target. In addition, your melee attacks deal an extra 1d6 force damage on a hit. Once used, this bonus action can’t be used again until the next dawn.</p>
+		</description>
+		<setters>
+			<set name="keywords">tattoo, unarmed</set>
+			<set name="category">Wondrous Items</set>
+			<set name="type">Tattoo</set>
+			<set name="rarity">Uncommon</set>
+			<set name="attunement">true</set>
+		</setters>
+	</element>
+
+	<element name="Ghost Step Tattoo" type="Magic Item" source="Tasha’s Cauldron of Everything" id="ID_WOTC_TCOE_MAGIC_ITEM_TATTOO_GHOST_STEP_TATTOO">
+		<description>
+			<p>Produced by a special needle, this tattoo shifts and wavers on the skin, parts of it appearing blurred.</p>
+			<p class="indent"><strong><em>Ghostly Form.</em></strong> The tattoo has 3 charges, and it regains all expended charges daily at dawn. As a bonus action while the tattoo is on your skin, you can expend 1 of the tattoo’s charges to become incorporeal until the end of your next turn. For the duration, you gain the following benefits:</p>
+			<ul>
+				<li>You have resistance to bludgeoning, piercing, and slashing damage from nonmagical attacks.</li>
+				<li>You can’t be grappled or restrained.</li>
+				<li>You can move through creatures and solid objects as if they were difficult terrain. If you end your turn in a solid object, you take 1d10 force damage. If the effect ends while you are inside a solid object, you instead are shunted to the nearest unoccupied space, and you take 1d10 force damage for every 5 feet traveled.</li>
+			</ul>			
+		</description>
+		<setters>
+			<set name="keywords">tattoo</set>
+			<set name="category">Wondrous Items</set>
+			<set name="type">Tattoo</set>
+			<set name="rarity">Very Rare</set>
+			<set name="attunement">true</set>
+		</setters>
+	</element>
+
+	<element name="Illuminator’s Tattoo" type="Magic Item" source="Tasha’s Cauldron of Everything" id="ID_WOTC_TCOE_MAGIC_ITEM_TATTOO_ILLUMINATORS_TATTOO">
+		<description>
+			<p>Produced by a special needle, this magic tattoo features beautiful calligraphy, images of writing implements, and the like.</p>
+			<p class="indent"><strong><em>Magical Scribing.</em></strong> While this tattoo is on your skin, you can write with your fingertip as if it were an ink pen that never runs out of ink.</p>
+			<p class="indent">As an action, you can touch a piece of writing up to one page in length and speak a creature’s name. The writing becomes invisible to everyone other than you and the named creature for the next 24 hours. Either of you can dismiss the invisibility by touching the script (no action required). Once used, this action can’t be used again until the next dawn.</p>
+		</description>
+		<setters>
+			<set name="keywords">tattoo</set>
+			<set name="category">Wondrous Items</set>
+			<set name="type">Tattoo</set>
+			<set name="rarity">Common</set>
+			<set name="attunement">true</set>
+		</setters>
+	</element>
+
+	<element name="Lifewell Tattoo" type="Magic Item" source="Tasha’s Cauldron of Everything" id="ID_WOTC_TCOE_MAGIC_ITEM_TATTOO_LIFEWELL_TATTOO">
+		<description>
+			<p>Produced by a special needle, this magic tattoo features symbols of life and rebirth.</p>
+			<p class="indent"><strong><em>Necrotic Resistance.</em></strong> You have resistance to necrotic damage.</p>
+			<p class="indent"><strong><em>Life Ward.</em></strong> When you would be reduced to 0 hit points, you drop to 1 hit point instead. Once used, this property can’t be used again until the next dawn.</p>
+		</description>
+		<setters>
+			<set name="keywords">tattoo, necrotic, resistance, death ward</set>
+			<set name="category">Wondrous Items</set>
+			<set name="type">Tattoo</set>
+			<set name="rarity">Very Rare</set>
+			<set name="attunement">true</set>
+		</setters>
+		<rules>
+			<grant type="Condition" id="ID_INTERNAL_CONDITION_DAMAGE_RESISTANCE_NECROTIC" />
+		</rules>
+	</element>
+
+	<element name="Masquerade Tattoo" type="Magic Item" source="Tasha’s Cauldron of Everything" id="ID_WOTC_TCOE_MAGIC_ITEM_TATTOO_MASQUERADE_TATTOO">
+		<description>
+			<p>Produced by a special needle, this magic tattoo appears on your body as whatever you desire.</p>
+			<p class="indent"><strong><em>Fluid Ink.</em></strong> As a bonus action, you can shape the tattoo into any color or pattern and move it to any area of your skin. Whatever form it takes, it is always obviously a tattoo. It can range in size from no smaller than a copper piece to an intricate work of art that covers all your skin.</p>
+			<p class="indent"><strong><em>Disguise Self.</em></strong> As an action, you can use the tattoo to cast the <i>disguise self</i> spell (DC 13 to discern the disguise). Once the spell is cast from the tattoo, it can’t be cast from the tattoo again until the next dawn.</p>
+		</description>
+		<setters>
+			<set name="keywords">tattoo, disguise self</set>
+			<set name="category">Wondrous Items</set>
+			<set name="type">Tattoo</set>
+			<set name="rarity">Common</set>
+			<set name="attunement">true</set>
+		</setters>
+	</element>
+
+	<element name="Shadowfell Brand Tattoo" type="Magic Item" source="Tasha’s Cauldron of Everything" id="ID_WOTC_TCOE_MAGIC_ITEM_TATTOO_SHADOWFELL_BRAND_TATTOO">
+		<description>
+			<p>Produced by a special needle, this magic tattoo is dark in color and abstract.</p>
+			<p class="indent"><strong><em>Shadow Essence.</em></strong> You gain darkvision with a range of 60 feet, and you have advantage on Dexterity (Stealth) checks.</p>
+			<p class="indent"><strong><em>Shadowy Defense.</em></strong> When you take damage, you can use your reaction to become insubstantial for a moment, halving the damage you take. Then the reaction can’t be used again until the next sunset.</p>
+		</description>
+		<setters>
+			<set name="keywords">tattoo, darkvision</set>
+			<set name="category">Wondrous Items</set>
+			<set name="type">Tattoo</set>
+			<set name="rarity">Rare</set>
+			<set name="attunement">true</set>
+		</setters>
+		<rules>
+			<grant type="Vision" id="ID_VISION_DARKVISION" />
+		</rules>
+	</element>
+
+</elements>
