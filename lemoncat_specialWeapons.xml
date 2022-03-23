@@ -4,7 +4,7 @@
 		<name>Special Weapons</name>
 		<description>Special Weapons</description>
 		<author url="https://github.com/cajadehu/aurorabuilder/">LemonCat</author>
-		<update version="0.0.7">
+		<update version="0.0.9">
 			<file name="lemoncat_specialWeapons.xml" url="https://github.com/cajadehu/aurorabuilder/lemoncat_specialWeapons.xml" />
 		</update>
 	</info>
@@ -344,6 +344,270 @@
 		</setters>
 	</element>
 	
+		<element name="Thieves' Bracelet" type="Magic Item" source="AAA" id="ID_LEMONCAT_THIEVES_BRACELET">
+		<description>
+			<p>This extremely ornate metal bracelet appears to be finely engraved with intricate depictions of birds.</p>
+			<p>When a command word is spoken by the wearer, the bracelet magically disassembles into a set of lock picking tools that emit a dim red light within a radius of 5 feet.</p>
+			<p>When the command word is spoken again, the bracelet magically reassembles itself, provided that all of its parts are undamaged and within 5ft of each other. The dim red light also fades.</p>
+		</description>
+		<setters>
+			<set name="keywords">bracelet, thieves, thief, lock, pick, custom, lemoncat, aaa</set>
+			<set name="category">Wondrous Items</set>
+			<set name="type">Wondrous Item</set>
+			<set name="slot">misc</set>
+			<set name="attunement">false</set>
+			<set name="rarity">Common</set>
+		</setters>
+	</element>
+	
+	<element name="Elemental Bracelet" type="Magic Item" source="AAA" id="ID_LEMONCAT_ELEMENTAL_BRACELET">
+		<description>
+			<p>This ivory bracelet is engraved with simplistic icons of the elements: acid, cold, fire, lightning, and thunder.</p>
+			<p>When the wearer casts a spell that does elemental damage of a type listed above, the caster can expend one charge to alter that damage to that of a different element of a type listed above.</p>
+			<p>For example if the fireball spell were cast, one charge could be expended by the caster to change the damage type from fire to acid.</p>
+			<p>The bracelet can hold up to 5 charges and regains 1 charge at dawn.</p>
+		</description>
+		<setters>
+			<set name="keywords">bracelet, element, damage, spell, cast, custom, lemoncat, aaa</set>
+			<set name="category">Wondrous Items</set>
+			<set name="type">Wondrous Item</set>
+			<set name="slot">misc</set>
+			<set name="attunement">true</set>
+			<set name="rarity">Uncommon</set>
+		</setters>
+	</element>
+	
+	<element name="Barkskin Bracelet" type="Magic Item" source="AAA" id="ID_LEMONCAT_BARKSKIN_BRACELET">
+		<description>
+			<p>This verawood bracelet is inlaid with snakewood in a striped pattern, and is completely smooth to the touch.</p>
+			<p>When the wearer casts the Barkskin spell on a creature (or themselves), Concentration is not needed to maintain the spell.</p>
+			<p>For each charge expended upon the time of casting Barkskin, the AC increases by 1.</p>
+			<p>The bracelet can hold up to 3 charges and regains 1 charge at dawn.</p>
+		</description>
+		<setters>
+			<set name="keywords">bracelet, barkskin, spell, cast, custom, lemoncat, aaa</set>
+			<set name="category">Wondrous Items</set>
+			<set name="type">Wondrous Item</set>
+			<set name="slot">misc</set>
+			<set name="attunement">false</set>
+			<set name="rarity">Common</set>
+		</setters>
+	</element>
+	
+	<element name="Riding Crop of Ease" type="Magic Item" source="AAA" id="ID_LEMONCAT_RIDING_CROP_OF_EASE">
+		<description>
+			<p>This black leather riding crop sparkles galantly with blue twinkling dim light to a radius of 5ft.</p>
+			<p>When the holder casts the Find Steed spell, they can do so with following modifications:</p>
+			<ul>
+				<li>The casting time becomes 1 minute.</li>
+				<li>Each summoned steed gains temporary HP equal to your Proficiency Bonus ({{proficiency:bonus}}).</li>
+				<li>Each summoned steed is in excellent health, and is summoned with maximum possible HP based on their hit dice.</li>
+				<li>At higher levels, you can summon 1 additional steed for each additional level of spell slot.</li>
+				<li>With your DM's permission, when you touch a summoned steed with the riding crop, you can alter it's form to a different steed creature.</li>
+			</ul>
+		</description>
+		<setters>
+			<set name="keywords">riding, crop, find, steed, spell, cast, custom, lemoncat, aaa</set>
+			<set name="category">Wondrous Items</set>
+			<set name="type">Wondrous Item</set>
+			<set name="slot">misc</set>
+			<set name="attunement">false</set>
+			<set name="rarity">Uncommon</set>
+		</setters>
+	</element>
+	
+	<element name="Dousing Rods of Trap Finding" type="Magic Item" source="AAA" id="ID_LEMONCAT_DOUSING_RODS_OF_TRAP_FINDING">
+		<description>
+			<p>This pair of dousing rods is made of ashwood with silver handles.</p>
+			<p>When the holder casts the Find Traps spell, they can do so with following modifications:</p>
+			<ul>
+				<li>You learn the location of all traps within range.</li>
+				<li>You learn the damage type(s) inflicted by each trap. Example: piercing, fire, etc.</li>
+			</ul>
+		</description>
+		<setters>
+			<set name="keywords">dousing, find, trap, spell, cast, custom, lemoncat, aaa</set>
+			<set name="category">Wondrous Items</set>
+			<set name="type">Wondrous Item</set>
+			<set name="slot">misc</set>
+			<set name="attunement">false</set>
+			<set name="rarity">Uncommon</set>
+		</setters>
+	</element>
+	
+	<element name="Knocking Bell" type="Magic Item" source="AAA" id="ID_LEMONCAT_KNOCKING_BELL">
+		<description>
+			<p>This 2 inch diameter bell has no clapper, and is made of oakwood.</p>
+			<p>When the holder casts the Knock spell, they can do so with following modifications:</p>
+			<ul>
+				<li>No knocking sound emanates from the targeted object at all.</li>
+				<li>If the object has multiple locks, up to three of them are unlocked instead of just one.</li>
+			</ul>
+		</description>
+		<setters>
+			<set name="keywords">knock, bell, spell, cast, custom, lemoncat, aaa</set>
+			<set name="category">Wondrous Items</set>
+			<set name="type">Wondrous Item</set>
+			<set name="slot">misc</set>
+			<set name="attunement">false</set>
+			<set name="rarity">Common</set>
+		</setters>
+	</element>
+		
+	<element name="Spider Silk Choker" type="Magic Item" source="AAA" id="ID_LEMONCAT_SPIDER_SILK_CHOKER">
+		<description>
+			<p>This chocker is made of finely woven spider silk with a spiderweb embroidered on the front.</p>
+			<p>When the wearer casts the Web spell, they can do so with up to two of the following modifications:</p>
+			<ul>
+				<li>The webs you cast do not require concentration to maintain, and their duration is reduced to 2 minutes.</li>
+				<li>The webs you cast are not flammable, and do not burn at all.</li>
+				<li>The webs you cast can be any color you choose.</li>
+				<li>The webs you cast have very fine strands. For a creature to sense your web, it must first pass a perception check equal to your spellcasting DC ({{spellcasting:dc}}). If it becomes trapped in your web, it senses it.</li>
+			</ul>
+		</description>
+		<setters>
+			<set name="keywords">spider, web, choker, spell, cast, custom, lemoncat, aaa</set>
+			<set name="category">Wondrous Items</set>
+			<set name="type">Wondrous Item</set>
+			<set name="slot">neck</set>
+			<set name="attunement">false</set>
+			<set name="rarity">Common</set>
+		</setters>
+	</element>
+	
+	<element name="Brass Brazier of the Phoenix" type="Magic Item" source="AAA" id="ID_LEMONCAT_BRASS_BRAZIER_OF_THE_PHOENIX">
+		<description>
+			<p>This ornate brass brazier is finely engraved with intricate depictions of phoenixes.</p>
+			<p>When a command word is spoken and the lid lifted, a single charge is expended and charcoal, incense, and herbs with a combined value of 10gp is magically produced in the brazier. If these components are removed from the brazier they instantly dissapear.</p>
+			<p>The brass brazier regains 1d4 charges at dawn, to a maximum of 5 charges.</p>
+			<p>Any familiar summoned from this brazier with the Find Familiar spell gains an additional 5 temporary HP.</p>
+		</description>
+		<setters>
+			<set name="keywords">brass, brazier, phoenix, familiar, custom, lemoncat, aaa</set>
+			<set name="category">Wondrous Items</set>
+			<set name="type">Wondrous Item</set>
+			<set name="attunement">false</set>
+			<set name="rarity">Uncommon</set>
+		</setters>
+	</element>
+	
+	<element name="Hexblood Ring" type="Magic Item" source="AAA" id="ID_LEMONCAT_RING_HEXBLOOD">
+		<description>
+			<p>While wearing this ring you gain the following modifications to your Hexblood traits and features.</p>
+			<ul>
+				<li>Eerie Tokens - The maximum number of Eerie Tokens you can create now equals your Proficiency Bonus ({{proficiency:bonus}}).</li>
+				<li>Telepathic Messages - These can now be sent through one, some, or all of your Eerie Tokens at the same time.</li>
+				<li>Remote Viewing - The Eerie Token is not destroyed at the end of the trance unless you choose it to be.</li>
+				<li>Remote Viewing - You can enter your trance a number of times equal to your Proficiency Bonus ({{proficiency:bonus}}). </li>
+			</ul>
+		</description>
+		<setters>
+			<set name="keywords">hexblood, eerie, token, custom, lemoncat, aaa</set>
+			<set name="category">Rings</set>
+			<set name="type">Ring</set>
+			<set name="slot">ring</set>
+			<set name="attunement">false</set>
+			<set name="rarity">Common</set>
+		</setters>
+	</element>
+	
+	<element name="Amulet of Kenku Blessing" type="Magic Item" source="AAA" id="ID_LEMONCAT_AMULET_KENKU_BLESSING">
+		<description>
+			<p>While wearing this amulet you gain the following modifications to your Kenku traits and features.</p>
+			<ul>
+				<li>Tool Proficiency - You gain proficiency with Caligraphy tools and Forgery Tools if you do not already have them.</li>
+				<li>Languages - Your speech is no longer restricted by your Mimicry trait. You can speak naturally with your own voice if you choose to.</li>
+			</ul>
+		</description>
+		<setters>
+			<set name="keywords">kenku, blessing, amulet, custom, lemoncat, aaa</set>
+			<set name="category">Wondrous Items</set>
+			<set name="type">Wondrous Item</set>
+			<set name="slot">neck</set>
+			<set name="attunement">false</set>
+			<set name="rarity">Common</set>
+		</setters>
+	</element>
+	
+	<element name="Meat Bone of Plenty" type="Magic Item" source="AAA" id="ID_LEMONCAT_MEAT_BONE_OF_PLENTY">
+		<description>
+			<p>When struck three times on a hard suface a charge is expended, and the foot long silver femur (thigh) bone magically forms around it a large amount of freshly roasted, juicy red beast meat that is sufficient to sustain a medium sized creature for one full day. This item has 3 charges and regains all of its charges at dawn.</p>
+		</description>
+		<setters>
+			<set name="keywords">meat, bone, plenty, food, custom, lemoncat, aaa</set>
+			<set name="category">Wondrous Items</set>
+			<set name="type">Wondrous Item</set>
+			<set name="slot">misc</set>
+			<set name="attunement">false</set>
+			<set name="rarity">Common</set>
+		</setters>
+	</element>
+		
+	<element name="Cornocopia of Plenty" type="Magic Item" source="AAA" id="ID_LEMONCAT_CORNOCOPIA_OF_PLENTY">
+		<description>
+			<p>This cornocopia is made of woven reeds and silver thread, and is about the size of a chicken. When upturned and a command word is spoken, a charge is expended and the cornocopia produces enough fresh fruit, vegetables, and grains to feed 5 medium sized creatures for one day. The cornocopia regains 1d4 charges at dawn.</p>
+			<p>Each time a charge is spent, roll a d20. On a natural 20 the cornocopia also produces a single golden apple worth 25 gold pieces.</p>
+		</description>
+		<setters>
+			<set name="keywords">cornocopia, plenty, food, custom, lemoncat, aaa</set>
+			<set name="category">Wondrous Items</set>
+			<set name="type">Wondrous Item</set>
+			<set name="slot">misc</set>
+			<set name="attunement">false</set>
+			<set name="rarity">Common</set>
+		</setters>
+	</element>
+	
+	<element name="Churn of Plenty" type="Magic Item" source="AAA" id="ID_LEMONCAT_CHURN_OF_PLENTY">
+		<description>
+			<p>This wooden butter churn is made of ash wood and silver banding, and is about the size of a bucket. When a command word is spoken and the churn is then opened, a charge is expended and the cornocopia produces either two dozen fresh chicken eggs, four pounds of fresh goat butter, four gallons of fresh cool goat milk, four gallons of fresh cool goat cream, or four pounds of fresh fish. The cornocopia regains 1d4 charges at dawn.</p>
+			<p>Each time a charge is spent, roll a d20. On a natural 20 the churn instead produces all of the listed produce.</p>
+			<p>After one hour, any food within the churn magically disappears as it cleans itself.</p>
+		</description>
+		<setters>
+			<set name="keywords">churn, plenty, food, custom, lemoncat, aaa</set>
+			<set name="category">Wondrous Items</set>
+			<set name="type">Wondrous Item</set>
+			<set name="slot">misc</set>
+			<set name="attunement">false</set>
+			<set name="rarity">Common</set>
+		</setters>
+	</element>
+	
+	<element name="Supper Bell" type="Magic Item" source="AAA" id="ID_LEMONCAT_SUPPER_BELL">
+		<description>
+			<p>This 4 inch diameter silver hand bell, can be rung loudly once per day to cast the spell Create Food and Water. When rung, the chime can be heard within a range of 100ft.</p>
+			<p>When the bell is rung, roll a d20. On a natural 20 the bell casts the spell 10 times in a row, and cannot be prevented from doing so.</p>
+		</description>
+		<setters>
+			<set name="keywords">supper, bell, food, custom, lemoncat, aaa</set>
+			<set name="category">Wondrous Items</set>
+			<set name="type">Wondrous Item</set>
+			<set name="slot">misc</set>
+			<set name="attunement">false</set>
+			<set name="rarity">Uncommon</set>
+		</setters>
+	</element>
+	
+	<element name="Purse of Holding" type="Magic Item" source="AAA" id="ID_LEMONCAT_PURSE_OF_HOLDING">
+		<description>
+			<p>This bag has an interior space considerably larger than its outside dimensions, roughly 10 cubic feet. The bag can hold up to a value of 50,000 gold coins, or the equivalent in other units or currency. The bag weighs 1 pound, regardless of its contents. Retrieving any amount of coins from the bag requires an action.</p>
+			<p class="indent">If an attempt to overload the purse is made, any excess currency is harmlessly rejected by the purse.</p>
+			<p class="indent">If the bag is pierced or torn from the outside, it ruptures and is destroyed, and its contents are expelled in the nearest unoccupied space. If the bag is turned inside out, its contents spill forth, unharmed, but the purse must be put right before it can be used again.</p>
+			<p class="indent">Only minted currency (coins or notes) can be put into the purse, as it harmlessly rejects all other items, objects, creatures, and such like.</p>
+			<p class="indent">The magic of the purse makes it difficult to steal, granting a +5DC to any Slight of Hand checks made to steal it.</p>
+		</description>
+		<setters>
+			<set name="keywords">purse, holding, money, coins, currency, custom, lemoncat, aaa</set>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="15">1 lb.</set>
+			<set name="stash" lb="50000" weightless="true">true</set>
+			<set name="type">Wondrous Item</set>
+			<set name="rarity">Uncommon</set>
+		</setters>
+	</element>
+	
 	<element name="Choker of Land Breathing" type="Magic Item" source="AAA" id="ID_LEMONCAT_CHOKER_OF_LAND_BREATHING">
 		<description>
 			<p>While wearing this choker out of water, you can speak its command word as an action to create a bubble of perpetually fresh sea water around your head and or gills. It allows you to breathe water normally while out of water. This bubble stays with you until you speak the command word again, the choker is removed, or you are no longer out of the water.</p>
@@ -417,6 +681,90 @@
 		<rules>
 			<stat name="artificer:spellcasting:attack" value="0" />
 			<stat name="artificer:spellcasting:dc" value="0" />
+		</rules>
+	</element>
+	
+		<element name="Book of Shadows, +0" type="Magic Item" source="AAA" id="ID_LEMONCAT_BOOK_OF_SHADOWS_0">
+		<description>
+			<p>While this book is in your posession, you gain a +0 bonus spell attack rolls and to the saving throw DCs of all of your spells, not just your Warlock spells.</p>
+			<p class="indent">In addition, you can regain one warlock spell slot as an action while holding the book. You can’t use this property again until you finish a long rest.</p>
+		</description>
+		<setters>
+			<set name="keywords">warlock, book, tome, grimoire, shadows, lemoncat, aaa</set>
+			<set name="category">Wondrous Items</set>
+			<set name="weight" lb="2">2 lb.</set>
+			<set name="type">Wondrous Item</set>
+			<set name="slot">misc</set>
+			<set name="attunement" addition="by a warlock">true</set>
+			<set name="rarity">Common</set>
+			<set name="enhancement">0</set>
+		</setters>
+		<rules>
+			<stat name="spellcasting:attack" value="0" bonus="book of shadows" />
+			<stat name="spellcasting:dc"     value="0" bonus="book of shadows" />
+		</rules>
+	</element>
+	
+		<element name="Book of Shadows, +1" type="Magic Item" source="AAA" id="ID_LEMONCAT_BOOK_OF_SHADOWS_1">
+		<description>
+			<p>While this book is in your posession, you gain a +1 bonus spell attack rolls and to the saving throw DCs of all of your spells, not just your Warlock spells.</p>
+			<p class="indent">In addition, you can regain one warlock spell slot as an action while holding the book. You can’t use this property again until you finish a long rest.</p>
+		</description>
+		<setters>
+			<set name="keywords">warlock, book, tome, grimoire, shadows, lemoncat, aaa</set>
+			<set name="category">Wondrous Items</set>
+			<set name="weight" lb="2">2 lb.</set>
+			<set name="type">Wondrous Item</set>
+			<set name="slot">misc</set>
+			<set name="attunement" addition="by a warlock">true</set>
+			<set name="rarity">Uncommon</set>
+			<set name="enhancement">1</set>
+		</setters>
+		<rules>
+			<stat name="spellcasting:attack" value="1" bonus="book of shadows" />
+			<stat name="spellcasting:dc"     value="1" bonus="book of shadows" />
+		</rules>
+	</element>
+	
+	<element name="Book of Shadows, +2" type="Magic Item" source="AAA" id="ID_LEMONCAT_BOOK_OF_SHADOWS_2">
+		<description>
+			<p>While this book is in your posession, you gain a +2 bonus spell attack rolls and to the saving throw DCs of all of your spells, not just your Warlock spells.</p>
+			<p class="indent">In addition, you can regain one warlock spell slot as an action while holding the book. You can’t use this property again until you finish a long rest.</p>
+		</description>
+		<setters>
+			<set name="keywords">warlock, book, tome, grimoire, shadows, lemoncat, aaa</set>
+			<set name="category">Wondrous Items</set>
+			<set name="weight" lb="2">2 lb.</set>
+			<set name="type">Wondrous Item</set>
+			<set name="slot">misc</set>
+			<set name="attunement" addition="by a warlock">true</set>
+			<set name="rarity">Rare</set>
+			<set name="enhancement">2</set>
+		</setters>
+		<rules>
+			<stat name="spellcasting:attack" value="2" bonus="book of shadows" />
+			<stat name="spellcasting:dc"     value="2" bonus="book of shadows" />
+		</rules>
+	</element>
+	
+	<element name="Book of Shadows, +3" type="Magic Item" source="AAA" id="ID_LEMONCAT_BOOK_OF_SHADOWS_3">
+		<description>
+			<p>While this book is in your posession, you gain a +3 bonus spell attack rolls and to the saving throw DCs of all of your spells, not just your Warlock spells.</p>
+			<p class="indent">In addition, you can regain one warlock spell slot as an action while holding the book. You can’t use this property again until you finish a long rest.</p>
+		</description>
+		<setters>
+			<set name="keywords">warlock, book, tome, grimoire, shadows, lemoncat, aaa</set>
+			<set name="category">Wondrous Items</set>
+			<set name="weight" lb="2">2 lb.</set>
+			<set name="type">Wondrous Item</set>
+			<set name="slot">misc</set>
+			<set name="attunement" addition="by a warlock">true</set>
+			<set name="rarity">Very Rare</set>
+			<set name="enhancement">3</set>
+		</setters>
+		<rules>
+			<stat name="spellcasting:attack" value="3" bonus="book of shadows" />
+			<stat name="spellcasting:dc"     value="3" bonus="book of shadows" />
 		</rules>
 	</element>
 
