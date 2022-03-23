@@ -5,7 +5,7 @@
 		<description>Special Weapons</description>
 		<author url="https://github.com/cajadehu/aurorabuilder/">LemonCat</author>
 		<update version="0.0.9">
-			<file name="lemoncat_specialWeapons.xml" url="https://github.com/cajadehu/aurorabuilder/lemoncat_specialWeapons.xml" />
+			<file name="lemoncat_specialWeapons.xml" url="https://github.com/cajadehu/aurorabuilder/blob/main/lemoncat_specialWeapons.xml" />
 		</update>
 	</info>
 	<element name="Shillelagh Club" type="Weapon" source="AAA" id="ID_LEMONCAT_WEAPON_SHILLELAGH_CLUB">
@@ -116,7 +116,7 @@
 		</setters>
 	</element>
 	
-	<element name="Caster's Tattoo" type="Magic Item" source="AAA" id="ID_LEMONCAT_CASTER_TATTOO0">
+	<element name="Caster's Tattoo" type="Magic Item" source="AAA" id="ID_LEMONCAT_CASTER_TATTOO_0">
 		<description>
 			<p>Produced by a special needle, this magic tattoo focuses magic for casters.</p>
 			<p class="indent"><strong><em>Tattoo Attunement.</em></strong> </p>
@@ -142,7 +142,7 @@
 		</rules>
 	</element>
 	
-	<element name="Caster's Tattoo +1" type="Magic Item" source="AAA" id="ID_LEMONCAT_CASTER_TATTOO1">
+	<element name="Caster's Tattoo +1" type="Magic Item" source="AAA" id="ID_LEMONCAT_CASTER_TATTOO_1">
 		<description>
 			<p>Produced by a special needle, this magic tattoo focuses magic for casters.</p>
 			<p class="indent"><strong><em>Tattoo Attunement.</em></strong> </p>
@@ -168,7 +168,7 @@
 		</rules>
 	</element>
 	
-	<element name="Caster's Tattoo +2" type="Magic Item" source="AAA" id="ID_LEMONCAT_CASTER_TATTOO2">
+	<element name="Caster's Tattoo +2" type="Magic Item" source="AAA" id="ID_LEMONCAT_CASTER_TATTOO_2">
 		<description>
 			<p>Produced by a special needle, this magic tattoo focuses magic for casters.</p>
 			<p class="indent"><strong><em>Tattoo Attunement.</em></strong> </p>
@@ -194,7 +194,7 @@
 		</rules>
 	</element>
 	
-	<element name="Caster's Tattoo +3" type="Magic Item" source="AAA" id="ID_LEMONCAT_CASTER_TATTOO3">
+	<element name="Caster's Tattoo +3" type="Magic Item" source="AAA" id="ID_LEMONCAT_CASTER_TATTOO_3">
 		<description>
 			<p>Produced by a special needle, this magic tattoo focuses magic for casters.</p>
 			<p class="indent"><strong><em>Tattoo Attunement.</em></strong> </p>
@@ -229,9 +229,13 @@
 			<set name="keywords">tattoo, cast, spell, goodberry, custom, lemoncat, aaa</set>
 			<set name="category">Wondrous Items</set>
 			<set name="type">Tattoo</set>
-			<set name="attunement">true</set>
+			<set name="slot">misc</set>
+			<set name="attunement">false</set>
 			<set name="rarity">Common</set>
 		</setters>
+		<rules>
+			<grant type="Spell" id="ID_PHB_SPELL_GOODBERRY" level="1" />
+		</rules>
 	</element>
 	
 		<element name="Darkvision Tattoo" type="Magic Item" source="AAA" id="ID_LEMONCAT_DARKVISION_TATTOO">
@@ -240,11 +244,12 @@
 			<p class="indent"><strong><em>Darkvision.</em></strong> You gain darkvision with a range of 60 feet.</p>
 		</description>
 		<setters>
-			<set name="keywords">tattoo, darkvision</set>
+			<set name="keywords">tattoo, darkvision, lemoncat, aaa</set>
 			<set name="category">Wondrous Items</set>
 			<set name="type">Tattoo</set>
+			<set name="slot">misc</set>
 			<set name="rarity">Uncommon</set>
-			<set name="attunement">true</set>
+			<set name="attunement">false</set>
 		</setters>
 		<rules>
 			<grant type="Vision" id="ID_VISION_DARKVISION" />
@@ -300,6 +305,9 @@
 			<set name="attunement">false</set>
 			<set name="rarity">Common</set>
 		</setters>
+		<rules>
+			<grant type="Spell" id="ID_PHB_SPELL_PRESTIDIGITATION" level="1" />
+		</rules>
 	</element>
 
 	<element name="Ring of Thaumaturgy" type="Magic Item" source="AAA" id="ID_LEMONCAT_RING_THAUMATURGY">
@@ -314,6 +322,9 @@
 			<set name="attunement">false</set>
 			<set name="rarity">Common</set>
 		</setters>
+		<rules>
+			<grant type="Spell" id="ID_PHB_SPELL_THAUMATURGY" level="1" />
+		</rules>
 	</element>
 
 	<element name="Ring of Druidcraft" type="Magic Item" source="AAA" id="ID_LEMONCAT_RING_DRUIDCRAFT">
@@ -321,13 +332,16 @@
 			<p>While wearing this ring you can cast the Druidcraft cantrip at will.</p>
 		</description>
 		<setters>
-			<set name="keywords">druid, custom, lemoncat, aaa</set>
+			<set name="keywords">druidcraft, custom, lemoncat, aaa</set>
 			<set name="category">Rings</set>
 			<set name="type">Ring</set>
 			<set name="slot">ring</set>
 			<set name="attunement">false</set>
 			<set name="rarity">Common</set>
 		</setters>
+		<rules>
+			<grant type="Spell" id="ID_PHB_SPELL_DRUIDCRAFT" level="1" />
+		</rules>
 	</element>
 	
 	<element name="Ring of Light" type="Magic Item" source="AAA" id="ID_LEMONCAT_RING_LIGHT">
@@ -342,9 +356,12 @@
 			<set name="attunement">false</set>
 			<set name="rarity">Common</set>
 		</setters>
+		<rules>
+			<grant type="Spell" id="ID_PHB_SPELL_LIGHT" level="1" />
+		</rules>
 	</element>
 	
-		<element name="Thieves' Bracelet" type="Magic Item" source="AAA" id="ID_LEMONCAT_THIEVES_BRACELET">
+	<element name="Thieves' Bracelet" type="Magic Item" source="AAA" id="ID_LEMONCAT_THIEVES_BRACELET">
 		<description>
 			<p>This extremely ornate metal bracelet appears to be finely engraved with intricate depictions of birds.</p>
 			<p>When a command word is spoken by the wearer, the bracelet magically disassembles into a set of lock picking tools that emit a dim red light within a radius of 5 feet.</p>
@@ -400,7 +417,7 @@
 			<p>When the holder casts the Find Steed spell, they can do so with following modifications:</p>
 			<ul>
 				<li>The casting time becomes 1 minute.</li>
-				<li>Each summoned steed gains temporary HP equal to your Proficiency Bonus ({{proficiency:bonus}}).</li>
+				<li>Each summoned steed gains temporary HP equal to your Proficiency Bonus.</li>
 				<li>Each summoned steed is in excellent health, and is summoned with maximum possible HP based on their hit dice.</li>
 				<li>At higher levels, you can summon 1 additional steed for each additional level of spell slot.</li>
 				<li>With your DM's permission, when you touch a summoned steed with the riding crop, you can alter it's form to a different steed creature.</li>
@@ -426,7 +443,7 @@
 			</ul>
 		</description>
 		<setters>
-			<set name="keywords">dousing, find, trap, spell, cast, custom, lemoncat, aaa</set>
+			<set name="keywords">dousing, rod, find, trap, spell, cast, custom, lemoncat, aaa</set>
 			<set name="category">Wondrous Items</set>
 			<set name="type">Wondrous Item</set>
 			<set name="slot">misc</set>
@@ -453,16 +470,16 @@
 			<set name="rarity">Common</set>
 		</setters>
 	</element>
-		
+	
 	<element name="Spider Silk Choker" type="Magic Item" source="AAA" id="ID_LEMONCAT_SPIDER_SILK_CHOKER">
 		<description>
-			<p>This chocker is made of finely woven spider silk with a spiderweb embroidered on the front.</p>
+			<p>This choker is made of finely woven spider silk with a spiderweb embroidered on the front.</p>
 			<p>When the wearer casts the Web spell, they can do so with up to two of the following modifications:</p>
 			<ul>
 				<li>The webs you cast do not require concentration to maintain, and their duration is reduced to 2 minutes.</li>
 				<li>The webs you cast are not flammable, and do not burn at all.</li>
 				<li>The webs you cast can be any color you choose.</li>
-				<li>The webs you cast have very fine strands. For a creature to sense your web, it must first pass a perception check equal to your spellcasting DC ({{spellcasting:dc}}). If it becomes trapped in your web, it senses it.</li>
+				<li>The webs you cast have very fine strands. For a creature to sense your web, it must first pass a perception check equal to your spellcasting DC. If it becomes trapped in your web, it senses it.</li>
 			</ul>
 		</description>
 		<setters>
@@ -495,10 +512,10 @@
 		<description>
 			<p>While wearing this ring you gain the following modifications to your Hexblood traits and features.</p>
 			<ul>
-				<li>Eerie Tokens - The maximum number of Eerie Tokens you can create now equals your Proficiency Bonus ({{proficiency:bonus}}).</li>
+				<li>Eerie Tokens - The maximum number of Eerie Tokens you can create now equals your Proficiency Bonus.</li>
 				<li>Telepathic Messages - These can now be sent through one, some, or all of your Eerie Tokens at the same time.</li>
 				<li>Remote Viewing - The Eerie Token is not destroyed at the end of the trance unless you choose it to be.</li>
-				<li>Remote Viewing - You can enter your trance a number of times equal to your Proficiency Bonus ({{proficiency:bonus}}). </li>
+				<li>Remote Viewing - You can enter your trance a number of times equal to your Proficiency Bonus. </li>
 			</ul>
 		</description>
 		<setters>
@@ -542,11 +559,11 @@
 			<set name="rarity">Common</set>
 		</setters>
 	</element>
-		
+	
 	<element name="Cornocopia of Plenty" type="Magic Item" source="AAA" id="ID_LEMONCAT_CORNOCOPIA_OF_PLENTY">
 		<description>
-			<p>This cornocopia is made of woven reeds and silver thread, and is about the size of a chicken. When upturned and a command word is spoken, a charge is expended and the cornocopia produces enough fresh fruit, vegetables, and grains to feed 5 medium sized creatures for one day. The cornocopia regains 1d4 charges at dawn.</p>
-			<p>Each time a charge is spent, roll a d20. On a natural 20 the cornocopia also produces a single golden apple worth 25 gold pieces.</p>
+			<p>This cornocopia is made of woven reeds and silver thread, and is about the size of a chicken. When upturned and a command word is spoken, a charge is expended and the cornocopia produces enough fresh fruit, vegetables, seeds, grains, and other vegan-safe produce to feed 5 medium sized creatures for one day. The cornocopia regains 1d4 charges at dawn.</p>
+			<p>Each time a charge is spent, roll a d20. On a natural 20 the cornocopia also produces a jar of fresh local honey.</p>
 		</description>
 		<setters>
 			<set name="keywords">cornocopia, plenty, food, custom, lemoncat, aaa</set>
@@ -595,13 +612,13 @@
 			<p class="indent">If an attempt to overload the purse is made, any excess currency is harmlessly rejected by the purse.</p>
 			<p class="indent">If the bag is pierced or torn from the outside, it ruptures and is destroyed, and its contents are expelled in the nearest unoccupied space. If the bag is turned inside out, its contents spill forth, unharmed, but the purse must be put right before it can be used again.</p>
 			<p class="indent">Only minted currency (coins or notes) can be put into the purse, as it harmlessly rejects all other items, objects, creatures, and such like.</p>
-			<p class="indent">The magic of the purse makes it difficult to steal, granting a +5DC to any Slight of Hand checks made to steal it.</p>
+			<p class="indent">The magic of the purse makes it difficult to steal, granting you advantage on Perception checks against any Slight of Hand checks made to steal it.</p>
 		</description>
 		<setters>
 			<set name="keywords">purse, holding, money, coins, currency, custom, lemoncat, aaa</set>
 			<set name="category">Wondrous Items</set>
 			<set name="cost" currency="gp">0</set>
-			<set name="weight" lb="15">1 lb.</set>
+			<set name="weight" lb="1">1 lb.</set>
 			<set name="stash" lb="50000" weightless="true">true</set>
 			<set name="type">Wondrous Item</set>
 			<set name="rarity">Uncommon</set>
@@ -704,6 +721,7 @@
 			<stat name="spellcasting:dc"     value="0" bonus="book of shadows" />
 		</rules>
 	</element>
+
 	
 		<element name="Book of Shadows, +1" type="Magic Item" source="AAA" id="ID_LEMONCAT_BOOK_OF_SHADOWS_1">
 		<description>
