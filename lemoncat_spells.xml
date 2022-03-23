@@ -1,0 +1,511 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Lemoncat Spells</name>
+		<description>Lemoncat Spells</description>
+		<author url="https://github.com/cajadehu/aurorabuilder/">LemonCat</author>
+		<update version="0.0.1">
+			<file name="lemoncat_spells.xml" url="https://github.com/cajadehu/aurorabuilder/blob/main/lemoncat_spells.xml" />
+		</update>
+	</info>
+
+<!-- Ranged, Spell Attack, Spell Saving Throw, Artificer, Bard, Cleric, Druid, Paladin, Ranger, Sorcerer, Warlock, Wizard -->
+<!-- Abjuration, Conjuration, Divination, Enchantment, Evocation, Illusion, Necromancy, Transmutation -->
+
+	<element name="Mass Sobering" type="Spell" source="AAA" id="ID_LEMONCAT_SPELL_MASS_SOBERING">
+		<supports>Ranged, Spell Saving Throw, Cleric, Paladin, Sorcerer, Warlock, Wizard</supports>
+		<description>
+			<p>Provided there are at least 10 drunk creatures in range, all drunks in range instantly become completely sober, and their impending hangovers will be 3 times worse than they would otherwise be, as all of the alchohol is magically siphoned from their bodies, and magically forms a bottle of fine wine or strong spirits, caster's choice, in your open hand. The bottle has a value of 10+1d20 gp, or determined by the DM.</p>
+			<p>A creature within range of this spell can resist its effects with a Wisdom Saving Throw, DC15</p>
+		</description>
+		<setters>
+			<set name="keywords">mass, sobering, custom, lemoncat, aaa</set>
+			<set name="level">1</set>
+			<set name="school">Enchantment</set>
+			<set name="time">1 action</set>
+			<set name="duration">Instantaneous</set>
+			<set name="range">100ft radius sphere</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a jeweled shot glass worth at least 20gp, which the spell consumes</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	
+	<element name="Mass Duplicate Meal" type="Spell" source="AAA" id="ID_LEMONCAT_SPELL_MASS_DUPLICATE_MEAL">
+		<supports>Ranged, Bard, Cleric, Paladin, Wizard</supports>
+		<description>
+			<p>You focus your mind on a freshly cooked meal that fits on a single 1 foot diameter platter. The meal is perfectly duplicated up to 100 times covering all available empty clean platters within a 100ft cube. The duplicate meals can be moved, served, and consumed as expected, with any unconsumed food or material vanishing at the end of the spell's duration.</p>
+		</description>
+		<setters>
+			<set name="keywords">mass, duplicate, meal, food, custom, lemoncat, aaa</set>
+			<set name="level">1</set>
+			<set name="school">Conjuration</set>
+			<set name="time">1 action</set>
+			<set name="duration">Instantaneous</set>
+			<set name="range">Touch</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a gilded platter worth at least 100gp, which the spell consumes</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	
+	<element name="Mass Laundry" type="Spell" source="AAA" id="ID_LEMONCAT_SPELL_MASS_LAUNDRY">
+		<supports>Ranged, Artificer, Bard, Cleric, Druid, Paladin, Wizard</supports>
+		<description>
+			<p>All mundane clothing (no effect on armor or magical clothing) within a 100ft radius sphere is magically repaired and cleaned.</p>
+			<p class="indent"><b><i>At Higher Levels.</i></b> for each additional level of spell slot used, the radius is increased by 100 ft.</p>
+		</description>
+		<setters>
+			<set name="keywords">mass, laundry, clothes, clean, mend, custom, lemoncat, aaa</set>
+			<set name="level">1</set>
+			<set name="school">Transmutation</set>
+			<set name="time">1 action</set>
+			<set name="duration">Instantaneous</set>
+			<set name="range">Self</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">an ornate sewing wheel worth at least 100gp</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	
+	<element name="Transmute Wealth" type="Spell" source="AAA" id="ID_LEMONCAT_SPELL_TRANSMUTE_WEALTH">
+		<supports>Ranged, Artificer, Sorcerer, Warlock, Wizard</supports>
+		<description>
+			<p>All mundane wealth (coinage, ingots, processed minerals, gems, gem dust, but not artwork, armor, weapons, fancy goblets, etc. DM's discretion) within the area shimmers with a soft pink glow. At the end of successfully casting the spell, the wealth is transmuted into solid bars and or ingots of pure metal (mithril, gold, iron, copper, lead, or silver, choose at the start of casting) in neat stacks, of equal or lesser value, rounding down the value to the nearest 100gp if needed. Strangely, all of the bars and ingots are debossed with the date and time in Celestial, at the time of casting.</p>
+		</description>
+		<setters>
+			<set name="keywords">mass, transmute, wealth, coin, money, currency, custom, lemoncat, aaa</set>
+			<set name="level">5</set>
+			<set name="school">Transmutation</set>
+			<set name="time">1 hour</set>
+			<set name="duration">Instantaneous</set>
+			<set name="range">Self, 20ft cube</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a set of filigris silver handscales worth at least 1000gp</set>
+			<set name="isConcentration">true</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	
+	<element name="Mercy's Embrace" type="Spell" source="AAA" id="ID_LEMONCAT_SPELL_MERCYS_EMBRACE">
+		<supports>Cleric, Druid, Paladin, Ranger</supports>
+		<description>
+			<p>Upon sprinkling the ground medicinal herbs over a creature experiencing intense pain, for the next month it feels no physical pain from its injuries or afflictions, allowing it to pass away painlessly. This spell does not prevent new intentionally inflicted pain, nor provide any curative, restorative, or healing effects. After the spell is cast, it restores a spell slot of equal level to the caster.</p>
+		</description>
+		<setters>
+			<set name="keywords">heal, cure, mercy, custom, lemoncat, aaa</set>
+			<set name="level">3</set>
+			<set name="school">Enchantment</set>
+			<set name="time">1 Action</set>
+			<set name="duration">1 Month</set>
+			<set name="range">5ft</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a handful of ground medicinal herbs, which the spell consumes</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	
+	<element name="Canopy of Dreams" type="Spell" source="AAA" id="ID_LEMONCAT_SPELL_CANOPY_OF_DREAMS">
+		<supports>Ranged, Bard, Druid, Sorcerer, Warlock, Wizard</supports>
+		<description>
+			<p>The ceiling of the room you are in (up to 10,000 square feet) down to at least 10ft above floor level fills with a noticibly illusory visual and auditory effect. Choose one of the following effects to fill the space, at the start of casting.</p>
+			<ul>
+				<li>Soft, pillowy white clouds with birds of paradise gracefully flying.</li>
+				<li>A raging thunderstorm.</li>
+				<li>A gentle rainstorm.</li>
+				<li>Assorted butterflies.</li>
+				<li>Gentle breezes with Autumn leaves.</li>
+				<li>A twinkling clear night sky with intermittent shooting stars.</li>
+				<li>Fish calmly swimming beneath the sea.</li>
+				<li>Unicorns frolicking in a vast field.</li>
+				<li>A sandy beach with waves.</li>
+				<li>Gently falling snow.</li>
+				<li>A view of the current local sky.</li>
+			</ul>         
+		</description>
+		<setters>
+			<set name="keywords">canopy, dream, party, custom, lemoncat, aaa</set>
+			<set name="level">2</set>
+			<set name="school">Illusion</set>
+			<set name="time">1 Minute</set>
+			<set name="duration">8 Hours</set>
+			<set name="range">100ft</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">an ornate candle worth at least 1 gold coin, which the spell consumes</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	
+	<element name="Portrait Portals" type="Spell" source="AAA" id="ID_LEMONCAT_SPELL_PORTRAIT_PORTALS">
+		<supports>Artificer, Sorcerer, Warlock, Wizard</supports>
+		<description>
+			<p>The caster and up to 10 creatures of their choice within 10 feet of the caster each prick their thumb on both hands, and simultaneously touch both paintings at the time of casting. The blood is drawn into the canvas of each painting.</p>
+			<p>Each member of the group can now pass freely and instantly through one portrait and out the other, appearing in the nearest unnocupied space. The portraits sparkle noticibly when exposed to moonlight, and to creatures who can See Invisibility.</p>
+			<p>The portraits do not function as portals if they are separated by more than 5 miles. Any damage or destruction to one portrait also happens to the paired portrait. Each portrait can only be destroyed by a wish spell.</p>
+		</description>
+		<setters>
+			<set name="keywords">teleport, portal, transport, custom, lemoncat, aaa</set>
+			<set name="level">9</set>
+			<set name="school">Conjuration</set>
+			<set name="time">1 Action</set>
+			<set name="duration">Indefinitely</set>
+			<set name="range">10ft radius</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">false</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">2 masterwork lifesize full-body portraits of the caster, each worth at least 5,000 gold coins, and drops of fresh blood from selected creatures</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+		
+	<element name="Tree of Festivity" type="Spell" source="AAA" id="ID_LEMONCAT_SPELL_TREE_OF_FESTIVITY">
+		<supports>Artificer, Bard, Cleric, Wizard</supports>
+		<description>
+			<p>This spell only succeeds if the sky is clear and moonlit. Touching the trunk of the tree with one hand, and holding the bowl with the other hand, the leaves of the tree twinkle with colorful light. For the first 10 minutes of each hour of the spell, the sky is filled with illusory fireworks of various shapes, colors, and sounds. Any creature within radius of the tree can experience the illusion.</p>
+			<p>Any creature wearing a ribbon around their wrist does not experience the illusion, allowing them to go about their business without disturbance.</p>
+			<p class="indent"><b><i>At Higher Levels.</i></b> 	For each slot level above minimum casting level, the radius is increased by 100ft.</p>
+		</description>
+		<setters>
+			<set name="keywords">tree, festiv, party, custom, lemoncat, aaa</set>
+			<set name="level">4</set>
+			<set name="school">Illusion</set>
+			<set name="time">10 minutes</set>
+			<set name="duration">4 hours</set>
+			<set name="range">Touch, 250 ft radius</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">false</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">A living tree of at least 20ft height and 1 year of age. A large wooden bowl of local fruits, nuts, and or delicacies, which the spell consumes.</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+		
+	<element name="Ruler's Map" type="Spell" source="AAA" id="ID_LEMONCAT_SPELL_RULERS_MAP">
+		<supports>Artificer, Cleric, Druid, Paladin, Ranger</supports>
+		<description>
+			<p>Placing the cartography set in the center of a 10ft square flat surface, it becomes magically marked with a perfect geographic map (including compass rose, scale line, and optionally well-known structure outlines) of the surrounding area at a scale of 1 mile of terrain to 1 foot of map surface. The scale can optionally be reduced, but not increased beyond the 10 mile square area. The map surface can only be destroyed, damaged, or altered with Universal Solvent or a Wish spell. The markings turn red in the last month of the spell's duration, and vanish completely at the end of the spell's duration.</p>
+		</description>
+		<setters>
+			<set name="keywords">ruler, king, queen, leader, map, cartography, custom, lemoncat, aaa</set>
+			<set name="level">9</set>
+			<set name="school">Divination</set>
+			<set name="time">1 hour</set>
+			<set name="duration">10 years</set>
+			<set name="range">Touch, 10ft square</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">A masterwork quality jeweled cartography set worth at least 1,000gp, which the spell consumes</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	
+	<element name="Ice Sculpture" type="Spell" source="AAA" id="ID_LEMONCAT_SPELL_ICE_SCULPTURE">
+		<supports>Artificer, Bard, Sorcerer, Wizard</supports>
+		<description>
+			<p>A Medium or smaller sized humanoid creature that you touch (or yourself) throughout the casting time is recreated in perfect likeness, from crystal clear ice, in an unoccupied space within 30 ft. The sculpture resists melting until the last minute of its duration, whereupon it rapidly melts and falls apart. The sculpture has AC 10, 5 HP.</p>
+		</description>
+		<setters>
+			<set name="keywords">ice, sculpture, statue, party, custom, lemoncat, aaa</set>
+			<set name="level">2</set>
+			<set name="school">Conjuration</set>
+			<set name="time">1 minute</set>
+			<set name="duration">8 hours</set>
+			<set name="range">Touch, 30 ft</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">false</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a 2 inch silver humanoid figurine worth at least 25gp, which the spell consumes</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	
+	<element name="Portable Corpse" type="Spell" source="AAA" id="ID_LEMONCAT_SPELL_PORTABLE_CORPSE">
+		<supports>Bard, Cleric, Druid, Paladin, Wizard</supports>
+		<description>
+			<p>The caster touches the jade piece to the corpse, which reduces in size by a factor of 10, weight by a factor of 100, and turns into a robust solid jade statuette of the corpse. It also emits a dim green light in a 5ft radius. This spell fails to cast or ends early if the targeted corpse is not currently under the effect of Gentle Repose.</p>
+		</description>
+		<setters>
+			<set name="keywords">repose, portable, transport, dead, corpse, body, death, custom, lemoncat, aaa</set>
+			<set name="level">1</set>
+			<set name="school">Necromancy</set>
+			<set name="time">1 Action</set>
+			<set name="duration">10 days</set>
+			<set name="range">Touch, 30 ft</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">false</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a single piece of jade worth at least 25gp, which the spell consumes</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	
+	<element name="Copy Tome" type="Spell" source="AAA" id="ID_LEMONCAT_SPELL_COPY_TOME">
+		<supports>Artificer, Bard, Cleric, Paladin, Wizard</supports>
+		<description>
+			<p>Placing the blank parchment and obsidian dust on top of the mundane (non-magical) tome, the parchment shimmers and becomes a pristine, simply-bound, unmarked duplicate of the original tome. Pencil marks, mug rings, hidden magic, page fold marks etc. are not duplicated. The spell cannot recreate badly damaged or missing pages.</p>
+			<p class="indent"><b><i>At Higher Levels.</i></b> If cast at 2nd level, the copied tome is also resistant to damage and includes a leather spine and cover, and silk ribbon page-mark.</p>
+		</description>
+		<setters>
+			<set name="keywords">copy, book, tome, grimoire, manuscript, document, custom, lemoncat, aaa</set>
+			<set name="level">1</set>
+			<set name="school">Transmutation</set>
+			<set name="time">1 Action</set>
+			<set name="duration">Instantaneous</set>
+			<set name="range">Touch</set>
+			<set name="hasVerbalComponent">false</set>
+			<set name="hasSomaticComponent">false</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">parchment and obsidian dust worth at least 10gp total, which the spell consumes.</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">true</set>
+		</setters>
+	</element>
+	
+	<element name="Summon Oasis" type="Spell" source="AAA" id="ID_LEMONCAT_SPELL_SUMMON_OASIS">
+		<supports>Ranged, Bard, Cleric, Druid, Paladin, Ranger, Sorcerer, Warlock, Wizard</supports>
+		<description>
+			<p>Choosing an unoccupied space with a 50ft radius within range, a natural and vibrant area of land is summoned with soft ground, 4d4 fruit bearing trees, and a clean water source. The oasis can be tropical, temperate, or polar, but the temperature and weather within the area of the oasis is always comfortable. If the terrain was difficult, it is no longer difficult for the duration. If the spell is cast in the same area every day for a year, it becomes permanant.</p>
+			<p class="indent"><b><i>At Higher Levels.</i></b> For each higher level of casting, the radius is increased by 10ft and the number of fruit bearing trees increases by 1d4.</p>
+		</description>
+		<setters>
+			<set name="keywords">summon, oasis, safety, camp, party, custom, lemoncat, aaa</set>
+			<set name="level">6</set>
+			<set name="school">Conjuration</set>
+			<set name="time">1 minute</set>
+			<set name="duration">24 Hours</set>
+			<set name="range">100ft</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a drop of water, a leaf, and an emerald worth 100gp.</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+
+	<element name="Create-A-Crate" type="Spell" source="AAA" id="ID_LEMONCAT_SPELL_SUMMON_CRATE">
+		<supports>Ranged, Artificer, Bard, Wizard</supports>
+		<description>
+			<p>A 2ft cube wooden crate filled with straw packing is summoned in an unoccupied space within range, ideal for shipping and storing items. The crate's AC is 10, it has 35 HP, and it's empty weight is 100 pounds. Its weight capacity is 3,000lbs and its stacking strength is 9,000lbs.</p>
+		</description>
+		<setters>
+			<set name="keywords">summon, crate, storage, box, container, custom, lemoncat, aaa</set>
+			<set name="level">1</set>
+			<set name="school">Conjuration</set>
+			<set name="time">1 Minute</set>
+			<set name="duration">Instantaneous</set>
+			<set name="range">30ft</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">a large splinter of wood, a nail, and a piece of straw</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	
+	<element name="Summon Casino" type="Spell" source="AAA" id="ID_LEMONCAT_SPELL_SUMMON_CASINO">
+		<supports>Ranged, Bard, Sorcerer, Warlock, Wizard</supports>
+		<description>
+			<p>A spectral humanoid in a spectral tuxedo suit appears in a 10 foot square unnocupied space within range, along with 6 wooden stools, a red felt topped card table, and a chest filled with common games. Upon request the spectre is able to host a variety of games such as Blackjack, Chess, Poker, Roulette, Dice, Three-Dragon-Ante, and more.</p>
+			<p>The spectre does not cheat, and has a passive insight of 25 to detect cheating players. If the spectre detects any cheating, it immediately turns red and the spell ends. In the last 15 minutes of the spell, the summoned spectre and equipment gradually fade, giving time for the caster to renew the spell or allow it all to dissaperate.</p>
+			<p class="indent"><b><i>At Higher Levels.</i></b> For each higher level of casting, the duration of the spell is increased by 4 Hours.</p>
+		</description>
+		<setters>
+			<set name="keywords">summon, casino, game, party, custom, lemoncat, aaa</set>
+			<set name="level">1</set>
+			<set name="school">Conjuration</set>
+			<set name="time">1 minute</set>
+			<set name="duration">4 Hours</set>
+			<set name="range">30ft</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">5gp per spell level which the spell consumes, and a deck of cards.</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">true</set>
+		</setters>
+	</element>
+
+	<element name="Mandala" type="Spell" source="AAA" id="ID_LEMONCAT_SPELL_MANDALA">
+		<supports>Bard, Cleric, Druid, Paladin, Ranger, Sorcerer, Warlock, Wizard</supports>
+		<description>
+			<p>This spell fails if cast on Difficult Terrain or under water. The terrain in a 10ft radius is flattened, cleared of minor debris and grass, revealing the natural earth, stone, or tile. Fine colored sand materializes, covering the cleared surface in an intricate mandala with yourself in the center.</p>
+			<p>For 1 round after casting, the mandala remains undisturbed by footprints, gentle wind, and other environmental factors that would disturb loose sand.</p>
+			<p class="indent"><b><i>At Higher Levels.</i></b> For each higher level of casting, the radius of the mandala is increased by 10ft, and the mandala remains undisturbed for 1 additional round.</p>
+		</description>
+		<setters>
+			<set name="keywords">mandala, alarm, camp, custom, lemoncat, aaa</set>
+			<set name="level">1</set>
+			<set name="school">Conjuration</set>
+			<set name="time">1 Action</set>
+			<set name="duration">Instantaneous</set>
+			<set name="range">Self</set>
+			<set name="hasVerbalComponent">false</set>
+			<set name="hasSomaticComponent">false</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">A pinch of sand.</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">true</set>
+		</setters>
+	</element>
+
+	<element name="Censor's Delight" type="Spell" source="AAA" id="ID_LEMONCAT_SPELL_CENSORS_DELIGHT">
+		<supports>Ranged, Spell Saving Throw, Artificer, Bard, Cleric, Paladin, Wizard</supports>
+		<description>
+			<p>The caster can choose up to 10 willing creatures (including themselves) within range to apply the spell effects to.</p>
+			<p class="indent"><b><i>Audible or spoken obscenities are replaced with:</i></b> Bell chimes, mute, static, trumpet noises, dog barking, baby babbling, laughter, bird chirps;</p>
+			<p class="indent"><b><i>Ledgible, gestured, or visual obscenities are masked with:</i></b> A black bar of pure shadow, a mosaic effect of light, a fluffy white cloud, a foam of soap bubbles, images of kittens, images of heart shapes, a depiction of a locally favored deity, a magestic image of the king or queen, children's crayon art;</p>
+			<p class="indent"><b><i>If the spell is cast on a marble statue</i></b> of a deity with good, lawful, or neutral alignment, the spell instead effects all creatures within a radius of 100ft and lasts 24 hours. If the spell is cast on the same statue every day for 30 days, it becomes permanent.
+			It is popular at public bath houses, places of worship, and places of public speaking.</p>
+			<p class="indent"><b><i>At Higher Levels.</i></b> For each higher level of casting on a statue, the radius of the effect is increased by 25ft.</p>
+			<p>A creature can resist the effects of the spell by succeeding on a Wisdom saving throw, DC18</p>
+		</description>
+		<setters>
+			<set name="keywords">censor, delight, rude, swear, profan, obscen, custom, lemoncat, aaa</set>
+			<set name="level">1</set>
+			<set name="school">Illusion</set>
+			<set name="time">1 Action</set>
+			<set name="duration">8 Hours</set>
+			<set name="range">30ft</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">A bar of soap</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">true</set>
+		</setters>
+	</element>
+
+	<element name="End of the Rainbow" type="Spell" source="AAA" id="ID_LEMONCAT_SPELL_END_OF_THE_RAINBOW">
+		<supports>Ranged, Artificer, Bard, Ranger, Sorcerer, Warlock, Wizard</supports>
+		<description>
+			<p>An illusory rainbow-colored rope that only you can see is created in a direct line between yourself and the most valuable hoard of wealth within 1 mile at the time of casting.</p>
+		</description>
+		<setters>
+			<set name="keywords">rainbow, wealth, custom, lemoncat, aaa</set>
+			<set name="level">3</set>
+			<set name="school">Divination</set>
+			<set name="time">1 Minute</set>
+			<set name="duration">1 Hour</set>
+			<set name="range">Self</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">Butterfly wings, a four-leaf clover, or a flower bouquet</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">true</set>
+		</setters>
+	</element>
+	
+	<element name="Glutton's Gift" type="Spell" source="AAA" id="ID_LEMONCAT_SPELL_GLUTTONS_GIFT">
+		<supports>Ranged, Bard, Cleric, Wizard</supports>
+		<description>
+			<p>Yourself and any other willing creatures of your choice within a 10ft radius (at the time of casting) can not become full or sick, no matter how much food or drink is consumed within the spell's duration. Creatures can become tipsy, but not drunk. This spell has no effect on any poison or disease that may be consumed.</p>
+		</description>
+		<setters>
+			<set name="keywords">glutton, food, drink, party, custom, lemoncat, aaa</set>
+			<set name="level">1</set>
+			<set name="school">Transmutation</set>
+			<set name="time">1 Action</set>
+			<set name="duration">2 Hours</set>
+			<set name="range">Self</set>
+			<set name="hasVerbalComponent">false</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">A set of silver cutlery worth at least 5gp.</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">true</set>
+		</setters>
+	</element>
+		
+	<element name="Curse of Minor Annoyance" type="Spell" source="AAA" id="ID_LEMONCAT_SPELL_CURSE_OF_MINOR_ANNOYANCE">
+		<supports>Spell Saving Throw, Bard, Sorcerer, Warlock</supports>
+		<description>
+			<p>Touching a creature within 5ft of you, you bestow a curse upon it that attracts small amounts of inconsequential bad-luck. For the duration of the spell the creature experiences bad-luck such as dropping coins, wobbly chairs, a passing bird poops on their shoulder, the food in the tavern is stale, they fall out of bed, etc.</p>
+			<p>The targeted creature can end the spell if they are aware of or suspect the curse, with a Wisdom Saving Throw (DC15).</p>
+			<p>The creature cannot be targeted by the spell again until a full day passed, or if they wear a divine symbol or artifact.</p>
+		</description>
+		<setters>
+			<set name="keywords">curse, minor, annoy, custom, lemoncat, aaa</set>
+			<set name="level">1</set>
+			<set name="school">Enchantment</set>
+			<set name="time">1 Action</set>
+			<set name="duration">8 Hours</set>
+			<set name="range">Touch</set>
+			<set name="hasVerbalComponent">false</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">false</set>
+			<set name="materialComponent"></set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+	
+	<element name="Wealth Tidy" type="Spell" source="AAA" id="ID_LEMONCAT_SPELL_WEALTH_TIDY">
+		<supports>Ranged, Cleric, Paladin, Warlock, Wizard</supports>
+		<description>
+			<p>An incorporeal spirit is summoned within the cube and proceeds, at great speed, to telekinetically categorize the wealth within the cube into neat organized stacks as follows: books, papers, scrolls, gems, coins (by denomination), ores, weapons, armor, art objects, cloth, food, potions, misc.; Other categories at the DM's discretion. The spirit is not able to leave the cube, and dissapears at the end of the spell's duration.</p>
+			<p class="indent"><b><i>At Higher Levels.</i></b> For each additional slot level of casting, the cube is increased by an additional 5ft.</p>
+		</description>
+		<setters>
+			<set name="keywords">wealth, tidy, organize, stor, custom, lemoncat, aaa</set>
+			<set name="level">1</set>
+			<set name="school">Conjuration</set>
+			<set name="time">1 Action</set>
+			<set name="duration">1 Minute</set>
+			<set name="range">20ft cube</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">10gp which the spell consumes.</set>
+			<set name="isConcentration">false</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+
+	<element name="Reconstitute Gems" type="Spell" source="AAA" id="ID_LEMONCAT_SPELL_REMAKE_GEMS">
+		<supports>Artificer, Bard, Cleric, Druid, Paladin, Wizard</supports>
+		<description>
+			<p>Pouring the component into a container of loose, mixed gem dust and concentrating intensely, the gem dust liquifies and shifts, coagulating into solid, uncut gems of equivalent types and values.</p>
+		</description>
+		<setters>
+			<set name="keywords">gem, make, mend, repair, fix, organize, stor, custom, lemoncat, aaa</set>
+			<set name="level">3</set>
+			<set name="school">Transmutation</set>
+			<set name="time">10 Minutes</set>
+			<set name="duration">Instantaneous</set>
+			<set name="range">5ft cube</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">A Flask of Holy Water, which the spell consumes.</set>
+			<set name="isConcentration">true</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+
+</elements>
