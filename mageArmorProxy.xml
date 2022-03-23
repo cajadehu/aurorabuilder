@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Mage / Stone Armor Proxy</name>
+		<description>Mage / Stone Armor Proxy</description>
+		<author url="https://github.com/cajadehu/aurorabuilder/">LemonCat</author>
+		<update version="0.0.2">
+			<file name="lemoncat_mageArmorProxy.xml" url="https://github.com/cajadehu/aurorabuilder/blob/main/lemoncat_mageArmorProxy.xml" />
+		</update>
+	</info>
+
+	<element name="Mage Armor" type="Magic Item" source="AAA" id="ID_AURORA_EXAMPLES_MAGIC_ITEM_PROXY_MAGE_ARMOR">
+		<description>
+			<p>Your base AC becomes 13 + your Dexterity modifier.</p>
+			<div class="reference">
+				<div element="ID_PHB_SPELL_MAGE_ARMOR" />
+			</div>
+		</description>
+		<setters>
+			<set name="keywords">ac,armor,mage</set>
+			<set name="category">Proxy Effects</set>
+			<set name="type">Proxy Effect</set>
+			<set name="slot">misc</set>
+		</setters>
+		<rules>
+			<stat name="ac:mage armor" value="13" />
+			<stat name="ac:mage armor" value="dexterity:modifier" />
+			<stat name="ac:calculation" value="ac:mage armor" bonus="calculation" />
+		</rules>
+	</element>
+
+	<element name="Stone Sorcerer Armor" type="Magic Item" source="AAA" id="ID_AURORA_EXAMPLES_MAGIC_ITEM_PROXY_STONE_SORCERER_ARMOR">
+		<description>
+			<p>Your base AC becomes 13 + your Constitution modifier.</p>
+		</description>
+		<setters>
+			<set name="keywords">ac,armor,sorcerer,stone</set>
+			<set name="category">Proxy Effects</set>
+			<set name="type">Proxy Effect</set>
+			<set name="slot">misc</set>
+		</setters>
+		<rules>
+			<stat name="ac:stone sorcerer armor" value="13" />
+			<stat name="ac:stone sorcerer armor" value="constitution:modifier" />
+			<stat name="ac:calculation" value="ac:stone sorcerer armor" bonus="calculation" />
+		</rules>
+	</element>    
+</elements>

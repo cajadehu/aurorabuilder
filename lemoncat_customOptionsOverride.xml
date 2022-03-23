@@ -5,8 +5,8 @@
 		<name>Custom Options Override</name>
 		<description>Custom Options Override</description>
 		<author url="https://github.com/cajadehu/aurorabuilder/">LemonCat</author>
-		<update version="0.0.3">
-			<file name="lemoncat_customOptionsOverride.xml" url="https://github.com/cajadehu/aurorabuilder/lemoncat_customOptionsOverride.xml" />
+		<update version="0.0.4">
+			<file name="lemoncat_customOptionsOverride.xml" url="https://github.com/cajadehu/aurorabuilder/blob/main/lemoncat_customOptionsOverride.xml" />
 		</update>
 	</info>
 	<element name="Maximum Hit Points" type="Option" source="AAA" id="ID_INTERNAL_OPTION_ALLOW_MAX_HP">

@@ -4,8 +4,8 @@
 		<name>Squirrelan</name>
 		<description>Squirrelan</description>
 		<author url="https://github.com/cajadehu/aurorabuilder/">LemonCat</author>
-		<update version="0.0.1">
-			<file name="race-squirrelan.xml" url="https://github.com/cajadehu/aurorabuilder/race-squirrelan.xml" />
+		<update version="0.0.2">
+			<file name="race-squirrelan.xml" url="https://github.com/cajadehu/aurorabuilder/blob/main/race-squirrelan.xml" />
 		</update>
 	</info>
 

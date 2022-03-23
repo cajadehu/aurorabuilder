@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Packs</name>
+		<description>Packs</description>
+		<author url="https://github.com/cajadehu/aurorabuilder/">LemonCat</author>
+		<update version="0.0.2">
+			<file name="lemoncat_packs.xml" url="https://github.com/cajadehu/aurorabuilder/blob/main/lemoncat_packs.xml" />
+		</update>
+	</info>
+	<element name="LemonCat's Pack" type="Item" source="AAA" id="ID_LEMONCAT_ITEM_STANDARD_PACK">
+		<description>
+			<p>Includes:
+			backpack, 
+			10 feet of string, 
+			bell (1gp), 
+			10 candles (1cp ea), 
+			6 flasks of oil (1sp 1lb ea), 
+			10 rations (5sp 2lb ea), 
+			tinderbox (5sp 1lb), 
+			waterskin (2sp 5lb), 
+			bulleye lantern (10gp 2lb), 
+			whetstone (1cp 1lb), 
+			soap (2cp), 
+			6 torches (1cp 1lb ea), 
+			chalk (1cp ea), 
+			2 pouch (5sp 1lb ea), 
+			2 sack (1cp ½lb ea), 
+			signal whistle (5cp).
+			</p><p>
+			TOTAL VALUE:18g 5s 7c
+			</p><p>
+			TOTAL WEIGHT: 44 lbs
+			</p>
+		</description>
+		<setters>
+			<set name="category">Equipment Packs</set>
+			<set name="cost" currency="gp">20</set>
+			<set name="weight" lb="10">10 lbs.</set>
+			<set name="keywords">lemoncat, aaa</set>
+		</setters>
+		<extract>
+			<item>ID_WOTC_PHB_ITEM_BACKPACK</item>
+			<item>ID_WOTC_PHB_ITEM_STRING_10FEET</item>
+			<item>ID_WOTC_PHB_ITEM_BELL</item>
+			<item amount="10">ID_WOTC_PHB_ITEM_CANDLE</item>
+			<item amount="6">ID_WOTC_PHB_ITEM_OIL_FLASK</item>
+			<item amount="10">ID_WOTC_PHB_ITEM_RATIONS_1DAY</item>
+			<item>ID_WOTC_PHB_ITEM_TINDERBOX</item>
+			<item>ID_WOTC_PHB_ITEM_WATERSKIN</item>
+			<item>ID_WOTC_PHB_ITEM_LANTERN_BULLSEYE</item>
+			<item>ID_WOTC_PHB_ITEM_WHETSTONE</item>
+			<item>ID_WOTC_PHB_ITEM_SOAP</item>
+			<item amount="6">ID_WOTC_PHB_ITEM_TORCH</item>
+			<item>ID_WOTC_PHB_ITEM_CHALK_1PIECE</item>
+			<item amount="2">ID_WOTC_PHB_ITEM_POUCH</item>
+			<item amount="2">ID_WOTC_PHB_ITEM_SACK</item>
+			<item>ID_WOTC_PHB_ITEM_SIGNALWHISTLE</item>
+		</extract>
+	</element>
+</elements>

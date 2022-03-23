@@ -4,8 +4,8 @@
 		<name>Mothian</name>
 		<description>Mothian</description>
 		<author url="https://github.com/cajadehu/aurorabuilder/">LemonCat</author>
-		<update version="0.0.1">
-			<file name="race-mothian.xml" url="https://github.com/cajadehu/aurorabuilder/race-mothian.xml" />
+		<update version="0.0.2">
+			<file name="race-mothian.xml" url="https://github.com/cajadehu/aurorabuilder/blob/main/race-mothian.xml" />
 		</update>
 	</info>
 

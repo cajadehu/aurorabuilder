@@ -4,8 +4,8 @@
 		<name>Golemkin</name>
 		<description>Golemkin</description>
 		<author url="https://github.com/cajadehu/aurorabuilder/">LemonCat</author>
-		<update version="0.0.2">
-			<file name="race-golemkin.xml" url="https://github.com/cajadehu/aurorabuilder/race-golemkin.xml" />
+		<update version="0.0.3">
+			<file name="race-golemkin.xml" url="https://github.com/cajadehu/aurorabuilder/blob/main/race-golemkin.xml" />
 		</update>
 	</info>
 
