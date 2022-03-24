@@ -4,7 +4,7 @@
 		<name>Special Weapons</name>
 		<description>Special Weapons</description>
 		<author url="https://github.com/cajadehu/aurorabuilder/">LemonCat</author>
-		<update version="0.0.9">
+		<update version="0.1.1">
 			<file name="lemoncat_specialWeapons.xml" url="https://github.com/cajadehu/aurorabuilder/blob/main/lemoncat_specialWeapons.xml" />
 		</update>
 	</info>
@@ -397,9 +397,12 @@
 	<element name="Barkskin Bracelet" type="Magic Item" source="AAA" id="ID_LEMONCAT_BARKSKIN_BRACELET">
 		<description>
 			<p>This verawood bracelet is inlaid with snakewood in a striped pattern, and is completely smooth to the touch.</p>
-			<p>When the wearer casts the Barkskin spell on a creature (or themselves), Concentration is not needed to maintain the spell.</p>
-			<p>For each charge expended upon the time of casting Barkskin, the AC increases by 1.</p>
-			<p>The bracelet can hold up to 3 charges and regains 1 charge at dawn.</p>
+			<p class="indent">When the wearer casts the Barkskin spell on a creature or themselves, the caster can apply the following optional modifiers:</p>
+			<ul>
+				<li>Concentration is not needed to maintain the spell.</li>
+				<li>The AC cannot be less than 19, but the Duration is reduced to 5 minutes.</li>
+				<li>If Barkskin is active on a creature, you can expend a level 1 spell slot to recast it on that creature.</li>
+			</ul>
 		</description>
 		<setters>
 			<set name="keywords">bracelet, barkskin, spell, cast, custom, lemoncat, aaa</set>
@@ -701,7 +704,54 @@
 		</rules>
 	</element>
 	
-		<element name="Book of Shadows, +0" type="Magic Item" source="AAA" id="ID_LEMONCAT_BOOK_OF_SHADOWS_0">
+	<element name="Druidic Defense" type="Magic Item" source="AAA" id="ID_LEMONCAT_DRUIDIC_DEFENSE">
+		<description>
+			<p class="indent"><b><i>This item only works for Druids</i></b> Regardless of your physical form (Humanoid, Wild Shape, Elemental, Gaseous), while you are in possession of this item, are wearing no armor, and not wielding a shield, your AC equals 10 + your Dexterity modifier + your Wisdom modifier.</p>
+		</description>
+		<sheet>
+			<description>
+				<p class="indent"><b><i>This item only works for Druids</i></b> Regardless of your physical form (Humanoid, Wild Shape, Elemental, Gaseous), while you are in possession of this item, you are wearing no armor, and not wielding a shield, your AC equals {{ac:unarmored defense monk}}.</p>
+			</description>
+		</sheet>
+		<setters>
+			<set name="keywords">druid, ac, defense, armor, lemoncat, aaa</set>
+			<set name="category">Wondrous Items</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="type">Wondrous Item</set>
+			<set name="slot">misc</set>
+			<set name="rarity">Common</set>
+		</setters>
+		<rules>
+			<stat name="ac:unarmored defense monk:base" value="10" />
+			<stat name="ac:unarmored defense monk:dexterity" value="dexterity:modifier" />
+			<stat name="ac:unarmored defense monk:wisdom" value="wisdom:modifier" />
+			<stat name="ac:unarmored defense monk" value="ac:unarmored defense monk:base" />
+			<stat name="ac:unarmored defense monk" value="ac:unarmored defense monk:dexterity" />
+			<stat name="ac:unarmored defense monk" value="ac:unarmored defense monk:wisdom" />
+			<stat name="ac:calculation" value="ac:unarmored defense monk" bonus="calculation" equipped="[armor:none],[shield:none]" alt="Druidic Defense" requirements="[level:druid:1]" />
+		</rules>
+	</element>
+		
+	<element name="Druidic Telepathy" type="Magic Item" source="AAA" id="ID_LEMONCAT_DRUIDIC_TELEPATHY">
+		<description>
+			<p class="indent"><b><i>This item only works for Druids</i></b> Regardless of your physical form (Humanoid, Wild Shape, Elemental, Gaseous), while you are in possession of this item, you have the magical ability to communicate mentally with any number of willing creatures you can see within 30 feet of you. A contacted creature doesn’t need to share a language with you, but it must be able to understand at least one language. Your telepathic link to a creature is broken if you and the creature move more than 30 feet apart, if either of you is incapacitated, or if either of you mentally breaks the contact (no action required).</p>
+		</description>
+		<sheet>
+			<description>
+				<p class="indent"><b><i>This item only works for Druids</i></b> Regardless of your physical form (Humanoid, Wild Shape, Elemental, Gaseous), while you are in possession of this item, you have the magical ability to communicate mentally with any number of willing creatures you can see within 30 feet of you. A contacted creature doesn’t need to share a language with you, but it must be able to understand at least one language. Your telepathic link to a creature is broken if you and the creature move more than 30 feet apart, if either of you is incapacitated, or if either of you mentally breaks the contact (no action required).</p>
+			</description>
+		</sheet>
+		<setters>
+			<set name="keywords">druid, telepathy, talk, chat, message, lemoncat, aaa</set>
+			<set name="category">Wondrous Items</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="type">Wondrous Item</set>
+			<set name="slot">misc</set>
+			<set name="rarity">Common</set>
+		</setters>
+	</element>
+	
+	<element name="Book of Shadows, +0" type="Magic Item" source="AAA" id="ID_LEMONCAT_BOOK_OF_SHADOWS_0">
 		<description>
 			<p>While this book is in your posession, you gain a +0 bonus spell attack rolls and to the saving throw DCs of all of your spells, not just your Warlock spells.</p>
 			<p class="indent">In addition, you can regain one warlock spell slot as an action while holding the book. You can’t use this property again until you finish a long rest.</p>
@@ -784,6 +834,201 @@
 			<stat name="spellcasting:attack" value="3" bonus="book of shadows" />
 			<stat name="spellcasting:dc"     value="3" bonus="book of shadows" />
 		</rules>
+	</element>
+
+	<element name="Weapon of Vermin Stunning" type="Magic Item" source="AAA" id="ID_LEMONCAT_WEAPON_OF_VERMIN_STUNNING">
+		<description>
+			<p>When you strike the ground using this magic weapon, all vermin within a 30ft radius sphere are Stunned until the start of your next turn.</p>
+		</description>
+		<setters>
+			<set name="keywords">melee, lemoncat, aaa, custom</set>
+			<set name="category">Magic Weapons</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="type" addition="any">Weapon</set>
+			<set name="rarity">Common</set>
+			<set name="weapon">ID_INTERNAL_WEAPON_CATEGORY_SIMPLE_MELEE||ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE</set>
+			<set name="name-format">{{parent}} of Vermin Stunning</set>
+		</setters>
+	</element>
+
+	<element name="Weapon of Gloom" type="Magic Item" source="AAA" id="ID_LEMONCAT_WEAPON_OF_GLOOM">
+		<description>
+			<p>Speaking a command word to activate or deactivate this feature, this magic weapon absorbs natural light within a 10ft sphere. Dim light becomes Darkness. Day light becomes Dim light.</p>
+		</description>
+		<setters>
+			<set name="keywords">melee, ranged, lemoncat, aaa, custom</set>
+			<set name="category">Magic Weapons</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="type" addition="any">Weapon</set>
+			<set name="rarity">Common</set>
+			<set name="weapon">ID_INTERNAL_WEAPON_CATEGORY_SIMPLE_MELEE||ID_INTERNAL_WEAPON_CATEGORY_SIMPLE_RANGED||ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE||ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED</set>
+			<set name="name-format">{{parent}} of Gloom</set>
+		</setters>
+	</element>
+
+	<element name="Weapon of Magnetism" type="Magic Item" source="AAA" id="ID_LEMONCAT_WEAPON_OF_MAGNETISM">
+		<description>
+			<p>Once per day while weilding this magic weapon, you can give yourself advantage on a single attack against a creature wearing metal armor.</p>
+		</description>
+		<setters>
+			<set name="keywords">melee, ranged, lemoncat, aaa, custom</set>
+			<set name="category">Magic Weapons</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="type" addition="any">Weapon</set>
+			<set name="rarity">Common</set>
+			<set name="weapon">ID_INTERNAL_WEAPON_CATEGORY_SIMPLE_MELEE||ID_INTERNAL_WEAPON_CATEGORY_SIMPLE_RANGED||ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE||ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED</set>
+			<set name="name-format">{{parent}} of Magnetism</set>
+		</setters>
+	</element>
+
+	<element name="Weapon of Magnetism" type="Magic Item" source="AAA" id="ID_LEMONCAT_WEAPON_OF_MAGNETISM">
+		<description>
+			<p>Once per day while weilding this magic weapon, you can give yourself advantage on a single attack against a creature wearing metal armor.</p>
+		</description>
+		<setters>
+			<set name="keywords">melee, ranged, lemoncat, aaa, custom</set>
+			<set name="category">Magic Weapons</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="type" addition="any">Weapon</set>
+			<set name="rarity">Common</set>
+			<set name="weapon">ID_INTERNAL_WEAPON_CATEGORY_SIMPLE_MELEE||ID_INTERNAL_WEAPON_CATEGORY_SIMPLE_RANGED||ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE||ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED</set>
+			<set name="name-format">{{parent}} of Magnetism</set>
+		</setters>
+	</element>
+
+	<element name="Weapon of Tracking" type="Magic Item" source="AAA" id="ID_LEMONCAT_WEAPON_OF_TRACKING">
+		<description>
+			<p>You have advantage on Survival Checks to track the most recent creature you successfully hit with this magic weapon, provided that it has at least one hit point.</p>
+		</description>
+		<setters>
+			<set name="keywords">melee, ranged, lemoncat, aaa, custom</set>
+			<set name="category">Magic Weapons</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="type" addition="any">Weapon</set>
+			<set name="rarity">Common</set>
+			<set name="weapon">ID_INTERNAL_WEAPON_CATEGORY_SIMPLE_MELEE||ID_INTERNAL_WEAPON_CATEGORY_SIMPLE_RANGED||ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE||ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED</set>
+			<set name="name-format">{{parent}} of Tracking</set>
+		</setters>
+	</element>
+
+	<element name="Umbrella Weapon" type="Magic Item" source="AAA" id="ID_LEMONCAT_UMBRELLA_WEAPON">
+		<description>
+			<p>While this magic weapon is in your possession, all rain and hail within a 5ft radius sphere is deflected away from you, keeping you dry. This property does not function when you are underwater.</p>
+		</description>
+		<setters>
+			<set name="keywords">melee, ranged, lemoncat, aaa, custom</set>
+			<set name="category">Magic Weapons</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="type" addition="any">Weapon</set>
+			<set name="rarity">Common</set>
+			<set name="weapon">ID_INTERNAL_WEAPON_CATEGORY_SIMPLE_MELEE||ID_INTERNAL_WEAPON_CATEGORY_SIMPLE_RANGED||ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE||ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED</set>
+			<set name="name-format">Umbrella {{parent}}</set>
+		</setters>
+	</element>
+
+	<element name="Weapon of Disguise" type="Magic Item" source="AAA" id="ID_LEMONCAT_WEAPON_OF_DISGUISE">
+		<description>
+			<p>Once per day, you can speak a command word to transform this magic weapon into a plushie (small stuffed animal toy) for 1 hour. You can end the effect early by speaking the command word again. This is a effect polymorphic transformation, not an illusion.</p>
+		</description>
+		<setters>
+			<set name="keywords">melee, ranged, lemoncat, aaa, custom</set>
+			<set name="category">Magic Weapons</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="type" addition="any">Weapon</set>
+			<set name="rarity">Common</set>
+			<set name="weapon">ID_INTERNAL_WEAPON_CATEGORY_SIMPLE_MELEE||ID_INTERNAL_WEAPON_CATEGORY_SIMPLE_RANGED||ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE||ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED</set>
+			<set name="name-format">{{parent}} of Disguise</set>
+		</setters>
+	</element>
+
+	<element name="Weapon of Subdual" type="Magic Item" source="AAA" id="ID_LEMONCAT_WEAPON_OF_SUBDUAL">
+		<description>
+			<p>This magic weapon is unable to deal lethal damage under any circumstances. If a creature (as a direct result of being struck by this weapon or its ammunition) is forced to make a Death Saving Throw, that creature immediately Stablizes.</p>
+		</description>
+		<setters>
+			<set name="keywords">melee, ranged, lemoncat, aaa, custom</set>
+			<set name="category">Magic Weapons</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="type" addition="any">Weapon</set>
+			<set name="rarity">Common</set>
+			<set name="weapon">ID_INTERNAL_WEAPON_CATEGORY_SIMPLE_MELEE||ID_INTERNAL_WEAPON_CATEGORY_SIMPLE_RANGED||ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE||ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED</set>
+			<set name="name-format">{{parent}} of Subdual</set>
+		</setters>
+	</element>
+
+	<element name="Weapon of Sobriety" type="Magic Item" source="AAA" id="ID_LEMONCAT_WEAPON_OF_SOBRIETY">
+		<description>
+			<p>While wielding this magic weapon, the Drunk Condition is suppressed (if the wielder so chooses).</p>
+		</description>
+		<setters>
+			<set name="keywords">melee, ranged, lemoncat, aaa, custom</set>
+			<set name="category">Magic Weapons</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="type" addition="any">Weapon</set>
+			<set name="rarity">Common</set>
+			<set name="weapon">ID_INTERNAL_WEAPON_CATEGORY_SIMPLE_MELEE||ID_INTERNAL_WEAPON_CATEGORY_SIMPLE_RANGED||ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE||ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED</set>
+			<set name="name-format">{{parent}} of Sobriety</set>
+		</setters>
+	</element>
+
+	<element name="Weapon of the Mask" type="Magic Item" source="AAA" id="ID_LEMONCAT_WEAPON_OF_THE_MASK">
+		<description>
+			<p>While wielding this magic weapon, a wooden mask (of the weilder's preferred design) magically appears on their face and cannot be removed.</p>
+		</description>
+		<setters>
+			<set name="keywords">melee, ranged, lemoncat, aaa, custom</set>
+			<set name="category">Magic Weapons</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="type" addition="any">Weapon</set>
+			<set name="rarity">Common</set>
+			<set name="weapon">ID_INTERNAL_WEAPON_CATEGORY_SIMPLE_MELEE||ID_INTERNAL_WEAPON_CATEGORY_SIMPLE_RANGED||ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE||ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED</set>
+			<set name="name-format">{{parent}} of the Mask</set>
+		</setters>
+	</element>
+
+	<element name="Weapon of Glass" type="Magic Item" source="AAA" id="ID_LEMONCAT_WEAPON_OF_GLASS">
+		<description>
+			<p>This magic weapon is made of beatiful, strong glass. If a light emitting spell is cast on it, all ranges of that light spell are doubled. For Example, if the Light cantrip is cast on this magic weapon, the brightness ranges are 40/40 instead of the usual 20/20.</p>
+		</description>
+		<setters>
+			<set name="keywords">melee, ranged, lemoncat, aaa, custom</set>
+			<set name="category">Magic Weapons</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="type" addition="any">Weapon</set>
+			<set name="rarity">Common</set>
+			<set name="weapon">ID_INTERNAL_WEAPON_CATEGORY_SIMPLE_MELEE||ID_INTERNAL_WEAPON_CATEGORY_SIMPLE_RANGED||ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE||ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED</set>
+			<set name="name-format">{{parent}} of Glass</set>
+		</setters>
+	</element>
+
+	<element name="Weapon of Gleaming" type="Magic Item" source="AAA" id="ID_LEMONCAT_WEAPON_OF_GLEAMING">
+		<description>
+			<p>This magic weapon never gets dirty.</p>
+		</description>
+		<setters>
+			<set name="keywords">melee, ranged, lemoncat, aaa, custom</set>
+			<set name="category">Magic Weapons</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="type" addition="any">Weapon</set>
+			<set name="rarity">Common</set>
+			<set name="weapon">ID_INTERNAL_WEAPON_CATEGORY_SIMPLE_MELEE||ID_INTERNAL_WEAPON_CATEGORY_SIMPLE_RANGED||ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE||ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED</set>
+			<set name="name-format">{{parent}} of Gleaming</set>
+		</setters>
+	</element>
+
+	<element name="Weapon of Convenience" type="Magic Item" source="AAA" id="ID_LEMONCAT_WEAPON_OF_CONVENIENCE">
+		<description>
+			<p>This magic weapon magically teleports to your free hand if available, and if it is within 20 feet of you when you roll initiative.</p>
+		</description>
+		<setters>
+			<set name="keywords">melee, ranged, lemoncat, aaa, custom</set>
+			<set name="category">Magic Weapons</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="type" addition="any">Weapon</set>
+			<set name="rarity">Common</set>
+			<set name="weapon">ID_INTERNAL_WEAPON_CATEGORY_SIMPLE_MELEE||ID_INTERNAL_WEAPON_CATEGORY_SIMPLE_RANGED||ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE||ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED</set>
+			<set name="name-format">{{parent}} of Convenience</set>
+		</setters>
 	</element>
 
 </elements>
