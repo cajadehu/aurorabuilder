@@ -4,10 +4,28 @@
 		<name>Special Weapons</name>
 		<description>Special Weapons</description>
 		<author url="https://github.com/cajadehu/aurorabuilder/">LemonCat</author>
-		<update version="0.1.1">
+		<update version="0.1.2">
 			<file name="lemoncat_specialWeapons.xml" url="https://github.com/cajadehu/aurorabuilder/blob/main/lemoncat_specialWeapons.xml" />
 		</update>
 	</info>
+	
+	<!-- UPDATE LOG
+	0.1.2
+		Book of shadows no longer has an equipment slot, just attunement
+		All purpose tool +0 now requires 1 level of artificer, description corrected
+		Removed a duplicate element
+		Corrected spelling
+		Band of Wave Calling description corrected
+		Churn of plenty description corrected
+		Amulet of Kenku Blessing adds tool proficiencies as described
+		Brass Brazier of Phoenix now has a misc slot to equip it. this shows the description on the sheet.
+		I learned how to spell 'dowsing'
+		Added Ring of Shape Water
+	0.1.1
+		Added Common rarity magic weapon upgrades
+		I learned how to spell 'choker'
+	-->
+	
 	<element name="Shillelagh Club" type="Weapon" source="AAA" id="ID_LEMONCAT_WEAPON_SHILLELAGH_CLUB">
 		<supports>ID_INTERNAL_WEAPON_CATEGORY_SIMPLE_MELEE, ID_INTERNAL_DAMAGE_TYPE_BLUDGEONING, ID_INTERNAL_WEAPON_PROPERTY_LIGHT, ID_INTERNAL_WEAPON_GROUP_CLUBS</supports>
 		<requirements>ID_PHB_SPELL_SHILLELAGH</requirements>
@@ -361,6 +379,23 @@
 		</rules>
 	</element>
 	
+	<element name="Ring of Shape Water" type="Magic Item" source="AAA" id="ID_LEMONCAT_RING_SHAPE_WATER">
+		<description>
+			<p>While wearing this ring you can cast the Shape Water cantrip at will.</p>
+		</description>
+		<setters>
+			<set name="keywords">shape, water, custom, lemoncat, aaa</set>
+			<set name="category">Rings</set>
+			<set name="type">Ring</set>
+			<set name="slot">ring</set>
+			<set name="attunement">false</set>
+			<set name="rarity">Common</set>
+		</setters>
+		<rules>
+			<grant type="Spell" id="ID_XGTE_SPELL_SHAPE_WATER" level="1" />
+		</rules>
+	</element>
+	
 	<element name="Thieves' Bracelet" type="Magic Item" source="AAA" id="ID_LEMONCAT_THIEVES_BRACELET">
 		<description>
 			<p>This extremely ornate metal bracelet appears to be finely engraved with intricate depictions of birds.</p>
@@ -379,7 +414,7 @@
 	
 	<element name="Elemental Bracelet" type="Magic Item" source="AAA" id="ID_LEMONCAT_ELEMENTAL_BRACELET">
 		<description>
-			<p>This ivory bracelet is engraved with simplistic icons of the elements: acid, cold, fire, lightning, and thunder.</p>
+			<p>This ivory bracelet is engraved with simplistic icons of the elements: <i>acid, cold, fire, lightning, and thunder</i>.</p>
 			<p>When the wearer casts a spell that does elemental damage of a type listed above, the caster can expend one charge to alter that damage to that of a different element of a type listed above.</p>
 			<p>For example if the fireball spell were cast, one charge could be expended by the caster to change the damage type from fire to acid.</p>
 			<p>The bracelet can hold up to 5 charges and regains 1 charge at dawn.</p>
@@ -436,9 +471,9 @@
 		</setters>
 	</element>
 	
-	<element name="Dousing Rods of Trap Finding" type="Magic Item" source="AAA" id="ID_LEMONCAT_DOUSING_RODS_OF_TRAP_FINDING">
+	<element name="Dowsing Rods of Trap Finding" type="Magic Item" source="AAA" id="ID_LEMONCAT_DOWSING_RODS_OF_TRAP_FINDING">
 		<description>
-			<p>This pair of dousing rods is made of ashwood with silver handles.</p>
+			<p>This pair of dowsing rods is made of ashwood with silver handles.</p>
 			<p>When the holder casts the Find Traps spell, they can do so with following modifications:</p>
 			<ul>
 				<li>You learn the location of all traps within range.</li>
@@ -446,7 +481,7 @@
 			</ul>
 		</description>
 		<setters>
-			<set name="keywords">dousing, rod, find, trap, spell, cast, custom, lemoncat, aaa</set>
+			<set name="keywords">dowsing, rod, find, trap, spell, cast, custom, lemoncat, aaa</set>
 			<set name="category">Wondrous Items</set>
 			<set name="type">Wondrous Item</set>
 			<set name="slot">misc</set>
@@ -461,7 +496,7 @@
 			<p>When the holder casts the Knock spell, they can do so with following modifications:</p>
 			<ul>
 				<li>No knocking sound emanates from the targeted object at all.</li>
-				<li>If the object has multiple locks, up to three of them are unlocked instead of just one.</li>
+				<li>If the targeted object has multiple locks, up to three of them are unlocked instead of just one.</li>
 			</ul>
 		</description>
 		<setters>
@@ -477,7 +512,7 @@
 	<element name="Spider Silk Choker" type="Magic Item" source="AAA" id="ID_LEMONCAT_SPIDER_SILK_CHOKER">
 		<description>
 			<p>This choker is made of finely woven spider silk with a spiderweb embroidered on the front.</p>
-			<p>When the wearer casts the Web spell, they can do so with up to two of the following modifications:</p>
+			<p>When the wearer casts the Web spell, they can do so with <b>up to two</b> of the following modifications:</p>
 			<ul>
 				<li>The webs you cast do not require concentration to maintain, and their duration is reduced to 2 minutes.</li>
 				<li>The webs you cast are not flammable, and do not burn at all.</li>
@@ -498,7 +533,7 @@
 	<element name="Brass Brazier of the Phoenix" type="Magic Item" source="AAA" id="ID_LEMONCAT_BRASS_BRAZIER_OF_THE_PHOENIX">
 		<description>
 			<p>This ornate brass brazier is finely engraved with intricate depictions of phoenixes.</p>
-			<p>When a command word is spoken and the lid lifted, a single charge is expended and charcoal, incense, and herbs with a combined value of 10gp is magically produced in the brazier. If these components are removed from the brazier they instantly dissapear.</p>
+			<p>When a command word is spoken and the lid lifted, a single charge is expended. Charcoal, incense, and herbs with a combined value of 10gp are magically produced in the brazier. If these components are removed from the brazier they instantly dissapear.</p>
 			<p>The brass brazier regains 1d4 charges at dawn, to a maximum of 5 charges.</p>
 			<p>Any familiar summoned from this brazier with the Find Familiar spell gains an additional 5 temporary HP.</p>
 		</description>
@@ -506,6 +541,7 @@
 			<set name="keywords">brass, brazier, phoenix, familiar, custom, lemoncat, aaa</set>
 			<set name="category">Wondrous Items</set>
 			<set name="type">Wondrous Item</set>
+			<set name="slot">misc</set>
 			<set name="attunement">false</set>
 			<set name="rarity">Uncommon</set>
 		</setters>
@@ -518,7 +554,7 @@
 				<li>Eerie Tokens - The maximum number of Eerie Tokens you can create now equals your Proficiency Bonus.</li>
 				<li>Telepathic Messages - These can now be sent through one, some, or all of your Eerie Tokens at the same time.</li>
 				<li>Remote Viewing - The Eerie Token is not destroyed at the end of the trance unless you choose it to be.</li>
-				<li>Remote Viewing - You can enter your trance a number of times equal to your Proficiency Bonus. </li>
+				<li>Remote Viewing - You can enter your trance a number of times equal to your Proficiency Bonus.</li>
 			</ul>
 		</description>
 		<setters>
@@ -535,7 +571,7 @@
 		<description>
 			<p>While wearing this amulet you gain the following modifications to your Kenku traits and features.</p>
 			<ul>
-				<li>Tool Proficiency - You gain proficiency with Caligraphy tools and Forgery Tools if you do not already have them.</li>
+				<li>Tool Proficiency - You gain proficiency with Calligraphers Supplies and Forgery Tools if you do not already have them.</li>
 				<li>Languages - Your speech is no longer restricted by your Mimicry trait. You can speak naturally with your own voice if you choose to.</li>
 			</ul>
 		</description>
@@ -547,6 +583,10 @@
 			<set name="attunement">false</set>
 			<set name="rarity">Common</set>
 		</setters>
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_FORGERY_KIT" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_CALLIGRAPHERS_SUPPLIES" />
+		</rules>
 	</element>
 	
 	<element name="Meat Bone of Plenty" type="Magic Item" source="AAA" id="ID_LEMONCAT_MEAT_BONE_OF_PLENTY">
@@ -580,7 +620,7 @@
 	
 	<element name="Churn of Plenty" type="Magic Item" source="AAA" id="ID_LEMONCAT_CHURN_OF_PLENTY">
 		<description>
-			<p>This wooden butter churn is made of ash wood and silver banding, and is about the size of a bucket. When a command word is spoken and the churn is then opened, a charge is expended and the cornocopia produces either two dozen fresh chicken eggs, four pounds of fresh goat butter, four gallons of fresh cool goat milk, four gallons of fresh cool goat cream, or four pounds of fresh fish. The cornocopia regains 1d4 charges at dawn.</p>
+			<p>This wooden butter churn is made of ash wood and silver banding, and is about the size of a bucket. When a command word is spoken and the churn is then opened, a charge is expended and the curn produces either two dozen fresh chicken eggs, four pounds of fresh goat butter, four gallons of fresh cool goat milk, four gallons of fresh cool goat cream, or four pounds of fresh fish (user's choice). The churn regains 1d4 charges at dawn.</p>
 			<p>Each time a charge is spent, roll a d20. On a natural 20 the churn instead produces all of the listed produce.</p>
 			<p>After one hour, any food within the churn magically disappears as it cleans itself.</p>
 		</description>
@@ -660,9 +700,8 @@
 	
 	<element name="Band of Wave Calling" type="Magic Item" source="AAA" id="ID_LEMONCAT_BAND_OF_WAVE_CALLING">
 		<description>
-			<p>While wearing this band, you have the Call to the Wave Racial Feature from the Water Genasi.</p>
-			<p><span class="feature">Call to the Wave.</span>You know the Shape Water cantrip. When you reach 3rd level, you can cast  the Create or Destroy Water spell as a 2nd-level spell once with this trait, and you regain the ability to cast it this way when you finish a long rest. Constitution is your spellcasting ability for these spells.<br />
-			</p> 
+			<p>While wearing this band, you have the Call to the Wave Racial Feature from the Water Genasi. (Princes of the Apocalypse)</p>
+			<p><span class="feature">Call to the Wave.</span>You know the Shape Water cantrip. When you reach 3rd level, you can cast the Create or Destroy Water spell as a 2nd-level spell once with this trait, and you regain the ability to cast it this way when you finish a long rest. Constitution is your spellcasting ability for these spells.			</p> 
 		</description>
 		<setters>
 			<set name="keywords">band, call, wave, grung, custom, lemoncat, aaa</set>
@@ -675,8 +714,8 @@
 		</setters>
 		<sheet display="true">
 			<description>
-				<p>While wearing this band, you have the Call to the Wave Racial Feature from the Water Genasi.</p>
-				<p><span class="feature">Call to the Wave.</span>You know the Shape Water cantrip. When you reach 3rd level, you can cast  the Create or Destroy Water spell as a 2nd-level spell once with this trait, and you regain the ability to cast it this way when you finish a long rest. Constitution is your spellcasting ability for these spells.</p> 
+				<p>While wearing this band, you have the Call to the Wave Racial Feature from the Water Genasi (Princes of the Apocalypse).</p>
+				<p><span class="feature">Call to the Wave.</span>You know the Shape Water cantrip. When you reach 3rd level, you can cast the Create or Destroy Water spell as a 2nd-level spell once with this trait, and you regain the ability to cast it this way when you finish a long rest. Constitution is your spellcasting ability for these spells.</p> 
 			</description>
 		</sheet>
 		<rules>
@@ -684,10 +723,10 @@
 		</rules>
 	</element>
 	
-	<element name="All-Purpose Tool" type="Magic Item" source="AAA" id="ID_LEMONCAT_ALL_PURPOSE_TOOL_COMMON">
+	<element name="All-Purpose Tool, +0" type="Magic Item" source="AAA" id="ID_LEMONCAT_ALL_PURPOSE_TOOL_COMMON">
 		<description>
 			<p>This simple screwdriver can transform into a variety of tools; as an action, you can touch the item and transform it into any type of artisan’s tool of your choice (see the "Equipment" chapter in the Player’s Handbook for a list of artisan’s tools). Whatever form the tool takes, you are proficient with it.</p>
-			<p class="indent">While holding this tool, you gain a +1 bonus to the spell attack rolls and the saving throw DCs of your artificer spells.</p>
+			<p class="indent">While holding this tool, you gain a +0 bonus to the spell attack rolls and the saving throw DCs of your artificer spells.</p>
 			<p class="indent">As an action, you can focus on the tool to channel your creative forces. Choose a cantrip that you don’t know from any class list. For 8 hours, you can cast that cantrip, and it counts as an artificer cantrip for you. Once this property is used, it can’t be used again until the next dawn.</p>
 		</description>
 		<setters>
@@ -699,8 +738,8 @@
 			<set name="attunement" addition="by an artificer">true</set>
 		</setters>
 		<rules>
-			<stat name="artificer:spellcasting:attack" value="0" />
-			<stat name="artificer:spellcasting:dc" value="0" />
+			<stat name="artificer:spellcasting:attack" value="0" requirements="[level:artificer:1]" />
+			<stat name="artificer:spellcasting:dc" value="0" requirements="[level:artificer:1]" />
 		</rules>
 	</element>
 	
@@ -761,7 +800,6 @@
 			<set name="category">Wondrous Items</set>
 			<set name="weight" lb="2">2 lb.</set>
 			<set name="type">Wondrous Item</set>
-			<set name="slot">misc</set>
 			<set name="attunement" addition="by a warlock">true</set>
 			<set name="rarity">Common</set>
 			<set name="enhancement">0</set>
@@ -771,9 +809,8 @@
 			<stat name="spellcasting:dc"     value="0" bonus="book of shadows" />
 		</rules>
 	</element>
-
 	
-		<element name="Book of Shadows, +1" type="Magic Item" source="AAA" id="ID_LEMONCAT_BOOK_OF_SHADOWS_1">
+	<element name="Book of Shadows, +1" type="Magic Item" source="AAA" id="ID_LEMONCAT_BOOK_OF_SHADOWS_1">
 		<description>
 			<p>While this book is in your posession, you gain a +1 bonus spell attack rolls and to the saving throw DCs of all of your spells, not just your Warlock spells.</p>
 			<p class="indent">In addition, you can regain one warlock spell slot as an action while holding the book. You can’t use this property again until you finish a long rest.</p>
@@ -783,7 +820,6 @@
 			<set name="category">Wondrous Items</set>
 			<set name="weight" lb="2">2 lb.</set>
 			<set name="type">Wondrous Item</set>
-			<set name="slot">misc</set>
 			<set name="attunement" addition="by a warlock">true</set>
 			<set name="rarity">Uncommon</set>
 			<set name="enhancement">1</set>
@@ -804,7 +840,6 @@
 			<set name="category">Wondrous Items</set>
 			<set name="weight" lb="2">2 lb.</set>
 			<set name="type">Wondrous Item</set>
-			<set name="slot">misc</set>
 			<set name="attunement" addition="by a warlock">true</set>
 			<set name="rarity">Rare</set>
 			<set name="enhancement">2</set>
@@ -825,7 +860,6 @@
 			<set name="category">Wondrous Items</set>
 			<set name="weight" lb="2">2 lb.</set>
 			<set name="type">Wondrous Item</set>
-			<set name="slot">misc</set>
 			<set name="attunement" addition="by a warlock">true</set>
 			<set name="rarity">Very Rare</set>
 			<set name="enhancement">3</set>
@@ -868,22 +902,7 @@
 
 	<element name="Weapon of Magnetism" type="Magic Item" source="AAA" id="ID_LEMONCAT_WEAPON_OF_MAGNETISM">
 		<description>
-			<p>Once per day while weilding this magic weapon, you can give yourself advantage on a single attack against a creature wearing metal armor.</p>
-		</description>
-		<setters>
-			<set name="keywords">melee, ranged, lemoncat, aaa, custom</set>
-			<set name="category">Magic Weapons</set>
-			<set name="cost" currency="gp">0</set>
-			<set name="type" addition="any">Weapon</set>
-			<set name="rarity">Common</set>
-			<set name="weapon">ID_INTERNAL_WEAPON_CATEGORY_SIMPLE_MELEE||ID_INTERNAL_WEAPON_CATEGORY_SIMPLE_RANGED||ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE||ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED</set>
-			<set name="name-format">{{parent}} of Magnetism</set>
-		</setters>
-	</element>
-
-	<element name="Weapon of Magnetism" type="Magic Item" source="AAA" id="ID_LEMONCAT_WEAPON_OF_MAGNETISM">
-		<description>
-			<p>Once per day while weilding this magic weapon, you can give yourself advantage on a single attack against a creature wearing metal armor.</p>
+			<p>Once per day while wielding this magic weapon, you can give yourself advantage on a single attack against a creature wearing metal armor.</p>
 		</description>
 		<setters>
 			<set name="keywords">melee, ranged, lemoncat, aaa, custom</set>
@@ -928,7 +947,7 @@
 
 	<element name="Weapon of Disguise" type="Magic Item" source="AAA" id="ID_LEMONCAT_WEAPON_OF_DISGUISE">
 		<description>
-			<p>Once per day, you can speak a command word to transform this magic weapon into a plushie (small stuffed animal toy) for 1 hour. You can end the effect early by speaking the command word again. This is a effect polymorphic transformation, not an illusion.</p>
+			<p>Once per day, you can speak a command word to transform this magic weapon into a plushie (small stuffed animal toy) for 1 hour. You can end the effect early by speaking the command word again. This effect is polymorphic transformation, not an illusion.</p>
 		</description>
 		<setters>
 			<set name="keywords">melee, ranged, lemoncat, aaa, custom</set>
@@ -973,7 +992,7 @@
 
 	<element name="Weapon of the Mask" type="Magic Item" source="AAA" id="ID_LEMONCAT_WEAPON_OF_THE_MASK">
 		<description>
-			<p>While wielding this magic weapon, a wooden mask (of the weilder's preferred design) magically appears on their face and cannot be removed.</p>
+			<p>While wielding this magic weapon, a wooden mask (of the wielder's preferred design) magically appears on their face and cannot be removed.</p>
 		</description>
 		<setters>
 			<set name="keywords">melee, ranged, lemoncat, aaa, custom</set>
@@ -988,7 +1007,7 @@
 
 	<element name="Weapon of Glass" type="Magic Item" source="AAA" id="ID_LEMONCAT_WEAPON_OF_GLASS">
 		<description>
-			<p>This magic weapon is made of beatiful, strong glass. If a light emitting spell is cast on it, all ranges of that light spell are doubled. For Example, if the Light cantrip is cast on this magic weapon, the brightness ranges are 40/40 instead of the usual 20/20.</p>
+			<p>This magic weapon is enhanced with a beautiful, strong glass coating. If a light emitting spell is cast on it, all ranges of that light spell are doubled. For Example, if the Light cantrip is cast on this magic weapon, the brightness ranges are 40 bright/40 dim instead of the usual 20/20.</p>
 		</description>
 		<setters>
 			<set name="keywords">melee, ranged, lemoncat, aaa, custom</set>
