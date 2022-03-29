@@ -1,11 +1,11 @@
-<?xml version="1.0" encoding="utf-8" ?>
+<?xml version="1.0" encoding="utf-8"?>
 <index>
 	<info>
-		<name>Lemoncat Index</name>
-		<description>Lemoncat Index</description>
+		<name>Lemoncat</name>
+		<description>Lemoncat</description>
 		<author url="https://raw.githubusercontent.com/cajadehu/aurorabuilder/">LemonCat</author>
-		<update version="0.0.3">
-			<file name="lemoncat.index" 				url="https://github.com/cajadehu/aurorabuilder/blob/main/lemoncat.index" 						/>
+		<update version="0.0.4">
+			<file name="lemoncat.index" url="https://github.com/cajadehu/aurorabuilder/blob/main/lemoncat.index" />
 		</update>
 	</info>
 	<files>
@@ -15,10 +15,8 @@
 		<file name="lemoncat_spells.xml" 				url="https://raw.githubusercontent.com/cajadehu/aurorabuilder/blob/main/lemoncat_spells.xml" 					/>
 		<file name="background_sneaker.xml" 			url="https://raw.githubusercontent.com/cajadehu/aurorabuilder/blob/main/background-sneaker.xml" 				/>
 		<file name="mageArmorProxy.xml" 				url="https://raw.githubusercontent.com/cajadehu/aurorabuilder/blob/main/mageArmorProxy.xml" 					/>
-		<file name="race-golemkin.xml" 					url="https://raw.githubusercontent.com/cajadehu/aurorabuilder/blob/main/race-golemkin.xml" 					/>
+		<file name="race-golemkin.xml" 					url="https://raw.githubusercontent.com/cajadehu/aurorabuilder/blob/main/race-golemkin.xml" 						/>
 		<file name="race-mothian.xml" 					url="https://raw.githubusercontent.com/cajadehu/aurorabuilder/blob/main/race-mothian.xml" 						/>
 		<file name="race-squirrelan.xml" 				url="https://raw.githubusercontent.com/cajadehu/aurorabuilder/blob/main/race-squirrelan.xml" 					/>
 	</files>
 </index>
-
-https://raw.githubusercontent.com/cajadehu/aurorabuilder/main/lemoncat.index
