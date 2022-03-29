@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<update version="0.0.1">
+			<file name="source.xml" url="https://raw.githubusercontent.com/cajadehu/aurorabuilder/main/source.xml" />
+		</update>
+	</info>
+	<element name="AAA" type="Source" source="lemoncat" id="ID_LEMONCAT_SOURCE">
+		<description>
+			<![CDATA[<p><strong>Lots of extra spells, weapon and armor upgrades, magic items, Options Overrides, and more!</strong></p>]]>
+		</description>
+		<setters>
+			<set name="abbreviation">LMN</set>
+			<set name="url">https://github.com/cajadehu/aurorabuilder</set>
+			<set name="image">https://github.com/cajadehu/aurorabuilder/blob/main/lemoncatTransparent_150x150.png?raw=true</set>
+			<set name="errata">n/a</set>
+			<set name="author" abbreviation="LC" url="https://github.com/cajadehu/aurorabuilder">LemonCat</set>
+			<set name="official">false</set>
+			<set name="core">false</set>
+			<set name="release">20220329</set>
+		</setters>
+	</element>
+</elements>
