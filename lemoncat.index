@@ -4,7 +4,7 @@
 		<name>Lemoncat</name>
 		<description>Lemoncat</description>
 		<author url="https://raw.githubusercontent.com/cajadehu/aurorabuilder/main/">LemonCat</author>
-		<update version="1.0.7">
+		<update version="1.0.8">
 			<file name="lemoncat.index" url="https://raw.githubusercontent.com/cajadehu/aurorabuilder/main/lemoncat.index" />
 		</update>
 	</info>
@@ -18,5 +18,6 @@
 		<file name="race-golemkin.xml" 					url="https://raw.githubusercontent.com/cajadehu/aurorabuilder/main/race-golemkin.xml" 						/>
 		<file name="race-mothian.xml" 					url="https://raw.githubusercontent.com/cajadehu/aurorabuilder/main/race-mothian.xml" 						/>
 		<file name="race-squirrelan.xml" 				url="https://raw.githubusercontent.com/cajadehu/aurorabuilder/main/race-squirrelan.xml" 					/>
+		<file name="source.xml" 				url="https://raw.githubusercontent.com/cajadehu/aurorabuilder/main/source.xml" />
 	</files>
 </index>
