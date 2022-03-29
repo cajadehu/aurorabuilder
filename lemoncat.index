@@ -4,13 +4,13 @@
 		<name>User</name>
 		<description>Lemoncat</description>
 		<author url="https://raw.githubusercontent.com/cajadehu/aurorabuilder/main/">LemonCat</author>
-		<update version="0.0.6">
+		<update version="0.0.7">
 			<file name="lemoncat.index" url="https://raw.githubusercontent.com/cajadehu/aurorabuilder/main/lemoncat.index" />
 		</update>
 	</info>
 	<files>
 		<file name="lemoncat_specialWeapons.xml" 		url="https://raw.githubusercontent.com/cajadehu/aurorabuilder/main/lemoncat_specialWeapons.xml" 			/>
-		<file name="lemoncat_customOptionOverrides.xml" url="https://raw.githubusercontent.com/cajadehu/aurorabuilder/main/lemoncat_customOptionOverrides.xml" 	/>
+		<file name="lemoncat_customOptionsOverride.xml" url="https://raw.githubusercontent.com/cajadehu/aurorabuilder/main/lemoncat_customOptionsOverride.xml" 	/>
 		<file name="lemoncat_packs.xml" 				url="https://raw.githubusercontent.com/cajadehu/aurorabuilder/main/lemoncat_packs.xml" 					/>
 		<file name="lemoncat_spells.xml" 				url="https://raw.githubusercontent.com/cajadehu/aurorabuilder/main/lemoncat_spells.xml" 					/>
 		<file name="background_sneaker.xml" 			url="https://raw.githubusercontent.com/cajadehu/aurorabuilder/main/background-sneaker.xml" 				/>
