@@ -4,8 +4,8 @@
 		<name>Mage / Stone Armor Proxy</name>
 		<description>Mage / Stone Armor Proxy</description>
 		<author url="https://github.com/cajadehu/aurorabuilder/">LemonCat</author>
-		<update version="0.0.2">
-			<file name="lemoncat_mageArmorProxy.xml" url="https://github.com/cajadehu/aurorabuilder/blob/main/lemoncat_mageArmorProxy.xml" />
+		<update version="0.0.3">
+			<file name="lemoncat_mageArmorProxy.xml" url="https://raw.githubusercontent.com/cajadehu/aurorabuilder/main/lemoncat_mageArmorProxy.xml" />
 		</update>
 	</info>
 

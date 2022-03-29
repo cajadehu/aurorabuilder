@@ -4,8 +4,8 @@
 		<name>Text Replacement</name>
 		<description>Text Replacement</description>
 		<author url="https://github.com/cajadehu/aurorabuilder/">LemonCat</author>
-		<update version="0.0.2">
-			<file name="lemoncat_textReplacement.xml" url="https://github.com/cajadehu/aurorabuilder/blob/main/lemoncat_textReplacement.xml" />
+		<update version="0.0.3">
+			<file name="lemoncat_textReplacement.xml" url="https://raw.githubusercontent.com/cajadehu/aurorabuilder/main/lemoncat_textReplacement.xml" />
 		</update>
 	</info>
 

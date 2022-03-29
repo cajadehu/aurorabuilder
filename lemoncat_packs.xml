@@ -4,8 +4,8 @@
 		<name>Packs</name>
 		<description>Packs</description>
 		<author url="https://github.com/cajadehu/aurorabuilder/">LemonCat</author>
-		<update version="0.0.2">
-			<file name="lemoncat_packs.xml" url="https://github.com/cajadehu/aurorabuilder/blob/main/lemoncat_packs.xml" />
+		<update version="0.0.3">
+			<file name="lemoncat_packs.xml" url="https://raw.githubusercontent.com/cajadehu/aurorabuilder/main/lemoncat_packs.xml" />
 		</update>
 	</info>
 	<element name="LemonCat's Pack" type="Item" source="AAA" id="ID_LEMONCAT_ITEM_STANDARD_PACK">

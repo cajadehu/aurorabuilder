@@ -4,7 +4,7 @@
 		<name>Special Weapons</name>
 		<description>Special Weapons</description>
 		<author url="https://github.com/cajadehu/aurorabuilder/">LemonCat</author>
-		<update version="0.1.2">
+		<update version="0.1.4">
 			<file name="lemoncat_specialWeapons.xml" url="https://raw.githubusercontent.com/cajadehu/aurorabuilder/main/lemoncat_specialWeapons.xml" />
 		</update>
 	</info>

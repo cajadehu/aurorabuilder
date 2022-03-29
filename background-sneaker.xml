@@ -4,8 +4,8 @@
         <name>AAA Sneaker</name>
         <description>All DEX skills + Artisan's Tools</description>
 		<author url="https://github.com/cajadehu/aurorabuilder/">LemonCat</author>
-		<update version="0.0.2">
-            <file name="background-sneaker.xml" url="https://github.com/cajadehu/aurorabuilder/blob/main/background-sneaker.xml" />
+		<update version="0.0.3">
+            <file name="background-sneaker.xml" url="https://raw.githubusercontent.com/cajadehu/aurorabuilder/main/background-sneaker.xml" />
         </update>
     </info>
     <element name="AAA Sneaker" type="Background" source="AAA" id="ID_BACKGROUND_AAA_SNEAKER">
