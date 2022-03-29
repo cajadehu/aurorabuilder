@@ -5,7 +5,7 @@
 		<description>Lemoncat Spells</description>
 		<author url="https://github.com/cajadehu/aurorabuilder/">LemonCat</author>
 		<update version="0.0.1">
-			<file name="lemoncat_spells.xml" url="https://github.com/cajadehu/aurorabuilder/blob/main/lemoncat_spells.xml" />
+			<file name="lemoncat_spells.xml" url="https://raw.githubusercontent.com/cajadehu/aurorabuilder/main/lemoncat_spells.xml" />
 		</update>
 	</info>
 
