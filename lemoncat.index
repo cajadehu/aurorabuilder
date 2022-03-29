@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <index>
 	<info>
-		<name>Lemoncat</name>
+		<name>User</name>
 		<description>Lemoncat</description>
 		<author url="https://raw.githubusercontent.com/cajadehu/aurorabuilder/">LemonCat</author>
-		<update version="0.0.4">
+		<update version="0.0.5">
 			<file name="lemoncat.index" url="https://github.com/cajadehu/aurorabuilder/blob/main/lemoncat.index" />
 		</update>
 	</info>
