@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<index>
+	<info>
+		<name>Lemoncat Index</name>
+		<description>Lemoncat Index</description>
+		<author url="https://github.com/cajadehu/aurorabuilder/">LemonCat</author>
+		<update version="0.0.1">
+			<file name="lemoncat.index" url="https://github.com/cajadehu/aurorabuilder/blob/main/lemoncat.index" />
+		</update>
+	</info>
+	<files>
+		<file name="lemoncat_specialWeapons.xml" url="https://github.com/cajadehu/aurorabuilder/blob/main/lemoncat_specialWeapons.xml" />
+		<file name="lemoncat_customOptionOverrides.xml" url="https://github.com/cajadehu/aurorabuilder/blob/main/lemoncat_customOptionOverrides.xml" />
+		<file name="lemoncat_packs.xml" url="https://github.com/cajadehu/aurorabuilder/blob/main/lemoncat_packs.xml" />
+		<file name="lemoncat_spells.xml" url="https://github.com/cajadehu/aurorabuilder/blob/main/lemoncat_spells.xml" />
+	</files>
+</index>
