@@ -5,7 +5,7 @@
 		<description>Lemoncat</description>
 		<author url="https://raw.githubusercontent.com/cajadehu/aurorabuilder/">LemonCat</author>
 		<update version="0.0.5">
-			<file name="lemoncat.index" url="https://github.com/cajadehu/aurorabuilder/blob/main/lemoncat.index" />
+			<file name="lemoncat.index" url="https://raw.githubusercontent.com/cajadehu/aurorabuilder/main/lemoncat.index" />
 		</update>
 	</info>
 	<files>
