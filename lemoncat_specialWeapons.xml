@@ -10,6 +10,10 @@
 	</info>
 	
 	<!-- UPDATE LOG
+	0.1.5
+		Added numerous magic armor options
+	0.1.4
+		Fixed url for updates
 	0.1.2
 		Book of shadows no longer has an equipment slot, just attunement
 		All purpose tool +0 now requires 1 level of artificer, description corrected
@@ -1050,4 +1054,187 @@
 		</setters>
 	</element>
 
+	<element name="Armor of Snakewood" type="Magic Item" source="AAA" id="ID_LEMONCAT_ARMOR_OF_SNAKEWOOD">
+		<description>
+			<p>This magic armor is made of Snakewood; an extremely hard wearing and tough wood, instead of metal.</p>
+		</description>
+		<setters>
+			<set name="keywords">druid, wood, armor, lemoncat, aaa, custom</set>
+			<set name="category">Magic Armor</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="type" addition="light, medium, or heavy">Armor</set>
+			<set name="rarity">Common</set>
+			<set name="armor">ID_INTERNAL_ARMOR_GROUP_LIGHT|ID_INTERNAL_ARMOR_GROUP_MEDIUM|ID_INTERNAL_ARMOR_GROUP_HEAVY</set>
+			<set name="name-format">{{parent}} of Snakewood</set>
+		</setters>
+	</element>
+
+	<element name="Armor of Comfort" type="Magic Item" source="AAA" id="ID_LEMONCAT_ARMOR_OF_COMFORT">
+		<description>
+			<p>While wearing this magic armor your body temperature remains comfortable no matter the environmental temperature. It does not prevent damage or other effects.</p>
+		</description>
+		<setters>
+			<set name="keywords">temperature, armor, lemoncat, aaa, custom</set>
+			<set name="category">Magic Armor</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="type" addition="light, medium, or heavy">Armor</set>
+			<set name="rarity">Common</set>
+			<set name="armor">ID_INTERNAL_ARMOR_GROUP_LIGHT|ID_INTERNAL_ARMOR_GROUP_MEDIUM|ID_INTERNAL_ARMOR_GROUP_HEAVY</set>
+			<set name="name-format">{{parent}} of Comfort</set>
+		</setters>
+	</element>
+
+	<element name="Armor of Rest" type="Magic Item" source="AAA" id="ID_LEMONCAT_ARMOR_OF_REST">
+		<description>
+			<p>You can sleep normally while wearing this magic armor, without suffering exhaustion. This property functions for a consecutive number of long rests equal to your proficiency bonus. Then the armor must be removed for a full night to restore its functionality.</p>
+		</description>
+		<setters>
+			<set name="keywords">sleep, armor, lemoncat, aaa, custom</set>
+			<set name="category">Magic Armor</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="type" addition="light, medium, or heavy">Armor</set>
+			<set name="rarity">Common</set>
+			<set name="armor">ID_INTERNAL_ARMOR_GROUP_LIGHT|ID_INTERNAL_ARMOR_GROUP_MEDIUM|ID_INTERNAL_ARMOR_GROUP_HEAVY</set>
+			<set name="name-format">{{parent}} of Rest</set>
+		</setters>
+	</element>
+
+	<element name="Sponge Armor" type="Magic Item" source="AAA" id="ID_LEMONCAT_SPONGE_ARMOR">
+		<description>
+			<p>Once per day while wearing this magic armor, you can grant yourself temporary HP equal to your proficiency bonus.</p>
+		</description>
+		<setters>
+			<set name="keywords">sponge, armor, lemoncat, aaa, custom</set>
+			<set name="category">Magic Armor</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="type" addition="light, medium, or heavy">Armor</set>
+			<set name="rarity">Common</set>
+			<set name="armor">ID_INTERNAL_ARMOR_GROUP_LIGHT|ID_INTERNAL_ARMOR_GROUP_MEDIUM|ID_INTERNAL_ARMOR_GROUP_HEAVY</set>
+			<set name="name-format">Sponge {{parent}}</set>
+		</setters>
+	</element>
+
+	<element name="Steed Armor" type="Magic Item" source="AAA" id="ID_LEMONCAT_STEED_ARMOR">
+		<description>
+			<p>Once per day while wearing this magic armor, you can cast the Find Steed spell.</p>
+		</description>
+		<setters>
+			<set name="keywords">steed, armor, lemoncat, aaa, custom</set>
+			<set name="category">Magic Armor</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="type" addition="light, medium, or heavy">Armor</set>
+			<set name="rarity">Common</set>
+			<set name="armor">ID_INTERNAL_ARMOR_GROUP_LIGHT|ID_INTERNAL_ARMOR_GROUP_MEDIUM|ID_INTERNAL_ARMOR_GROUP_HEAVY</set>
+			<set name="name-format">Steed {{parent}}</set>
+		</setters>
+	</element>
+
+	<element name="Armor of Hiding" type="Magic Item" source="AAA" id="ID_LEMONCAT_ARMOR_OF_HIDING">
+		<description>
+			<p>The coloring of this magic armor constantly shifts to match its environment, granting you advantage on Hide checks.</p>
+		</description>
+		<setters>
+			<set name="keywords">sleep, armor, lemoncat, aaa, custom</set>
+			<set name="category">Magic Armor</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="type" addition="light, medium, or heavy">Armor</set>
+			<set name="rarity">Rare</set>
+			<set name="armor">ID_INTERNAL_ARMOR_GROUP_LIGHT|ID_INTERNAL_ARMOR_GROUP_MEDIUM|ID_INTERNAL_ARMOR_GROUP_HEAVY</set>
+			<set name="name-format">{{parent}} of Hiding</set>
+		</setters>
+	</element>
+
+	<element name="Armor of the Grave" type="Magic Item" source="AAA" id="ID_LEMONCAT_ARMOR_OF_THE_GRAVE">
+		<description>
+			<p>While wearing this magic armor you can vaguely sense the contents of any grave, burial site, or place of internment, within 10ft. For example, you would know a coffin contains "jewelry, a weapon, and a skeleton," but not "2 gold rings, a magic longsword, and a Lich Warrior."</p>
+		</description>
+		<setters>
+			<set name="keywords">grave, undead, sense, armor, lemoncat, aaa, custom</set>
+			<set name="category">Magic Armor</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="type" addition="light, medium, or heavy">Armor</set>
+			<set name="rarity">Common</set>
+			<set name="armor">ID_INTERNAL_ARMOR_GROUP_LIGHT|ID_INTERNAL_ARMOR_GROUP_MEDIUM|ID_INTERNAL_ARMOR_GROUP_HEAVY</set>
+			<set name="name-format">{{parent}} of the Grave</set>
+		</setters>
+	</element>
+
+	<element name="Armor of Gluttony" type="Magic Item" source="AAA" id="ID_LEMONCAT_ARMOR_OF_GLUTTONY">
+		<description>
+			<p>While wearing this magic armor, everything you eat or drink tastes incredibly delicious. This armor smells slightly of fresh baked bread.</p>
+		</description>
+		<setters>
+			<set name="keywords">food, armor, lemoncat, aaa, custom</set>
+			<set name="category">Magic Armor</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="type" addition="light, medium, or heavy">Armor</set>
+			<set name="rarity">Common</set>
+			<set name="armor">ID_INTERNAL_ARMOR_GROUP_LIGHT|ID_INTERNAL_ARMOR_GROUP_MEDIUM|ID_INTERNAL_ARMOR_GROUP_HEAVY</set>
+			<set name="name-format">{{parent}} of Gluttony</set>
+		</setters>
+	</element>
+
+	<element name="Armor of Rescue" type="Magic Item" source="AAA" id="ID_LEMONCAT_ARMOR_OF_RESCUE">
+		<description>
+			<p>Once per day while wearing this magic armor, you can activate its feature as an Action. The feature lasts for 1 minute. Up to 5 creatures who have touched this armor within the last day, magically know your exact location, provided that they are on the same plane of existance.</p>
+		</description>
+		<setters>
+			<set name="keywords">locat, sense, armor, lemoncat, aaa, custom</set>
+			<set name="category">Magic Armor</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="type" addition="light, medium, or heavy">Armor</set>
+			<set name="rarity">Common</set>
+			<set name="armor">ID_INTERNAL_ARMOR_GROUP_LIGHT|ID_INTERNAL_ARMOR_GROUP_MEDIUM|ID_INTERNAL_ARMOR_GROUP_HEAVY</set>
+			<set name="name-format">{{parent}} of Rescue</set>
+		</setters>
+	</element>
+
+	<element name="Armor of Pets" type="Magic Item" source="AAA" id="ID_LEMONCAT_ARMOR_OF_PETS">
+		<description>
+			<p>While wearing this magic armor, you can use a reaction to harmlessly store or retrieve 1 pet of Small or Tiny size within an pocket dimension. While the creature or construct pet is within this pocket dimension it rests peacefully, and does not change HP. All effects on the pet are effectively suspended until it emerges again.</p>
+		</description>
+		<setters>
+			<set name="keywords">store, armor, lemoncat, aaa, custom</set>
+			<set name="category">Magic Armor</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="type" addition="light, medium, or heavy">Armor</set>
+			<set name="rarity">Common</set>
+			<set name="armor">ID_INTERNAL_ARMOR_GROUP_LIGHT|ID_INTERNAL_ARMOR_GROUP_MEDIUM|ID_INTERNAL_ARMOR_GROUP_HEAVY</set>
+			<set name="name-format">{{parent}} of Pets</set>
+		</setters>
+	</element>
+
+	<element name="Armor of Feathers" type="Magic Item" source="AAA" id="ID_LEMONCAT_ARMOR_OF_FEATHERS">
+		<description>
+			<p>While wearing this magic armor, you can cast the Feather Fall spell at will on yourself only.</p>
+		</description>
+		<setters>
+			<set name="keywords">spell, fall, armor, lemoncat, aaa, custom</set>
+			<set name="category">Magic Armor</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="type" addition="light, medium, or heavy">Armor</set>
+			<set name="rarity">Common</set>
+			<set name="armor">ID_INTERNAL_ARMOR_GROUP_LIGHT|ID_INTERNAL_ARMOR_GROUP_MEDIUM|ID_INTERNAL_ARMOR_GROUP_HEAVY</set>
+			<set name="name-format">{{parent}} of Feathers</set>
+		</setters>
+	</element>
+	
+	<element name="Infested Armor" type="Magic Item" source="AAA" id="ID_LEMONCAT_INFESTED_ARMOR">
+		<description>
+			<p>This magic armor has illusory insects crawling all over it constantly, granting the wearer a +2 bonus to Intimidation Checks.</p>
+		</description>
+		<setters>
+			<set name="keywords">intimidat, skill, check, armor, lemoncat, aaa, custom</set>
+			<set name="category">Magic Armor</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="type" addition="light, medium, or heavy">Armor</set>
+			<set name="rarity">Common</set>
+			<set name="armor">ID_INTERNAL_ARMOR_GROUP_LIGHT|ID_INTERNAL_ARMOR_GROUP_MEDIUM|ID_INTERNAL_ARMOR_GROUP_HEAVY</set>
+			<set name="name-format">Infested {{parent}}</set>
+		</setters>
+		<rules>
+			<stat name="intimidation:misc" value="2" />
+		</rules>
+	</element>
+	
 </elements>
