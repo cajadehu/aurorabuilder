@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Feats</name>
+		<description>Feats</description>
+		<author url="https://github.com/cajadehu/aurorabuilder/">LemonCat</author>
+		<update version="0.0.1">
+			<file name="lemoncat_feats.xml" url="https://raw.githubusercontent.com/cajadehu/aurorabuilder/main/lemoncat_feats.xml" />
+		</update>
+	</info>
+	
+	<element name="Pocket Weapon" type="Feat" source="AAA" id="ID_LEMONCAT_FEAT_POCKET_WEAPON">
+		<description>
+			<p>Skilled at misdirection and being awesome, you gain the following benefits</p>
+			<ul>
+				<li>Increase your Dexterity score by 1, to a maximum of 20.</li>
+				<li>As an action, you can stow or draw one chosen weapon in a pocket dimension.</li>
+			</ul>
+		</description>
+		<sheet>
+			<description>As an action, you can stow or draw one chosen weapon in a pocket dimension.</description>
+		</sheet>
+		<rules>
+			<stat name="dexterity" value="1" />
+		</rules>
+	</element>
+	
+	<element name="Seige Breaker" type="Feat" source="AAA" id="ID_LEMONCAT_FEAT_SEIGE_BREAKER">
+		<description>
+			<p>When attacking an object, you gain the following benefits</p>
+			<ul>
+				<li>You gain advantage on attacks</li>
+				<li>If your attack hits, it deals Critical Damage</li>
+				<li>The damage dealt by your attack ignores all damage resistance and all damage immunity</li>
+			</ul>
+		</description>
+		<sheet>
+			<description>
+			<p>When attacking an object, you gain the following benefits</p>
+			<ul>
+				<li>You gain advantage on attacks</li>
+				<li>If your attack hits, it deals Critical Damage</li>
+				<li>The damage dealt by your attack ignores all damage resistance and all damage immunity</li>
+			</ul>
+		</description>
+		</sheet>
+	</element>
+	
+	<element name="Lycanthropic Form" type="Feat" source="AAA" id="ID_LEMONCAT_FEAT_LYCANTHROPIC_FORM">
+		<description>
+			<p>Once per Long Rest, you can spend an Action to Wild Shape into a Dire Wolf (CR1) for up to 1 hour. Your Intellect score remains the same as your humanoid form, but your other Scores change. You can return to your humanoid form early by expending an Action.</p>
+		</description>
+		<sheet>
+			<description>
+				<p>Once per Long Rest, you can spend an Action to Wild Shape into a Dire Wolf (CR1) for up to 1 hour. Your Intellect score remains the same as your humanoid form, but your other Scores change. You can return to your humanoid form early by expending an Action.</p>
+			</description>
+		</sheet>
+	</element>
+	
+	<element name="Lock Master" type="Feat" source="AAA" id="ID_LEMONCAT_FEAT_LOCK_MASTER">
+		<description>
+			<p>You are magically predisposed to Lock Smithing. Perhaps you have an unknown connection to the Clockwork Plane. You gain the following benefits:</p>
+			<ul>
+				<li>You can cast the Knock spell at will.</li>
+				<li>When you cast Knock, it produces no sound.</li>
+				<li>You gain proficiency with Thieve's Tools, or Expertise if you already have proficiency with them.</li>
+				<li>As a bonus action, you can summon magical Thieve's Tools for a duration of 5 minutes, after which they vanish.</li>
+			</ul>
+		</description>
+		<sheet action="Bonus Action">
+			<description>You can summon magical Thieve's Tools for a duration of 5 minutes, after which they vanish.</description>
+		</sheet>
+		<rules>
+			<grant type="Grants" id="ID_INTERNAL_GRANTS_PROFICIENCY_SKILL_OR_DOUBLE_THIEVES_TOOLS" />
+			<grant type="Spell" id="ID_PHB_SPELL_KNOCK" />
+		</rules>
+	</element>
+	
+	<element name="Psychic Ammunition" type="Feat" source="AAA" id="ID_LEMONCAT_FEAT_PSYCHIC_AMMO">
+		<description>
+			<p>You can use your psychic powers at will (no action needed) to manifest ammunition for a Ranged Weapon that you are wielding. It appears to be constructed of spectral wisps, and vanishes after 3 rounds.</p>
+		</description>
+		<sheet>
+			<description>
+				<p>You can use your psychic powers at will (no action needed) to manifest ammunition for a Ranged Weapon that you are wielding. It appears to be constructed of spectral wisps, and vanishes after 3 rounds.</p>
+			</description>
+		</sheet>
+	</element>
+	
+	<element name="Star Touched" type="Feat" source="AAA" id="ID_LEMONCAT_FEAT_STAR_TOUCHED">
+		<description>
+			<p>Any armors or weapons you are wearing or wielding temporarily gain the properties of Adamantine, Mithril, and Silver, as if it were made of all three metals. These properties also apply to non-metal equipment such as that used by Druids or Casters.</p>
+		</description>
+		<sheet>
+			<description>
+				<p>Any armors or weapons you are wearing or wielding temporarily gain the properties of Adamantine, Mithril, and Silver, as if it were made of all three metals. These properties also apply to non-metal equipment such as that used by Druids or Casters.</p>
+			</description>
+		</sheet>
+	</element>
+	
+	<element name="Delivery Specialist" type="Feat" source="AAA" id="ID_LEMONCAT_FEAT_DELIVERY_SPECIALIST">
+		<description>
+			<p>You are an expert at delivering goods and packages.</p>
+			<ul>
+				<li>Your speed increases by 10 feet.</li>
+				<li>You can travel at your normal speed even when encumbered.</li>
+				<li>The spell <i>Galder's Speedy Courier (LLoK)</i> is added to your spell list, and you can cast it once (at its lowest level) per Long Rest without expending a spell slot, although it does still require the material components.</li>
+			</ul>
+		</description>
+		<sheet>
+			<description>
+				<p>You are an expert at delivering goods and packages.</p>
+				<ul>
+					<li>Your speed increases by 10 feet.</li>
+					<li>You can travel at your normal speed even when encumbered.</li>
+					<li>The spell <i>Galder's Speedy Courier (LLoK)</i> is added to your spell list, and you can cast it once (at its lowest level) per Long Rest without expending a spell slot, although it does still require the material components.</li>
+				</ul>
+			</description>
+		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_LLOK_SPELL_GALDERS_SPEEDY_COURIER" />
+			<stat name="innate speed:misc" value="10" />
+			<stat name="innate speed:climb:misc" value="10" requirements="[innate speed:climb:1]" />
+			<stat name="innate speed:fly:misc" value="10" requirements="[innate speed:fly:1]" />
+			<stat name="innate speed:swim:misc" value="10" requirements="[innate speed:swim:1]" />
+			<stat name="innate speed:burrow:misc" value="10" requirements="[innate speed:burrow:1]" />
+		</rules>
+	</element>
+
+
+</elements>
