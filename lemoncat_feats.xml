@@ -4,7 +4,7 @@
 		<name>Feats</name>
 		<description>Feats</description>
 		<author url="https://github.com/cajadehu/aurorabuilder/">LemonCat</author>
-		<update version="0.0.1">
+		<update version="0.0.2">
 			<file name="lemoncat_feats.xml" url="https://raw.githubusercontent.com/cajadehu/aurorabuilder/main/lemoncat_feats.xml" />
 		</update>
 	</info>
@@ -126,6 +126,86 @@
 			<stat name="innate speed:burrow:misc" value="10" requirements="[innate speed:burrow:1]" />
 		</rules>
 	</element>
-
+	
+	<element name="Tunneler" type="Feat" source="AAA" id="ID_LEMONCAT_FEAT_TUNNELER">
+		<description>
+			<p>Once per Long Rest you can grant yourself a burrowing speed of 30ft for 1 hour. While burrowing, the form of a large mole spirit superimposes over your form. The displaced earth is compressed into the walls of the tunnel, which is 5ft in diameter.</p>
+		</description>
+		<sheet>
+			<description>
+				<p>Once per Long Rest you can grant yourself a burrowing speed of 30ft for 1 hour. While burrowing, the form of a large mole spirit superimposes over your form. The displaced earth is compressed into the walls of the tunnel, which is 5ft in diameter.</p>
+			</description>
+		</sheet>
+	</element>
+	
+	<element name="Ungulate Master" type="Feat" source="AAA" id="ID_LEMONCAT_FEAT_UNGULATE_MASTER">
+		<description>
+			<p>You have a natural affinity with Ungulate Beasts (large mammals with hooves), and gain the following benefits</p>
+			<ul>
+				<li>You gain the Animal Friendship spell, and can cast it at will but only with Ungulate Beasts.</li>
+				<li>You gain the Find Steed spell but can only summon Ungulate Beasts with it, and each Long Rest you can cast it without a spell slot a nuber of times equal to your Proficiency Modifier.</li>
+				<li>You have Advantage on Animal Handling checks with Ungulate Beasts.</li>
+			</ul>
+		</description>
+		<sheet>
+			<description>
+				<p>You have a natural affinity with Ungulate Beasts (large mammals with hooves), and gain the following benefits</p>
+				<ul>
+					<li>You gain the Animal Friendship spell, and can cast it at will but only with Ungulate Beasts.</li>
+					<li>You gain the Find Steed spell but can only summon Ungulate Beasts with it, and each Long Rest you can cast it without a spell slot a nuber of times equal to your Proficiency Modifier.</li>
+					<li>You have Advantage on Animal Handling checks with Ungulate Beasts.</li>
+				</ul>
+			</description>
+		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_PHB_SPELL_ANIMAL_FRIENDSHIP" />
+			<grant type="Spell" id="ID_PHB_SPELL_FIND_STEED" />
+		</rules>
+	</element>
+	
+	<element name="Attunement Familiarity" type="Feat" source="AAA" id="ID_LEMONCAT_FEAT_ATTUNEMENT_FAMILIARITY">
+		<description>
+			<p>You are able to attune to up to <b>seven</b> magical items.</p>
+		</description>
+		<sheet>
+			<description>
+				<p>You are able to attune to up to <b>seven</b> magical items.</p>
+			</description>
+		</sheet>
+		<rules>
+			<stat name="attunement:max" value="7" bonus="base" />
+		</rules>
+	</element>
+	
+	<element name="Transcendent Tongue" type="Feat" source="AAA" id="ID_LEMONCAT_FEAT_TRANSCENDENT_TONGUE">
+		<description>
+			<p>The Tongues spell is added to your spell list, and you can cast it on yourself at will without expending a spell slot.</p>
+		</description>
+		<sheet>
+			<description>
+				<p>The Tongues spell is added to your spell list, and you can cast it on yourself at will without expending a spell slot.</p>
+			</description>
+		</sheet>
+		<rules>
+			<grant type="Spell" id="ID_PHB_SPELL_TONGUES" />
+		</rules>
+	</element>
+	
+	<element name="Alchemy Major" type="Feat" source="AAA" id="ID_LEMONCAT_FEAT_ALCHEMY_MAJOR">
+		<description>
+			<p>If you are a level 2 Transmutation Wizard, You gain the following optional modifications to your Minor Alchemy Feature.</p>
+			<p>The list of alchemically transmutable materials is expanded to include: Mithril, Adamantine, Gold, Bronze, Brass, Candle Wax, Hard Moldy Cheese, Clear Ice, Lead, fresh horse dung, Porcelain, Baked Clay.</p>
+			<p>You can alchemically transmute between the following liquids (liquid to liquid only): Sea Water, Olive Oil, Simple Syrup, Deer Urine, Chicken Blood, Sour Wine, Mercury.</p>
+			<p>As an Action, you can transform up to 1 cubic inch of material, for a maximum duration of 1 minute.</p>
+		</description>
+		<sheet>
+			<description>
+				<p>If you are a level 2 Transmutation Wizard, You gain the following optional modifications to your Minor Alchemy Feature.</p>
+				<p>The list of alchemically transmutable materials is expanded to include: Mithril, Adamantine, Gold, Bronze, Brass, Candle Wax, Hard Moldy Cheese, Clear Ice, Lead, fresh horse dung, Porcelain, Baked Clay.</p>
+				<p>You can alchemically transmute between the following liquids (liquid to liquid only): Sea Water, Olive Oil, Simple Syrup, Deer Urine, Chicken Blood, Sour Wine, Mercury.</p>
+				<p>As an Action, you can transform up to 1 cubic inch of material, for a maximum duration of 1 minute.</p>
+			</description>
+		</sheet>
+	</element>
 
 </elements>
