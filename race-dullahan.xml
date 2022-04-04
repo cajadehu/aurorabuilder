@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Golemkin</name>
+		<description>Golemkin</description>
+		<author url="https://github.com/cajadehu/aurorabuilder/">LemonCat</author>
+		<update version="0.0.2">
+			<file name="race-dullahan.xml" url="https://raw.githubusercontent.com/cajadehu/aurorabuilder/main/race-dullahan.xml" />
+		</update>
+	</info>
+
+	<element name="Dullahan" type="Race" source="AAA" id="ID_CUSTOM_RACE_DULLAHAN">
+		<description>
+			<p class="flavor">“Guide the souls of the dead to their eternal rest.”</p>
+			<h4>Dullahan Nature</h4>
+			<p>
+			Dullahan are usually a confident, calm people with a strong sense of honor and justice. They are most populous in swamp land and marsh land, and their culture has strong emphasis on justice and honor.</p>
+			<p class="indent">Dullahan are somewhat unusual in terms of lifecycle in that they rise naturally from the land on a full moon as full-grown adults, and do not age. Their head is detachable, and if more than 10 feet away from their body or destroyed, it returns to the body fully restored. Damage to a Dullahan can be caused both to the head and body, but decapitation is a temporary inconvenience rather than a mortal wound.
+			</p>
+			<p class="indent">When Dullahan are slain, their soul remains within 5ft of their corpse for 1 hour before travelling to the beyond.</p>
+			<h4>Dullahan Varieties</h4>
+			<p>All varieties of Dullahan are tall, typically 7-8ft including their head, and have pale skin with deep blue veins showing through. They are sometimes confused with other Undead humanoids, but are distinctive in that their flesh is always in excellent condition (aside from being bloodless).
+			There are several common variations of Dullahan, differing primarily in the manifestation of their spiritual abilities. Whip Masters, Blade Masters, Headless Masters, and Soul Masters.</p>
+			<h4>Dullahan Traditions</h4>
+			<p>All of the Dullahan people have an innate bond souls, finding it a easy to guide souls to the afterlife and communicate with them. They are also keep on cleanliness, ejoying communal bathing and skin care regimens. It is considered quite rude to ask a Dullahan to remove their head as a parlor trick. Dullahan are known for their respect toward death, their knowledge of death rituals and funeral rites, and are sometimes requested if a cleric or priest cannot be found locally.</p>
+			<h4>Dullahan Politics</h4>
+			<p>Each community of Dullahan is usually small and isolationist, but are tolerant of visitors and traders for a short time at least, prefering their solitude.</p>
+			<h4>Dullahan Traits</h4>
+			<p>Your Dullahan character has certain traits deriving from your unusual nature.</p>
+			<p class="indent"><b><i>Ability Score Increase. </i></b>Your Strength score increases by 1, and your Constitution score increases by 2.</p>
+			<p class="indent"><b><i>Age. </i></b>Dullahan rise from the land as adults and do not age.</p>
+			<p class="indent"><b><i>Alignment. </i></b>As a general rule, Dullahan are calm and solitary, making them tend toward lawful and neutral.</p>
+			<p class="indent"><b><i>Size. </i></b>Dullahan are quite tall, often between 7 and 8 feet. Your size is Medium.</p>
+			<p class="indent"><b><i>Speed. </i></b>Your base walking speed is 30 feet.</p>
+			<p class="indent"><b><i>Languages. </i></b>You can speak, read, and write Common and one other standard language of your choice.</p>
+			<p class="indent"><b><i>Soul Sense</i></b> All Dullahan are able to sense the presence or absence of a soul within a creature they touch.</p>
+			<p class="indent"><b><i>Subraces. </i></b>Currently there are 4 common subraces, each with their own unique additional Traits.</p>
+			<p class="indent"><b><i>Tireless Nature. </i></b> You have the following benefits:</p>
+			<ul>
+				<li>You don’t need to eat, drink, or breathe.</li>
+				<li>You don’t need to sleep, and magic can’t put you to sleep.</li>
+				<li>You can finish a long rest in 4 hours if you spend those hours in an inactive state, during which you retain consciousness.</li>
+			</ul>
+		</description>
+		<setters>
+			<set name="names" type="male">Ivan, Igor, Gorash, Lorth</set>
+			<set name="names" type="female">Vivi, Lala, Korkor, Nunu</set>
+			<set name="names-format">{{name}}</set>
+			<set name="height" modifier="1d12">7'6"</set>
+			<set name="weight" modifier="2d4">220 lb.</set>
+		</setters>
+		<sheet display="false" />
+		<rules>
+			<stat name="strength" value="1" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+			<select type="Ability Score Improvement" name="Custom Ability Score Increase +1 (Dullahan)" supports="Custom Ability Score Increase 1" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+			
+			<stat name="constitution" value="2" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+			<select type="Ability Score Improvement" name="Custom Ability Score Increase +2 (Dullahan)" supports="Custom Ability Score Increase 2" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI" />
+			
+			<stat name="innate speed" value="30" bonus="base" />
+			<grant type="Size" id="ID_SIZE_MEDIUM" />
+			<grant type="Language" id="ID_LANGUAGE_COMMON" requirements="!ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE" />
+			<select type="Language" name="Customized Language" supports="Custom Race Language" requirements="ID_WOTC_TCOE_OPTION_CUSTOMIZED_LANGUAGE" />
+			<select type="Language" name="Language (Dullahan)" number="1" supports="Standard" />
+			<grant type="Racial Trait" id="ID_RACIAL_TRAIT_DULLAHAN_SUBRACE" />
+			<grant type="Racial Trait" id="ID_CUSTOM_RACIAL_TRAIT_SOUL_SENSE" />
+			<grant type="Racial Trait" id="ID_CUSTOM_RACIAL_TRAIT_TIRELESS_NATURE" />
+		</rules>
+	</element>
+
+	<element name="Soul Sight" type="Racial Trait" source="AAA" id="ID_LEMONCAT_SOUL_SIGHT">
+		<description>
+			<p>You have the ability to occasionally sense the presence of souls. As an action, you can open your awareness to magically detect souls. Until the end of your next turn, you know the location of any souls within 60 feet of you that isn’t behind total cover and that isn’t protected from divination magic. This sense doesn’t tell you anything about a soul's capabilities or identity, nor that of the soul's host.</p>
+			<p class="indent">You can use this feature a number of times equal to your Constitution modifier (minimum of once). You regain all expended uses when you finish a long rest.</p>
+		</description>
+		<sheet action="Action" usage="{{soul sight:usage}}/Long Rest">
+			<description>Until your next turn, you know the location of any undead within 60 feet of you that isn’t behind total cover and that isn’t protected from divination magic.</description>
+		</sheet>
+		<rules>
+			<stat name="soul sight:usage" value="1" bonus="base" />
+			<stat name="soul sight:usage" value="Constitution:modifier" bonus="base" />
+		</rules>
+	</element>
+
+	<element name="Headless Scout" type="Spell" source="Player’s Handbook" id="ID_LEMONCAT_SPELL_HEADLESS_SCOUT">
+		<description>
+			<p>You sit cross-legged, holding your detached head in your hands, and create a spectral head within range that hovers in the air for the duration.</p>
+			<p class="indent">You mentally receive visual information from the spectral head, which has normal vision and darkvision out to 30 feet. The spectral head can look in every direction.</p>
+			<p class="indent">As an action, you can move the spectral head up to 30 feet in any direction. There is no limit to how far away from you the spectral head can move, but it can’t enter another plane of existence. A solid barrier blocks the spectral head’s movement, but the eye can pass through an opening as small as 1 foot in diameter.</p>
+		</description>
+		<setters>
+			<set name="keywords">spectral, custom, lemoncat, aaa</set>
+			<set name="level">1</set>
+			<set name="school">Divination</set>
+			<set name="time">1 action</set>
+			<set name="duration">Concentration, up to 1 hour</set>
+			<set name="range">30 feet</set>
+			<set name="hasVerbalComponent">true</set>
+			<set name="hasSomaticComponent">true</set>
+			<set name="hasMaterialComponent">true</set>
+			<set name="materialComponent">your detached head</set>
+			<set name="isConcentration">true</set>
+			<set name="isRitual">false</set>
+		</setters>
+	</element>
+
+<!-- RACIAL TRAITS ON SHEET -->
+
+	<element name="Tireless Nature" type="Racial Trait" source="AAA" id="ID_CUSTOM_RACIAL_TRAIT_TIRELESS_NATURE">
+		<description>
+			<p class="indent"><b><i>Tireless Nature</i></b> You have the following benefits:</p>
+			<ul>
+				<li>You don’t need to eat, drink, or breathe.</li>
+				<li>You don’t need to sleep, and magic can’t put you to sleep. You can finish a long rest in 4 hours if you spend those hours in an inactive state, during which you retain consciousness.</li>
+			</ul>
+		</description>
+		<sheet>
+			<description>You have the following benefits
+				<ul>
+					<li>You don’t need to eat, drink, or breathe.</li>
+					<li>You don’t need to sleep, and magic can’t put you to sleep.</li>
+					<li>You can finish a long rest in 4 hours if you spend those hours in an inactive state, during which you retain consciousness.</li>
+				</ul>
+			</description>
+		</sheet>
+	</element>
+
+	<element name="Soul Sense" type="Racial Trait" source="AAA" id="ID_CUSTOM_RACIAL_TRAIT_SOUL_SENSE">
+		<description>
+			<p class="indent"><strong><em>Soul Sense</em></strong> You are able to sense the presense or absense of a soul within a creature that you touch.</p>
+		</description>
+		<sheet>
+			<description>
+			<p> You are able to sense the presense or absense of a soul within a creature that you touch.</p>
+		</description>
+		</sheet>
+	</element>
+
+	<element name="Magic Resistance" type="Racial Trait" source="AAA" id="ID_CUSTOM_RACIAL_TRAIT_MAGIC_RESISTANCE">
+		<description>
+			<p>You have advantage on saving throws against spells and other magical effects.</p>
+		</description>
+		<sheet>
+			<description>You have advantage on saving throws against spells and other magical effects.</description>
+		</sheet>
+	</element>
+  
+  	<element name="Dullahan Subrace" type="Racial Trait" source="AAA" id="ID_RACIAL_TRAIT_DULLAHAN_SUBRACE">
+		<description>
+			<p>Several subraces of Dullahan populate the worlds of D&amp;D. Choose one of these subraces.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Sub Race" name="Dullahan Subrace" supports="Dullahan" />
+		</rules>
+	</element>
+
+<!-- SUB RACES IN MENU -->
+
+	<element name="Whip Master" type="Sub Race" source="AAA" id="ID_CUSTOM_SUB_RACE_DULLAHAN_WHIP_MASTER">
+		<supports>Dullahan</supports>
+		<description>
+			<p class="indent"><strong><em>Whip Master</em></strong> You are naturally proficient with Whips and when wielding one it takes on an illusory appearance of a humanoid spine.</p>
+			<p>All hits you make with a Whip are Critical hits on a d20 roll of 17-20.</p>
+			<p>All Whips you wield have a Range of 15ft minimum.</p>
+			<p>Any creature that is injured by your Whip is blinded until the end of your next turn, if it fails a Constitution Check of 13.</p>
+			<p>While wielding a Whip on one hand, and your detached head in your other hand, you have advantage on all attacks you make with the Whip.</p>
+		</description>
+		<sheet alt="Dullahan (Whip Master)">
+			<description>
+				<p class="indent"><strong><em>Whip Master</em></strong> You are naturally proficient with Whips and when wielding one it takes on an illusory appearance of a humanoid spine.</p>
+				<p>All hits you make with a Whip are Critical hits on a d20 roll of 17-20.</p>
+				<p>All Whips you wield have a Range of 15ft minimum.</p>
+				<p>Any creature that is injured by your Whip is blinded until the end of your next turn, if it fails a Constitution Check of 13.</p>
+				<p>As an action, you can manifest a Whip in your Primary Hand for up to one minute. You can perfom this action each day a number of times equal to your Proficiency Bonus.</p>
+				<p>While wielding a Whip on one hand, and your detached head in your other hand, you have advantage on all attacks you make with the Whip.</p>
+			</description>
+		</sheet>
+		<rules>
+			<grant type="Racial Trait" id="ID_CUSTOM_RACIAL_TRAIT_SOUL_SENSE" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_WHIP" />
+		</rules>
+	</element>
+
+	<element name="Blade Master" type="Sub Race" source="AAA" id="ID_CUSTOM_SUB_RACE_DULLAHAN_BLADE_MASTER">
+		<supports>Dullahan</supports>
+		<description>
+			<p class="indent"><strong><em>Blade Master</em></strong> You are naturally proficient with Greatswords and when wielding one it takes on an illusory appearance of bone, sinue, and muscle.</p>
+			<p>All hits you make with a Greatsword are Critical hits on a d20 roll of 18-20.</p>
+			<p>You are able to wield a Greatsword in one hand provided that you are holding your detached head in your other hand.</p>
+			<p>As an action, you can manifest a Greatsword in your Primary Hand for up to one minute. You can perfom this action each day a number of times equal to your Proficiency Bonus.</p>
+			<p>While wielding a Greatsword in one hand and your detached head in your other hand, you have advantage on all attacks you make with the Greatsword.</p>
+		</description>
+		<sheet alt="Dullahan (Blade Master)">
+			<description>
+				<p class="indent"><strong><em>Blade Master</em></strong> You are naturally proficient with Greatswords and when wielding one it takes on an illusory appearance of bone, sinue, and muscle.</p>
+				<p>All hits you make with a Greatsword are Critical hits on a d20 roll of 18-20.</p>
+				<p>You are able to wield a Greatsword in one hand provided that you are holding your detached head in your other hand.</p>
+				<p>As an action, you can manifest a Greatsword in your Primary Hand for up to one minute. You can perfom this action each day a number of times equal to your Proficiency Bonus.</p>
+				<p>While wielding a Greatsword in one hand and your detached head in your other hand, you have advantage on all attacks you make with the Greatsword.</p>
+			</description>
+		</sheet>
+		<rules>
+			<grant type="Racial Trait" id="ID_CUSTOM_RACIAL_TRAIT_SOUL_SENSE" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_GREATSWORD" />
+		</rules>
+	</element>
+
+	<element name="Headless Master" type="Sub Race" source="AAA" id="ID_CUSTOM_SUB_RACE_DULLAHAN_HEADLESS_MASTER">
+		<supports>Dullahan</supports>
+		<description>
+			<p class="indent"><strong><em>Headless Master</em></strong> You are able to use your detached head in curious ways.</p>
+			<p>You are able to cast the spell <i>Headless Scout</i> (similar to Arcane Eye) at will, without expending a spell slot.</p>
+			<p>You are able to cast the spell <i>Detect Magic</i> at will, without expending a spell slot.</p>
+			<p>You have advantage on saving throws against spells and other magical effects.</p>
+		</description>
+		<sheet alt="Dullahan (Headless Master)">
+			<description>
+				<p class="indent"><strong><em>Headless Master</em></strong> You are able to use your detached head in curious ways.</p>
+				<p>You are able to cast the spell <i>Headless Scout</i> (similar to Arcane Eye) at will, without expending a spell slot.</p>
+				<p>You are able to cast the spell <i>Detect Magic</i> at will, without expending a spell slot.</p>
+				<p>You have advantage on saving throws against spells and other magical effects.</p>
+			</description>
+		</sheet>
+		<rules>
+			<grant type="Racial Trait" id="ID_CUSTOM_RACIAL_TRAIT_SOUL_SENSE" />
+			<grant type="Racial Trait" id="ID_CUSTOM_RACIAL_TRAIT_MAGIC_RESISTANCE" />
+			<grant type="Spell" id="ID_LEMONCAT_SPELL_HEADLESS_SCOUT" />
+			<grant type="Spell" id="ID_PHB_SPELL_DETECT_MAGIC" />
+		</rules>
+	</element>
+
+	<element name="Soul Master" type="Sub Race" source="AAA" id="ID_CUSTOM_SUB_RACE_DULLAHAN_SOUL_MASTER">
+		<supports>Dullahan</supports>
+		<description>
+			<p class="indent"><strong><em>Soul Master</em></strong> You are very sensitive to the souls of creatures.</p>
+			<p>You are able to cast the Cantrip <i>Spare the Dying</i> at will.</p>
+			<p>You are able to use <i>Soul Sight</i> (similar to Eyes of the Grave) to sense the presence of souls within 60ft.</p>
+			<p>If a creature dies within 30ft of you, you regain 5HP, up to your maximum HP. This effect occurs even if you are incapacitated or unconcious, but not if you are deceased.</p>
+			<p>You are difficult to kill. If a spell, such as raise dead, has the sole effect of restoring you to life (but not undeath), the caster doesn’t need material components to cast the spell on you.</p>
+		</description>
+		<sheet alt="Dullahan (Soul Master)">
+			<description>
+				<p class="indent"><strong><em>Soul Master</em></strong> You are very sensitive to the souls of creatures.</p>
+				<p>You are able to cast the Cantrip <i>Spare the Dying</i> at will.</p>
+				<p>You are able to use <i>Soul Sight</i> (similar to Eyes of the Grave) to sense the presence of souls within 60ft.</p>
+				<p>If a creature dies within 30ft of you, you regain 5HP, up to your maximum HP. This effect occurs even if you are incapacitated or unconcious, but not if you are deceased.</p>
+				<p>You are difficult to kill. If a spell, such as raise dead, has the sole effect of restoring you to life (but not undeath), the caster doesn’t need material components to cast the spell on you.</p>
+			</description>
+		</sheet>
+		<rules>
+			<grant type="Racial Trait" id="ID_CUSTOM_RACIAL_TRAIT_SOUL_SENSE" />
+			<grant type="Racial Trait" id="ID_LEMONCAT_SOUL_SIGHT" />
+			<grant type="Spell" id="ID_PHB_SPELL_SPARE_THE_DYING" />
+			<grant type="Racial Trait" source="Xanathar’s Guide to Everything" id="ID_WOTC_XGTE_ARCHETYPE_FEATURE_ZEALOT_WARRIOR_OF_THE_GODS" />
+		</rules>
+	</element>
+
+	
+</elements>
