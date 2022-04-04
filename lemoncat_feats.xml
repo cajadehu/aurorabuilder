@@ -4,7 +4,7 @@
 		<name>Feats</name>
 		<description>Feats</description>
 		<author url="https://github.com/cajadehu/aurorabuilder/">LemonCat</author>
-		<update version="0.0.2">
+		<update version="0.0.4">
 			<file name="lemoncat_feats.xml" url="https://raw.githubusercontent.com/cajadehu/aurorabuilder/main/lemoncat_feats.xml" />
 		</update>
 	</info>
@@ -206,6 +206,27 @@
 				<p>As an Action, you can transform up to 1 cubic inch of material, for a maximum duration of 1 minute.</p>
 			</description>
 		</sheet>
+	</element>
+	
+	<element name="Well Prepared" type="Feat" source="AAA" id="ID_LEMONCAT_FEAT_WELL_PREPARED">
+		<prerequisite>Cleric/Druid/Paladin/Ranger/Wizard</prerequisite>
+		<requirements>ID_WOTC_PHB_CLASS_CLERIC||ID_WOTC_PHB_CLASS_DRUID||ID_WOTC_PHB_CLASS_PALADIN||ID_WOTC_PHB_CLASS_RANGER||ID_WOTC_PHB_CLASS_WIZARD</requirements>
+		<description>
+			<p><em>Prerequisite: Full Spellcasting</em></p>
+			<p>You've trained your mind to quickly recall your spells at a moment's notice, and can have <b>six</b> additional spells prepared.</p>
+		</description>
+		<sheet>
+			<description>
+				<p>You've trained your mind to quickly recall your spells at a moment's notice, and can have <b>six</b> additional spells prepared.</p>
+			</description>
+		</sheet>
+		<rules>
+			<stat name="cleric:spellcasting:prepare" 	value="6"  requirements="[level:cleric:1]" />
+			<stat name="druid:spellcasting:prepare" 	value="6"  requirements="[level:druid:1]" />
+			<stat name="paladin:spellcasting:prepare" 	value="6"  requirements="[level:paladin:1]" />
+			<stat name="ranger:spellcasting:prepare" 	value="6"  requirements="[level:ranger:1]" />
+			<stat name="wizard:spellcasting:prepare" 	value="6"  requirements="[level:wizard:1]" />
+		</rules>
 	</element>
 
 </elements>
