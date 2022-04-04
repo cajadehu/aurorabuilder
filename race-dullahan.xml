@@ -4,7 +4,7 @@
 		<name>Golemkin</name>
 		<description>Golemkin</description>
 		<author url="https://github.com/cajadehu/aurorabuilder/">LemonCat</author>
-		<update version="0.0.2">
+		<update version="0.0.4">
 			<file name="race-dullahan.xml" url="https://raw.githubusercontent.com/cajadehu/aurorabuilder/main/race-dullahan.xml" />
 		</update>
 	</info>
@@ -256,5 +256,49 @@
 		</rules>
 	</element>
 
-	
+	<element name="Steed Master" type="Sub Race" source="AAA" id="ID_CUSTOM_SUB_RACE_DULLAHAN_STEED_MASTER">
+		<supports>Dullahan</supports>
+		<description>
+			<p class="indent"><strong><em>Steed Master</em></strong> You have an innate bond with steeds of all kinds.</p>
+			<p>You gain a number of <b>Steed Slots</b> each dawn, up to a maximum of your Proficiency Bonus. You can cast one of the following spells using a Steed Slot, instead of a Spell Slot, as an Action.</p>
+			<ul>
+				<li>Find Steed (granted at character level 1)</li>
+				<li>Phantom Steed (granted at character level 4)</li>
+				<li>Find Greater Steed (granted at character level 8)</li>
+			</ul>
+			<p>If you are standing within 5ft of your Steed, you can mount it as a Free Action.</p>
+			<p>While you are riding your Steed and holding your detached head in one hand, you gain the following benefits</p>
+			<ul>
+				<li>Your Steed is not slowed by Difficult Terrain.</li>
+				<li>Both you and your Steed have resistance to all damage.</li>
+				<li>The speed of your Steed increases by 10ft.</li>
+			</ul>
+		</description>
+		<sheet alt="Dullahan (Steed Master)">
+			<description>
+				<p class="indent"><strong><em>Steed Master</em></strong> You have an innate bond with steeds of all kinds.</p>
+				<p>You gain a number of <b>Steed Slots</b> each dawn, up to a maximum of your Proficiency Bonus. You can cast one of the following spells using a Steed Slot, instead of a Spell Slot, as an Action.</p>
+				<ul>
+					<li>Find Steed (granted at character level 1)</li>
+					<li>Phantom Steed (granted at character level 4)</li>
+					<li>Find Greater Steed (granted at character level 8)</li>
+				</ul>
+				<p>If you are standing within 5ft of your Steed, you can mount it as a Free Action.</p>
+				<p>While you are riding your Steed and holding your detached head in one hand, you gain the following benefits</p>
+				<ul>
+					<li>Your Steed is not slowed by Difficult Terrain.</li>
+					<li>Both you and your Steed have resistance to all damage.</li>
+					<li>The speed of your Steed increases by 10ft.</li>
+				</ul>
+			</description>
+		</sheet>
+		<rules>
+			<grant type="Racial Trait" id="ID_CUSTOM_RACIAL_TRAIT_SOUL_SENSE" />
+			<grant type="Spell" id="ID_PHB_SPELL_FIND_STEED" />
+			<grant type="Spell" id="ID_PHB_SPELL_PHANTOM_STEED" />
+			<grant type="Spell" id="ID_XGTE_SPELL_FIND_GREATER_STEED" />
+		</rules>
+	</element>
+
+
 </elements>
