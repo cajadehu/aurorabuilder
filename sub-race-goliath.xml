@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Goliath Sub Races</name>
+		<description>Goliath Sub Races</description>
+		<author url="https://github.com/cajadehu/aurorabuilder/">LemonCat</author>
+		<update version="0.0.1">
+			<file name="sub-race-goliath.xml" url="https://raw.githubusercontent.com/cajadehu/aurorabuilder/main/sub-race-goliath.xml" />
+		</update>
+	</info>
+	
+	<!-- Racial Traits -->
+		<element name="Titan Skin" type="Racial Trait" source="AAA" id="ID_LEMONCAT_ARMOR_TITAN_SKIN">
+		<description>
+			<p>You have thick, leathery skin. When you aren’t wearing armor, your AC is 14 + your Constitution modifier. You can use your natural armor to determine your AC if the armor you wear would leave you with a lower AC. A shield’s benefits apply as normal while you use your natural armor.</p>
+		</description>
+		<sheet>
+			<description>When you aren’t wearing armor, your AC is {{titan skin}}. You can use your natural armor to determine your AC if the armor you wear would leave you with a lower AC. A shield’s benefits apply as normal while you use your natural armor.</description>
+		</sheet>
+		<rules>
+			<stat name="titan skin" value="14" />
+			<stat name="titan skin" value="constitution:modifier" />
+			<stat name="ac:calculation" value="titan skin" bonus="calculation" alt="Natural Armor (Titan Skin)" />
+		</rules>
+	</element>
+	
+	
+	<!-- Sub Races -->
+	<element name="Titan" type="Sub Race" source="AAA" id="ID_LEMONCAT_SUB_RACE_GOLIATH_TITAN">
+		<supports>Goliath</supports>
+		<description>
+			<p>Tending towards militarianism, the "Titans" will sometimes come into conflict with others who encroach on their territory.</p>
+			<p class="indent"><strong><em>Hardy</em></strong> You have a natural armor deriving from your tough life-style. Your AC is 13 + Constitution Modifier.</p>
+			<p class="indent"><strong><em>Combat Training</em></strong>	You have also gained proficiency in Martial Weapons through intense training.</p>
+			<p class="indent"><strong><em>Night Sight</em></strong>	Your kin have developed Dark Vision through a tendancy for nocturnalism.</p>
+		</description>
+		<sheet alt="Goliath (Titan)">
+		
+		</sheet>
+		<rules>
+			<grant type="Vision" id="ID_VISION_DARKVISION" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_MARTIAL_WEAPONS" />
+			<grant type="Racial Trait" id="ID_LEMONCAT_ARMOR_TITAN_SKIN" />
+		</rules>
+	</element>
+	
+	<!-- Subrace selector -->
+	<element name="Goliath Subrace" type="Racial Trait" source="AAA" id="ID_RACIAL_TRAITGOLIATH_SUBRACE">
+		<description>
+			<p>Several subraces of Goliath populate the worlds of D&amp;D. Choose one of these subraces.</p>
+		</description>
+		<sheet display="false"/>
+		<rules>
+			<select type="Sub Race" name="Goliath Subrace" supports="Goliath" />
+		</rules>
+	</element>
+
+	<!-- Append subrace selector to existing Goliath races -->
+	<append id="ID_WOTC_MOTM_RACE_GOLIATH">
+		<rules>
+			<grant type="Racial Trait" id="ID_RACIAL_TRAITGOLIATH_SUBRACE" />
+		</rules>
+	</append>
+	<append id="ID_WOTC_VGTM_RACE_GOLIATH">
+		<rules>
+			<grant type="Racial Trait" id="ID_RACIAL_TRAITGOLIATH_SUBRACE" />
+		</rules>
+	</append>
+	
+</elements>
