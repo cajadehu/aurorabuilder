@@ -4,7 +4,7 @@
 		<name>Goliath Sub Races</name>
 		<description>Goliath Sub Races</description>
 		<author url="https://github.com/cajadehu/aurorabuilder/">LemonCat</author>
-		<update version="0.0.1">
+		<update version="0.0.2">
 			<file name="sub-race-goliath.xml" url="https://raw.githubusercontent.com/cajadehu/aurorabuilder/main/sub-race-goliath.xml" />
 		</update>
 	</info>
@@ -35,7 +35,11 @@
 			<p class="indent"><strong><em>Night Sight</em></strong>	Your kin have developed Dark Vision through a tendancy for nocturnalism.</p>
 		</description>
 		<sheet alt="Goliath (Titan)">
-		
+			<description>
+				<p class="indent"><strong><em>Hardy</em></strong> Your AC can be 13 + Constitution Modifier.</p>
+				<p class="indent"><strong><em>Combat Training</em></strong>	You have proficiency in Martial Weapons.</p>
+				<p class="indent"><strong><em>Night Sight</em></strong>	Your kin have Dark Vision.</p>
+			</description>
 		</sheet>
 		<rules>
 			<grant type="Vision" id="ID_VISION_DARKVISION" />
@@ -44,8 +48,51 @@
 		</rules>
 	</element>
 	
+	<element name="Cyclops" type="Sub Race" source="AAA" id="ID_LEMONCAT_SUB_RACE_GOLIATH_CYCLOPS">
+		<supports>Goliath</supports>
+		<description>
+			<p>Tending towards passivisism, the "Cyclops" are isolationist in nature, and prefer peaceful resolution to conflicts when possible. They also have a single, central eye with a 'plus-sign' shaped pupil.</p>
+			<p class="indent"><strong><em>Ernest</em></strong> You are very convincing in speech and body gestures, granting you a +4 bonus to Persuasion Checks.</p>
+			<p class="indent"><strong><em>All-Seeing</em></strong> You have Truesight to a range of 120 feet.</p>
+			<p class="indent"><strong><em>Sight Stealer</em></strong> You can cast the Blindness (but not Deafness) spell with a Constitution Save DC of 13 once per Short Rest as a Bonus Action, without expending a spell slot.</p>
+		</description>
+		<sheet alt="Goliath (Cyclops)">
+			<description>
+				<p class="indent"><strong><em>Ernest</em></strong> +4 bonus to Persuasion Checks.</p>
+				<p class="indent"><strong><em>All-Seeing</em></strong> You have Truesight to a range of 120 feet.</p>
+				<p class="indent"><strong><em>Sight Stealer</em></strong> You can cast the Blindness (but not Deafness) spell with a Constitution Save DC of 13 once per Short Rest as a Bonus Action, without expending a spell slot.</p>
+			</description>
+		</sheet>
+		<rules>
+			<grant type="Vision" id="ID_VISION_TRUESIGHT" />
+			<stat name="truesight:range" value="120" bonus="base" />
+			<stat name="persuasion:misc" value="4" />
+			<grant type="Spell" id="ID_PHB_SPELL_BLINDNESS_DEAFNESS" />
+		</rules>
+	</element>
+		
+	<element name="Behemoth" type="Sub Race" source="AAA" id="ID_LEMONCAT_SUB_RACE_GOLIATH_BEHEMOTH">
+		<supports>Goliath</supports>
+		<description>
+			<p>Tending towards Anarchism, the "Behemoth" are wanderers by nature, and rumored to be immensely strong and violent.</p>
+			<p class="indent"><strong><em>Mighty</em></strong> You have advantage on Strength Saving Throws, Strength Checks, and Athletic Checks.</p>
+			<p class="indent"><strong><em>Rock-Fisted</em></strong> Your body structure allows you to wield two-handed heavy weapons with a single hand.</p>
+			<p class="indent"><strong><em>Athletic</em></strong> You have proficiency and expertise with the Athletics Skill.</p>
+		</description>
+		<sheet alt="Goliath (Behemoth)">
+			<description>
+				<p class="indent"><strong><em>Mighty</em></strong> You have advantage on Strength Saving Throws, Strength Checks, and Athletic Checks.</p>
+				<p class="indent"><strong><em>Rock-Fisted</em></strong> You can wield two-handed heavy weapons with a single hand.</p>
+				<p class="indent"><strong><em>Athletic</em></strong> You have proficiency and expertise with the Athletics Skill.</p>
+			</description>
+		</sheet>
+		<rules>
+			<grant type="Grants" id="ID_INTERNAL_GRANTS_PROFICIENCY_SKILL_OR_DOUBLE_ATHLETICS" />
+		</rules>
+	</element>
+	
 	<!-- Subrace selector -->
-	<element name="Goliath Subrace" type="Racial Trait" source="AAA" id="ID_RACIAL_TRAITGOLIATH_SUBRACE">
+	<element name="Goliath Subrace" type="Racial Trait" source="AAA" id="ID_RACIAL_TRAIT_GOLIATH_SUBRACE">
 		<description>
 			<p>Several subraces of Goliath populate the worlds of D&amp;D. Choose one of these subraces.</p>
 		</description>
@@ -58,12 +105,12 @@
 	<!-- Append subrace selector to existing Goliath races -->
 	<append id="ID_WOTC_MOTM_RACE_GOLIATH">
 		<rules>
-			<grant type="Racial Trait" id="ID_RACIAL_TRAITGOLIATH_SUBRACE" />
+			<grant type="Racial Trait" id="ID_RACIAL_TRAIT_GOLIATH_SUBRACE" />
 		</rules>
 	</append>
 	<append id="ID_WOTC_VGTM_RACE_GOLIATH">
 		<rules>
-			<grant type="Racial Trait" id="ID_RACIAL_TRAITGOLIATH_SUBRACE" />
+			<grant type="Racial Trait" id="ID_RACIAL_TRAIT_GOLIATH_SUBRACE" />
 		</rules>
 	</append>
 	
