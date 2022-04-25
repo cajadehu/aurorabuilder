@@ -4,7 +4,7 @@
 		<name>Special Weapons</name>
 		<description>Special Weapons</description>
 		<author url="https://github.com/cajadehu/aurorabuilder/">LemonCat</author>
-		<update version="0.1.5">
+		<update version="0.1.6">
 			<file name="lemoncat_specialWeapons.xml" url="https://raw.githubusercontent.com/cajadehu/aurorabuilder/main/lemoncat_specialWeapons.xml" />
 		</update>
 	</info>
@@ -1236,5 +1236,254 @@
 			<stat name="intimidation:misc" value="2" />
 		</rules>
 	</element>
+
+	<element name="Shield of Gleaming" type="Magic Item" source="AAA" id="ID_LEMONCAT_SHIELD_OF_GLEAMING">		
+		<description>
+			<p>This shield never gets dirty.</p>
+		</description>
+		<setters>
+			<set name="keywords">gleam, lemoncat, aaa, custom</set>
+			<set name="category">Magic Armor</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="type" addition="shield">Armor</set>
+			<set name="rarity">Common</set>
+			<set name="armor">ID_INTERNAL_ARMOR_GROUP_SHIELD</set>
+			<set name="name-format">{{parent}} of Gleaming</set>
+		</setters>
+	</element>
+
+	<element name="Shield of Moonlight" type="Magic Item" source="AAA" id="ID_LEMONCAT_SHIELD_OF_MOONLIGHT">		
+		<description>
+			<p>Using a command word as an action to activate or deactivate this shield's feature, it emits a 120ft cone of moonlight. The first 60ft is bright moonlight, and the next 60ft is dim moonlight. A small image on the back always shows the current phases of the moon(s) of the material plane.</p>
+		</description>
+		<setters>
+			<set name="keywords">moon, light, dark, lemoncat, aaa, custom</set>
+			<set name="category">Magic Armor</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="type" addition="shield">Armor</set>
+			<set name="rarity">Common</set>
+			<set name="armor">ID_INTERNAL_ARMOR_GROUP_SHIELD</set>
+			<set name="name-format">{{parent}} of Moonlight</set>
+		</setters>
+	</element>
+
+	<element name="Shield of Floating" type="Magic Item" source="AAA" id="ID_LEMONCAT_SHIELD_OF_FLOATING">		
+		<description>
+			<p>A single Medium sized creature can stand on this bouyant shield and float of calm water. It is naturally stable, and responds to the rider's will, moving up to 10ft per round.</p>
+		</description>
+		<setters>
+			<set name="keywords">water, travel, lemoncat, aaa, custom</set>
+			<set name="category">Magic Armor</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="type" addition="shield">Armor</set>
+			<set name="rarity">Common</set>
+			<set name="armor">ID_INTERNAL_ARMOR_GROUP_SHIELD</set>
+			<set name="name-format">{{parent}} of Floating</set>
+		</setters>
+	</element>
+
+	<element name="Shield of Ropes" type="Magic Item" source="AAA" id="ID_LEMONCAT_SHIELD_OF_ROPES">		
+		<description>
+			<p>This shield has a maximum of 3 charges, and regenerates 1d4 charges each dawn. You can expend a charge as an action to cause the shield to produce a 60ft hemp rope, which vanishes after one hour or if it is destroyed.</p>
+		</description>
+		<setters>
+			<set name="keywords">climb, lemoncat, aaa, custom</set>
+			<set name="category">Magic Armor</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="type" addition="shield">Armor</set>
+			<set name="rarity">Common</set>
+			<set name="armor">ID_INTERNAL_ARMOR_GROUP_SHIELD</set>
+			<set name="name-format">{{parent}} of Ropes</set>
+		</setters>
+	</element>
+
+	<element name="Shield of Tentacles" type="Magic Item" source="AAA" id="ID_LEMONCAT_SHIELD_OF_TENTACLES">		
+		<description>
+			<p>This shield looks like a single coiled tentacle. The weilder has advantage on Grappling Checks, and once per dawn as an Action the wielder can gain Cold Resistance for one minute.</p>
+		</description>
+		<setters>
+			<set name="keywords">grappl, cold, resist, lemoncat, aaa, custom</set>
+			<set name="category">Magic Armor</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="type" addition="shield">Armor</set>
+			<set name="rarity">Common</set>
+			<set name="armor">ID_INTERNAL_ARMOR_GROUP_SHIELD</set>
+			<set name="name-format">{{parent}} of Tentacles</set>
+		</setters>
+	</element>
+
+	<element name="Shield of Storing" type="Magic Item" source="AAA" id="ID_LEMONCAT_SHIELD_OF_STORING">		
+		<description>
+			<p>This shield grants its wielder access to a pocket dimension for storage up to 5 cubic feet, and 50 pounds of weight. It cannot store living, undead, or construct creatures.</p>
+		</description>
+		<setters>
+			<set name="keywords">pocket, dimension, hold, lemoncat, aaa, custom</set>
+			<set name="category">Magic Armor</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="type" addition="shield">Armor</set>
+			<set name="rarity">Common</set>
+			<set name="armor">ID_INTERNAL_ARMOR_GROUP_SHIELD</set>
+			<set name="name-format">{{parent}} of Storing</set>
+		</setters>
+	</element>
 	
+
+	<element name="Shield of Menacing" type="Magic Item" source="AAA" id="ID_LEMONCAT_SHIELD_OF_MENACING">		
+		<description>
+			<p>This shield has a permanant harmless visual effect that grants its wielder a +2 bonus to Intimidation Skill Checks. The effect appears as one of the following:
+			<ul>
+				<li>dripping blood</li>
+				<li>rising wisps of smoke</li>
+				<li>quivering fangs</li>
+				<li>shadowy tendrils</li>
+				<li>scaly red eyes that look around wildly</li>
+			</ul>			
+			</p>
+		</description>
+		<setters>
+			<set name="keywords">intimidat, bonus, skill, check, lemoncat, aaa, custom</set>
+			<set name="category">Magic Armor</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="type" addition="shield">Armor</set>
+			<set name="rarity">Common</set>
+			<set name="armor">ID_INTERNAL_ARMOR_GROUP_SHIELD</set>
+			<set name="name-format">{{parent}} of Menacing</set>
+		</setters>
+	</element>
+	
+	<element name="Shield of Wandering" type="Magic Item" source="AAA" id="ID_LEMONCAT_SHIELD_OF_WANDERING">		
+		<description>
+			<p>When held flat and face up, an illusory arrow on the face of the shield points North, and an illusory sun dial appears on the shield face indicating the current time to the nearest hour, even at night.</p>
+		</description>
+		<setters>
+			<set name="keywords">travel, north, time, sun, moon, lemoncat, aaa, custom</set>
+			<set name="category">Magic Armor</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="type" addition="shield">Armor</set>
+			<set name="rarity">Common</set>
+			<set name="armor">ID_INTERNAL_ARMOR_GROUP_SHIELD</set>
+			<set name="name-format">{{parent}} of Wandering</set>
+		</setters>
+	</element>
+
+	<element name="Shield of Nibbles" type="Magic Item" source="AAA" id="ID_LEMONCAT_SHIELD_OF_NIBBLES">		
+		<description>
+			<p>Once per day this shield can be held flat, face up, and a command word spoken to activate its feature. When activated the shield casts Prestidigitation on itself to become clean, and a variety of cheeses, breads, sliced preserved meats, fruits, and a large cup of juice appear on the shield face. The food produced is enough to sustain a Medium sized creature for one day. Any of the meal not consumed within an hour, vanishes.</p>
+		</description>
+		<setters>
+			<set name="keywords">food, sustain, meal, lemoncat, aaa, custom</set>
+			<set name="category">Magic Armor</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="type" addition="shield">Armor</set>
+			<set name="rarity">Common</set>
+			<set name="armor">ID_INTERNAL_ARMOR_GROUP_SHIELD</set>
+			<set name="name-format">{{parent}} of Nibbles</set>
+		</setters>
+	</element>
+	
+	<element name="Shield of Tomes" type="Magic Item" source="AAA" id="ID_LEMONCAT_SHIELD_OF_TOMES">		
+		<description>
+			<p>When a non-magical tome is placed on the face of the shield, its contents are absorbed into the shield for up to 30 days. Up to 5 tomes can be stored in the shield at a time. While not in combat or unconcious, the wielder can psychically access the tomes stored within the shield, and read them at their normal pace.</p>
+		</description>
+		<setters>
+			<set name="keywords">book, read, learn, lemoncat, aaa, custom</set>
+			<set name="category">Magic Armor</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="type" addition="shield">Armor</set>
+			<set name="rarity">Common</set>
+			<set name="armor">ID_INTERNAL_ARMOR_GROUP_SHIELD</set>
+			<set name="name-format">{{parent}} of Tomes</set>
+		</setters>
+	</element>
+	
+	<element name="Shield of Bathing" type="Magic Item" source="AAA" id="ID_LEMONCAT_SHIELD_OF_BATHING">		
+		<description>
+			<p>When placed flat on the ground and the command word spoken, this shield transforms into a large soaking tub (5ft cube) and fills with clean hot water that is ideal for bathing. Any water that leaves the tub magically vanishes, and the tub both refills, drains, and untransforms with command words. Attempts to drink from the tub automatically fail. This tub feature lasts for up to one hour and can be used up to two times per day.</p>
+		</description>
+		<setters>
+			<set name="keywords">grung, water, wash, shower, clean, lemoncat, aaa, custom</set>
+			<set name="category">Magic Armor</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="type" addition="shield">Armor</set>
+			<set name="rarity">Common</set>
+			<set name="armor">ID_INTERNAL_ARMOR_GROUP_SHIELD</set>
+			<set name="name-format">{{parent}} of Bathing</set>
+		</setters>
+	</element>
+
+	<element name="Shield of Tremorsense" type="Magic Item" source="AAA" id="ID_LEMONCAT_SHIELD_OF_TREMORSENSE">		
+		<description>
+			<p>While this shield is flat to the ground, standing atop it grants its standee Tremorsense to a range of 30ft.</p>
+		</description>
+		<setters>
+			<set name="keywords">sight, detect, lemoncat, aaa, custom</set>
+			<set name="category">Magic Armor</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="type" addition="shield">Armor</set>
+			<set name="rarity">Common</set>
+			<set name="armor">ID_INTERNAL_ARMOR_GROUP_SHIELD</set>
+			<set name="name-format">{{parent}} of Tremorsense</set>
+		</setters>
+	</element>
+
+	<element name="Shield of Sausages" type="Magic Item" source="AAA" id="ID_LEMONCAT_SHIELD_OF_SAUSAGES">		
+		<description>
+			<p>This shield looks like a spiral string of sausages, and emits a faint smell of cooked meat. when a piece of uncooked meat is placed upon the flat face of this shield, it is cooked to perfection over a 1 minute period. The shield is not hot to the touch and does not cause damage to creatures.</p>
+		</description>
+		<setters>
+			<set name="keywords">cook, meat, food, lemoncat, aaa, custom</set>
+			<set name="category">Magic Armor</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="type" addition="shield">Armor</set>
+			<set name="rarity">Common</set>
+			<set name="armor">ID_INTERNAL_ARMOR_GROUP_SHIELD</set>
+			<set name="name-format">{{parent}} of Sausages</set>
+		</setters>
+	</element>
+
+	<element name="Shield of Net Launching" type="Magic Item" source="AAA" id="ID_LEMONCAT_SHIELD_OF_NETLAUNCHING">		
+		<description>
+			<p>This shield has 3 charges, which it regenerates each dawn. As an Action its wielder can expend a charge to magically create and launch a net at one Large or smaller creature within 15ft. The net lasts for up to one minute, or until it is destroyed.</p>
+		</description>
+		<setters>
+			<set name="keywords">grappl, lemoncat, aaa, custom</set>
+			<set name="category">Magic Armor</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="type" addition="shield">Armor</set>
+			<set name="rarity">Common</set>
+			<set name="armor">ID_INTERNAL_ARMOR_GROUP_SHIELD</set>
+			<set name="name-format">{{parent}} of Net Launching</set>
+		</setters>
+	</element>
+
+	<element name="Shield of Reflection" type="Magic Item" source="AAA" id="ID_LEMONCAT_SHIELD_OF_REFLECTION">		
+		<description>
+			<p>This shield has a very shiny, flat, mirrored finish. Once per day as a reaction, the wielder can deflect a ray attact or effect that targets them. They can choose to deflect the ray toward another creature which then becomes the new target of the ray.</p>
+		</description>
+		<setters>
+			<set name="keywords">ray, attack, reaction, lemoncat, aaa, custom</set>
+			<set name="category">Magic Armor</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="type" addition="shield">Armor</set>
+			<set name="rarity">Common</set>
+			<set name="armor">ID_INTERNAL_ARMOR_GROUP_SHIELD</set>
+			<set name="name-format">{{parent}} of Reflection</set>
+		</setters>
+	</element>
+
 </elements>
