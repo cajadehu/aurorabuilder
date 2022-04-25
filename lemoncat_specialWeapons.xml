@@ -4,12 +4,16 @@
 		<name>Special Weapons</name>
 		<description>Special Weapons</description>
 		<author url="https://github.com/cajadehu/aurorabuilder/">LemonCat</author>
-		<update version="0.1.6">
+		<update version="0.1.7">
 			<file name="lemoncat_specialWeapons.xml" url="https://raw.githubusercontent.com/cajadehu/aurorabuilder/main/lemoncat_specialWeapons.xml" />
 		</update>
 	</info>
 	
 	<!-- UPDATE LOG
+	0.1.7
+		Added additional Common magic shields, added more description text to some shields
+	0.1.6
+		Added numerous custom Common magic shields
 	0.1.5
 		Added numerous magic armor options
 	0.1.4
@@ -1255,7 +1259,7 @@
 
 	<element name="Shield of Moonlight" type="Magic Item" source="AAA" id="ID_LEMONCAT_SHIELD_OF_MOONLIGHT">		
 		<description>
-			<p>Using a command word as an action to activate or deactivate this shield's feature, it emits a 120ft cone of moonlight. The first 60ft is bright moonlight, and the next 60ft is dim moonlight. A small image on the back always shows the current phases of the moon(s) of the material plane.</p>
+			<p>This shield has a detailed painting of the (material plane's primary) moon on its face, which is always pristine regardless of damage or dirt. Using a command word as an action to activate or deactivate this shield's feature, it emits a 120ft cone of moonlight. The first 60ft is bright moonlight, and the next 60ft is dim moonlight. A small image on the back always shows the current phases of the moon(s) of the material plane.</p>
 		</description>
 		<setters>
 			<set name="keywords">moon, light, dark, lemoncat, aaa, custom</set>
@@ -1271,7 +1275,7 @@
 
 	<element name="Shield of Floating" type="Magic Item" source="AAA" id="ID_LEMONCAT_SHIELD_OF_FLOATING">		
 		<description>
-			<p>A single Medium sized creature can stand on this bouyant shield and float of calm water. It is naturally stable, and responds to the rider's will, moving up to 10ft per round.</p>
+			<p>This shield has a yellow rubber ducky painted by the handle. A single Medium sized creature can stand on this bouyant shield and float of calm water. It is naturally stable, and responds to the rider's will, moving up to 10ft per round.</p>
 		</description>
 		<setters>
 			<set name="keywords">water, travel, lemoncat, aaa, custom</set>
@@ -1287,7 +1291,7 @@
 
 	<element name="Shield of Ropes" type="Magic Item" source="AAA" id="ID_LEMONCAT_SHIELD_OF_ROPES">		
 		<description>
-			<p>This shield has a maximum of 3 charges, and regenerates 1d4 charges each dawn. You can expend a charge as an action to cause the shield to produce a 60ft hemp rope, which vanishes after one hour or if it is destroyed.</p>
+			<p>This shield looks like it has a coil of thick rope on the front face. This shield has a maximum of 3 charges, and regenerates 1d4 charges each dawn. You can expend a charge as an action to cause the shield to produce a 60ft hemp rope, which vanishes after one hour or if it is destroyed.</p>
 		</description>
 		<setters>
 			<set name="keywords">climb, lemoncat, aaa, custom</set>
@@ -1319,7 +1323,7 @@
 
 	<element name="Shield of Storing" type="Magic Item" source="AAA" id="ID_LEMONCAT_SHIELD_OF_STORING">		
 		<description>
-			<p>This shield grants its wielder access to a pocket dimension for storage up to 5 cubic feet, and 50 pounds of weight. It cannot store living, undead, or construct creatures.</p>
+			<p>This shield has a distinctive velvet backing, with a draw string across it. This shield grants its wielder access to a pocket dimension for storage up to 5 cubic feet, and 50 pounds of weight. It cannot store living, undead, or construct creatures.</p>
 		</description>
 		<setters>
 			<set name="keywords">pocket, dimension, hold, lemoncat, aaa, custom</set>
@@ -1360,7 +1364,7 @@
 	
 	<element name="Shield of Wandering" type="Magic Item" source="AAA" id="ID_LEMONCAT_SHIELD_OF_WANDERING">		
 		<description>
-			<p>When held flat and face up, an illusory arrow on the face of the shield points North, and an illusory sun dial appears on the shield face indicating the current time to the nearest hour, even at night.</p>
+			<p>The face of this shield has a distinctive clockwork motif. When held flat and face up, an illusory arrow on the face of the shield points North, and an illusory sun dial appears on the shield face indicating the current time to the nearest hour, even at night, and even if the sky is not visible.</p>
 		</description>
 		<setters>
 			<set name="keywords">travel, north, time, sun, moon, lemoncat, aaa, custom</set>
@@ -1376,7 +1380,7 @@
 
 	<element name="Shield of Nibbles" type="Magic Item" source="AAA" id="ID_LEMONCAT_SHIELD_OF_NIBBLES">		
 		<description>
-			<p>Once per day this shield can be held flat, face up, and a command word spoken to activate its feature. When activated the shield casts Prestidigitation on itself to become clean, and a variety of cheeses, breads, sliced preserved meats, fruits, and a large cup of juice appear on the shield face. The food produced is enough to sustain a Medium sized creature for one day. Any of the meal not consumed within an hour, vanishes.</p>
+			<p>This shield smells faintly of cheese and fruit. Once per day this shield can be held flat, face up, and a command word spoken to activate its feature. When activated the shield casts Prestidigitation on itself to become clean, and a variety of cheeses, breads, sliced preserved meats, fruits, and a large cup of juice appear on the shield face. The food produced is enough to sustain a Medium sized creature for one day. Any of the meal not consumed within an hour, vanishes.</p>
 		</description>
 		<setters>
 			<set name="keywords">food, sustain, meal, lemoncat, aaa, custom</set>
@@ -1392,7 +1396,7 @@
 	
 	<element name="Shield of Tomes" type="Magic Item" source="AAA" id="ID_LEMONCAT_SHIELD_OF_TOMES">		
 		<description>
-			<p>When a non-magical tome is placed on the face of the shield, its contents are absorbed into the shield for up to 30 days. Up to 5 tomes can be stored in the shield at a time. While not in combat or unconcious, the wielder can psychically access the tomes stored within the shield, and read them at their normal pace.</p>
+			<p>This shield looks as if it is constructed of laminated book pages. When a non-magical tome is placed on the face of the shield, its contents are absorbed into the shield for up to 30 days. Up to 5 tomes can be stored in the shield at a time. While not in combat or unconcious, the wielder can psychically access the tomes stored within the shield, and read them at their normal pace.</p>
 		</description>
 		<setters>
 			<set name="keywords">book, read, learn, lemoncat, aaa, custom</set>
@@ -1408,7 +1412,7 @@
 	
 	<element name="Shield of Bathing" type="Magic Item" source="AAA" id="ID_LEMONCAT_SHIELD_OF_BATHING">		
 		<description>
-			<p>When placed flat on the ground and the command word spoken, this shield transforms into a large soaking tub (5ft cube) and fills with clean hot water that is ideal for bathing. Any water that leaves the tub magically vanishes, and the tub both refills, drains, and untransforms with command words. Attempts to drink from the tub automatically fail. This tub feature lasts for up to one hour and can be used up to two times per day.</p>
+			<p>This shield looks like it is covered with soap bubbles. When placed flat on the ground and the command word spoken, this shield transforms into a large soaking tub (5ft cube) and fills with clean hot water that is ideal for bathing. Any water that leaves the tub magically vanishes, and the tub both refills, drains, and untransforms with command words. Attempts to drink from the tub automatically fail. This tub feature lasts for up to one hour and can be used up to two times per day.</p>
 		</description>
 		<setters>
 			<set name="keywords">grung, water, wash, shower, clean, lemoncat, aaa, custom</set>
@@ -1424,7 +1428,7 @@
 
 	<element name="Shield of Tremorsense" type="Magic Item" source="AAA" id="ID_LEMONCAT_SHIELD_OF_TREMORSENSE">		
 		<description>
-			<p>While this shield is flat to the ground, standing atop it grants its standee Tremorsense to a range of 30ft.</p>
+			<p>This shield has a distinctive spider-web pattern on the face. While this shield is flat to the ground, standing atop it grants its standee Tremorsense to a range of 30ft.</p>
 		</description>
 		<setters>
 			<set name="keywords">sight, detect, lemoncat, aaa, custom</set>
@@ -1456,7 +1460,7 @@
 
 	<element name="Shield of Net Launching" type="Magic Item" source="AAA" id="ID_LEMONCAT_SHIELD_OF_NETLAUNCHING">		
 		<description>
-			<p>This shield has 3 charges, which it regenerates each dawn. As an Action its wielder can expend a charge to magically create and launch a net at one Large or smaller creature within 15ft. The net lasts for up to one minute, or until it is destroyed.</p>
+			<p>This shield looks as if it is woven from thick rope. This shield has 3 charges, which it regenerates each dawn. As an Action its wielder can expend a charge to magically create and launch a net at one Large or smaller creature within 15ft. The net lasts for up to one minute, or until it is destroyed.</p>
 		</description>
 		<setters>
 			<set name="keywords">grappl, lemoncat, aaa, custom</set>
@@ -1486,4 +1490,84 @@
 		</setters>
 	</element>
 
+	<element name="Shield of Analysis" type="Magic Item" source="AAA" id="ID_LEMONCAT_SHIELD_OF_ANALYSIS">		
+		<description>
+			<p>This shield has the icon of an abacus engraved on the front. When you successfully block an attack using this shield, you learn one Vulnerability or Resistance of the Creature or Object that attacked you, if it has any, and of the DM's choice.</p>
+		</description>
+		<setters>
+			<set name="keywords">eval, block, defend, vuln, resist, attack, lemoncat, aaa, custom</set>
+			<set name="category">Magic Armor</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="type" addition="shield">Armor</set>
+			<set name="rarity">Common</set>
+			<set name="armor">ID_INTERNAL_ARMOR_GROUP_SHIELD</set>
+			<set name="name-format">{{parent}} of Analysis</set>
+		</setters>
+	</element>
+
+	<element name="Shield of Shadows" type="Magic Item" source="AAA" id="ID_LEMONCAT_SHIELD_OF_SHADOWS">		
+		<description>
+			<p>This shield seems to be covered in shadowy tendrils that can only be seen with peripheral vision. When held above a creatures head it temporarily loses its AC bonus but casts a shadow of dim light on the creature no matter the current environment's lighting. Once per day as an action, the wielder can speak a command word to stow the shield for up to 1 hour within their shadow. The command word can be spoken again as an action to retrieve the shield from their shadow at any time.</p>
+		</description>
+		<setters>
+			<set name="keywords">action, shadow, dim, light, lemoncat, aaa, custom</set>
+			<set name="category">Magic Armor</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="type" addition="shield">Armor</set>
+			<set name="rarity">Common</set>
+			<set name="armor">ID_INTERNAL_ARMOR_GROUP_SHIELD</set>
+			<set name="name-format">{{parent}} of Shadows</set>
+		</setters>
+	</element>
+
+	<element name="Shield of Diagnosis" type="Magic Item" source="AAA" id="ID_LEMONCAT_SHIELD_OF_DIAGNOSIS">		
+		<description>
+			<p>This shield seems to be covered in shimmering water that ripples when touched. When a willing creature touches the watery surface of the shield for at least one full round, the names of any diseases or curses they are afflicted with appear written on the shield in the creature's native (main) language. When the willing creature stops touching the shield's watery surface, the information fades immediately.</p>
+		</description>
+		<setters>
+			<set name="keywords">medic, health, curse, disease, lemoncat, aaa, custom</set>
+			<set name="category">Magic Armor</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="type" addition="shield">Armor</set>
+			<set name="rarity">Common</set>
+			<set name="armor">ID_INTERNAL_ARMOR_GROUP_SHIELD</set>
+			<set name="name-format">{{parent}} of Diagnosis</set>
+		</setters>
+	</element>
+
+	<element name="Shield of Sticks and Stones" type="Magic Item" source="AAA" id="ID_LEMONCAT_SHIELD_OF_STICKS_AND_STONES">		
+		<description>
+			<p>This shield is covered with sticks and stones that glimmer faintly. While wielding this shield you have Resistance to all damage from targeted spells that hit only you and have a Verbal Component. You also have Vulnerabilty to all Bludgeoning, Piercing, and Slashing damage, that cannot be reduced or negated in any way.</p>
+		</description>
+		<setters>
+			<set name="keywords">resist, vuln, damage, verbal, lemoncat, aaa, custom</set>
+			<set name="category">Magic Armor</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="type" addition="shield">Armor</set>
+			<set name="rarity">Uncommon</set>
+			<set name="armor">ID_INTERNAL_ARMOR_GROUP_SHIELD</set>
+			<set name="name-format">{{parent}} of Sticks and Stones</set>
+		</setters>
+	</element>
+
+	<element name="Shield of Need" type="Magic Item" source="AAA" id="ID_LEMONCAT_SHIELD_OF_NEED">		
+		<description>
+			<p>This shield appears to be a single forearm leather bracer with three semi-precious stones affixed with brass clasps. This shield has a maximum of 3 charges and regains 1d4 charges at dusk. As a Reaction the creature wearing this object can expend a charge to instantly form an opaque, glittering shield that is attached to their arm and hand, and lasts for up to 2 minutes. When the shield is dismissed it crumbles away in a shower of illusory glitter.</p>
+		</description>
+		<setters>
+			<set name="keywords">dusk, charge, lemoncat, aaa, custom</set>
+			<set name="category">Magic Armor</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="type" addition="shield">Armor</set>
+			<set name="rarity">Common</set>
+			<set name="armor">ID_INTERNAL_ARMOR_GROUP_SHIELD</set>
+			<set name="name-format">{{parent}} of Need</set>
+		</setters>
+	</element>
+	
 </elements>
