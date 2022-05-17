@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<index>
+	<info>
+		<name>Lemoncat</name>
+		<description>Lemoncat</description>
+		<author url="https://raw.githubusercontent.com/cajadehu/aurorabuilder/main/">LemonCat</author>
+		<update version="0.0.1">
+			<file name="lemoncatTextReplacement.index" url="https://raw.githubusercontent.com/cajadehu/aurorabuilder/main/lemoncatTextReplacement.index" />
+		</update>
+	</info>
+	<files>
+		<file name="lemoncat_textReplacement.xml" url="https://raw.githubusercontent.com/cajadehu/aurorabuilder/main/lemoncat_textReplacement.xml" />
+	</files>
+</index>
