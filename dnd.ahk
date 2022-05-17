@@ -25,7 +25,7 @@ Menu, Tray, Icon, msctf.dll, 23
 ;===============================================================================================================
 :c*:lcgithub::{raw}https://github.com/cajadehu/aurorabuilder
 :c*:au0::{raw}https://raw.githubusercontent.com/cajadehu/aurorabuilder/main/lemoncatPreferred.index
-:c*:au1::{raw}https://raw.githubusercontent.com/cajadehu/aurorabuilder/main/lemoncat_textReplacement.index
+:c*:au1::{raw}https://raw.githubusercontent.com/cajadehu/aurorabuilder/main/lemoncatTextReplacement.index
 :c*:au2::{raw}https://raw.githubusercontent.com/AuroraLegacy/elements/master/core.index
 :c*:au3::{raw}https://raw.githubusercontent.com/AuroraLegacy/elements/master/supplements.index
 :c*:au4::{raw}https://raw.githubusercontent.com/AuroraLegacy/elements/master/unearthed-arcana.index
