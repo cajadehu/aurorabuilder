@@ -4,15 +4,21 @@
 		<name>Lemoncat</name>
 		<description>Lemoncat</description>
 		<author url="https://raw.githubusercontent.com/cajadehu/aurorabuilder/main/">LemonCat</author>
-		<update version="0.0.1">
+		<update version="0.0.2">
 			<file name="lemoncatPreferred.index" url="https://raw.githubusercontent.com/cajadehu/aurorabuilder/main/lemoncatPreferred.index" />
 		</update>
 	</info>
 	<files>
-		<file name="core.index" url="https://raw.githubusercontent.com/AuroraLegacy/elements/master/core.index" />
-		<file name="supplements.index" url="https://raw.githubusercontent.com/AuroraLegacy/elements/master/supplements.index" />
-		<file name="unearthed-arcana.index" url="https://raw.githubusercontent.com/AuroraLegacy/elements/master/unearthed-arcana.index" />
-		<file name="taldorei-reborn.index" url="https://raw.githubusercontent.com/mamawerecat/AuroraCustomContent/main/taldorei-reborn.index" />
-		<file name="lemoncat.index" url="https://raw.githubusercontent.com/cajadehu/aurorabuilder/main/lemoncat.index" />
+		<file name="..\core.index" url="https://raw.githubusercontent.com/AuroraLegacy/elements/master/core.index" />
+		<file name="..\supplements.index" url="https://raw.githubusercontent.com/AuroraLegacy/elements/master/supplements.index" />
+		<file name="..\unearthed-arcana.index" url="https://raw.githubusercontent.com/AuroraLegacy/elements/master/unearthed-arcana.index" />
+		<file name="..\taldorei-reborn.index" url="https://raw.githubusercontent.com/mamawerecat/AuroraCustomContent/main/taldorei-reborn.index" />
+		<file name="..\lemoncat.index" url="https://raw.githubusercontent.com/cajadehu/aurorabuilder/main/lemoncat.index" />
+
+		<!--  TEST SECTION
+			<file name="..\..\portraits\background-sneaker.xml" url="https://raw.githubusercontent.com/cajadehu/aurorabuilder/main/background-sneaker.xml" />
+			<file name="..\..\portraits_builtInReduced_5bit200x200.7z" url="https://raw.githubusercontent.com/cajadehu/aurorabuilder/main/portraits_builtInReduced_5bit200x200.7z" />
+			<file name="..\..\7zExtract.xml" url="https://raw.githubusercontent.com/cajadehu/aurorabuilder/main/portraits_builtInReduced_5bit200x200.7z" />
+		-->
 	</files>
 </index>
