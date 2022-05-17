@@ -1,0 +1,600 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<character version="1.0.3" preview="false">
+	<!-- Aurora - https://www.aurorabuilder.com -->
+	<!-- information -->
+	<information>
+		<group>Characters</group>
+		<generationOption>2</generationOption>
+	</information>
+	<!-- display data -->
+	<display-properties favorite="false">
+		<name>arr Dyten - Dhampir Moon Creation Bardruid 6-2 ac16</name>
+		<race>Dhampir</race>
+		<class>Bard (4) / Druid (2)</class>
+		<archetype>
+		</archetype>
+		<background>Selesnya Initiate</background>
+		<level>6</level>
+		<portrait>
+			<companion>
+			</companion>
+			<local>C:\Users\rtress\Documents\5e Character Builder\portraits\dhampir_40491407.jpg</local>
+			<base64><![CDATA[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]]></base64>
+		</portrait>
+	</display-properties>
+	<!-- build data -->
+	<build>
+		<input>
+			<name>arr Dyten - Dhampir Moon Creation Bardruid 6-2 ac16</name>
+			<gender>Female</gender>
+			<player-name>
+			</player-name>
+			<experience>14000</experience>
+			<attacks>
+				<description><![CDATA[Druid Wild Shapes, no swimming, no flying
+CR 0 - Badger, Cat, Rat, Spider, Weasel. Badger.
+CR 1/8 - Camel, Giant Rat, Giant Weasel, Mastiff, Mule.
+CR 1/4 - Giant Badger, Giant Wolf Spider, Riding Horse, Velociraptor, Wolf. Cow, Panther.
+CR 1/2 - Ape, Warhorse.
+CR 1 - Brn Bear, Dr Wolf, Gnt Hyena, Gnt Spider.]]></description>
+				<attack identifier="6126f5c2-2dff-4e8d-9c25-b4688bbb570b" name="Moon-Touched Shortsword" range="5 ft" attack="+5 vs AC" damage="1d6+2 piercing" displayed="true" ability="Dexterity">
+					<description><![CDATA[Finesse, Light]]></description>
+				</attack>
+			</attacks>
+			<backstory><![CDATA[You are a member of a blessed community, built on the ideals of harmony. Here, nature and civilization coexist peacefully. living and growing in accordance with the will of the Worldsoul, Mat’Selesnya. As a member of the Selesnya Conclave, you are surrounded by people and other creatures who share your worldview and your longing for deeper spiritual communion with the world, and you have a fervent desire to share the joy you have experienced with Ravnica. Along with the rest of the conclave, you are committed to resisting the ambitions of the other guilds- with military force if necessary.]]></backstory>
+			<background-trinket>A gold coin minted in a fallen civilization</background-trinket>
+			<background-traits>I would rather make a friend than thwart an enemy.
+Nature offers rich and abundant metaphors for understanding the complexities of life.</background-traits>
+			<background-ideals>Humility. Ambition and pride are the roots of strife. (Good)</background-ideals>
+			<background-bonds>I’ll sing the invitation of Mat’Selesnya with my dying breath.</background-bonds>
+			<background-flaws>I assume that people mean well until they prove otherwise.</background-flaws>
+			<background>
+				<feature name="Trauma Survivor">
+					<description><![CDATA[You survived. Whatever it was, you made it through, and you can help others do the same. People view you as an expert on the traumatic situation you faced—be it a specific sort of violence, illness, or otherwise. You are aware of nonmagical recovery techniques, common resources, and misinformation. You know how to speak to sympathetic doctors, clergy, and local leaders and can convince them to shelter one person (other than yourself) at a modest lifestyle for up to one month.]]></description>
+				</feature>
+			</background>
+			<organization>
+				<name>
+				</name>
+				<symbol>
+				</symbol>
+				<allies><![CDATA[]]></allies>
+			</organization>
+			<additional-features><![CDATA[]]></additional-features>
+			<currency>
+				<copper>0</copper>
+				<silver>0</silver>
+				<electrum>0</electrum>
+				<gold>0</gold>
+				<platinum>0</platinum>
+				<equipment><![CDATA[]]></equipment>
+				<treasure><![CDATA[]]></treasure>
+			</currency>
+			<notes>
+				<note column="left">
+				</note>
+				<note column="right">
+				</note>
+			</notes>
+			<quest>
+			</quest>
+		</input>
+		<appearance>
+			<portrait>C:\Users\rtress\Documents\5e Character Builder\portraits\dhampir_40491407.jpg</portrait>
+			<age>
+			</age>
+			<height>
+			</height>
+			<weight>
+			</weight>
+			<eyes>
+			</eyes>
+			<skin>
+			</skin>
+			<hair>
+			</hair>
+		</appearance>
+		<abilities available-points="15">
+			<strength>8</strength>
+			<dexterity>14</dexterity>
+			<constitution>10</constitution>
+			<intelligence>12</intelligence>
+			<wisdom>13</wisdom>
+			<charisma>15</charisma>
+		</abilities>
+		<elements level-count="6" registered-count="54">
+			<element type="Option" name="Feats" id="ID_INTERNAL_OPTION_ALLOW_FEATS" />
+			<element type="Option" name="Multiclassing" id="ID_INTERNAL_OPTION_ALLOW_MULTICLASSING">
+				<element type="Grants" name="Multiclass Spellcasting" id="ID_INTERNAL_GRANTS_MULTICLASS_SPELLCASTING" />
+			</element>
+			<element type="Option" name="Maximum Hit Points" id="ID_INTERNAL_OPTION_ALLOW_MAX_HP" />
+			<element type="Level" name="1" id="ID_LEVEL_1" rndhp="8,6,1,8,4,7,8,1,6,3,1,1,6,8,7,2,5,8,1,5">
+				<element type="Race" name="Race" requiredLevel="1" checksum="1597ef76" registered="ID_WOTC_VRGTR_RACE_DHAMPIR">
+					<element type="Ability Score Improvement" name="Ability Score Improvement Option (Dhampir)" requiredLevel="1" checksum="a9bc4eab" registered="ID_WOTC_ASI_ABILITY_SCORE_IMPROVEMENT_OPTION_1">
+						<element type="Ability Score Improvement" name="Custom Ability Score Improvement +2" requiredLevel="1" checksum="071a37f0" registered="ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI_CHARISMA_INCREASE_2" />
+						<element type="Ability Score Improvement" name="Custom Ability Score Improvement +1" requiredLevel="1" checksum="05c430d7" registered="ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI_WISDOM_INCREASE_1" />
+					</element>
+					<element type="Language" name="Language (Dhampir)" requiredLevel="1" checksum="9cbbf6ef" registered="ID_LANGUAGE_UNDERCOMMON" />
+					<element type="Racial Trait" name="Size (Dhampir)" requiredLevel="1" checksum="00eeb145" registered="ID_INTERNAL_RACIAL_TRAIT_MEDIUM">
+						<element type="Size" name="Medium" id="ID_SIZE_MEDIUM" />
+					</element>
+					<element type="Language" name="Common" id="ID_LANGUAGE_COMMON" />
+					<element type="Racial Trait" name="Humanoid" id="ID_INTERNAL_RACIAL_TRAIT_TYPE_HUMANOID" />
+					<element type="Racial Trait" name="Ancestral Legacy" id="ID_WOTC_VRGTR_RACIAL_TRAIT_DHAMPIR_ANCESTRAL_LEGACY">
+						<element type="Proficiency" name="Skill Proficiency (Ancestral Legacy)" requiredLevel="1" number="1" checksum="9925fd26" registered="ID_PROFICIENCY_SKILL_PERFORMANCE" />
+						<element type="Proficiency" name="Skill Proficiency (Ancestral Legacy)" requiredLevel="1" number="2" checksum="002cac9c" registered="ID_PROFICIENCY_SKILL_PERCEPTION" />
+					</element>
+					<element type="Vision" name="Darkvision" id="ID_VISION_DARKVISION" />
+					<element type="Racial Trait" name="Deathless Nature" id="ID_WOTC_VRGTR_RACIAL_TRAIT_DHAMPIR_DEATHLESS_NATURE" />
+					<element type="Racial Trait" name="Spider Climb" id="ID_WOTC_VRGTR_RACIAL_TRAIT_DHAMPIR_SPIDER_CLIMB" />
+					<element type="Racial Trait" name="Vampiric Bite" id="ID_WOTC_VRGTR_RACIAL_TRAIT_DHAMPIR_VAMPIRIC_BITE" />
+				</element>
+				<element type="Class" name="Class" requiredLevel="1" checksum="33a7b15b" registered="ID_WOTC_PHB_CLASS_BARD">
+					<element type="Proficiency" name="Musical Instrument (Bard)" requiredLevel="1" number="1" checksum="a1ffae65" registered="ID_SCAG_PROFICIENCY_TOOL_PROFICIENCY_THELARR" />
+					<element type="Proficiency" name="Musical Instrument (Bard)" requiredLevel="1" number="2" checksum="38f6ffdf" registered="ID_PROFICIENCY_TOOL_PROFICIENCY_DRUM" />
+					<element type="Proficiency" name="Musical Instrument (Bard)" requiredLevel="1" number="3" checksum="4ff1cf49" registered="ID_SCAG_PROFICIENCY_TOOL_PROFICIENCY_TOCKEN" />
+					<element type="Proficiency" name="Skill Proficiency (Bard)" requiredLevel="1" number="1" checksum="9cff6156" registered="ID_PROFICIENCY_SKILL_INTIMIDATION" />
+					<element type="Proficiency" name="Skill Proficiency (Bard)" requiredLevel="1" number="2" checksum="05f630ec" registered="ID_PROFICIENCY_SKILL_STEALTH" />
+					<element type="Proficiency" name="Skill Proficiency (Bard)" requiredLevel="1" number="3" checksum="72f1007a" registered="ID_PROFICIENCY_SKILL_DECEPTION" />
+					<element type="Proficiency" name="Armor Proficiency (Light Armor)" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_LIGHT_ARMOR">
+						<element type="Proficiency" name="Armor Proficiency (Padded)" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_PADDED" />
+						<element type="Proficiency" name="Armor Proficiency (Leather)" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_LEATHER" />
+						<element type="Proficiency" name="Armor Proficiency (Studded Leather)" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_STUDDED_LEATHER" />
+					</element>
+					<element type="Proficiency" name="Weapon Proficiency (Simple Weapons)" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_SIMPLE_WEAPONS">
+						<element type="Proficiency" name="Weapon Proficiency (Simple Melee Weapons)" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_SIMPLE_MELEE_WEAPONS">
+							<element type="Proficiency" name="Weapon Proficiency (Club)" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_CLUB" />
+							<element type="Proficiency" name="Weapon Proficiency (Dagger)" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_DAGGER" />
+							<element type="Proficiency" name="Weapon Proficiency (Greatclub)" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_GREATCLUB" />
+							<element type="Proficiency" name="Weapon Proficiency (Handaxe)" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_HANDAXE" />
+							<element type="Proficiency" name="Weapon Proficiency (Javelin)" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_JAVELIN" />
+							<element type="Proficiency" name="Weapon Proficiency (Light Hammer)" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_LIGHT_HAMMER" />
+							<element type="Proficiency" name="Weapon Proficiency (Mace)" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_MACE" />
+							<element type="Proficiency" name="Weapon Proficiency (Quarterstaff)" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_QUARTERSTAFF" />
+							<element type="Proficiency" name="Weapon Proficiency (Sickle)" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_SICKLE" />
+							<element type="Proficiency" name="Weapon Proficiency (Spear)" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_SPEAR" />
+							<element type="Proficiency" name="Weapon Proficiency (Unarmed Strike)" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_UNARMED_STRIKE" />
+							<element type="Weapon" name="Unarmed Strike" id="ID_LEMONCAT_WEAPON_UNARMEDSTRIKE" />
+							<element type="Weapon" name="Psychic Blade (STR/DEX Action)" id="ID_LEMONCAT_WEAPON_PSYCHICBLADE1" />
+							<element type="Weapon" name="Psychic Blade (STR/DEX Bonus Action)" id="ID_LEMONCAT_WEAPON_PSYCHICBLADE2" />
+						</element>
+						<element type="Proficiency" name="Weapon Proficiency (Simple Ranged Weapons)" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_SIMPLE_RANGED_WEAPONS">
+							<element type="Proficiency" name="Weapon Proficiency (Crossbow, Light)" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_CROSSBOW_LIGHT" />
+							<element type="Proficiency" name="Weapon Proficiency (Dart)" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_DART" />
+							<element type="Proficiency" name="Weapon Proficiency (Shortbow)" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_SHORTBOW" />
+							<element type="Proficiency" name="Weapon Proficiency (Sling)" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_SLING" />
+						</element>
+						<element type="Weapon" name="Lightning Launcher (DEX/INT)" id="ID_LEMONCAT_WEAPON_LIGHTNINGLAUNCHER" />
+					</element>
+					<element type="Proficiency" name="Weapon Proficiency (Crossbow, Hand)" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_CROSSBOW_HAND" />
+					<element type="Proficiency" name="Weapon Proficiency (Longsword)" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_LONGSWORD" />
+					<element type="Proficiency" name="Weapon Proficiency (Rapier)" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_RAPIER" />
+					<element type="Proficiency" name="Weapon Proficiency (Shortsword)" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_SHORTSWORD" />
+					<element type="Proficiency" name="Saving Throw Proficiency (Dexterity)" id="ID_PROFICIENCY_SAVINGTHROW_DEXTERITY" />
+					<element type="Proficiency" name="Saving Throw Proficiency (Charisma)" id="ID_PROFICIENCY_SAVINGTHROW_CHARISMA" />
+					<element type="Class Feature" name="Bardic Inspiration" id="ID_WOTC_PHB_CLASS_FEATURE_BARD_BARDIC_INSPIRATION" />
+					<element type="Class Feature" name="Spellcasting" id="ID_WOTC_PHB_CLASS_FEATURE_BARD_SPELLCASTING_BARD">
+						<element type="Spell" name="Cantrip (Bard)" requiredLevel="1" number="1" checksum="3ae0cd93" registered="ID_PHB_SPELL_MINOR_ILLUSION" />
+						<element type="Spell" name="Cantrip (Bard)" requiredLevel="1" number="2" checksum="62fe64bb" registered="ID_WOTC_UA20191125_SPELL_MIND_SLIVER" />
+						<element type="Spell" name="Cantrip (Bard)" requiredLevel="4" checksum="64d61766" registered="ID_PHB_SPELL_PRESTIDIGITATION" />
+						<element type="Spell" name="Spellcasting (Bard)" requiredLevel="1" number="1" checksum="471aa73f" registered="ID_PHB_SPELL_BANE" />
+						<element type="Spell" name="Spellcasting (Bard)" requiredLevel="1" number="2" checksum="3962ef99" registered="ID_PHB_SPELL_DISGUISE_SELF" />
+						<element type="Spell" name="Spellcasting (Bard)" requiredLevel="1" number="3" checksum="134ad7fb" registered="ID_PHB_SPELL_IDENTIFY" />
+						<element type="Spell" name="Spellcasting (Bard)" requiredLevel="1" number="4" checksum="c5927ed5" registered="ID_PHB_SPELL_THUNDERWAVE" />
+						<element type="Spell" name="Spellcasting (Bard)" requiredLevel="2" checksum="78d1d9aa" registered="ID_PHB_SPELL_HEROISM" />
+						<element type="Spell" name="Spellcasting (Bard)" requiredLevel="3" checksum="db47f1e6" registered="ID_PHB_SPELL_PHANTASMAL_FORCE" />
+						<element type="Spell" name="Spellcasting (Bard)" requiredLevel="4" checksum="07472480" registered="ID_PHB_SPELL_HOLD_PERSON" />
+						<element type="Grants" name="Ritual Casting" id="ID_INTERNAL_RITUAL_CASTING" />
+						<element type="Grants" name="Multiclass Spellcasting Slots Full" id="ID_INTERNAL_GRANT_MULTICLASS_SPELLCASTING_SLOTS_FULL" />
+					</element>
+					<element type="Grants" name="Multiclassing Prerequisite" id="ID_INTERNAL_GRANTS_MULTICLASSING_PREREQUISITE" />
+					<element type="Class Feature" name="Jack of All Trades" id="ID_WOTC_PHB_CLASS_FEATURE_BARD_JACK_OF_ALL_TRADES" />
+					<element type="Class Feature" name="Song of Rest" id="ID_WOTC_PHB_CLASS_FEATURE_BARD_SONG_OF_REST" />
+					<element type="Class Feature" name="Bard College" id="ID_WOTC_PHB_CLASS_FEATURE_BARD_BARD_COLLEGE">
+						<element type="Archetype" name="Bard College" requiredLevel="3" checksum="15878cb4" registered="ID_WOTC_TCOE_ARCHETYPE_BARD_COLLEGE_OF_CREATION">
+							<element type="Archetype Feature" name="Mote of Potential" id="ID_WOTC_TCOE_ARCHETYPE_FEATURE_COLLEGE_OF_CREATION_MOTE_OF_POTENTIAL" />
+							<element type="Archetype Feature" name="Performance of Creation" id="ID_WOTC_TCOE_ARCHETYPE_FEATURE_COLLEGE_OF_CREATION_PERFORMANCE_OF_CREATION" />
+						</element>
+					</element>
+					<element type="Class Feature" name="Expertise" id="ID_WOTC_PHB_CLASS_FEATURE_BARD_EXPERTISE">
+						<element type="Class Feature" name="Expertise (Bard 3)" requiredLevel="3" number="1" checksum="281885ea" registered="ID_EXPERTISE_SKILL_DECEPTION" />
+						<element type="Class Feature" name="Expertise (Bard 3)" requiredLevel="3" number="2" checksum="b111d450" registered="ID_EXPERTISE_SKILL_PERSUASION" />
+					</element>
+					<element type="Class Feature" name="Ability Score Improvement" id="ID_WOTC_PHB_CLASS_FEATURE_BARD_ABILITYSCOREIMPROVEMENT_BARD">
+						<element type="Class Feature" name="Improvement Option (Bard 4)" requiredLevel="4" checksum="162ae58b" registered="ID_INTERNAL_CLASS_FEATURE_FEAT_4_BARD">
+							<element type="Feat" name="Feat (BARD 4)" requiredLevel="4" checksum="a273f472" registered="ID_WOTC_TCOE_FEAT_TELEPATHIC">
+								<element type="Feat Feature" name="Ability Score Increase, Telepathic" requiredLevel="1" checksum="e371a3b8" registered="ID_WOTC_TCOE_FEAT_FEATURE_TELEPATHIC_CHARISMA" />
+								<element type="Spell" name="Detect Thoughts" id="ID_PHB_SPELL_DETECT_THOUGHTS" />
+							</element>
+						</element>
+					</element>
+				</element>
+				<element type="Background" name="Background" requiredLevel="1" checksum="6a621392" registered="ID_WOTC_GGTR_BACKGROUND_SELESNYA_INITIATE">
+					<element type="Proficiency" name="Tool Proficiency, Selesnya Initiate" requiredLevel="1" checksum="7c66c3de" registered="ID_PROFICIENCY_TOOL_PROFICIENCY_COOKS_UTENSILS" />
+					<element type="Language" name="Language, Selesnya Initiate" requiredLevel="1" checksum="57e5098e" registered="ID_LANGUAGE_ELVISH" />
+					<element type="Background Feature" name="Variant Feature" requiredLevel="1" checksum="c7d3586f" registered="ID_WOTC_VRGTR_BACKGROUND_FEATURE_TRAUMA_SURVIVOR">
+						<element type="Grants" name="Optional Background Feature" id="ID_INTERNAL_GRANT_OPTIONAL_BACKGROUND_FEATURE" />
+					</element>
+					<element type="List" name="Personality Trait" requiredLevel="1" number="1" checksum="c3869277" isList="true" registered="3">I would rather make a friend than thwart an enemy.</element>
+					<element type="List" name="Personality Trait" requiredLevel="1" number="2" checksum="5a8fc3cd" isList="true" registered="8">Nature offers rich and abundant metaphors for understanding the complexities of life.</element>
+					<element type="List" name="Ideal" requiredLevel="1" checksum="2ae60bf3" isList="true" registered="5">Humility. Ambition and pride are the roots of strife. (Good)</element>
+					<element type="List" name="Bond" requiredLevel="1" checksum="4ac5fe4b" isList="true" registered="4">I’ll sing the invitation of Mat’Selesnya with my dying breath.</element>
+					<element type="List" name="Flaw" requiredLevel="1" checksum="f5b5f60b" isList="true" registered="2">I assume that people mean well until they prove otherwise.</element>
+					<element type="Proficiency" name="Nature" id="ID_PROFICIENCY_SKILL_NATURE" />
+					<element type="Proficiency" name="Persuasion" id="ID_PROFICIENCY_SKILL_PERSUASION" />
+					<element type="Background Feature" name="Selesnya Guild Spells" id="ID_WOTC_GGTR_BACKGROUND_FEATURE_SELESNYA_INITIATE_SELESNYA_GUILD_SPELLS" />
+				</element>
+				<element type="Alignment" name="Alignment" requiredLevel="1" checksum="c9ac49d5" registered="ID_ALIGNMENT_NEUTRAL_GOOD" />
+				<element type="Deity" name="Deity" requiredLevel="1" checksum="989cce4c" registered="" />
+				<element type="Grants" name="Base" id="ID_INTERNAL_GRANTS_CHARACTER_BASE" />
+				<element type="Grants" name="Spellcasting Base" id="ID_INTERNAL_GRANTS_SPELLCASTING_BASE" />
+				<element type="Grants" name="Base Armor Class" id="ID_INTERNAL_GRANTS_ARMOR_CLASS_BASE" />
+				<element type="Grants" name="Dexterity Modifier" id="ID_INTERNAL_GRANTS_ARMOR_CLASS_DEXTERITY_MODIFIER" />
+				<element type="Grants" name="Constitution Modifier" id="ID_INTERNAL_GRANTS_HP_CONSTITUTION_MODIFIER" />
+			</element>
+			<element type="Level" name="2" id="ID_LEVEL_2" />
+			<element type="Level" name="3" id="ID_LEVEL_3" />
+			<element type="Level" name="4" id="ID_LEVEL_4" />
+			<element type="Level" name="5" id="ID_LEVEL_5" multiclass="true" starting="true" rndhp="1,6,6,2,5,2,3,6,7,7,1,3,6,2,5,4,6,5,8,3" class="ID_WOTC_PHB_MULTICLASS_DRUID">
+				<element type="Multiclass" name="Multiclass (Level 5)" requiredLevel="5" checksum="24ace93b" registered="ID_WOTC_PHB_MULTICLASS_DRUID">
+					<element type="Class Feature" name="Druidic" id="ID_WOTC_PHB_CLASS_FEATURE_DRUID_DRUIDIC">
+						<element type="Language" name="Druidic" id="ID_LANGUAGE_DRUIDIC" />
+					</element>
+					<element type="Class Feature" name="Spellcasting" id="ID_WOTC_PHB_CLASS_FEATURE_DRUID_SPELLCASTING_DRUID">
+						<element type="Spell" name="Cantrip (Druid)" requiredLevel="1" number="1" checksum="68890990" registered="ID_PHB_SPELL_PRODUCE_FLAME" />
+						<element type="Spell" name="Cantrip (Druid)" requiredLevel="1" number="2" checksum="3097a0b8" registered="ID_XGTE_SPELL_PRIMAL_SAVAGERY" />
+						<element type="Grants" name="Ritual Casting" id="ID_INTERNAL_RITUAL_CASTING" />
+						<element type="Grants" name="Multiclass Spellcasting Slots Full" id="ID_INTERNAL_GRANT_MULTICLASS_SPELLCASTING_SLOTS_FULL" />
+					</element>
+					<element type="Grants" name="Multiclass" id="ID_INTERNAL_GRANT_MULTICLASS" />
+					<element type="Proficiency" name="Armor Proficiency (Light Armor)" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_LIGHT_ARMOR">
+						<element type="Proficiency" name="Armor Proficiency (Padded)" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_PADDED" />
+						<element type="Proficiency" name="Armor Proficiency (Leather)" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_LEATHER" />
+						<element type="Proficiency" name="Armor Proficiency (Studded Leather)" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_STUDDED_LEATHER" />
+					</element>
+					<element type="Proficiency" name="Armor Proficiency (Medium Armor)" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_MEDIUM_ARMOR">
+						<element type="Proficiency" name="Armor Proficiency (Hide)" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_HIDE" />
+						<element type="Proficiency" name="Armor Proficiency (Chain Shirt)" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_CHAIN_SHIRT" />
+						<element type="Proficiency" name="Armor Proficiency (Scale Mail)" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_SCALE_MAIL" />
+						<element type="Proficiency" name="Armor Proficiency (Breastplate)" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_BREASTPLATE" />
+						<element type="Proficiency" name="Armor Proficiency (Half Plate)" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_HALF_PLATE" />
+						<element type="Proficiency" name="Armor Proficiency (Spiked Armor)" id="ID_SCAG_PROFICIENCY_ARMOR_PROFICIENCY_SPIKED_ARMOR" />
+					</element>
+					<element type="Proficiency" name="Armor Proficiency (Shields)" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_SHIELDS">
+						<element type="Proficiency" name="Armor Proficiency (Shield)" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_SHIELD" />
+					</element>
+					<element type="Class Feature" name="Wild Shape" id="ID_WOTC_PHB_CLASS_FEATURE_DRUID_WILDSHAPE" />
+					<element type="Class Feature" name="Druid Circle" id="ID_WOTC_PHB_CLASS_FEATURE_DRUID_DRUID_CIRCLE">
+						<element type="Archetype" name="Druid Circle" requiredLevel="2" checksum="ba718f2c" registered="ID_WOTC_PHB_ARCHETYPE_CIRCLEOFTHEMOON">
+							<element type="Archetype Feature" name="Combat Wild Shape" id="ID_WOTC_PHB_ARCHETYPE_FEATURE_CIRCLE_MOON_COMBAT_WILD_SHAPE" />
+							<element type="Archetype Feature" name="Circle Forms" id="ID_WOTC_PHB_ARCHETYPE_FEATURE_CIRCLE_MOON_CIRCLE_FORMS" />
+						</element>
+					</element>
+				</element>
+				<element type="Grants" name="Multiclassing (Level 5)" id="ID_INTERNAL_MULTICLASS_LEVEL_5" />
+			</element>
+			<element type="Level" name="6" id="ID_LEVEL_6" multiclass="true" class="ID_WOTC_PHB_MULTICLASS_DRUID" />
+		</elements>
+		<defenses>
+			<conditional>
+			</conditional>
+		</defenses>
+		<companion name="">
+			<attributes>
+				<strength>10</strength>
+				<dexterity>10</dexterity>
+				<constitution>10</constitution>
+				<intelligence>10</intelligence>
+				<wisdom>10</wisdom>
+				<charisma>10</charisma>
+			</attributes>
+			<saves>
+				<save ability="strength">0</save>
+				<save ability="dexterity">0</save>
+				<save ability="constitution">0</save>
+				<save ability="intelligence">0</save>
+				<save ability="wisdom">0</save>
+				<save ability="charisma">0</save>
+			</saves>
+			<skills>
+				<skill name="Acrobatics">0</skill>
+				<skill name="Animal Handling">0</skill>
+				<skill name="Arcana">0</skill>
+				<skill name="Athletics">0</skill>
+				<skill name="Deception">0</skill>
+				<skill name="History">0</skill>
+				<skill name="Insight">0</skill>
+				<skill name="Intimidation">0</skill>
+				<skill name="Investigation">0</skill>
+				<skill name="Medicine">0</skill>
+				<skill name="Nature">0</skill>
+				<skill name="Perception">0</skill>
+				<skill name="Performance">0</skill>
+				<skill name="Persuasion">0</skill>
+				<skill name="Religion">0</skill>
+				<skill name="Sleight of Hand">0</skill>
+				<skill name="Stealth">0</skill>
+				<skill name="Survival">0</skill>
+			</skills>
+			<portrait location="local">
+			</portrait>
+		</companion>
+		<equipment>
+			<storage name="#1" />
+			<storage name="#2" />
+			<item identifier="b61b6411-a158-4db8-928a-d138c5f6234a" name="Breastplate" id="ID_WOTC_ARMOR_MEDIUM_BREASTPLATE" sidebar="true">
+				<equipped location="Armor">true</equipped>
+				<items>
+					<adorner name="Armor of Feathers" id="ID_LEMONCAT_ARMOR_OF_FEATHERS" />
+				</items>
+				<details card="true">
+					<name>
+					</name>
+					<notes>
+					</notes>
+				</details>
+			</item>
+			<item identifier="6126f5c2-2dff-4e8d-9c25-b4688bbb570b" name="Shortsword" id="ID_WOTC_PHB_WEAPON_SHORTSWORD" sidebar="true">
+				<equipped location="Primary Hand">true</equipped>
+				<items>
+					<adorner name="Moon-Touched Sword" id="ID_WOTC_XGTE_MAGIC_ITEM_MOONTOUCHED_SWORD" />
+				</items>
+				<details card="true">
+					<name>
+					</name>
+					<notes>
+					</notes>
+				</details>
+			</item>
+			<item identifier="4a0be47d-91d0-4d32-beda-e167c21052bc" name="Yew Wand" id="ID_WOTC_PHB_ITEM_YEWWAND" sidebar="true">
+				<equipped location="Secondary Hand">true</equipped>
+				<details card="true">
+					<name>
+					</name>
+					<notes>
+					</notes>
+				</details>
+			</item>
+			<item identifier="6f074f2d-782e-4379-98ae-d0374c71b6b9" name="Drum" id="ID_WOTC_SRD_INSTRUMENT_DRUM">
+				<details card="true">
+					<name>
+					</name>
+					<notes>
+					</notes>
+				</details>
+			</item>
+			<item identifier="45a75e55-6aa3-49a9-82cd-2dd4b1c9e4c1" name="Thelarr" id="ID_WOTC_SCAG_INSTRUMENT_THELARR">
+				<details card="true">
+					<name>
+					</name>
+					<notes>
+					</notes>
+				</details>
+			</item>
+			<item identifier="0060b427-a86f-463a-b79c-1d263b7f6f09" name="Tocken" id="ID_WOTC_SCAG_INSTRUMENT_TOCKEN">
+				<details card="true">
+					<name>
+					</name>
+					<notes>
+					</notes>
+				</details>
+			</item>
+			<item identifier="9d645ef2-2a34-4671-b455-80a1c1dbe058" name="Cook’s Utensils" id="ID_WOTC_PHB_ITEM_TOOL_COOKS_UTENSILS">
+				<details card="true">
+					<name>
+					</name>
+					<notes>
+					</notes>
+				</details>
+			</item>
+		</equipment>
+		<sum element-count="141">
+			<element type="Level" id="ID_LEVEL_1" />
+			<element type="Grants" id="ID_INTERNAL_GRANTS_CHARACTER_BASE" />
+			<element type="Grants" id="ID_INTERNAL_GRANTS_SPELLCASTING_BASE" />
+			<element type="Grants" id="ID_INTERNAL_GRANTS_ARMOR_CLASS_BASE" />
+			<element type="Grants" id="ID_INTERNAL_GRANTS_ARMOR_CLASS_DEXTERITY_MODIFIER" />
+			<element type="Grants" id="ID_INTERNAL_GRANTS_HP_CONSTITUTION_MODIFIER" />
+			<element type="Option" id="ID_INTERNAL_OPTION_ALLOW_FEATS" />
+			<element type="Option" id="ID_INTERNAL_OPTION_ALLOW_MULTICLASSING" />
+			<element type="Grants" id="ID_INTERNAL_GRANTS_MULTICLASS_SPELLCASTING" />
+			<element type="Option" id="ID_INTERNAL_OPTION_ALLOW_MAX_HP" />
+			<element type="Race" id="ID_WOTC_VRGTR_RACE_DHAMPIR" />
+			<element type="Language" id="ID_LANGUAGE_COMMON" />
+			<element type="Racial Trait" id="ID_INTERNAL_RACIAL_TRAIT_TYPE_HUMANOID" />
+			<element type="Racial Trait" id="ID_WOTC_VRGTR_RACIAL_TRAIT_DHAMPIR_ANCESTRAL_LEGACY" />
+			<element type="Vision" id="ID_VISION_DARKVISION" />
+			<element type="Racial Trait" id="ID_WOTC_VRGTR_RACIAL_TRAIT_DHAMPIR_DEATHLESS_NATURE" />
+			<element type="Racial Trait" id="ID_WOTC_VRGTR_RACIAL_TRAIT_DHAMPIR_SPIDER_CLIMB" />
+			<element type="Racial Trait" id="ID_WOTC_VRGTR_RACIAL_TRAIT_DHAMPIR_VAMPIRIC_BITE" />
+			<element type="Racial Trait" id="ID_INTERNAL_RACIAL_TRAIT_MEDIUM" />
+			<element type="Size" id="ID_SIZE_MEDIUM" />
+			<element type="Ability Score Improvement" id="ID_WOTC_ASI_ABILITY_SCORE_IMPROVEMENT_OPTION_1" />
+			<element type="Ability Score Improvement" id="ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI_CHARISMA_INCREASE_2" />
+			<element type="Ability Score Improvement" id="ID_WOTC_TCOE_OPTION_CUSTOMIZED_ASI_WISDOM_INCREASE_1" />
+			<element type="Level" id="ID_LEVEL_2" />
+			<element type="Level" id="ID_LEVEL_3" />
+			<element type="Level" id="ID_LEVEL_4" />
+			<element type="Level" id="ID_LEVEL_5" />
+			<element type="Grants" id="ID_INTERNAL_MULTICLASS_LEVEL_5" />
+			<element type="Level" id="ID_LEVEL_6" />
+			<element type="Feat" id="ID_WOTC_TCOE_FEAT_TELEPATHIC" />
+			<element type="Spell" id="ID_PHB_SPELL_DETECT_THOUGHTS" />
+			<element type="Feat Feature" id="ID_WOTC_TCOE_FEAT_FEATURE_TELEPATHIC_CHARISMA" />
+			<element type="Background" id="ID_WOTC_GGTR_BACKGROUND_SELESNYA_INITIATE" />
+			<element type="Proficiency" id="ID_PROFICIENCY_SKILL_NATURE" />
+			<element type="Proficiency" id="ID_PROFICIENCY_SKILL_PERSUASION" />
+			<element type="Background Feature" id="ID_WOTC_GGTR_BACKGROUND_FEATURE_SELESNYA_INITIATE_SELESNYA_GUILD_SPELLS" />
+			<element type="Background Feature" id="ID_WOTC_VRGTR_BACKGROUND_FEATURE_TRAUMA_SURVIVOR" />
+			<element type="Grants" id="ID_INTERNAL_GRANT_OPTIONAL_BACKGROUND_FEATURE" />
+			<element type="Language" id="ID_LANGUAGE_ELVISH" />
+			<element type="Language" id="ID_LANGUAGE_UNDERCOMMON" />
+			<element type="Proficiency" id="ID_SCAG_PROFICIENCY_TOOL_PROFICIENCY_THELARR" />
+			<element type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_DRUM" />
+			<element type="Proficiency" id="ID_SCAG_PROFICIENCY_TOOL_PROFICIENCY_TOCKEN" />
+			<element type="Proficiency" id="ID_PROFICIENCY_TOOL_PROFICIENCY_COOKS_UTENSILS" />
+			<element type="Proficiency" id="ID_PROFICIENCY_SKILL_DECEPTION" />
+			<element type="Proficiency" id="ID_PROFICIENCY_SKILL_STEALTH" />
+			<element type="Proficiency" id="ID_PROFICIENCY_SKILL_INTIMIDATION" />
+			<element type="Proficiency" id="ID_PROFICIENCY_SKILL_PERFORMANCE" />
+			<element type="Proficiency" id="ID_PROFICIENCY_SKILL_PERCEPTION" />
+			<element type="Spell" id="ID_XGTE_SPELL_PRIMAL_SAVAGERY" />
+			<element type="Spell" id="ID_PHB_SPELL_PRODUCE_FLAME" />
+			<element type="Spell" id="ID_PHB_SPELL_PRESTIDIGITATION" />
+			<element type="Spell" id="ID_WOTC_UA20191125_SPELL_MIND_SLIVER" />
+			<element type="Spell" id="ID_PHB_SPELL_MINOR_ILLUSION" />
+			<element type="Spell" id="ID_PHB_SPELL_BANE" />
+			<element type="Spell" id="ID_PHB_SPELL_DISGUISE_SELF" />
+			<element type="Spell" id="ID_PHB_SPELL_IDENTIFY" />
+			<element type="Spell" id="ID_PHB_SPELL_THUNDERWAVE" />
+			<element type="Spell" id="ID_PHB_SPELL_HEROISM" />
+			<element type="Spell" id="ID_PHB_SPELL_HOLD_PERSON" />
+			<element type="Spell" id="ID_PHB_SPELL_PHANTASMAL_FORCE" />
+			<element type="Alignment" id="ID_ALIGNMENT_NEUTRAL_GOOD" />
+			<element type="Armor" id="ID_WOTC_ARMOR_MEDIUM_BREASTPLATE" />
+			<element type="Magic Item" id="ID_LEMONCAT_ARMOR_OF_FEATHERS" />
+			<element type="Weapon" id="ID_WOTC_PHB_WEAPON_SHORTSWORD" />
+			<element type="Magic Item" id="ID_WOTC_XGTE_MAGIC_ITEM_MOONTOUCHED_SWORD" />
+			<element type="Item" id="ID_WOTC_PHB_ITEM_YEWWAND" />
+			<element type="Class" id="ID_WOTC_PHB_CLASS_BARD" />
+			<element type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_LIGHT_ARMOR" />
+			<element type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_PADDED" />
+			<element type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_LEATHER" />
+			<element type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_STUDDED_LEATHER" />
+			<element type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_SIMPLE_WEAPONS" />
+			<element type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_SIMPLE_MELEE_WEAPONS" />
+			<element type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_CLUB" />
+			<element type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_DAGGER" />
+			<element type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_GREATCLUB" />
+			<element type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_HANDAXE" />
+			<element type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_JAVELIN" />
+			<element type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_LIGHT_HAMMER" />
+			<element type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_MACE" />
+			<element type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_QUARTERSTAFF" />
+			<element type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_SICKLE" />
+			<element type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_SPEAR" />
+			<element type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_UNARMED_STRIKE" />
+			<element type="Weapon" id="ID_LEMONCAT_WEAPON_UNARMEDSTRIKE" />
+			<element type="Weapon" id="ID_LEMONCAT_WEAPON_PSYCHICBLADE1" />
+			<element type="Weapon" id="ID_LEMONCAT_WEAPON_PSYCHICBLADE2" />
+			<element type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_SIMPLE_RANGED_WEAPONS" />
+			<element type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_CROSSBOW_LIGHT" />
+			<element type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_DART" />
+			<element type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_SHORTBOW" />
+			<element type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_SLING" />
+			<element type="Weapon" id="ID_LEMONCAT_WEAPON_LIGHTNINGLAUNCHER" />
+			<element type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_CROSSBOW_HAND" />
+			<element type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_LONGSWORD" />
+			<element type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_RAPIER" />
+			<element type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_SHORTSWORD" />
+			<element type="Proficiency" id="ID_PROFICIENCY_SAVINGTHROW_DEXTERITY" />
+			<element type="Proficiency" id="ID_PROFICIENCY_SAVINGTHROW_CHARISMA" />
+			<element type="Class Feature" id="ID_WOTC_PHB_CLASS_FEATURE_BARD_BARDIC_INSPIRATION" />
+			<element type="Class Feature" id="ID_WOTC_PHB_CLASS_FEATURE_BARD_SPELLCASTING_BARD" />
+			<element type="Grants" id="ID_INTERNAL_RITUAL_CASTING" />
+			<element type="Grants" id="ID_INTERNAL_GRANT_MULTICLASS_SPELLCASTING_SLOTS_FULL" />
+			<element type="Grants" id="ID_INTERNAL_GRANTS_MULTICLASSING_PREREQUISITE" />
+			<element type="Class Feature" id="ID_WOTC_PHB_CLASS_FEATURE_BARD_JACK_OF_ALL_TRADES" />
+			<element type="Class Feature" id="ID_WOTC_PHB_CLASS_FEATURE_BARD_SONG_OF_REST" />
+			<element type="Class Feature" id="ID_WOTC_PHB_CLASS_FEATURE_BARD_BARD_COLLEGE" />
+			<element type="Class Feature" id="ID_WOTC_PHB_CLASS_FEATURE_BARD_EXPERTISE" />
+			<element type="Class Feature" id="ID_WOTC_PHB_CLASS_FEATURE_BARD_ABILITYSCOREIMPROVEMENT_BARD" />
+			<element type="Archetype" id="ID_WOTC_TCOE_ARCHETYPE_BARD_COLLEGE_OF_CREATION" />
+			<element type="Archetype Feature" id="ID_WOTC_TCOE_ARCHETYPE_FEATURE_COLLEGE_OF_CREATION_MOTE_OF_POTENTIAL" />
+			<element type="Archetype Feature" id="ID_WOTC_TCOE_ARCHETYPE_FEATURE_COLLEGE_OF_CREATION_PERFORMANCE_OF_CREATION" />
+			<element type="Class Feature" id="ID_INTERNAL_CLASS_FEATURE_FEAT_4_BARD" />
+			<element type="Class Feature" id="ID_EXPERTISE_SKILL_DECEPTION" />
+			<element type="Class Feature" id="ID_EXPERTISE_SKILL_PERSUASION" />
+			<element type="Multiclass" id="ID_WOTC_PHB_MULTICLASS_DRUID" />
+			<element type="Class Feature" id="ID_WOTC_PHB_CLASS_FEATURE_DRUID_DRUIDIC" />
+			<element type="Language" id="ID_LANGUAGE_DRUIDIC" />
+			<element type="Class Feature" id="ID_WOTC_PHB_CLASS_FEATURE_DRUID_SPELLCASTING_DRUID" />
+			<element type="Grants" id="ID_INTERNAL_RITUAL_CASTING" />
+			<element type="Grants" id="ID_INTERNAL_GRANT_MULTICLASS_SPELLCASTING_SLOTS_FULL" />
+			<element type="Grants" id="ID_INTERNAL_GRANT_MULTICLASS" />
+			<element type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_LIGHT_ARMOR" />
+			<element type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_PADDED" />
+			<element type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_LEATHER" />
+			<element type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_STUDDED_LEATHER" />
+			<element type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_MEDIUM_ARMOR" />
+			<element type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_HIDE" />
+			<element type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_CHAIN_SHIRT" />
+			<element type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_SCALE_MAIL" />
+			<element type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_BREASTPLATE" />
+			<element type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_HALF_PLATE" />
+			<element type="Proficiency" id="ID_SCAG_PROFICIENCY_ARMOR_PROFICIENCY_SPIKED_ARMOR" />
+			<element type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_SHIELDS" />
+			<element type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_SHIELD" />
+			<element type="Class Feature" id="ID_WOTC_PHB_CLASS_FEATURE_DRUID_WILDSHAPE" />
+			<element type="Class Feature" id="ID_WOTC_PHB_CLASS_FEATURE_DRUID_DRUID_CIRCLE" />
+			<element type="Archetype" id="ID_WOTC_PHB_ARCHETYPE_CIRCLEOFTHEMOON" />
+			<element type="Archetype Feature" id="ID_WOTC_PHB_ARCHETYPE_FEATURE_CIRCLE_MOON_COMBAT_WILD_SHAPE" />
+			<element type="Archetype Feature" id="ID_WOTC_PHB_ARCHETYPE_FEATURE_CIRCLE_MOON_CIRCLE_FORMS" />
+		</sum>
+		<magic multiclass="true" level="6">
+			<spellcasting name="Bard" ability="Charisma" attack="7" dc="15" source="ID_WOTC_PHB_CLASS_FEATURE_BARD_SPELLCASTING_BARD">
+				<slots s1="4" s2="3" s3="0" s4="0" s5="0" s6="0" s7="0" s8="0" s9="0" />
+				<cantrips>
+					<spell name="Mind Sliver" level="0" id="ID_WOTC_UA20191125_SPELL_MIND_SLIVER" />
+					<spell name="Minor Illusion" level="0" id="ID_PHB_SPELL_MINOR_ILLUSION" />
+					<spell name="Prestidigitation" level="0" id="ID_PHB_SPELL_PRESTIDIGITATION" />
+				</cantrips>
+				<spells>
+					<spell name="Bane" level="1" id="ID_PHB_SPELL_BANE" known="true" />
+					<spell name="Disguise Self" level="1" id="ID_PHB_SPELL_DISGUISE_SELF" known="true" />
+					<spell name="Heroism" level="1" id="ID_PHB_SPELL_HEROISM" known="true" />
+					<spell name="Identify" level="1" id="ID_PHB_SPELL_IDENTIFY" known="true" />
+					<spell name="Thunderwave" level="1" id="ID_PHB_SPELL_THUNDERWAVE" known="true" />
+					<spell name="Hold Person" level="2" id="ID_PHB_SPELL_HOLD_PERSON" known="true" />
+					<spell name="Phantasmal Force" level="2" id="ID_PHB_SPELL_PHANTASMAL_FORCE" known="true" />
+				</spells>
+			</spellcasting>
+			<spellcasting name="Druid" ability="Wisdom" attack="5" dc="13" source="ID_WOTC_PHB_CLASS_FEATURE_DRUID_SPELLCASTING_DRUID">
+				<slots s1="3" s2="0" s3="0" s4="0" s5="0" s6="0" s7="0" s8="0" s9="0" />
+				<cantrips>
+					<spell name="Primal Savagery" level="0" id="ID_XGTE_SPELL_PRIMAL_SAVAGERY" />
+					<spell name="Produce Flame" level="0" id="ID_PHB_SPELL_PRODUCE_FLAME" />
+				</cantrips>
+				<spells>
+					<spell name="Charm Person" level="1" id="ID_PHB_SPELL_CHARM_PERSON" prepared="true" />
+					<spell name="Create or Destroy Water" level="1" id="ID_PHB_SPELL_CREATE_OR_DESTROY_WATER" prepared="true" />
+					<spell name="Goodberry" level="1" id="ID_PHB_SPELL_GOODBERRY" prepared="true" />
+					<spell name="Healing Word" level="1" id="ID_PHB_SPELL_HEALING_WORD" prepared="true" />
+					<spell name="Absorb Elements" level="1" id="ID_POTA_SPELL_ABSORBELEMENTS" />
+					<spell name="Absorb Elements" level="1" id="ID_XGTE_SPELL_ABSORB_ELEMENTS" />
+					<spell name="Animal Friendship" level="1" id="ID_PHB_SPELL_ANIMAL_FRIENDSHIP" />
+					<spell name="Beast Bond" level="1" id="ID_POTA_SPELL_BEASTBOND" />
+					<spell name="Beast Bond" level="1" id="ID_XGTE_SPELL_BEAST_BOND" />
+					<spell name="Cure Wounds" level="1" id="ID_PHB_SPELL_CURE_WOUNDS" />
+					<spell name="Detect Magic" level="1" id="ID_PHB_SPELL_DETECT_MAGIC" />
+					<spell name="Detect Poison and Disease" level="1" id="ID_PHB_SPELL_DETECT_POISON_AND_DISEASE" />
+					<spell name="Earth Tremor" level="1" id="ID_POTA_SPELL_EARTHTREMOR" />
+					<spell name="Earth Tremor" level="1" id="ID_XGTE_SPELL_EARTH_TREMOR" />
+					<spell name="Entangle" level="1" id="ID_PHB_SPELL_ENTANGLE" />
+					<spell name="Faerie Fire" level="1" id="ID_PHB_SPELL_FAERIE_FIRE" />
+					<spell name="Fog Cloud" level="1" id="ID_PHB_SPELL_FOG_CLOUD" />
+					<spell name="Guiding Hand" level="1" id="ID_WOTC_UA20170403_SPELL_GUIDING_HAND" />
+					<spell name="Ice Knife" level="1" id="ID_POTA_SPELL_ICEKNIFE" />
+					<spell name="Ice Knife" level="1" id="ID_XGTE_SPELL_ICE_KNIFE" />
+					<spell name="Jump" level="1" id="ID_PHB_SPELL_JUMP" />
+					<spell name="Longstrider" level="1" id="ID_PHB_SPELL_LONGSTRIDER" />
+					<spell name="Mandala" level="1" id="ID_LEMONCAT_SPELL_MANDALA" />
+					<spell name="Mass Laundry" level="1" id="ID_LEMONCAT_SPELL_MASS_LAUNDRY" />
+					<spell name="Portable Corpse" level="1" id="ID_LEMONCAT_SPELL_PORTABLE_CORPSE" />
+					<spell name="Purify Food and Drink" level="1" id="ID_PHB_SPELL_PURIFY_FOOD_AND_DRINK" />
+					<spell name="Snare" level="1" id="ID_XGTE_SPELL_SNARE" />
+					<spell name="Speak with Animals" level="1" id="ID_PHB_SPELL_SPEAK_WITH_ANIMALS" />
+					<spell name="Thunderwave" level="1" id="ID_PHB_SPELL_THUNDERWAVE" />
+					<spell name="Wild Cunning" level="1" id="ID_WOTC_UA20170403_SPELL_WILD_CUNNING" />
+				</spells>
+			</spellcasting>
+			<additional>
+				<spell name="Detect Thoughts" level="2" id="ID_PHB_SPELL_DETECT_THOUGHTS" source="Telepathic" />
+			</additional>
+		</magic>
+	</build>
+	<!-- restricted sources -->
+	<sources>
+		<restricted />
+	</sources>
+</character>
