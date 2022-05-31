@@ -4,12 +4,14 @@
 		<name>Special Weapons</name>
 		<description>Special Weapons</description>
 		<author url="https://github.com/cajadehu/aurorabuilder/">LemonCat</author>
-		<update version="0.1.9">
+		<update version="0.1.10">
 			<file name="lemoncat_specialWeapons.xml" url="https://raw.githubusercontent.com/cajadehu/aurorabuilder/main/lemoncat_specialWeapons.xml" />
 		</update>
 	</info>
 	
 	<!-- UPDATE LOG
+	0.1.10
+		Added Wet Jewlery for Grung, and other equipment sets
 	0.1.9
 		Experiment with single element for 3 item types failed so I fixed it
 	0.1.8
@@ -691,6 +693,21 @@
 			<set name="cost" currency="gp">0</set>
 			<set name="weight" lb="0">0 lb.</set>
 			<set name="slot">head</set>
+			<set name="type">Wondrous Item</set>
+			<set name="rarity">Common</set>
+		</setters>
+	</element>
+
+	<element name="Wet Jewlery" type="Magic Item" source="AAA" id="ID_LEMONCAT_WET_JEWLERY">
+		<description>
+			<p>While wearing this jewlery your skin is permanantly coated with a thin layer of sea water, keeping you damp and hydrated. It does not intefere with your breathing or clothing. It is very popular with Grung and other races that require regular water immersion. It cannot be removed against the wearer's will.</p>
+		</description>
+		<setters>
+			<set name="keywords">grung, water, skin, custom, lemoncat, aaa</set>
+			<set name="category">Wondrous Items</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="slot">misc</set>
 			<set name="type">Wondrous Item</set>
 			<set name="rarity">Common</set>
 		</setters>
@@ -1574,8 +1591,7 @@
 		</setters>
 	</element>
 	
-	<!-- 			<p>This magic item has a permanant magic illusion on it, causing it to appear rusty, chipped, damaged, decayed, rotted, or otherwise of very low value. In reality it is in fact very finely crafted and of excellent condition. An Investigation Check of 15 or better, or an Identify Spell reveals the illusory nature of this magic item.</p>
-	-->
+<!-- Equipment Sets -->
 	
 	<element name="Weapon of Poverty" type="Magic Item" source="AAA" id="ID_LEMONCAT_WEAPON_OF_POVERTY">
 		<description>
@@ -1623,4 +1639,147 @@
 		</setters>
 	</element>
 	
+	<element name="Weapon of Telepathic Extension" type="Magic Item" source="AAA" id="ID_LEMONCAT_WEAPON_OF_TELEPATHIC_EXTENSION">
+		<description>
+			<p>This magic item grants the wielder the ability to telepathically communicate back and forth with any creature that shares a language within 30ft. The range of Telepathy granted by this item stacks with the range of Telepathy granted by other sources.</p>
+		</description>
+		<setters>
+			<set name="keywords">melee, ranged, lemoncat, aaa, custom</set>
+			<set name="category">Magic Weapons</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="type" addition="any">Weapon</set>
+			<set name="rarity">Common</set>
+			<set name="weapon">ID_INTERNAL_WEAPON_CATEGORY_SIMPLE_MELEE||ID_INTERNAL_WEAPON_CATEGORY_SIMPLE_RANGED||ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE||ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED</set>
+			<set name="name-format"> of Telepathic Extension</set>
+		</setters>
+	</element>
+
+	<element name="Armor of Telepathic Extension" type="Magic Item" source="AAA" id="ID_LEMONCAT_ARMOR_OF_TELEPATHIC_EXTENSION">
+		<description>
+			<p>This magic item grants the wielder the ability to telepathically communicate back and forth with any creature that shares a language within 30ft. The range of Telepathy granted by this item stacks with the range of Telepathy granted by other sources.</p>
+		</description>
+		<setters>
+			<set name="keywords">armor, lemoncat, aaa, custom</set>
+			<set name="category">Magic Armor</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="type" addition="light, medium, or heavy">Armor</set>
+			<set name="rarity">Common</set>
+			<set name="armor">ID_INTERNAL_ARMOR_GROUP_LIGHT|ID_INTERNAL_ARMOR_GROUP_MEDIUM|ID_INTERNAL_ARMOR_GROUP_HEAVY</set>
+			<set name="name-format"> of Telepathic Extension</set>
+		</setters>
+	</element>
+
+	<element name="Shield of Telepathic Extension" type="Magic Item" source="AAA" id="ID_LEMONCAT_SHIELD_OF_TELEPATHIC_EXTENSION">
+		<description>
+			<p>This magic item grants the wielder the ability to telepathically communicate back and forth with any creature that shares a language within 30ft. The range of Telepathy granted by this item stacks with the range of Telepathy granted by other sources.</p>
+		</description>
+		<setters>
+			<set name="keywords">lemoncat, aaa, custom</set>
+			<set name="category">Magic Armor</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="type" addition="shield">Armor</set>
+			<set name="rarity">Common</set>
+			<set name="armor">ID_INTERNAL_ARMOR_GROUP_SHIELD</set>
+			<set name="name-format"> of Telepathic Extension</set>
+		</setters>
+	</element>
+
+	<element name="Weapon of Shiftweave" type="Magic Item" source="AAA" id="ID_LEMONCAT_WEAPON_OF_SHIFTWEAVE">
+		<description>
+			<p>This magic item can take on the visual appearance of any other item it has touched, provided that it is of the same type. This shift in aesthetic requires an action.</p>
+		</description>
+		<setters>
+			<set name="keywords">melee, ranged, lemoncat, aaa, custom</set>
+			<set name="category">Magic Weapons</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="type" addition="any">Weapon</set>
+			<set name="rarity">Common</set>
+			<set name="weapon">ID_INTERNAL_WEAPON_CATEGORY_SIMPLE_MELEE||ID_INTERNAL_WEAPON_CATEGORY_SIMPLE_RANGED||ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE||ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED</set>
+			<set name="name-format"> of Shiftweave</set>
+		</setters>
+	</element>
+
+	<element name="Armor of Shiftweave" type="Magic Item" source="AAA" id="ID_LEMONCAT_ARMOR_OF_SHIFTWEAVE">
+		<description>
+			<p>This magic item can take on the visual appearance of any other item it has touched, provided that it is of the same type. This shift in aesthetic requires an action.</p>
+		</description>
+		<setters>
+			<set name="keywords">armor, lemoncat, aaa, custom</set>
+			<set name="category">Magic Armor</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="type" addition="light, medium, or heavy">Armor</set>
+			<set name="rarity">Common</set>
+			<set name="armor">ID_INTERNAL_ARMOR_GROUP_LIGHT|ID_INTERNAL_ARMOR_GROUP_MEDIUM|ID_INTERNAL_ARMOR_GROUP_HEAVY</set>
+			<set name="name-format"> of Shiftweave</set>
+		</setters>
+	</element>
+
+	<element name="Shield of Shiftweave" type="Magic Item" source="AAA" id="ID_LEMONCAT_SHIELD_OF_SHIFTWEAVE">
+		<description>
+			<p>This magic item can take on the visual appearance of any other item it has touched, provided that it is of the same type. This shift in aesthetic requires an action.</p>
+		</description>
+		<setters>
+			<set name="keywords">lemoncat, aaa, custom</set>
+			<set name="category">Magic Armor</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="type" addition="shield">Armor</set>
+			<set name="rarity">Common</set>
+			<set name="armor">ID_INTERNAL_ARMOR_GROUP_SHIELD</set>
+			<set name="name-format"> of Shiftweave</set>
+		</setters>
+	</element>
+
+	<element name="Weapon of Casting" type="Magic Item" source="AAA" id="ID_LEMONCAT_WEAPON_OF_CASTING">
+		<description>
+			<p>This magic item can also function as a spellcasting focus in place of a rod, wand, staff, totem, or other such spellcasting focus.</p>
+		</description>
+		<setters>
+			<set name="keywords">melee, ranged, lemoncat, aaa, custom</set>
+			<set name="category">Magic Weapons</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="type" addition="any">Weapon</set>
+			<set name="rarity">Common</set>
+			<set name="weapon">ID_INTERNAL_WEAPON_CATEGORY_SIMPLE_MELEE||ID_INTERNAL_WEAPON_CATEGORY_SIMPLE_RANGED||ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE||ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED</set>
+			<set name="name-format"> of Casting</set>
+		</setters>
+	</element>
+
+	<element name="Armor of Casting" type="Magic Item" source="AAA" id="ID_LEMONCAT_ARMOR_OF_CASTING">
+		<description>
+			<p>This magic item can also function as a spellcasting focus in place of a rod, wand, staff, totem, or other such spellcasting focus.</p>
+		</description>
+		<setters>
+			<set name="keywords">armor, lemoncat, aaa, custom</set>
+			<set name="category">Magic Armor</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="type" addition="light, medium, or heavy">Armor</set>
+			<set name="rarity">Common</set>
+			<set name="armor">ID_INTERNAL_ARMOR_GROUP_LIGHT|ID_INTERNAL_ARMOR_GROUP_MEDIUM|ID_INTERNAL_ARMOR_GROUP_HEAVY</set>
+			<set name="name-format"> of Casting</set>
+		</setters>
+	</element>
+
+	<element name="Shield of Casting" type="Magic Item" source="AAA" id="ID_LEMONCAT_SHIELD_OF_CASTING">
+		<description>
+			<p>This magic item can also function as a spellcasting focus in place of a rod, wand, staff, totem, or other such spellcasting focus.</p>
+		</description>
+		<setters>
+			<set name="keywords">lemoncat, aaa, custom</set>
+			<set name="category">Magic Armor</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="type" addition="shield">Armor</set>
+			<set name="rarity">Common</set>
+			<set name="armor">ID_INTERNAL_ARMOR_GROUP_SHIELD</set>
+			<set name="name-format"> of Casting</set>
+		</setters>
+	</element>
+
+
+
+
+
+
 </elements>
