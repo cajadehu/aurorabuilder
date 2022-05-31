@@ -4,14 +4,16 @@
 		<name>Special Weapons</name>
 		<description>Special Weapons</description>
 		<author url="https://github.com/cajadehu/aurorabuilder/">LemonCat</author>
-		<update version="0.1.8">
+		<update version="0.1.9">
 			<file name="lemoncat_specialWeapons.xml" url="https://raw.githubusercontent.com/cajadehu/aurorabuilder/main/lemoncat_specialWeapons.xml" />
 		</update>
 	</info>
 	
 	<!-- UPDATE LOG
+	0.1.9
+		Experiment with single element for 3 item types failed so I fixed it
 	0.1.8
-		Added an effect that can apply to weapons, shields, and or armor. - . . . of Poverty
+		Added an effect that can apply to weapons, shields, and or armor. X of Poverty
 	0.1.7
 		Added additional Common magic shields, added more description text to some shields
 	0.1.6
@@ -1572,19 +1574,51 @@
 		</setters>
 	</element>
 	
-	<element name="Equipment of Poverty" type="Magic Item" source="AAA" id="ID_LEMONCAT_EQUIP_OF_POVERTY">
+	<!-- 			<p>This magic item has a permanant magic illusion on it, causing it to appear rusty, chipped, damaged, decayed, rotted, or otherwise of very low value. In reality it is in fact very finely crafted and of excellent condition. An Investigation Check of 15 or better, or an Identify Spell reveals the illusory nature of this magic item.</p>
+	-->
+	
+	<element name="Weapon of Poverty" type="Magic Item" source="AAA" id="ID_LEMONCAT_WEAPON_OF_POVERTY">
 		<description>
 			<p>This magic item has a permanant magic illusion on it, causing it to appear rusty, chipped, damaged, decayed, rotted, or otherwise of very low value. In reality it is in fact very finely crafted and of excellent condition. An Investigation Check of 15 or better, or an Identify Spell reveals the illusory nature of this magic item.</p>
 		</description>
 		<setters>
-			<set name="keywords">value, illusion, effect, lemoncat, aaa, custom</set>
-			<set name="category">Magic Weapons, Magic Armor</set>
+			<set name="keywords">illusion, melee, ranged, lemoncat, aaa, custom</set>
+			<set name="category">Magic Weapons</set>
 			<set name="cost" currency="gp">0</set>
-			<set name="type" addition="any">Weapon, Armor, or Shield</set>
+			<set name="type" addition="any">Weapon</set>
 			<set name="rarity">Common</set>
 			<set name="weapon">ID_INTERNAL_WEAPON_CATEGORY_SIMPLE_MELEE||ID_INTERNAL_WEAPON_CATEGORY_SIMPLE_RANGED||ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE||ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED</set>
-			<set name="armor">ID_INTERNAL_ARMOR_GROUP_SHIELD</set>
+			<set name="name-format">{{parent}} of Poverty</set>
+		</setters>
+	</element>
+	
+	<element name="Armor of Poverty" type="Magic Item" source="AAA" id="ID_LEMONCAT_ARMOR_OF_POVERTY">
+		<description>
+			<p>This magic item has a permanant magic illusion on it, causing it to appear rusty, chipped, damaged, decayed, rotted, or otherwise of very low value. In reality it is in fact very finely crafted and of excellent condition. An Investigation Check of 15 or better, or an Identify Spell reveals the illusory nature of this magic item.</p>
+		</description>
+		<setters>
+			<set name="keywords">illusion, armor, lemoncat, aaa, custom</set>
+			<set name="category">Magic Armor</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="type" addition="light, medium, or heavy">Armor</set>
+			<set name="rarity">Common</set>
 			<set name="armor">ID_INTERNAL_ARMOR_GROUP_LIGHT|ID_INTERNAL_ARMOR_GROUP_MEDIUM|ID_INTERNAL_ARMOR_GROUP_HEAVY</set>
+			<set name="name-format">{{parent}} of Poverty</set>
+		</setters>
+	</element>
+	
+	<element name="Shield of Poverty" type="Magic Item" source="AAA" id="ID_LEMONCAT_SHIELD_OF_POVERTY">		
+		<description>
+			<p>This magic item has a permanant magic illusion on it, causing it to appear rusty, chipped, damaged, decayed, rotted, or otherwise of very low value. In reality it is in fact very finely crafted and of excellent condition. An Investigation Check of 15 or better, or an Identify Spell reveals the illusory nature of this magic item.</p>
+		</description>
+		<setters>
+			<set name="keywords">illusion, lemoncat, aaa, custom</set>
+			<set name="category">Magic Armor</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="type" addition="shield">Armor</set>
+			<set name="rarity">Common</set>
+			<set name="armor">ID_INTERNAL_ARMOR_GROUP_SHIELD</set>
 			<set name="name-format">{{parent}} of Poverty</set>
 		</setters>
 	</element>
