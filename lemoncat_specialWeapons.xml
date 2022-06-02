@@ -4,7 +4,7 @@
 		<name>Special Weapons</name>
 		<description>Special Weapons</description>
 		<author url="https://github.com/cajadehu/aurorabuilder/">LemonCat</author>
-		<update version="0.1.10">
+		<update version="0.1.11">
 			<file name="lemoncat_specialWeapons.xml" url="https://raw.githubusercontent.com/cajadehu/aurorabuilder/main/lemoncat_specialWeapons.xml" />
 		</update>
 	</info>
@@ -1777,8 +1777,51 @@
 		</setters>
 	</element>
 
+	<element name="Weapon of Rusting Vengeance" type="Magic Item" source="AAA" id="ID_LEMONCAT_WEAPON_OF_RUSTING_VENGEANCE">
+		<description>
+			<p>This magic weapon appears to have patches of rust on it that gradually move around on it. When this weapon sucessfully strikes a metal target and rolls a natural 20, that target begins to rust at an alarming rate: approximately 1 cubic foot per round, up to a maximum of 15 cubic feet.</p>
+		</description>
+		<setters>
+			<set name="keywords">melee, ranged, lemoncat, aaa, custom</set>
+			<set name="category">Magic Weapons</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="type" addition="any">Weapon</set>
+			<set name="rarity">Common</set>
+			<set name="weapon">ID_INTERNAL_WEAPON_CATEGORY_SIMPLE_MELEE||ID_INTERNAL_WEAPON_CATEGORY_SIMPLE_RANGED||ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE||ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED</set>
+			<set name="name-format"> of Rusting Vengeance</set>
+		</setters>
+	</element>
 
+	<element name="Armor of Rusting Vengeance" type="Magic Item" source="AAA" id="ID_LEMONCAT_ARMOR_OF_RUSTING_VENGEANCE">
+		<description>
+			<p>This magic armor appears to have patches of rust on it that gradually move around on it. It grants its wearer Resistance to Bludgeoning, Piercing, and Slashing damage from Non-Magical and Magical Melee Weapons that are primarily made of metal.</p>
+		</description>
+		<setters>
+			<set name="keywords">armor, lemoncat, aaa, custom</set>
+			<set name="category">Magic Armor</set>
+			<set name="cost" currency="gp">500</set>
+			<set name="type" addition="light, medium, or heavy">Armor</set>
+			<set name="rarity">Uncommon</set>
+			<set name="armor">ID_INTERNAL_ARMOR_GROUP_LIGHT|ID_INTERNAL_ARMOR_GROUP_MEDIUM|ID_INTERNAL_ARMOR_GROUP_HEAVY</set>
+			<set name="name-format"> of Rusting Vengeance</set>
+		</setters>
+	</element>
 
+	<element name="Shield of Rusting Vengeance" type="Magic Item" source="AAA" id="ID_LEMONCAT_SHIELD_OF_RUSTING_VENGEANCE">
+		<description>
+			<p>This magic shield appears to have patches of rust on it that gradually move around on it. When held against a Non-Magical lock made of metal, it begins to rust away the lock. It takes about 5 minutes of this process to damage a metal lock sufficiently to open it.</p>
+		</description>
+		<setters>
+			<set name="keywords">lemoncat, aaa, custom</set>
+			<set name="category">Magic Armor</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="type" addition="shield">Armor</set>
+			<set name="rarity">Common</set>
+			<set name="armor">ID_INTERNAL_ARMOR_GROUP_SHIELD</set>
+			<set name="name-format"> of Rusting Vengeance</set>
+		</setters>
+	</element>
 
 
 
