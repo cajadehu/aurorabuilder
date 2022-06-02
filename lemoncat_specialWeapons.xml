@@ -4,7 +4,7 @@
 		<name>Special Weapons</name>
 		<description>Special Weapons</description>
 		<author url="https://github.com/cajadehu/aurorabuilder/">LemonCat</author>
-		<update version="0.1.11">
+		<update version="0.1.12">
 			<file name="lemoncat_specialWeapons.xml" url="https://raw.githubusercontent.com/cajadehu/aurorabuilder/main/lemoncat_specialWeapons.xml" />
 		</update>
 	</info>
@@ -1823,6 +1823,142 @@
 		</setters>
 	</element>
 
+	<element name="Weapon of Vine-kin" type="Magic Item" source="AAA" id="ID_LEMONCAT_WEAPON_OF_VINE-KIN">
+		<description>
+			<p>This magic weapon has a distinctive vine-like appearance to it. Once per Dawn as an Action this weapon can magically produce a single Hemp Rope with a 100 foot length. It is made of woven vines.</p>
+		</description>
+		<setters>
+			<set name="keywords">rope, melee, ranged, lemoncat, aaa, custom</set>
+			<set name="category">Magic Weapons</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="type" addition="any">Weapon</set>
+			<set name="rarity">Common</set>
+			<set name="weapon">ID_INTERNAL_WEAPON_CATEGORY_SIMPLE_MELEE||ID_INTERNAL_WEAPON_CATEGORY_SIMPLE_RANGED||ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE||ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED</set>
+			<set name="name-format"> of Vine-kin</set>
+		</setters>
+	</element>
 
+	<element name="Armor of Vine-kin" type="Magic Item" source="AAA" id="ID_LEMONCAT_ARMOR_OF_VINE-KIN">
+		<description>
+			<p>This magic armor is made of finely woven fibers of magical vine. Some variants have vibrant leaves still on. Once each Dawn you can cast the Plant Growth spell as an action.</p>
+		</description>
+		<setters>
+			<set name="keywords">plant growth, spell, armor, lemoncat, aaa, custom</set>
+			<set name="category">Magic Armor</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="type" addition="light, medium, or heavy">Armor</set>
+			<set name="rarity">Common</set>
+			<set name="armor">ID_INTERNAL_ARMOR_GROUP_LIGHT|ID_INTERNAL_ARMOR_GROUP_MEDIUM|ID_INTERNAL_ARMOR_GROUP_HEAVY</set>
+			<set name="name-format"> of Vine-kin</set>
+		</setters>
+	</element>
+
+	<element name="Shield of Vine-kin" type="Magic Item" source="AAA" id="ID_LEMONCAT_SHIELD_OF_VINE-KIN">
+		<description>
+			<p>This magic Shield appears to be made of a dense tangled mess of vines. As a Verbal Action it can lightly grasp or release a Tiny or smaller Object of 5 pounds or less, such as a lantern or torch, but not a weapon or bucket. DM has full discretion.</p>
+		</description>
+		<setters>
+			<set name="keywords">plant, stor, lemoncat, aaa, custom</set>
+			<set name="category">Magic Armor</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">2 lb.</set>
+			<set name="type" addition="shield">Armor</set>
+			<set name="rarity">Common</set>
+			<set name="armor">ID_INTERNAL_ARMOR_GROUP_SHIELD</set>
+			<set name="name-format"> of Vine-kin</set>
+		</setters>
+	</element>
+
+	<element name="Weapon of The Ghost Runner" type="Magic Item" source="AAA" id="ID_LEMONCAT_WEAPON_OF_THE_GHOST_RUNNER">
+		<description>
+			<p>Once per turn, this magic weapon grants its wielder Advantage on an attack roll. The attack roll must be made with this weapon, and the wielder must have already moved at least 5ft during the turn.</p>
+		</description>
+		<setters>
+			<set name="keywords">advantage, roll, melee, ranged, lemoncat, aaa, custom</set>
+			<set name="category">Magic Weapons</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="type" addition="any">Weapon</set>
+			<set name="rarity">Very Rare</set>
+			<set name="weapon">ID_INTERNAL_WEAPON_CATEGORY_SIMPLE_MELEE||ID_INTERNAL_WEAPON_CATEGORY_SIMPLE_RANGED||ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE||ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED</set>
+			<set name="name-format"> of The Ghost Runner</set>
+		</setters>
+	</element>
+
+	<element name="Armor of The Ghost Runner" type="Magic Item" source="AAA" id="ID_LEMONCAT_ARMOR_OF_THE_GHOST_RUNNER">
+		<description>
+			<p>This magic armor allows its wearer to Dash as a Bonus Action.</p>
+		</description>
+		<setters>
+			<set name="keywords">dash, bonus, action, armor, lemoncat, aaa, custom</set>
+			<set name="category">Magic Armor</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="type" addition="light, medium, or heavy">Armor</set>
+			<set name="rarity">Uncommon</set>
+			<set name="armor">ID_INTERNAL_ARMOR_GROUP_LIGHT|ID_INTERNAL_ARMOR_GROUP_MEDIUM|ID_INTERNAL_ARMOR_GROUP_HEAVY</set>
+			<set name="name-format"> of The Ghost Runner</set>
+		</setters>
+	</element>
+
+	<element name="Shield of The Ghost Runner" type="Magic Item" source="AAA" id="ID_LEMONCAT_SHIELD_OF_THE_GHOST_RUNNER">
+		<description>
+			<p>For every 5 feet this magic shield's wielder has moved during their turn, they regain 1 Temporary HP up to a maximum of the wielder's Character Level.</p>
+		</description>
+		<setters>
+			<set name="keywords">lemoncat, aaa, custom</set>
+			<set name="category">Magic Armor</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="type" addition="shield">Armor</set>
+			<set name="rarity">Uncommon</set>
+			<set name="armor">ID_INTERNAL_ARMOR_GROUP_SHIELD</set>
+			<set name="name-format"> of The Ghost Runner</set>
+		</setters>
+	</element>
+
+	<element name="Weapon of Lazarusian Mercy" type="Magic Item" source="AAA" id="ID_LEMONCAT_WEAPON_OF_LAZARUSIAN_MERCY">
+		<description>
+			<p>This magic weapon automatically casts the Spare The Dying cantrip on any creature it (or its ammunition) strikes.</p>
+		</description>
+		<setters>
+			<set name="keywords">cast, spell, Spare, melee, ranged, lemoncat, aaa, custom</set>
+			<set name="category">Magic Weapons</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="type" addition="any">Weapon</set>
+			<set name="rarity">Common</set>
+			<set name="weapon">ID_INTERNAL_WEAPON_CATEGORY_SIMPLE_MELEE||ID_INTERNAL_WEAPON_CATEGORY_SIMPLE_RANGED||ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE||ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED</set>
+			<set name="name-format"> of Lazarusian Mercy</set>
+		</setters>
+	</element>
+
+	<element name="Armor of Lazarusian Mercy" type="Magic Item" source="AAA" id="ID_LEMONCAT_ARMOR_OF_LAZARUSIAN_MERCY">
+		<description>
+			<p>This magic armor automatically casts the Spare The Dying cantrip on its wearer on the first Death Saving Throw it makes since its last Long Rest.</p>
+		</description>
+		<setters>
+			<set name="keywords">cast, spell, Spare, armor, lemoncat, aaa, custom</set>
+			<set name="category">Magic Armor</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="type" addition="light, medium, or heavy">Armor</set>
+			<set name="rarity">Uncommon</set>
+			<set name="armor">ID_INTERNAL_ARMOR_GROUP_LIGHT|ID_INTERNAL_ARMOR_GROUP_MEDIUM|ID_INTERNAL_ARMOR_GROUP_HEAVY</set>
+			<set name="name-format"> of Lazarusian Mercy</set>
+		</setters>
+	</element>
+
+	<element name="Shield of Lazarusian Mercy" type="Magic Item" source="AAA" id="ID_LEMONCAT_SHIELD_OF_LAZARUSIAN_MERCY">
+		<description>
+			<p>This magic shield grants its wielder an increase in range of 30 feet to any spell the wielder casts to Stabilise or restore Hit Points to one or more targets that are at or below 0 Hit Points.</p>
+		</description>
+		<setters>
+			<set name="keywords">cast, spell, Spare, heal, medic, lemoncat, aaa, custom</set>
+			<set name="category">Magic Armor</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="type" addition="shield">Armor</set>
+			<set name="rarity">Uncommon</set>
+			<set name="armor">ID_INTERNAL_ARMOR_GROUP_SHIELD</set>
+			<set name="name-format"> of Lazarusian Mercy</set>
+		</setters>
+	</element>
 
 </elements>
