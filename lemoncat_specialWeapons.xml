@@ -4,12 +4,14 @@
 		<name>Special Weapons</name>
 		<description>Special Weapons</description>
 		<author url="https://github.com/cajadehu/aurorabuilder/">LemonCat</author>
-		<update version="0.1.12">
+		<update version="0.1.13">
 			<file name="lemoncat_specialWeapons.xml" url="https://raw.githubusercontent.com/cajadehu/aurorabuilder/main/lemoncat_specialWeapons.xml" />
 		</update>
 	</info>
 	
 	<!-- UPDATE LOG
+	0.1.13
+		More themed equipment sets added
 	0.1.10
 		Added Wet Jewlery for Grung, and other equipment sets
 	0.1.9
@@ -1960,5 +1962,192 @@
 			<set name="name-format"> of Lazarusian Mercy</set>
 		</setters>
 	</element>
+
+	<element name="Weapon of Larceny" type="Magic Item" source="AAA" id="ID_LEMONCAT_WEAPON_OF_LARCENY">
+		<description>
+			<p>When you critically hit a single target with a natural 20 dice roll, the wielder of this magic weapon may roll a Slight Of Hand Check (opposed by the target's Perception Check) to steal a trinket or Tiny object of the DMs choice, from the target.</p>
+		</description>
+		<setters>
+			<set name="keywords">mage hand, rogue, melee, ranged, lemoncat, aaa, custom</set>
+			<set name="category">Magic Weapons</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="type" addition="any">Weapon</set>
+			<set name="rarity">Common</set>
+			<set name="weapon">ID_INTERNAL_WEAPON_CATEGORY_SIMPLE_MELEE||ID_INTERNAL_WEAPON_CATEGORY_SIMPLE_RANGED||ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE||ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED</set>
+			<set name="name-format"> of Larceny</set>
+		</setters>
+	</element>
+
+	<element name="Armor of Larceny" type="Magic Item" source="AAA" id="ID_LEMONCAT_ARMOR_OF_LARCENY">
+		<description>
+			<p>If the wearer has the Mage Hand cantrip on their Spell List, this magic armor allows its wearer to Subtle cast the Mage Hand cantrip, and it can be invisible if the caster so chooses. The range of the caster's Mage Hand cantrip is also increased by 30 feet.</p>
+		</description>
+		<setters>
+			<set name="keywords">mage hand, rogue, armor, lemoncat, aaa, custom</set>
+			<set name="category">Magic Armor</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="type" addition="light, medium, or heavy">Armor</set>
+			<set name="rarity">Uncommon</set>
+			<set name="armor">ID_INTERNAL_ARMOR_GROUP_LIGHT|ID_INTERNAL_ARMOR_GROUP_MEDIUM|ID_INTERNAL_ARMOR_GROUP_HEAVY</set>
+			<set name="name-format"> of Larceny</set>
+		</setters>
+	</element>
+
+	<element name="Shield of Larceny" type="Magic Item" source="AAA" id="ID_LEMONCAT_SHIELD_OF_LARCENY">
+		<description>
+			<p>This magic shield grants it's wielder advantage on Perception Checks to oppose Slight Of Hand Checks made against them. A set of Thieves Tools can be magically stored or removed from within this shield as an Action.</p>
+		</description>
+		<setters>
+			<set name="keywords">Thieves Tools, rogue, lemoncat, aaa, custom</set>
+			<set name="category">Magic Armor</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="type" addition="shield">Armor</set>
+			<set name="rarity">Common</set>
+			<set name="armor">ID_INTERNAL_ARMOR_GROUP_SHIELD</set>
+			<set name="name-format"> of Larceny</set>
+		</setters>
+	</element>
+
+	<element name="Weapon of Painters Joy" type="Magic Item" source="AAA" id="ID_LEMONCAT_WEAPON_OF_PAINTERS_JOY">
+		<description>
+			<p>This magic weapon magically transforms into a clean paint brush of the wielder's choice as a Verbal Action for up to 1 hour. The wielder can revert it to its original form early as a Free Action.</p>
+		</description>
+		<setters>
+			<set name="keywords">art, melee, ranged, lemoncat, aaa, custom</set>
+			<set name="category">Magic Weapons</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="type" addition="any">Weapon</set>
+			<set name="rarity">Common</set>
+			<set name="weapon">ID_INTERNAL_WEAPON_CATEGORY_SIMPLE_MELEE||ID_INTERNAL_WEAPON_CATEGORY_SIMPLE_RANGED||ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE||ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED</set>
+			<set name="name-format"> of Painters Joy</set>
+		</setters>
+	</element>
+
+	<element name="Armor of Painters Joy" type="Magic Item" source="AAA" id="ID_LEMONCAT_ARMOR_OF_PAINTERS_JOY">
+		<description>
+			<p>This magic armor magically dries freshly painted surfaces within 15 feet as a Verbal Action.</p>
+		</description>
+		<setters>
+			<set name="keywords">armor, lemoncat, aaa, custom</set>
+			<set name="category">Magic Armor</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="type" addition="light, medium, or heavy">Armor</set>
+			<set name="rarity">Common</set>
+			<set name="armor">ID_INTERNAL_ARMOR_GROUP_LIGHT|ID_INTERNAL_ARMOR_GROUP_MEDIUM|ID_INTERNAL_ARMOR_GROUP_HEAVY</set>
+			<set name="name-format"> of Painters Joy</set>
+		</setters>
+	</element>
+
+	<element name="Shield of Painters Joy" type="Magic Item" source="AAA" id="ID_LEMONCAT_SHIELD_OF_PAINTERS_JOY">
+		<description>
+			<p>This magic shield magically transforms into a fresh paint palette with the wielder's choice of colored paints as a Verbal Action for up to 1 hour. The wielder can revert it to its original form early as a Free Action.</p>
+		</description>
+		<setters>
+			<set name="keywords">lemoncat, aaa, custom</set>
+			<set name="category">Magic Armor</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="type" addition="shield">Armor</set>
+			<set name="rarity">Common</set>
+			<set name="armor">ID_INTERNAL_ARMOR_GROUP_SHIELD</set>
+			<set name="name-format"> of Painters Joy</set>
+		</setters>
+	</element>
+
+	<element name="Weapon of Sorcery Points" type="Magic Item" source="AAA" id="ID_LEMONCAT_WEAPON_OF_SORCERY_POINTS">
+		<description>
+			<p>This magic weapon grants it's wielder an additional number of Sorcery Points equal to their Proficiency Modifier. This bonus stacks with Sorcery Points granted by other sources.</p>
+		</description>
+		<setters>
+			<set name="keywords">melee, ranged, lemoncat, aaa, custom</set>
+			<set name="category">Magic Weapons</set>
+			<set name="cost" currency="gp"></set>
+			<set name="type" addition="any">Weapon</set>
+			<set name="rarity">Common</set>
+			<set name="weapon">ID_INTERNAL_WEAPON_CATEGORY_SIMPLE_MELEE||ID_INTERNAL_WEAPON_CATEGORY_SIMPLE_RANGED||ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE||ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED</set>
+			<set name="name-format"> of Sorcery Points</set>
+		</setters>
+	</element>
+
+	<element name="Armor of Sorcery Points" type="Magic Item" source="AAA" id="ID_LEMONCAT_ARMOR_OF_SORCERY_POINTS">
+		<description>
+			<p>This magic armor grants it's wielder an additional number of Sorcery Points equal to their Proficiency Modifier. This bonus stacks with Sorcery Points granted by other sources.</p>
+		</description>
+		<setters>
+			<set name="keywords">armor, lemoncat, aaa, custom</set>
+			<set name="category">Magic Armor</set>
+			<set name="cost" currency="gp"></set>
+			<set name="type" addition="light, medium, or heavy">Armor</set>
+			<set name="rarity">Common</set>
+			<set name="armor">ID_INTERNAL_ARMOR_GROUP_LIGHT|ID_INTERNAL_ARMOR_GROUP_MEDIUM|ID_INTERNAL_ARMOR_GROUP_HEAVY</set>
+			<set name="name-format"> of Sorcery Points</set>
+		</setters>
+	</element>
+
+	<element name="Shield of Sorcery Points" type="Magic Item" source="AAA" id="ID_LEMONCAT_SHIELD_OF_SORCERY_POINTS">
+		<description>
+			<p>This magic shield grants it's wielder an additional number of Sorcery Points equal to their Proficiency Modifier. This bonus stacks with Sorcery Points granted by other sources.</p>
+		</description>
+		<setters>
+			<set name="keywords">lemoncat, aaa, custom</set>
+			<set name="category">Magic Armor</set>
+			<set name="cost" currency="gp"></set>
+			<set name="weight" lb="3">3 lb.</set>
+			<set name="type" addition="shield">Armor</set>
+			<set name="rarity">Common</set>
+			<set name="armor">ID_INTERNAL_ARMOR_GROUP_SHIELD</set>
+			<set name="name-format"> of Sorcery Points</set>
+		</setters>
+	</element>
+
+	<element name="Weapon of Racial Integration" type="Magic Item" source="AAA" id="ID_LEMONCAT_WEAPON_OF_RACIAL_INTEGRATION">
+		<description>
+			<p>This magic weapon vibrates softly when within 30 feet of a specific Race (discuss with DM) and can 'see' through Polymorph, Disguise Self, and other falsehoods.</p>
+		</description>
+		<setters>
+			<set name="keywords">melee, ranged, lemoncat, aaa, custom</set>
+			<set name="category">Magic Weapons</set>
+			<set name="cost" currency="gp"></set>
+			<set name="type" addition="any">Weapon</set>
+			<set name="rarity">Common</set>
+			<set name="weapon">ID_INTERNAL_WEAPON_CATEGORY_SIMPLE_MELEE||ID_INTERNAL_WEAPON_CATEGORY_SIMPLE_RANGED||ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE||ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED</set>
+			<set name="name-format"> of Racial Integration</set>
+		</setters>
+	</element>
+
+	<element name="Armor of Racial Integration" type="Magic Item" source="AAA" id="ID_LEMONCAT_ARMOR_OF_RACIAL_INTEGRATION">
+		<description>
+			<p>This magic armor Polymorphs it's wearer into a specific Race (discuss with DM) of equal Size and Structure (with the same number of limbs, etc.). This Polymorph effect lasts as long as the armor is being worn.</p>
+		</description>
+		<setters>
+			<set name="keywords">armor, lemoncat, aaa, custom</set>
+			<set name="category">Magic Armor</set>
+			<set name="cost" currency="gp"></set>
+			<set name="type" addition="light, medium, or heavy">Armor</set>
+			<set name="rarity">Common</set>
+			<set name="armor">ID_INTERNAL_ARMOR_GROUP_LIGHT|ID_INTERNAL_ARMOR_GROUP_MEDIUM|ID_INTERNAL_ARMOR_GROUP_HEAVY</set>
+			<set name="name-format"> of Racial Integration</set>
+		</setters>
+	</element>
+
+	<element name="Shield of Racial Integration" type="Magic Item" source="AAA" id="ID_LEMONCAT_SHIELD_OF_RACIAL_INTEGRATION">
+		<description>
+			<p>When placed face up on a flat surface, this magic shield projects an arrow pointing in the direction of the nearest member of a specific Race (discuss with DM) within 1 mile.</p>
+		</description>
+		<setters>
+			<set name="keywords">lemoncat, aaa, custom</set>
+			<set name="category">Magic Armor</set>
+			<set name="cost" currency="gp"></set>
+			<set name="weight" lb="3">3 lb.</set>
+			<set name="type" addition="shield">Armor</set>
+			<set name="rarity">Common</set>
+			<set name="armor">ID_INTERNAL_ARMOR_GROUP_SHIELD</set>
+			<set name="name-format"> of Racial Integration</set>
+		</setters>
+	</element>
+
+
+
 
 </elements>
