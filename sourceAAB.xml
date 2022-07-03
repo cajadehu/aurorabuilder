@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<update version="0.0.1">
+			<file name="sourceAAB.xml" url="https://raw.githubusercontent.com/cajadehu/aurorabuilder/main/sourceAAB.xml" />
+		</update>
+	</info>
+	<element name="AAB" type="Source" source="LemonCat" id="ID_LEMONCAT_SOURCEAAB">
+		<description>
+			<![CDATA[<p><strong>Adds Mage Armor, Stone Armor (UA), Shileilagh Quarterstaff, and Unarmed Strike.</strong></p>]]>
+		</description>
+		<setters>
+			<set name="abbreviation">LMN</set>
+			<set name="url">https://github.com/cajadehu/aurorabuilder</set>
+			<set name="image">https://github.com/cajadehu/aurorabuilder/blob/main/lemoncatTransparent_150x150.png?raw=true</set>
+			<set name="errata">n/a</set>
+			<set name="author" abbreviation="LC" url="https://github.com/cajadehu/aurorabuilder">LemonCat</set>
+			<set name="official">false</set>
+			<set name="core">false</set>
+			<set name="release">20220703</set>
+		</setters>
+	</element>
+</elements>

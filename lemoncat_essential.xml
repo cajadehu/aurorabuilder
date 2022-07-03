@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>
+	<info>
+		<name>Special Weapons</name>
+		<description>Special Weapons</description>
+		<author url="https://github.com/cajadehu/aurorabuilder/">LemonCat</author>
+		<update version="0.0.1">
+			<file name="lemoncat_essential.xml" url="https://raw.githubusercontent.com/cajadehu/aurorabuilder/main/lemoncat_essential.xml" />
+		</update>
+	</info>
+	
+	<!-- UPDATE LOG
+	0.0.1
+		Moved out Mage Armor, Stone Armor, Shileilagh Quarterstaff, Unarmed Strike, Psychic Blades, Lightning Launcher to its own section.
+		Duplicated All Purpose Tool +0 and Book of Shadows +0 for convenience.
+	-->
+
+	<element name="Mage Armor" type="Magic Item" source="AAB" id="ID_AURORA_EXAMPLES_MAGIC_ITEM_PROXY_MAGE_ARMOR">
+		<description>
+			<p>Your base AC becomes 13 + your Dexterity modifier.</p>
+			<div class="reference">
+				<div element="ID_PHB_SPELL_MAGE_ARMOR" />
+			</div>
+		</description>
+		<setters>
+			<set name="keywords">ac,armor,mage</set>
+			<set name="category">Proxy Effects</set>
+			<set name="type">Proxy Effect</set>
+			<set name="slot">misc</set>
+		</setters>
+		<rules>
+			<stat name="ac:mage armor" value="13" />
+			<stat name="ac:mage armor" value="dexterity:modifier" />
+			<stat name="ac:calculation" value="ac:mage armor" bonus="calculation" />
+		</rules>
+	</element>
+
+	<element name="Stone Sorcerer Armor" type="Magic Item" source="AAB" id="ID_AURORA_EXAMPLES_MAGIC_ITEM_PROXY_STONE_SORCERER_ARMOR">
+		<description>
+			<p>Your base AC becomes 13 + your Constitution modifier.</p>
+		</description>
+		<setters>
+			<set name="keywords">ac,armor,sorcerer,stone</set>
+			<set name="category">Proxy Effects</set>
+			<set name="type">Proxy Effect</set>
+			<set name="slot">misc</set>
+		</setters>
+		<rules>
+			<stat name="ac:stone sorcerer armor" value="13" />
+			<stat name="ac:stone sorcerer armor" value="constitution:modifier" />
+			<stat name="ac:calculation" value="ac:stone sorcerer armor" bonus="calculation" />
+		</rules>
+	</element>    
+
+	<element name="Shillelagh Club" type="Weapon" source="AAB" id="ID_LEMONCAT_WEAPON_SHILLELAGH_CLUB">
+		<supports>ID_INTERNAL_WEAPON_CATEGORY_SIMPLE_MELEE, ID_INTERNAL_DAMAGE_TYPE_BLUDGEONING, ID_INTERNAL_WEAPON_PROPERTY_LIGHT, ID_INTERNAL_WEAPON_GROUP_CLUBS</supports>
+		<requirements>ID_PHB_SPELL_SHILLELAGH</requirements>
+        <description>
+			<p>The wood of a club or quarterstaff you are holding is imbued with nature’s power.</p>
+			<p>For the duration, you can use your spellcasting ability instead of Strength for the attack and damage rolls of melee attacks using that weapon, and the weapon’s damage die becomes a d8.</p>
+			<p>The weapon also becomes magical, if it isn’t already. The spell ends if you cast it again or if you let go of the weapon. PHB p275</p>
+            <p>MANAGE > ATTACKS > ABILITY > WISDOM (or your spellcasting ability)</p>
+		</description>
+		<setters>
+			<set name="keywords">shillelagh, club, druid, custom, lemoncat, aab</set>
+			<set name="damage" type="bludgeoning">1d8</set>
+			<set name="category">Weapons</set>
+			<set name="cost" currency="sp">1</set>
+			<set name="weight" lb="2">2 lb.</set>
+			<set name="slot">onehand</set>
+			<set name="proficiency">ID_PROFICIENCY_WEAPON_PROFICIENCY_CLUB</set>
+		</setters>
+	</element>
+
+    <element name="Shillelagh Quarterstaff" type="Weapon" source="AAB" id="ID_LEMONCAT_WEAPON_SHILLELAGH_STAFF">
+		<supports>ID_INTERNAL_WEAPON_CATEGORY_SIMPLE_MELEE, ID_INTERNAL_DAMAGE_TYPE_BLUDGEONING, ID_INTERNAL_WEAPON_PROPERTY_VERSATILE</supports>
+		<requirements>ID_PHB_SPELL_SHILLELAGH</requirements>
+		<description>
+			<p>The wood of a club or quarterstaff you are holding is imbued with nature’s power.</p>
+			<p>For the duration, you can use your spellcasting ability instead of Strength for the attack and damage rolls of melee attacks using that weapon, and the weapon’s damage die becomes a d8.</p>
+			<p>The weapon also becomes magical, if it isn’t already. The spell ends if you cast it again or if you let go of the weapon. PHB p275</p>
+            <p>MANAGE > ATTACKS > ABILITY > WISDOM (or your spellcasting ability)</p>
+		</description>
+		<setters>
+			<set name="keywords">shillelagh, quarterstaff, druid, custom, lemoncat, aab</set>
+			<set name="damage" type="bludgeoning">1d8</set>
+			<set name="category">Weapons</set>
+			<set name="cost" currency="sp">2</set>
+			<set name="weight" lb="4">4 lb.</set>
+			<set name="slot">onehand</set>
+            <set name="versatile">1d8</set>
+			<set name="proficiency">ID_PROFICIENCY_WEAPON_PROFICIENCY_QUARTERSTAFF</set>
+		</setters>
+	</element>
+	
+	<element name="Lightning Launcher (DEX/INT)" type="Weapon" source="AAB" id="ID_LEMONCAT_WEAPON_LIGHTNINGLAUNCHER">
+		<supports>ID_INTERNAL_WEAPON_CATEGORY_SIMPLE_RANGED,ID_INTERNAL_DAMAGE_TYPE_LIGHTNING</supports>
+		<description>
+			A gemlike node appears on one of your armored fists or on the chest. It counts as a simple ranged weapon, with a normal range of 90 feet and a long range of 300 feet, and it deals 1d6 lightning damage on a hit. Once on each of your turns when you hit a creature with it, you can deal an extra 1d6 lightning damage to that target.
+		</description>
+		<setters>
+			<set name="keywords">lightning, launcher, artificer, armorer, custom, lemoncat, aab</set>
+			<set name="category">Weapons</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="slot">misc</set>
+			<set name="range">90/300</set>
+			<set name="damage" type="lightning">1d6</set>
+			<set name="proficiency">ID_PROFICIENCY_WEAPON_PROFICIENCY_SLING</set>
+		</setters>
+	</element>
+	
+	<element name="Psychic Blade (STR/DEX Action)" type="Weapon" source="AAB" id="ID_LEMONCAT_WEAPON_PSYCHICBLADE1">
+		<supports>ID_INTERNAL_DAMAGE_TYPE_PSYCHIC, ID_INTERNAL_WEAPON_CATEGORY_SIMPLE_MELEE, ID_INTERNAL_WEAPON_PROPERTY_THROWN, ID_INTERNAL_WEAPON_PROPERTY_FINESSE</supports>
+		<description>
+			PSYCHIC BLADES 3rd-level Rogue Soulknife feature - You can manifest your psionic power as shimmering blades of psychic energy. Whenever you take the Attack action, you can manifest a psychic blade from your free hand and make the attack with that blade. This magic blade is a simple melee weapon with the finesse and thrown properties. It has a normal range of 60 feet and no long range, and on a hit, it deals psychic damage equal to 1d6 plus the ability modifier you used for the attack roll. The blade vanishes immediately after it hits or misses its target, and it leaves no mark on its target if it deals damage. - After you attack with the blade, you can make a melee or ranged attack with a second psychic blade as a bonus action on the same turn, provided your other hand is free to create it. The damage die of this bonus attack is 1d4, instead of 1d6.
+		</description>
+		<setters>
+			<set name="keywords">psychic, psionic, soul, thrown, finesse, custom, lemoncat, aab</set>
+			<set name="category">Weapons</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="slot">onehand,primary</set>
+			<set name="range">60</set>
+			<set name="damage" type="psychic">1d6</set>
+			<set name="proficiency">ID_PROFICIENCY_WEAPON_PROFICIENCY_DAGGER</set>
+		</setters>
+	</element>
+	
+	<element name="Psychic Blade (STR/DEX Bonus Action)" type="Weapon" source="AAB" id="ID_LEMONCAT_WEAPON_PSYCHICBLADE2">
+		<supports>ID_INTERNAL_DAMAGE_TYPE_PSYCHIC, ID_INTERNAL_WEAPON_CATEGORY_SIMPLE_MELEE, ID_INTERNAL_WEAPON_PROPERTY_THROWN, ID_INTERNAL_WEAPON_PROPERTY_FINESSE</supports>
+		<description>
+			PSYCHIC BLADES 3rd-level Rogue Soulknife feature - You can manifest your psionic power as shimmering blades of psychic energy. Whenever you take the Attack action, you can manifest a psychic blade from your free hand and make the attack with that blade. This magic blade is a simple melee weapon with the finesse and thrown properties. It has a normal range of 60 feet and no long range, and on a hit, it deals psychic damage equal to 1d6 plus the ability modifier you used for the attack roll. The blade vanishes immediately after it hits or misses its target, and it leaves no mark on its target if it deals damage. - After you attack with the blade, you can make a melee or ranged attack with a second psychic blade as a bonus action on the same turn, provided your other hand is free to create it. The damage die of this bonus attack is 1d4, instead of 1d6.
+		</description>
+		<setters>
+			<set name="keywords">psychic, psionic, soul, thrown, finesse, custom, lemoncat, aab</set>
+			<set name="category">Weapons</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="slot">onehand,secondary</set>
+			<set name="range">60</set>
+			<set name="damage" type="psychic">1d4</set>
+			<set name="proficiency">ID_PROFICIENCY_WEAPON_PROFICIENCY_DAGGER</set>
+		</setters>
+	</element>
+	
+	<element name="Unarmed Strike" type="Weapon" source="AAB" id="ID_LEMONCAT_WEAPON_UNARMEDSTRIKE">
+		<supports>ID_INTERNAL_DAMAGE_TYPE_BLUDGEONING, ID_INTERNAL_WEAPON_CATEGORY_SIMPLE_MELEE, ID_INTERNAL_WEAPON_PROPERTY_FINESSE</supports>
+		<description>
+			A punch, kick, elbow, headbutt, or other physical attack using the body.
+		</description>
+		<setters>
+			<set name="keywords">unarmed, strike, melee, monk, custom, lemoncat, aab</set>
+			<set name="category">Weapons</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="range">5</set>
+			<set name="damage" type="bludgeoning">1d4</set>
+			<set name="proficiency">ID_PROFICIENCY_WEAPON_PROFICIENCY_CLUB</set>
+		</setters>
+	</element>
+		
+	<append id="ID_PROFICIENCY_WEAPON_PROFICIENCY_SIMPLE_MELEE_WEAPONS">
+		<rules>
+			<grant type="Proficiency" id="ID_LEMONCAT_WEAPON_SHILLELAGH_CLUB" />
+			<grant type="Proficiency" id="ID_LEMONCAT_WEAPON_SHILLELAGH_STAFF" />
+			<grant type="Proficiency" id="ID_LEMONCAT_WEAPON_UNARMEDSTRIKE" />
+			<grant type="Proficiency" id="ID_LEMONCAT_WEAPON_PSYCHICBLADE1" />
+			<grant type="Proficiency" id="ID_LEMONCAT_WEAPON_PSYCHICBLADE2" />
+		</rules>
+	</append>
+	
+	<append id="ID_PROFICIENCY_WEAPON_PROFICIENCY_SIMPLE_WEAPONS">
+		<rules>
+			<grant type="Proficiency" id="ID_LEMONCAT_WEAPON_LIGHTNINGLAUNCHER" />
+		</rules>
+	</append>
+
+	<element name="All-Purpose Tool, +0" type="Magic Item" source="AAB" id="ID_LEMONCAT_ALL_PURPOSE_TOOL_COMMON">
+		<description>
+			<p>This simple screwdriver can transform into a variety of tools; as an action, you can touch the item and transform it into any type of artisan’s tool of your choice (see the "Equipment" chapter in the Player’s Handbook for a list of artisan’s tools). Whatever form the tool takes, you are proficient with it.</p>
+			<p class="indent">While holding this tool, you gain a +0 bonus to the spell attack rolls and the saving throw DCs of your artificer spells.</p>
+			<p class="indent">As an action, you can focus on the tool to channel your creative forces. Choose a cantrip that you don’t know from any class list. For 8 hours, you can cast that cantrip, and it counts as an artificer cantrip for you. Once this property is used, it can’t be used again until the next dawn.</p>
+		</description>
+		<setters>
+			<set name="keywords">artificer, aab</set>
+			<set name="category">Wondrous Items</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="type">Wondrous Item</set>
+			<set name="rarity">Common</set>
+			<set name="attunement" addition="by an artificer">true</set>
+		</setters>
+		<rules>
+			<stat name="artificer:spellcasting:attack" value="0" requirements="[level:artificer:1]" />
+			<stat name="artificer:spellcasting:dc" value="0" requirements="[level:artificer:1]" />
+		</rules>
+	</element>
+	
+	<element name="Book of Shadows, +0" type="Magic Item" source="AAB" id="ID_LEMONCAT_BOOK_OF_SHADOWS_0">
+		<description>
+			<p>While this book is in your posession, you gain a +0 bonus spell attack rolls and to the saving throw DCs of all of your spells, not just your Warlock spells.</p>
+			<p class="indent">In addition, you can regain one warlock spell slot as an action while holding the book. You can’t use this property again until you finish a long rest.</p>
+		</description>
+		<setters>
+			<set name="keywords">warlock, book, tome, grimoire, shadows, lemoncat, aab</set>
+			<set name="category">Wondrous Items</set>
+			<set name="weight" lb="2">2 lb.</set>
+			<set name="type">Wondrous Item</set>
+			<set name="attunement" addition="by a warlock">true</set>
+			<set name="rarity">Common</set>
+			<set name="enhancement">0</set>
+		</setters>
+		<rules>
+			<stat name="spellcasting:attack" value="0" bonus="book of shadows" />
+			<stat name="spellcasting:dc"     value="0" bonus="book of shadows" />
+		</rules>
+	</element>
+
+</elements>
