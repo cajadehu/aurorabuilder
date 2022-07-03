@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<index>
+	<info>
+		<name>Lemoncat</name>
+		<description>Lemoncat</description>
+		<author url="https://raw.githubusercontent.com/cajadehu/aurorabuilder/main/">LemonCat</author>
+		<update version="0.0.1">
+			<file name="lemoncatEssential.index" url="https://raw.githubusercontent.com/cajadehu/aurorabuilder/main/lemoncatEssential.index" />
+		</update>
+	</info>
+	<files>
+		<file name="lemoncat_essential.xml" url="https://raw.githubusercontent.com/cajadehu/aurorabuilder/main/lemoncat_essential.xml" />
+
+		<file name="sourceAAB.xml" url="https://raw.githubusercontent.com/cajadehu/aurorabuilder/main/sourceAAB.xml" />
+	</files>
+</index>

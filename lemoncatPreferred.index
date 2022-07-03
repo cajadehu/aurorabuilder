@@ -1,10 +1,10 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <index>
 	<info>
 		<name>Lemoncat</name>
 		<description>Lemoncat</description>
 		<author url="https://raw.githubusercontent.com/cajadehu/aurorabuilder/main/">LemonCat</author>
-		<update version="0.0.2">
+		<update version="0.0.3">
 			<file name="lemoncatPreferred.index" url="https://raw.githubusercontent.com/cajadehu/aurorabuilder/main/lemoncatPreferred.index" />
 		</update>
 	</info>
@@ -14,11 +14,6 @@
 		<file name="..\unearthed-arcana.index" url="https://raw.githubusercontent.com/AuroraLegacy/elements/master/unearthed-arcana.index" />
 		<file name="..\taldorei-reborn.index" url="https://raw.githubusercontent.com/mamawerecat/AuroraCustomContent/main/taldorei-reborn.index" />
 		<file name="..\lemoncat.index" url="https://raw.githubusercontent.com/cajadehu/aurorabuilder/main/lemoncat.index" />
-
-		<!--  TEST SECTION
-			<file name="..\..\portraits\background-sneaker.xml" url="https://raw.githubusercontent.com/cajadehu/aurorabuilder/main/background-sneaker.xml" />
-			<file name="..\..\portraits_builtInReduced_5bit200x200.7z" url="https://raw.githubusercontent.com/cajadehu/aurorabuilder/main/portraits_builtInReduced_5bit200x200.7z" />
-			<file name="..\..\7zExtract.xml" url="https://raw.githubusercontent.com/cajadehu/aurorabuilder/main/portraits_builtInReduced_5bit200x200.7z" />
-		-->
+		<file name="..\lemoncatEssential.index" url="https://raw.githubusercontent.com/cajadehu/aurorabuilder/main/lemoncatEssential.index" />
 	</files>
 </index>
