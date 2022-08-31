@@ -4,12 +4,15 @@
 		<name>Special Weapons</name>
 		<description>Special Weapons</description>
 		<author url="https://github.com/cajadehu/aurorabuilder/">LemonCat</author>
-		<update version="0.0.1">
+		<update version="0.0.2">
 			<file name="lemoncat_essential.xml" url="https://raw.githubusercontent.com/cajadehu/aurorabuilder/main/lemoncat_essential.xml" />
 		</update>
 	</info>
 	
 	<!-- UPDATE LOG
+	0.0.2
+		Added Adamantine and Mithril to Magic Items.
+		Added Eldritch Claw variant of Unarmed Strike.
 	0.0.1
 		Moved out Mage Armor, Stone Armor, Shileilagh Quarterstaff, Unarmed Strike, Psychic Blades, Lightning Launcher to its own section.
 		Duplicated All Purpose Tool +0 and Book of Shadows +0 for convenience.
@@ -159,12 +162,30 @@
 			<set name="proficiency">ID_PROFICIENCY_WEAPON_PROFICIENCY_CLUB</set>
 		</setters>
 	</element>
-		
+
+	<element name="Unarmed Strike, Eldritch Claw" type="Weapon" source="AAB" id="ID_LEMONCAT_WEAPON_ELDRITCHCLAWSTRIKE">
+		<supports>ID_INTERNAL_DAMAGE_TYPE_BLUDGEONING, ID_INTERNAL_WEAPON_CATEGORY_SIMPLE_MELEE, ID_INTERNAL_WEAPON_PROPERTY_FINESSE</supports>
+		<description>
+			A punch, kick, elbow, headbutt, or other physical attack using the body, magically enhanced by the Eldritch Claw Tattoo or Insignia.
+		</description>
+		<setters>
+			<set name="keywords">unarmed, strike, claw, eldritch, melee, monk, custom, lemoncat, aab</set>
+			<set name="category">Weapons</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="range">5</set>
+			<set name="damage" type="bludgeoning">1d4</set>
+			<set name="enhancement">1</set>
+			<set name="proficiency">ID_PROFICIENCY_WEAPON_PROFICIENCY_CLUB</set>
+		</setters>
+	</element>
+
 	<append id="ID_PROFICIENCY_WEAPON_PROFICIENCY_SIMPLE_MELEE_WEAPONS">
 		<rules>
 			<grant type="Proficiency" id="ID_LEMONCAT_WEAPON_SHILLELAGH_CLUB" />
 			<grant type="Proficiency" id="ID_LEMONCAT_WEAPON_SHILLELAGH_STAFF" />
 			<grant type="Proficiency" id="ID_LEMONCAT_WEAPON_UNARMEDSTRIKE" />
+			<grant type="Proficiency" id="ID_LEMONCAT_WEAPON_ELDRITCHCLAWSTRIKE" />
 			<grant type="Proficiency" id="ID_LEMONCAT_WEAPON_PSYCHICBLADE1" />
 			<grant type="Proficiency" id="ID_LEMONCAT_WEAPON_PSYCHICBLADE2" />
 		</rules>
@@ -214,6 +235,66 @@
 			<stat name="spellcasting:attack" value="0" bonus="book of shadows" />
 			<stat name="spellcasting:dc"     value="0" bonus="book of shadows" />
 		</rules>
+	</element>
+
+	<element name="Weapon of Adamantine" type="Magic Item" source="AAB" id="ID_LEMONCAT_WEAPON_OF_ADAMANTINE">
+		<description>
+			<p>This magic weapon is made of or plated with Adamantine.</p>
+		</description>
+		<setters>
+			<set name="keywords">melee, ranged, lemoncat, aab, custom</set>
+			<set name="category">Magic Weapons</set>
+			<set name="cost" currency="gp"></set>
+			<set name="type" addition="any">Weapon</set>
+			<set name="rarity">Common</set>
+			<set name="weapon">ID_INTERNAL_WEAPON_CATEGORY_SIMPLE_MELEE||ID_INTERNAL_WEAPON_CATEGORY_SIMPLE_RANGED||ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE||ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED</set>
+			<set name="name-format">Adamantine {{parent}}</set>
+		</setters>
+	</element>
+
+	<element name="Armor of Adamantine" type="Magic Item" source="AAB" id="ID_LEMONCAT_ARMOR_OF_ADAMANTINE">
+		<description>
+			<p>This magic armor is made of or plated with Adamantine.</p>
+		</description>
+		<setters>
+			<set name="keywords">armor, lemoncat, aab, custom</set>
+			<set name="category">Magic Armor</set>
+			<set name="cost" currency="gp"></set>
+			<set name="type" addition="light, medium, or heavy">Armor</set>
+			<set name="rarity">Common</set>
+			<set name="armor">ID_INTERNAL_ARMOR_GROUP_LIGHT|ID_INTERNAL_ARMOR_GROUP_MEDIUM|ID_INTERNAL_ARMOR_GROUP_HEAVY</set>
+			<set name="name-format">Adamantine {{parent}}</set>
+		</setters>
+	</element>
+
+	<element name="Weapon of Mithril" type="Magic Item" source="AAB" id="ID_LEMONCAT_WEAPON_OF_MITHRIL">
+		<description>
+			<p>This magic weapon is made of or plated with Mithril.</p>
+		</description>
+		<setters>
+			<set name="keywords">melee, ranged, lemoncat, aab, custom</set>
+			<set name="category">Magic Weapons</set>
+			<set name="cost" currency="gp"></set>
+			<set name="type" addition="any">Weapon</set>
+			<set name="rarity">Common</set>
+			<set name="weapon">ID_INTERNAL_WEAPON_CATEGORY_SIMPLE_MELEE||ID_INTERNAL_WEAPON_CATEGORY_SIMPLE_RANGED||ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE||ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED</set>
+			<set name="name-format">Mithril {{parent}}</set>
+		</setters>
+	</element>
+
+	<element name="Armor of Mithril" type="Magic Item" source="AAB" id="ID_LEMONCAT_ARMOR_OF_MITHRIL">
+		<description>
+			<p>This magic armor is made of or plated with Mithril.</p>
+		</description>
+		<setters>
+			<set name="keywords">armor, lemoncat, aab, custom</set>
+			<set name="category">Magic Armor</set>
+			<set name="cost" currency="gp"></set>
+			<set name="type" addition="light, medium, or heavy">Armor</set>
+			<set name="rarity">Common</set>
+			<set name="armor">ID_INTERNAL_ARMOR_GROUP_LIGHT|ID_INTERNAL_ARMOR_GROUP_MEDIUM|ID_INTERNAL_ARMOR_GROUP_HEAVY</set>
+			<set name="name-format">Mithril {{parent}}</set>
+		</setters>
 	</element>
 
 </elements>

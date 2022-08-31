@@ -4,12 +4,16 @@
 		<name>Special Weapons</name>
 		<description>Special Weapons</description>
 		<author url="https://github.com/cajadehu/aurorabuilder/">LemonCat</author>
-		<update version="0.1.13">
+		<update version="0.1.14">
 			<file name="lemoncat_specialWeapons.xml" url="https://raw.githubusercontent.com/cajadehu/aurorabuilder/main/lemoncat_specialWeapons.xml" />
 		</update>
 	</info>
 	
 	<!-- UPDATE LOG
+	0.1.14
+		Corrected naming of numerous magic items
+		Added Adamantine and Mithril to Magic Items
+		Added Eldritch Claw variant of Unarmed Strike
 	0.1.13
 		More themed equipment sets added
 	0.1.10
@@ -146,6 +150,23 @@
 			<set name="weight" lb="0">0 lb.</set>
 			<set name="range">5</set>
 			<set name="damage" type="bludgeoning">1d4</set>
+			<set name="proficiency">ID_PROFICIENCY_WEAPON_PROFICIENCY_CLUB</set>
+		</setters>
+	</element>
+
+	<element name="Unarmed Strike, Eldritch Claw" type="Weapon" source="AAA" id="ID_LEMONCAT_WEAPON_ELDRITCHCLAWSTRIKE">
+		<supports>ID_INTERNAL_DAMAGE_TYPE_BLUDGEONING, ID_INTERNAL_WEAPON_CATEGORY_SIMPLE_MELEE, ID_INTERNAL_WEAPON_PROPERTY_FINESSE</supports>
+		<description>
+			A punch, kick, elbow, headbutt, or other physical attack using the body, magically enhanced by the Eldritch Claw Tattoo or Insignia.
+		</description>
+		<setters>
+			<set name="keywords">unarmed, strike, claw, eldritch, melee, monk, custom, lemoncat, aaa</set>
+			<set name="category">Weapons</set>
+			<set name="cost" currency="gp">0</set>
+			<set name="weight" lb="0">0 lb.</set>
+			<set name="range">5</set>
+			<set name="damage" type="bludgeoning">1d4</set>
+			<set name="enhancement">1</set>
 			<set name="proficiency">ID_PROFICIENCY_WEAPON_PROFICIENCY_CLUB</set>
 		</setters>
 	</element>
@@ -314,6 +335,7 @@
 			<grant type="Proficiency" id="ID_LEMONCAT_WEAPON_SHILLELAGH_CLUB" />
 			<grant type="Proficiency" id="ID_LEMONCAT_WEAPON_SHILLELAGH_STAFF" />
 			<grant type="Proficiency" id="ID_LEMONCAT_WEAPON_UNARMEDSTRIKE" />
+			<grant type="Proficiency" id="ID_LEMONCAT_WEAPON_ELDRITCHCLAWSTRIKE" />
 			<grant type="Proficiency" id="ID_LEMONCAT_WEAPON_PSYCHICBLADE1" />
 			<grant type="Proficiency" id="ID_LEMONCAT_WEAPON_PSYCHICBLADE2" />
 		</rules>
@@ -1652,7 +1674,7 @@
 			<set name="type" addition="any">Weapon</set>
 			<set name="rarity">Common</set>
 			<set name="weapon">ID_INTERNAL_WEAPON_CATEGORY_SIMPLE_MELEE||ID_INTERNAL_WEAPON_CATEGORY_SIMPLE_RANGED||ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE||ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED</set>
-			<set name="name-format"> of Telepathic Extension</set>
+			<set name="name-format">{{parent}} of Telepathic Extension</set>
 		</setters>
 	</element>
 
@@ -1667,7 +1689,7 @@
 			<set name="type" addition="light, medium, or heavy">Armor</set>
 			<set name="rarity">Common</set>
 			<set name="armor">ID_INTERNAL_ARMOR_GROUP_LIGHT|ID_INTERNAL_ARMOR_GROUP_MEDIUM|ID_INTERNAL_ARMOR_GROUP_HEAVY</set>
-			<set name="name-format"> of Telepathic Extension</set>
+			<set name="name-format">{{parent}} of Telepathic Extension</set>
 		</setters>
 	</element>
 
@@ -1683,7 +1705,7 @@
 			<set name="type" addition="shield">Armor</set>
 			<set name="rarity">Common</set>
 			<set name="armor">ID_INTERNAL_ARMOR_GROUP_SHIELD</set>
-			<set name="name-format"> of Telepathic Extension</set>
+			<set name="name-format">{{parent}} of Telepathic Extension</set>
 		</setters>
 	</element>
 
@@ -1698,7 +1720,7 @@
 			<set name="type" addition="any">Weapon</set>
 			<set name="rarity">Common</set>
 			<set name="weapon">ID_INTERNAL_WEAPON_CATEGORY_SIMPLE_MELEE||ID_INTERNAL_WEAPON_CATEGORY_SIMPLE_RANGED||ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE||ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED</set>
-			<set name="name-format"> of Shiftweave</set>
+			<set name="name-format">{{parent}} of Shiftweave</set>
 		</setters>
 	</element>
 
@@ -1713,7 +1735,7 @@
 			<set name="type" addition="light, medium, or heavy">Armor</set>
 			<set name="rarity">Common</set>
 			<set name="armor">ID_INTERNAL_ARMOR_GROUP_LIGHT|ID_INTERNAL_ARMOR_GROUP_MEDIUM|ID_INTERNAL_ARMOR_GROUP_HEAVY</set>
-			<set name="name-format"> of Shiftweave</set>
+			<set name="name-format">{{parent}} of Shiftweave</set>
 		</setters>
 	</element>
 
@@ -1729,7 +1751,7 @@
 			<set name="type" addition="shield">Armor</set>
 			<set name="rarity">Common</set>
 			<set name="armor">ID_INTERNAL_ARMOR_GROUP_SHIELD</set>
-			<set name="name-format"> of Shiftweave</set>
+			<set name="name-format">{{parent}} of Shiftweave</set>
 		</setters>
 	</element>
 
@@ -1744,7 +1766,7 @@
 			<set name="type" addition="any">Weapon</set>
 			<set name="rarity">Common</set>
 			<set name="weapon">ID_INTERNAL_WEAPON_CATEGORY_SIMPLE_MELEE||ID_INTERNAL_WEAPON_CATEGORY_SIMPLE_RANGED||ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE||ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED</set>
-			<set name="name-format"> of Casting</set>
+			<set name="name-format">{{parent}} of Casting</set>
 		</setters>
 	</element>
 
@@ -1759,7 +1781,7 @@
 			<set name="type" addition="light, medium, or heavy">Armor</set>
 			<set name="rarity">Common</set>
 			<set name="armor">ID_INTERNAL_ARMOR_GROUP_LIGHT|ID_INTERNAL_ARMOR_GROUP_MEDIUM|ID_INTERNAL_ARMOR_GROUP_HEAVY</set>
-			<set name="name-format"> of Casting</set>
+			<set name="name-format">{{parent}} of Casting</set>
 		</setters>
 	</element>
 
@@ -1775,7 +1797,7 @@
 			<set name="type" addition="shield">Armor</set>
 			<set name="rarity">Common</set>
 			<set name="armor">ID_INTERNAL_ARMOR_GROUP_SHIELD</set>
-			<set name="name-format"> of Casting</set>
+			<set name="name-format">{{parent}} of Casting</set>
 		</setters>
 	</element>
 
@@ -1790,7 +1812,7 @@
 			<set name="type" addition="any">Weapon</set>
 			<set name="rarity">Common</set>
 			<set name="weapon">ID_INTERNAL_WEAPON_CATEGORY_SIMPLE_MELEE||ID_INTERNAL_WEAPON_CATEGORY_SIMPLE_RANGED||ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE||ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED</set>
-			<set name="name-format"> of Rusting Vengeance</set>
+			<set name="name-format">{{parent}} of Rusting Vengeance</set>
 		</setters>
 	</element>
 
@@ -1805,7 +1827,7 @@
 			<set name="type" addition="light, medium, or heavy">Armor</set>
 			<set name="rarity">Uncommon</set>
 			<set name="armor">ID_INTERNAL_ARMOR_GROUP_LIGHT|ID_INTERNAL_ARMOR_GROUP_MEDIUM|ID_INTERNAL_ARMOR_GROUP_HEAVY</set>
-			<set name="name-format"> of Rusting Vengeance</set>
+			<set name="name-format">{{parent}} of Rusting Vengeance</set>
 		</setters>
 	</element>
 
@@ -1821,7 +1843,7 @@
 			<set name="type" addition="shield">Armor</set>
 			<set name="rarity">Common</set>
 			<set name="armor">ID_INTERNAL_ARMOR_GROUP_SHIELD</set>
-			<set name="name-format"> of Rusting Vengeance</set>
+			<set name="name-format">{{parent}} of Rusting Vengeance</set>
 		</setters>
 	</element>
 
@@ -1836,7 +1858,7 @@
 			<set name="type" addition="any">Weapon</set>
 			<set name="rarity">Common</set>
 			<set name="weapon">ID_INTERNAL_WEAPON_CATEGORY_SIMPLE_MELEE||ID_INTERNAL_WEAPON_CATEGORY_SIMPLE_RANGED||ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE||ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED</set>
-			<set name="name-format"> of Vine-kin</set>
+			<set name="name-format">{{parent}} of Vine-kin</set>
 		</setters>
 	</element>
 
@@ -1851,7 +1873,7 @@
 			<set name="type" addition="light, medium, or heavy">Armor</set>
 			<set name="rarity">Common</set>
 			<set name="armor">ID_INTERNAL_ARMOR_GROUP_LIGHT|ID_INTERNAL_ARMOR_GROUP_MEDIUM|ID_INTERNAL_ARMOR_GROUP_HEAVY</set>
-			<set name="name-format"> of Vine-kin</set>
+			<set name="name-format">{{parent}} of Vine-kin</set>
 		</setters>
 	</element>
 
@@ -1867,7 +1889,7 @@
 			<set name="type" addition="shield">Armor</set>
 			<set name="rarity">Common</set>
 			<set name="armor">ID_INTERNAL_ARMOR_GROUP_SHIELD</set>
-			<set name="name-format"> of Vine-kin</set>
+			<set name="name-format">{{parent}} of Vine-kin</set>
 		</setters>
 	</element>
 
@@ -1882,7 +1904,7 @@
 			<set name="type" addition="any">Weapon</set>
 			<set name="rarity">Very Rare</set>
 			<set name="weapon">ID_INTERNAL_WEAPON_CATEGORY_SIMPLE_MELEE||ID_INTERNAL_WEAPON_CATEGORY_SIMPLE_RANGED||ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE||ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED</set>
-			<set name="name-format"> of The Ghost Runner</set>
+			<set name="name-format">{{parent}} of The Ghost Runner</set>
 		</setters>
 	</element>
 
@@ -1897,7 +1919,7 @@
 			<set name="type" addition="light, medium, or heavy">Armor</set>
 			<set name="rarity">Uncommon</set>
 			<set name="armor">ID_INTERNAL_ARMOR_GROUP_LIGHT|ID_INTERNAL_ARMOR_GROUP_MEDIUM|ID_INTERNAL_ARMOR_GROUP_HEAVY</set>
-			<set name="name-format"> of The Ghost Runner</set>
+			<set name="name-format">{{parent}} of The Ghost Runner</set>
 		</setters>
 	</element>
 
@@ -1913,7 +1935,7 @@
 			<set name="type" addition="shield">Armor</set>
 			<set name="rarity">Uncommon</set>
 			<set name="armor">ID_INTERNAL_ARMOR_GROUP_SHIELD</set>
-			<set name="name-format"> of The Ghost Runner</set>
+			<set name="name-format">{{parent}} of The Ghost Runner</set>
 		</setters>
 	</element>
 
@@ -1928,7 +1950,7 @@
 			<set name="type" addition="any">Weapon</set>
 			<set name="rarity">Common</set>
 			<set name="weapon">ID_INTERNAL_WEAPON_CATEGORY_SIMPLE_MELEE||ID_INTERNAL_WEAPON_CATEGORY_SIMPLE_RANGED||ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE||ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED</set>
-			<set name="name-format"> of Lazarusian Mercy</set>
+			<set name="name-format">{{parent}} of Lazarusian Mercy</set>
 		</setters>
 	</element>
 
@@ -1943,7 +1965,7 @@
 			<set name="type" addition="light, medium, or heavy">Armor</set>
 			<set name="rarity">Uncommon</set>
 			<set name="armor">ID_INTERNAL_ARMOR_GROUP_LIGHT|ID_INTERNAL_ARMOR_GROUP_MEDIUM|ID_INTERNAL_ARMOR_GROUP_HEAVY</set>
-			<set name="name-format"> of Lazarusian Mercy</set>
+			<set name="name-format">{{parent}} of Lazarusian Mercy</set>
 		</setters>
 	</element>
 
@@ -1959,7 +1981,7 @@
 			<set name="type" addition="shield">Armor</set>
 			<set name="rarity">Uncommon</set>
 			<set name="armor">ID_INTERNAL_ARMOR_GROUP_SHIELD</set>
-			<set name="name-format"> of Lazarusian Mercy</set>
+			<set name="name-format">{{parent}} of Lazarusian Mercy</set>
 		</setters>
 	</element>
 
@@ -1974,7 +1996,7 @@
 			<set name="type" addition="any">Weapon</set>
 			<set name="rarity">Common</set>
 			<set name="weapon">ID_INTERNAL_WEAPON_CATEGORY_SIMPLE_MELEE||ID_INTERNAL_WEAPON_CATEGORY_SIMPLE_RANGED||ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE||ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED</set>
-			<set name="name-format"> of Larceny</set>
+			<set name="name-format">{{parent}} of Larceny</set>
 		</setters>
 	</element>
 
@@ -1989,7 +2011,7 @@
 			<set name="type" addition="light, medium, or heavy">Armor</set>
 			<set name="rarity">Uncommon</set>
 			<set name="armor">ID_INTERNAL_ARMOR_GROUP_LIGHT|ID_INTERNAL_ARMOR_GROUP_MEDIUM|ID_INTERNAL_ARMOR_GROUP_HEAVY</set>
-			<set name="name-format"> of Larceny</set>
+			<set name="name-format">{{parent}} of Larceny</set>
 		</setters>
 	</element>
 
@@ -2005,7 +2027,7 @@
 			<set name="type" addition="shield">Armor</set>
 			<set name="rarity">Common</set>
 			<set name="armor">ID_INTERNAL_ARMOR_GROUP_SHIELD</set>
-			<set name="name-format"> of Larceny</set>
+			<set name="name-format">{{parent}} of Larceny</set>
 		</setters>
 	</element>
 
@@ -2020,7 +2042,7 @@
 			<set name="type" addition="any">Weapon</set>
 			<set name="rarity">Common</set>
 			<set name="weapon">ID_INTERNAL_WEAPON_CATEGORY_SIMPLE_MELEE||ID_INTERNAL_WEAPON_CATEGORY_SIMPLE_RANGED||ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE||ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED</set>
-			<set name="name-format"> of Painters Joy</set>
+			<set name="name-format">{{parent}} of Painters Joy</set>
 		</setters>
 	</element>
 
@@ -2035,7 +2057,7 @@
 			<set name="type" addition="light, medium, or heavy">Armor</set>
 			<set name="rarity">Common</set>
 			<set name="armor">ID_INTERNAL_ARMOR_GROUP_LIGHT|ID_INTERNAL_ARMOR_GROUP_MEDIUM|ID_INTERNAL_ARMOR_GROUP_HEAVY</set>
-			<set name="name-format"> of Painters Joy</set>
+			<set name="name-format">{{parent}} of Painters Joy</set>
 		</setters>
 	</element>
 
@@ -2051,7 +2073,7 @@
 			<set name="type" addition="shield">Armor</set>
 			<set name="rarity">Common</set>
 			<set name="armor">ID_INTERNAL_ARMOR_GROUP_SHIELD</set>
-			<set name="name-format"> of Painters Joy</set>
+			<set name="name-format">{{parent}} of Painters Joy</set>
 		</setters>
 	</element>
 
@@ -2066,7 +2088,7 @@
 			<set name="type" addition="any">Weapon</set>
 			<set name="rarity">Common</set>
 			<set name="weapon">ID_INTERNAL_WEAPON_CATEGORY_SIMPLE_MELEE||ID_INTERNAL_WEAPON_CATEGORY_SIMPLE_RANGED||ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE||ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED</set>
-			<set name="name-format"> of Sorcery Points</set>
+			<set name="name-format">{{parent}} of Sorcery Points</set>
 		</setters>
 	</element>
 
@@ -2081,7 +2103,7 @@
 			<set name="type" addition="light, medium, or heavy">Armor</set>
 			<set name="rarity">Common</set>
 			<set name="armor">ID_INTERNAL_ARMOR_GROUP_LIGHT|ID_INTERNAL_ARMOR_GROUP_MEDIUM|ID_INTERNAL_ARMOR_GROUP_HEAVY</set>
-			<set name="name-format"> of Sorcery Points</set>
+			<set name="name-format">{{parent}} of Sorcery Points</set>
 		</setters>
 	</element>
 
@@ -2097,7 +2119,7 @@
 			<set name="type" addition="shield">Armor</set>
 			<set name="rarity">Common</set>
 			<set name="armor">ID_INTERNAL_ARMOR_GROUP_SHIELD</set>
-			<set name="name-format"> of Sorcery Points</set>
+			<set name="name-format">{{parent}} of Sorcery Points</set>
 		</setters>
 	</element>
 
@@ -2112,7 +2134,7 @@
 			<set name="type" addition="any">Weapon</set>
 			<set name="rarity">Common</set>
 			<set name="weapon">ID_INTERNAL_WEAPON_CATEGORY_SIMPLE_MELEE||ID_INTERNAL_WEAPON_CATEGORY_SIMPLE_RANGED||ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE||ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED</set>
-			<set name="name-format"> of Racial Integration</set>
+			<set name="name-format">{{parent}} of Racial Integration</set>
 		</setters>
 	</element>
 
@@ -2127,7 +2149,7 @@
 			<set name="type" addition="light, medium, or heavy">Armor</set>
 			<set name="rarity">Common</set>
 			<set name="armor">ID_INTERNAL_ARMOR_GROUP_LIGHT|ID_INTERNAL_ARMOR_GROUP_MEDIUM|ID_INTERNAL_ARMOR_GROUP_HEAVY</set>
-			<set name="name-format"> of Racial Integration</set>
+			<set name="name-format">{{parent}} of Racial Integration</set>
 		</setters>
 	</element>
 
@@ -2143,11 +2165,69 @@
 			<set name="type" addition="shield">Armor</set>
 			<set name="rarity">Common</set>
 			<set name="armor">ID_INTERNAL_ARMOR_GROUP_SHIELD</set>
-			<set name="name-format"> of Racial Integration</set>
+			<set name="name-format">{{parent}} of Racial Integration</set>
 		</setters>
 	</element>
 
+	<element name="Weapon of Adamantine" type="Magic Item" source="AAA" id="ID_LEMONCAT_WEAPON_OF_ADAMANTINE">
+		<description>
+			<p>This magic weapon is made of or plated with Adamantine.</p>
+		</description>
+		<setters>
+			<set name="keywords">melee, ranged, lemoncat, aaa, custom</set>
+			<set name="category">Magic Weapons</set>
+			<set name="cost" currency="gp"></set>
+			<set name="type" addition="any">Weapon</set>
+			<set name="rarity">Common</set>
+			<set name="weapon">ID_INTERNAL_WEAPON_CATEGORY_SIMPLE_MELEE||ID_INTERNAL_WEAPON_CATEGORY_SIMPLE_RANGED||ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE||ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED</set>
+			<set name="name-format">Adamantine {{parent}}</set>
+		</setters>
+	</element>
 
+	<element name="Armor of Adamantine" type="Magic Item" source="AAA" id="ID_LEMONCAT_ARMOR_OF_ADAMANTINE">
+		<description>
+			<p>This magic armor is made of or plated with Adamantine.</p>
+		</description>
+		<setters>
+			<set name="keywords">armor, lemoncat, aaa, custom</set>
+			<set name="category">Magic Armor</set>
+			<set name="cost" currency="gp"></set>
+			<set name="type" addition="light, medium, or heavy">Armor</set>
+			<set name="rarity">Common</set>
+			<set name="armor">ID_INTERNAL_ARMOR_GROUP_LIGHT|ID_INTERNAL_ARMOR_GROUP_MEDIUM|ID_INTERNAL_ARMOR_GROUP_HEAVY</set>
+			<set name="name-format">Adamantine {{parent}}</set>
+		</setters>
+	</element>
+
+	<element name="Weapon of Mithril" type="Magic Item" source="AAA" id="ID_LEMONCAT_WEAPON_OF_MITHRIL">
+		<description>
+			<p>This magic weapon is made of or plated with Mithril.</p>
+		</description>
+		<setters>
+			<set name="keywords">melee, ranged, lemoncat, aaa, custom</set>
+			<set name="category">Magic Weapons</set>
+			<set name="cost" currency="gp"></set>
+			<set name="type" addition="any">Weapon</set>
+			<set name="rarity">Common</set>
+			<set name="weapon">ID_INTERNAL_WEAPON_CATEGORY_SIMPLE_MELEE||ID_INTERNAL_WEAPON_CATEGORY_SIMPLE_RANGED||ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_MELEE||ID_INTERNAL_WEAPON_CATEGORY_MARTIAL_RANGED</set>
+			<set name="name-format">Mithril {{parent}}</set>
+		</setters>
+	</element>
+
+	<element name="Armor of Mithril" type="Magic Item" source="AAA" id="ID_LEMONCAT_ARMOR_OF_MITHRIL">
+		<description>
+			<p>This magic armor is made of or plated with Mithril.</p>
+		</description>
+		<setters>
+			<set name="keywords">armor, lemoncat, aaa, custom</set>
+			<set name="category">Magic Armor</set>
+			<set name="cost" currency="gp"></set>
+			<set name="type" addition="light, medium, or heavy">Armor</set>
+			<set name="rarity">Common</set>
+			<set name="armor">ID_INTERNAL_ARMOR_GROUP_LIGHT|ID_INTERNAL_ARMOR_GROUP_MEDIUM|ID_INTERNAL_ARMOR_GROUP_HEAVY</set>
+			<set name="name-format">Mithril {{parent}}</set>
+		</setters>
+	</element>
 
 
 </elements>
