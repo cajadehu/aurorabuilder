@@ -12,7 +12,7 @@
 	<!-- UPDATE LOG
 	0.0.2
 		Added Adamantine and Mithril to Magic Items.
-		Added Eldritch Claw variant of Unarmed Strike.
+		Added Eldritch Claw variant of Unarmed Strike to Magic Items, Club.
 	0.0.1
 		Moved out Mage Armor, Stone Armor, Shileilagh Quarterstaff, Unarmed Strike, Psychic Blades, Lightning Launcher to its own section.
 		Duplicated All Purpose Tool +0 and Book of Shadows +0 for convenience.
@@ -163,19 +163,22 @@
 		</setters>
 	</element>
 
-	<element name="Unarmed Strike, Eldritch Claw" type="Weapon" source="AAB" id="ID_LEMONCAT_WEAPON_ELDRITCHCLAWSTRIKE">
+	<element name="Unarmed Strike, Eldritch Claw" type="Magic Item" source="AAB" id="ID_LEMONCAT_WEAPON_ELDRITCHCLAWSTRIKE">
 		<supports>ID_INTERNAL_DAMAGE_TYPE_BLUDGEONING, ID_INTERNAL_WEAPON_CATEGORY_SIMPLE_MELEE, ID_INTERNAL_WEAPON_PROPERTY_FINESSE</supports>
 		<description>
 			A punch, kick, elbow, headbutt, or other physical attack using the body, magically enhanced by the Eldritch Claw Tattoo or Insignia.
 		</description>
 		<setters>
-			<set name="keywords">unarmed, strike, claw, eldritch, melee, monk, custom, lemoncat, aab</set>
-			<set name="category">Weapons</set>
+			<set name="category">Magic Weapons</set>
 			<set name="cost" currency="gp">0</set>
+			<set name="type" addition="club">Weapon</set>
+			<set name="rarity">Common</set>
+			<set name="weapon">Club</set>
+			<set name="enhancement">1</set>
+			<set name="keywords">unarmed, strike, claw, eldritch, melee, monk, custom, lemoncat, aab</set>
 			<set name="weight" lb="0">0 lb.</set>
 			<set name="range">5</set>
 			<set name="damage" type="bludgeoning">1d4</set>
-			<set name="enhancement">1</set>
 			<set name="proficiency">ID_PROFICIENCY_WEAPON_PROFICIENCY_CLUB</set>
 		</setters>
 	</element>
